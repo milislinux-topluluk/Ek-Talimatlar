@@ -15,7 +15,6 @@ derle() {
     --enable-mpg-mmx
 
   make
-
   make DESTDIR="$PKG"/ install
 
   install -Dm644 "$SRC"/Squeak-$surum-src/unix/doc/LICENSE \
