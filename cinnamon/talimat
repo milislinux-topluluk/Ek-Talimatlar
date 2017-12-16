@@ -1,7 +1,7 @@
 # Tanım: Cinnamon
 # URL: https://github.com/linuxmint/cinnamon
 # Paketçi: Cihan Alkan
-# Gerekler: caribou muffin cinnamon-settings-daemon python3-gobject cinnamon-session cinnamon-translations clutter-gtk libgnome-keyring cinnamon-control-center cinnamon-screensaver cinnamon-menus startup-notification libgnomekbd network-manager-applet nemo polkit-gnome xapps
+# Gerekler: caribou muffin cinnamon-settings-daemon python3-gobject python-setproctitle cinnamon-session cinnamon-translations clutter-gtk libgnome-keyring cinnamon-control-center cinnamon-screensaver cinnamon-menus startup-notification libgnomekbd network-manager-applet nemo polkit-gnome xapps
 
 isim=cinnamon
 surum=3.6.6
