@@ -1,3 +1,6 @@
+# Tanım: Cinnamon Dosya Yöneticisi
+# URL: https://github.com/linuxmint/nemo
+# Paketçi: Cihan Alkan
 # Gerekler: glib gtk-doc intltool xapps python-polib python-gobject gtk3 cinnamon-desktop libnotify cinnamon-translations
 
 isim=nemo
