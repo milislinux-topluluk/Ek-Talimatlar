@@ -1,1 +1,49 @@
-.
+# Tanım: Java Runtime Environment için ortak dosyalar
+# URL: https://www.archlinux.org/packages/extra/any/java-common/
+# Paketçi: Cihan Alkan
+# Gerekler: 
+
+isim=java-runtime-common
+surum=3
+devir=1
+kaynak=(profile_jre.csh
+        profile_jre.sh
+        bin_archlinux-java
+        test_archlinux-java
+        https://github.com/kward/shunit2/archive/source.tar.gz::shunit2-2.1.6.tar.gz)
+
+derle() {
+  install=install_java-runtime-common.sh
+
+  cd "${SRC}"
+
+  install -d -m 755 "${PKG}/usr/lib/jvm/"
+  ln -s /dev/null "${PKG}/usr/lib/jvm/default"
+  ln -s /dev/null "${PKG}/usr/lib/jvm/default-runtime"
+
+  install -D -m 644 profile_jre.sh  "${PKG}/etc/profile.d/jre.sh"
+  install -D -m 644 profile_jre.csh "${PKG}/etc/profile.d/jre.csh"
+  install -D -m 755 bin_archlinux-java "${PKG}/usr/bin/archlinux-java"
+
+  install -d -m 755 "${PKG}/usr/bin/"
+  # Official list of binaries that Java headless runtime packages MUST provide
+  # This list is based on Milis Linux' default Java implementation: "OpenJDK 7 Icedtea"
+  for b in \
+    java keytool orbd pack200 rmid rmiregistry servertool tnameserv unpack200;
+  do
+    ln -s /usr/lib/jvm/default-runtime/bin/${b} "${PKG}/usr/bin/${b}"
+  done
+
+  cd "${SRC}"
+
+  install -d -m 755 "${PKG}/usr/bin/"
+  # Official list of supplementary binaries that Java environment packages MUST provide
+  # This list is based on Milis Linux' default Java implementation: "OpenJDK 7 Icedtea"
+  for b in \
+    jar jarsigner javac javadoc javah javap jcmd \
+    jconsole jdb jinfo jmap jps jstack jstat \
+    jstatd rmic schemagen serialver wsgen wsimport xjc;
+  do
+    ln -s /usr/lib/jvm/default/bin/${b} "${PKG}/usr/bin/${b}"
+  done
+}
