@@ -1,7 +1,7 @@
 # Tanım: Cinnamon Denetim Merkezi
 # URL: https://github.com/linuxmint/cinnamon-control-center
 # Paketçi: Cihan Alkan
-# Gerekler: glib intltool docbook-xsl libgnomekbd colord glibmm network-manager-applet cinnamon-settings-daemon cinnamon-translations cinnamon-menus gnome-online-accounts
+# Gerekler: glib intltool docbook-xsl libgnomekbd colord glibmm network-manager-applet python-pillow python-pam cinnamon-settings-daemon cinnamon-translations cinnamon-menus gnome-online-accounts
 
 isim=cinnamon-control-center
 surum=3.6.5
