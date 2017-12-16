@@ -1,0 +1,29 @@
+# Gerekler: glib gtk-doc intltool xapps python-polib python-gobject gtk3 cinnamon-desktop libnotify cinnamon-translations
+
+isim=nemo
+surum=3.6.4
+devir=1
+kaynak=(https://github.com/linuxmint/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz
+libnemo-fileroller.so
+org.nemo.root.policy)
+
+derle() {
+  cd $isim-$surum
+  ./autogen.sh --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var --disable-static \
+      --libexecdir=/usr/lib/nemo \
+      --disable-update-mimedb \
+      --disable-tracker \
+      --disable-gtk-doc-html \
+      --disable-schemas-compile \
+      --disable-selinux
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+    
+  make
+  make DESTDIR=$PKG install
+  mkdir -p /usr/lib/nemo/extensions-3.0
+  mv $SRC/libnemo-fileroller.so /usr/lib/nemo/extensions-3.0/
+  rm $PKG/usr/share/polkit-1/actions/org.nemo.root.policy
+  cp $SRC/org.nemo.root.policy $PKG/usr/share/polkit-1/actions/
+}
