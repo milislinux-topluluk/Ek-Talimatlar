@@ -1,0 +1,16 @@
+# Tanım: Çapraz platform açık kaynaklı müzik çalar
+# URL: https://github.com/MBach/Miam-Player
+# Paketçi: Cihan Alkan
+# Gerekler: qt5 taglib qtav
+
+isim=miam-player
+surum=0.8.0
+devir=1
+kaynak=(https://github.com/MBach/Miam-Player/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd Miam-Player-$surum
+  qmake-qt5
+  make
+  make INSTALL_ROOT="$PKG" install
+}
