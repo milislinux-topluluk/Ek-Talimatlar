@@ -6,10 +6,14 @@
 isim=miam-player
 surum=0.8.0
 devir=1
-kaynak=(https://github.com/MBach/Miam-Player/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+kaynak=(https://github.com/MBach/Miam-Player/archive/v$surum.tar.gz::$isim-$surum.tar.gz
+        player_tr.ts
+        tr.png)
 
 derle() {
   cd Miam-Player-$surum
+  cp -p ../player_tr.ts src/Player/translations/player_de.ts
+  cp -p ../tr.png src/Player/language/de.png
   qmake-qt5
   make
   make INSTALL_ROOT="$PKG" install
