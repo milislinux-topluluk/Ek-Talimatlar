@@ -5,78 +5,78 @@
     <name>AlbumCover</name>
     <message>
         <source>Load a new cover...</source>
-        <translation>Load a new cover...</translation>
+        <translation>Yeni bir kapak yükle ...</translation>
     </message>
     <message>
         <source>Extract current cover...</source>
-        <translation>Extract current cover...</translation>
+        <translation>Mevcut kapağı çıkarın ...</translation>
     </message>
     <message>
         <source>Remove cover</source>
-        <translation>Remove cover</translation>
+        <translation>Kapağı çıkart</translation>
     </message>
     <message>
         <source>Apply cover to &apos;%1&apos;</source>
-        <translation>Apply cover to &apos;%1&apos;</translation>
+        <translation>&apos;%1&apos; e kapak uygulayın</translation>
     </message>
     <message>
         <source>Apply cover</source>
-        <translation>Apply cover</translation>
+        <translation>Kapağı uygulayın</translation>
     </message>
     <message>
         <source>to &apos;%1&apos; only</source>
-        <translation>to &apos;%1&apos; only</translation>
+        <translation>sadece &apos;%1&apos; e</translation>
     </message>
     <message>
         <source>to every tracks</source>
-        <translation>to every tracks</translation>
+        <translation>her parçaya</translation>
     </message>
     <message>
         <source>Load a new cover</source>
-        <translation>Load a new cover</translation>
+        <translation>Yeni bir kapak takın</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg)</source>
-        <translation>Images (*.png *.jpg)</translation>
+        <translation>Resimler (*.png *.jpg)</translation>
     </message>
     <message>
         <source>Save a cover</source>
-        <translation>Save a cover</translation>
+        <translation>Bir kapağı kaydet</translation>
     </message>
     <message>
         <source>Image (*.jpg)</source>
-        <translation>Image (*.jpg)</translation>
+        <translation>Resim (*.jpg)</translation>
     </message>
 </context>
 <context>
     <name>CustomizeOptionsDialog</name>
     <message>
         <source>Customize general options</source>
-        <translation>Customize general options</translation>
+        <translation>Genel seçenekleri özelleştir</translation>
     </message>
     <message>
         <source>Search bar</source>
-        <translation>Search bar</translation>
+        <translation>Arama çubuğu</translation>
     </message>
     <message>
         <source>What to do when typing text?</source>
-        <translation>What to do when typing text?</translation>
+        <translation>Metin yazarken ne yapılması gerekiyor?</translation>
     </message>
     <message>
         <source>Filter results and exclude everything else</source>
-        <translation>Filter results and exclude everything else</translation>
+        <translation>Sonuçları filtreleyin ve diğer her şeyi hariç tutun</translation>
     </message>
     <message>
         <source>Highlight only matching text</source>
-        <translation>Highlight only matching text</translation>
+        <translation>Yalnızca eşleşen metni vurgulayın</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Yes</translation>
+        <translation>Evet</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Yok</translation>
+        <translation>Hayır</translation>
     </message>
     <message>
         <source>No translation is available for this language :(</source>
@@ -93,7 +93,7 @@
     <message>
         <source>Translation status: OK!</source>
         <comment>status</comment>
-        <translation>Çeviri durumu: Tamam!</translation>
+        <translation>Çeviri Durumu: Tamam!</translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -133,7 +133,7 @@
     </message>
     <message>
         <source>Play / Pause</source>
-        <translation>Oynat / Pause</translation>
+        <translation>Oynat / Bekle</translation>
     </message>
     <message>
         <source>Seek backward</source>
@@ -161,15 +161,15 @@
     </message>
     <message>
         <source>Open general options</source>
-        <translation>Open general options</translation>
+        <translation>Genel Seçenekleri Aç</translation>
     </message>
     <message>
         <source>Open appearance</source>
-        <translation>Open appearance</translation>
+        <translation>Açık görünüm</translation>
     </message>
     <message>
         <source>Rescan library</source>
-        <translation>Rescan library</translation>
+        <translation>Kütüphaneyi yeniden tara</translation>
     </message>
     <message>
         <source>Exit</source>
@@ -181,23 +181,23 @@
     </message>
     <message>
         <source>Move selected track down</source>
-        <translation>Move selected track down</translation>
+        <translation>Seçilen parçayı aşağı taşı</translation>
     </message>
     <message>
         <source>Move selected track up</source>
-        <translation>Move selected track up</translation>
+        <translation>Seçilen parçayı yukarı taşı</translation>
     </message>
     <message>
         <source>Open playlist manager...</source>
-        <translation>Open playlist manager...</translation>
+        <translation>Oynatma listesi yöneticisini aç ...</translation>
     </message>
     <message>
         <source>Playback options</source>
-        <translation>Playback options</translation>
+        <translation>Oynatma seçenekleri</translation>
     </message>
     <message>
         <source>Seek time (forward or backward)</source>
-        <translation>Seek time (forward or backward)</translation>
+        <translation>Zamanı ara (ileri veya geriye)</translation>
     </message>
     <message>
         <source>Playlists</source>
@@ -205,19 +205,19 @@
     </message>
     <message>
         <source>Drag &amp; Drop</source>
-        <translation>Drag &amp; Drop</translation>
+        <translation>Sürükle &amp; Bırak</translation>
     </message>
     <message>
         <source>Open a Popup and ask how to proceed</source>
-        <translation>Open a Popup and ask how to proceed</translation>
+        <translation>Açılır Pencereyi açın ve nasıl ilerleneceğini sorun</translation>
     </message>
     <message>
         <source>Add folders to the library</source>
-        <translation>Add folders to the library</translation>
+        <translation>Kütüphaneye klasörler ekleyin</translation>
     </message>
     <message>
         <source>Add folders to the current playlist</source>
-        <translation>Add folders to the current playlist</translation>
+        <translation>Geçerli çalma listesine klasörler ekleyin</translation>
     </message>
     <message>
         <source>Note: tracks are automatically sent to the current playlist</source>
@@ -225,15 +225,15 @@
     </message>
     <message>
         <source>Drag and drop between two playlists</source>
-        <translation>Drag and drop between two playlists</translation>
+        <translation>İki çalma listesi arasında sürükleyip bırakın</translation>
     </message>
     <message>
         <source>What should I do when you&apos;re dragging tracks into another playlist?</source>
-        <translation>What should I do when you&apos;re dragging tracks into another playlist?</translation>
+        <translation>Parçaları başka bir çalma listesine sürüklediğinizde ne yapmam gerekir?</translation>
     </message>
     <message>
         <source>Just move them</source>
-        <translation>Just move them</translation>
+        <translation>Sadece onları taşı</translation>
     </message>
     <message>
         <source>Copy tracks in the new playlist</source>
@@ -241,11 +241,11 @@
     </message>
     <message>
         <source>Drag and drop from external places</source>
-        <translation>Drag and drop from external places</translation>
+        <translation>Dış mekanlara sürükle ve bırak</translation>
     </message>
     <message>
         <source>What should I do when you&apos;re dropping here items from another application?</source>
-        <translation>What should I do when you&apos;re dropping here items from another application?</translation>
+        <translation>Buraya başka bir uygulamadan öğe bırakırken ne yapmalıyım?</translation>
     </message>
     <message>
         <source>Plugins</source>
@@ -253,15 +253,15 @@
     </message>
     <message>
         <source>What should I do when you&apos;re closing a playlist?</source>
-        <translation>What should I do when you&apos;re closing a playlist?</translation>
+        <translation>Bir çalma listesini kapatırken ne yapmalıyım?</translation>
     </message>
     <message>
         <source>Would you like to keep your playlists in memory before exiting?</source>
-        <translation>Would you like to keep your playlists in memory before exiting?</translation>
+        <translation>Çalma listelerinizi çıkmadan önce hafızada tutmak ister misiniz?</translation>
     </message>
     <message>
         <source>Would you like to restore existing playlists at startup?</source>
-        <translation>Would you like to restore existing playlists at startup?</translation>
+        <translation>Başlangıçta mevcut oynatma listelerini geri yüklemek ister misiniz?</translation>
     </message>
     <message>
         <source>Let me decide</source>
@@ -273,7 +273,7 @@
     </message>
     <message>
         <source>Discard</source>
-        <translation>Discard</translation>
+        <translation>Kaydetme</translation>
     </message>
     <message>
         <source>Summary</source>
@@ -293,23 +293,23 @@
     </message>
     <message>
         <source>What is the behaviour for columns?</source>
-        <translation>What is the behaviour for columns?</translation>
+        <translation>Sütunlar için davranış nedir?</translation>
     </message>
     <message>
         <source>Resize columns to contents</source>
-        <translation>Resize columns to contents</translation>
+        <translation>Sütunları içeriğe göre yeniden boyutlandır</translation>
     </message>
     <message>
         <source>Keep all columns visible</source>
-        <translation>Keep all columns visible</translation>
+        <translation>Tüm sütunları görünür tutun</translation>
     </message>
     <message>
         <source>Language of Miam Player</source>
-        <translation>Language of Miam Player</translation>
+        <translation>Miam Player&apos;ın Dili</translation>
     </message>
     <message>
         <source>Currently under development</source>
-        <translation>Currently under development</translation>
+        <translation>Halen gelişmekte olan</translation>
     </message>
     <message>
         <source>Menu &amp;&amp; Options</source>
@@ -321,7 +321,7 @@
     </message>
     <message>
         <source>Current item in loop</source>
-        <translation>Current item in loop</translation>
+        <translation>Döngüdeki geçerli öğe</translation>
     </message>
     <message>
         <source>Shuffle</source>
@@ -365,15 +365,15 @@
     </message>
     <message>
         <source>Show view Playlists</source>
-        <translation>Show view Playlists</translation>
+        <translation>Çalma listelerini görünümü göster</translation>
     </message>
     <message>
         <source>Switch to Library tab</source>
-        <translation>Switch to Library tab</translation>
+        <translation>Kitaplık sekmesine geç</translation>
     </message>
     <message>
         <source>Switch to File Explorer tab</source>
-        <translation>Switch to File Explorer tab</translation>
+        <translation>Dosya Gezgini sekmesine geç</translation>
     </message>
     <message>
         <source>Add selected items to current playlist</source>
@@ -381,7 +381,7 @@
     </message>
     <message>
         <source>Show view Tag Editor</source>
-        <translation>Show view Tag Editor</translation>
+        <translation>Görünüm etiket editörünü göster</translation>
     </message>
     <message>
         <source>Search</source>
@@ -389,11 +389,11 @@
     </message>
     <message>
         <source>Remove selected tracks</source>
-        <translation>Remove selected tracks</translation>
+        <translation>Seçili parçaları kaldır</translation>
     </message>
     <message>
         <source>Keep your library up to date</source>
-        <translation>Keep your library up to date</translation>
+        <translation>Kütüphanenizi güncel tutun</translation>
     </message>
     <message>
         <source>Should I look for changes in your music folders? Your library will always be synchronized automatically.</source>
@@ -417,7 +417,7 @@
     </message>
     <message>
         <source>Startup &amp;&amp; Exit</source>
-        <translation>Startup &amp;&amp; Exit</translation>
+        <translation>Başlatma &amp;&amp;Exit</translation>
     </message>
     <message>
         <source>Note: unsaved playlists will be automatically saved, modified ones will be overwritten.</source>
@@ -425,11 +425,11 @@
     </message>
     <message>
         <source>Translation status: OK!</source>
-        <translation>Translation status: OK!</translation>
+        <translation>Tercüme durumu: Tamam!</translation>
     </message>
     <message>
         <source>Global</source>
-        <translation>Global</translation>
+        <translation>Evrensel</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -452,7 +452,7 @@
     </message>
     <message>
         <source>Customize appearance</source>
-        <translation>Customize appearance</translation>
+        <translation>Görünümü özelleştirme</translation>
     </message>
     <message>
         <source>Fonts</source>
@@ -472,39 +472,39 @@
     </message>
     <message>
         <source>Button list and their associated behaviour</source>
-        <translation>Button list and their associated behaviour</translation>
+        <translation>Düğme listesi ve ilişkili davranışları</translation>
     </message>
     <message>
         <source>Skip backward</source>
-        <translation>Skip backward</translation>
+        <translation>Geriye atla</translation>
     </message>
     <message>
         <source>Seek backbard</source>
-        <translation>Seek backbard</translation>
+        <translation>Arka planda arama</translation>
     </message>
     <message>
         <source>Play / Pause</source>
-        <translation>Play / Pause</translation>
+        <translation>Oynat / Bekle</translation>
     </message>
     <message>
         <source>Seek forword</source>
-        <translation>Seek forword</translation>
+        <translation>Ileri arama</translation>
     </message>
     <message>
         <source>Skip forward</source>
-        <translation>Skip forward</translation>
+        <translation>Ileri atla</translation>
     </message>
     <message>
         <source>Button size</source>
-        <translation>Button size</translation>
+        <translation>Düğme boyutu</translation>
     </message>
     <message>
         <source>Font family</source>
-        <translation>Font family</translation>
+        <translation>Font ailesi</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation>Playlist</translation>
+        <translation>Oynatma listesi</translation>
     </message>
     <message>
         <source>Size</source>
@@ -512,19 +512,19 @@
     </message>
     <message>
         <source>Artist and albums lists</source>
-        <translation>Artist and albums lists</translation>
+        <translation>Sanatçı ve albüm listeleri</translation>
     </message>
     <message>
         <source>Show covers</source>
-        <translation>Show covers</translation>
+        <translation>Kapakları göster</translation>
     </message>
     <message>
         <source>Size of covers</source>
-        <translation>Size of covers</translation>
+        <translation>Kapakların ebadı</translation>
     </message>
     <message>
         <source>Manage favorites</source>
-        <translation>Manage favorites</translation>
+        <translation>Sık kullanılanları yönet</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -536,23 +536,23 @@
     </message>
     <message>
         <source>This option will always displays 5 stars, even if the track has not been rated yet</source>
-        <translation>This option will always displays 5 stars, even if the track has not been rated yet</translation>
+        <translation>Parça henüz beğenilmese bile, bu seçenek her zaman 5 yıldız görüntüleyecek</translation>
     </message>
     <message>
         <source>This option will never show 5 gray stars if the track has not been rated </source>
-        <translation>This option will never show 5 gray stars if the track has not been rated </translation>
+        <translation>Parça derecelendirilmemişse, bu seçenek 5 gri yıldız gösterecektir.</translation>
     </message>
     <message>
         <source>Customize selected theme</source>
-        <translation>Customize selected theme</translation>
+        <translation>Seçili temayı özelleştirme</translation>
     </message>
     <message>
         <source>You can customize every icon by clicking on the buttons</source>
-        <translation>You can customize every icon by clicking on the buttons</translation>
+        <translation>Düğmelere tıklayarak her simgeyi özelleştirebilirsiniz</translation>
     </message>
     <message>
         <source>Choose your custom icon</source>
-        <translation>Choose your custom icon</translation>
+        <translation>Özel simgenizi seçin</translation>
     </message>
     <message>
         <source>Pictures (*.jpg *.jpeg *.png)</source>
@@ -560,15 +560,15 @@
     </message>
     <message>
         <source>Shuffle</source>
-        <translation>Shuffle</translation>
+        <translation>Karıştır</translation>
     </message>
     <message>
         <source>Would you like to alternate colors in playlists?</source>
-        <translation>Would you like to alternate colors in playlists?</translation>
+        <translation>Oynatma listelerinde alternatif renkler ister misiniz?</translation>
     </message>
     <message>
         <source>Alternative colors</source>
-        <translation>Alternative colors</translation>
+        <translation>Alternatif renkler</translation>
     </message>
     <message>
         <source>Background for playlists and the library</source>
@@ -576,31 +576,31 @@
     </message>
     <message>
         <source>Selected item</source>
-        <translation>Selected item</translation>
+        <translation>Seçilen öğe</translation>
     </message>
     <message>
         <source>Sorting the library</source>
-        <translation>Sorting the library</translation>
+        <translation>Kütüphaneyi sıralama</translation>
     </message>
     <message>
         <source>Custom colors</source>
-        <translation>Custom colors</translation>
+        <translation>Özel renkler</translation>
     </message>
     <message>
         <source>Would you like to customize the colors of the player?</source>
-        <translation>Would you like to customize the colors of the player?</translation>
+        <translation>Müzikçaların renklerini özelleştirmek ister misiniz?</translation>
     </message>
     <message>
         <source>No, keep the colors provided by my Operating System</source>
-        <translation>No, keep the colors provided by my Operating System</translation>
+        <translation>Hayır, İşletim Sistemim tarafından verilen renkleri koruyun</translation>
     </message>
     <message>
         <source>Loop</source>
-        <translation>Loop</translation>
+        <translation>Döngü</translation>
     </message>
     <message>
         <source>Playback Mode</source>
-        <translation>Playback Mode</translation>
+        <translation>Playback Modu</translation>
     </message>
     <message>
         <source>Sequential</source>
@@ -608,59 +608,59 @@
     </message>
     <message>
         <source>Current item once</source>
-        <translation>Current item once</translation>
+        <translation>Geçerli öğe bir kez</translation>
     </message>
     <message>
         <source>Current item in loop</source>
-        <translation>Current item in loop</translation>
+        <translation>Döngüdeki geçerli öğe</translation>
     </message>
     <message>
         <source>Should I display a large and faded cover when you&apos;re expanding an album?</source>
-        <translation>Should I display a large and faded cover when you&apos;re expanding an album?</translation>
+        <translation>Bir albümü genişletirken büyük ve soluk bir kapak görüntülemem gerekir mi?</translation>
     </message>
     <message>
         <source>Opacity</source>
-        <translation>Opacity</translation>
+        <translation>Saydamlık</translation>
     </message>
     <message>
         <source>Buttons &amp; Bars</source>
-        <translation>Buttons &amp; Bars</translation>
+        <translation>Düğmeler ve Çubuklar</translation>
     </message>
     <message>
         <source>Media buttons</source>
-        <translation>Media buttons</translation>
+        <translation>Ortam düğmeleri</translation>
     </message>
     <message>
         <source>Volume bar</source>
-        <translation>Volume bar</translation>
+        <translation>Ses düzeyi çubuğu</translation>
     </message>
     <message>
         <source>Should I display the value in the upper left corner permanently?</source>
-        <translation>Should I display the value in the upper left corner permanently?</translation>
+        <translation>Değeri sol üst köşede kalıcı olarak göstermeli miyim?</translation>
     </message>
     <message>
         <source>No, hide it after:</source>
-        <translation>No, hide it after:</translation>
+        <translation>Hayır, sonra gizle:</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation>Tabs</translation>
+        <translation>Sekmeler</translation>
     </message>
     <message>
         <source>What kind of shape do you want for displaying tabs?</source>
-        <translation>What kind of shape do you want for displaying tabs?</translation>
+        <translation>Sekmeleri görüntülemek için ne tür bir şekil istersiniz?</translation>
     </message>
     <message>
         <source>Rectangle</source>
-        <translation>Rectangle</translation>
+        <translation>Dikdörtgen</translation>
     </message>
     <message>
         <source>Rounded tabs</source>
-        <translation>Rounded tabs</translation>
+        <translation>Yuvarlak sekmeler</translation>
     </message>
     <message>
         <source>Overlap on other tabs with</source>
-        <translation>Overlap on other tabs with</translation>
+        <translation>Ile diğer sekmeler üzerinde çakışmalar</translation>
     </message>
     <message>
         <source>px</source>
@@ -668,15 +668,15 @@
     </message>
     <message>
         <source>Currently under development</source>
-        <translation>Currently under development</translation>
+        <translation>Halen gelişmekte olan</translation>
     </message>
     <message>
         <source>If there is an article at the beginning of an artist&apos;s name, should I ignore it?</source>
-        <translation>If there is an article at the beginning of an artist&apos;s name, should I ignore it?</translation>
+        <translation>Bir sanatçının adının başında bir makale varsa, onu görmezden mi geleyim?</translation>
     </message>
     <message>
         <source>This option will filter grammatical articles. For example, &quot;The Beatles&quot; will be treated as &quot;Beatles, the&quot;</source>
-        <translation>This option will filter grammatical articles. For example, &quot;The Beatles&quot; will be treated as &quot;Beatles, the&quot;</translation>
+        <translation>Bu seçenek, gramer makalelerini filtreleyecektir. Örneğin, &quot;Müslüm Baba&quot;, &quot;Müslüm&quot;</translation>
     </message>
     <message>
         <source>Search bar</source>
@@ -684,66 +684,66 @@
     </message>
     <message>
         <source>Should I show automatically an extended search area next to the search bar?</source>
-        <translation>Should I show automatically an extended search area next to the search bar?</translation>
+        <translation>Otomatik olarak arama çubuğunun yanında genişletilmiş bir arama alanı göstermeli miyim?</translation>
     </message>
     <message>
         <source>&quot;The&quot; is very common English article, like in « The Beatles »</source>
-        <translation>&quot;The&quot; is very common English article, like in « The Beatles »</translation>
+        <translation>&quot;The&quot;, The Beatles&apos;da olduğu gibi çok yaygın bir İngilizce makale</translation>
     </message>
     <message>
         <source>Do you want to display the article after the name?</source>
-        <translation>Do you want to display the article after the name?</translation>
+        <translation>Makaleyi ismin ardına görüntülemek istiyor musunuz?</translation>
     </message>
     <message>
         <source>Example:  « The Beatles » will become « Beatles, the »</source>
-        <translation>Example:  « The Beatles » will become « Beatles, the »</translation>
+        <translation>Örnek:  « The Beatles » « Beatles, olacak »</translation>
     </message>
     <message>
         <source>Would you like to display stars in the library, left to the track name?</source>
-        <translation>Would you like to display stars in the library, left to the track name?</translation>
+        <translation>Kütüphanede, parça adına bırakılmış yıldızları görüntülemek ister misiniz?</translation>
     </message>
     <message>
         <source>Display star outline if there&apos;s no rating yet for a track</source>
-        <translation>Display star outline if there&apos;s no rating yet for a track</translation>
+        <translation>Henüz bir parkur için not yoksa yıldız taslağını görüntüleyin</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Text</translation>
+        <translation>Metin</translation>
     </message>
     <message>
         <source>Library (tree)</source>
-        <translation>Library (tree)</translation>
+        <translation>Kütüphane (ağaç)</translation>
     </message>
     <message>
         <source>Unique Library (list)</source>
-        <translation>Unique Library (list)</translation>
+        <translation>Benzersiz Kütüphane (liste)</translation>
     </message>
     <message>
         <source>Pin when scrolling</source>
-        <translation>Pin when scrolling</translation>
+        <translation>Kaydırırken tutun</translation>
     </message>
 </context>
 <context>
     <name>DragDropDialog</name>
     <message>
         <source>Your attention is required</source>
-        <translation>Your attention is required</translation>
+        <translation>Dikkatin gerekiyor</translation>
     </message>
     <message>
         <source>What would you like to do with %1?</source>
-        <translation>What would you like to do with %1?</translation>
+        <translation>%1 ile ne yapmak istersiniz?</translation>
     </message>
     <message>
         <source>Add to library</source>
-        <translation>Add to library</translation>
+        <translation>Kütüphaneye ekle</translation>
     </message>
     <message>
         <source>Add to playlist</source>
-        <translation>Add to playlist</translation>
+        <translation>Oynatma listesine ekle</translation>
     </message>
     <message>
         <source>Remember my choice in the future</source>
-        <translation>Remember my choice in the future</translation>
+        <translation>Gelecekte seçimimi hatırla</translation>
     </message>
 </context>
 <context>
@@ -754,11 +754,11 @@
     </message>
     <message>
         <source>Activate</source>
-        <translation>Activate</translation>
+        <translation>Aktif</translation>
     </message>
     <message>
         <source>Preset</source>
-        <translation>Preset</translation>
+        <translation>Önayar</translation>
     </message>
     <message>
         <source>Preamp</source>
@@ -770,11 +770,11 @@
     </message>
     <message>
         <source>Classical</source>
-        <translation>Classical</translation>
+        <translation>Klasik</translation>
     </message>
     <message>
         <source>Club</source>
-        <translation>Club</translation>
+        <translation>Klüp</translation>
     </message>
     <message>
         <source>Dance</source>
@@ -786,7 +786,7 @@
     </message>
     <message>
         <source>Full bass and treble</source>
-        <translation>Full bass and treble</translation>
+        <translation>Tam bas ve üç kat</translation>
     </message>
     <message>
         <source>Full treble</source>
@@ -794,7 +794,7 @@
     </message>
     <message>
         <source>Headphones</source>
-        <translation>Headphones</translation>
+        <translation>Kulaklık</translation>
     </message>
     <message>
         <source>Large Hall</source>
@@ -826,11 +826,11 @@
     </message>
     <message>
         <source>Soft</source>
-        <translation>Soft</translation>
+        <translation>Hafif</translation>
     </message>
     <message>
         <source>Soft rock</source>
-        <translation>Soft rock</translation>
+        <translation>Hafif rock</translation>
     </message>
     <message>
         <source>Techno</source>
@@ -841,7 +841,7 @@
     <name>LogBrowserDialog</name>
     <message>
         <source>Save Log Output</source>
-        <translation>Save Log Output</translation>
+        <translation>Günlük Çıktısı Kaydet</translation>
     </message>
     <message>
         <source>%1/logfile.txt</source>
@@ -849,7 +849,7 @@
     </message>
     <message>
         <source>Text Files (*.txt);;All Files (*)</source>
-        <translation>Text Files (*.txt);;All Files (*)</translation>
+        <translation>Tüm Dosyalar (*.txt);;Tüm Dosyalar (*)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -857,7 +857,7 @@
     </message>
     <message>
         <source>&lt;nobr&gt;File &apos;%1&apos;&lt;br/&gt;cannot be opened for writing.&lt;br/&gt;&lt;br/&gt;The log output could &lt;b&gt;not&lt;/b&gt; be saved!&lt;/nobr&gt;</source>
-        <translation>&lt;nobr&gt;File &apos;%1&apos;&lt;br/&gt;cannot be opened for writing.&lt;br/&gt;&lt;br/&gt;The log output could &lt;b&gt;not&lt;/b&gt; be saved!&lt;/nobr&gt;</translation>
+        <translation>&lt;nobr&gt;&apos;%1&apos; dosyası&lt;br/&gt;yazmak için açılamaz.&lt;br/&gt;&lt;br/&gt;Günlük çıktısı &lt;b&gt; &lt;/b&gt; kaydedilemedi!&lt;/nobr&gt;</translation>
     </message>
     <message>
         <source>Type</source>
@@ -873,7 +873,7 @@
     </message>
     <message>
         <source>Save output</source>
-        <translation>Save output</translation>
+        <translation>Çıktıyı kaydet</translation>
     </message>
     <message>
         <source>Warning: </source>
@@ -884,7 +884,7 @@
     <name>MainWindow</name>
     <message>
         <source>Customize library...</source>
-        <translation>Customize library...</translation>
+        <translation>Kütüphaneyi özelleştir ...</translation>
     </message>
     <message>
         <source>LTR</source>
@@ -892,27 +892,27 @@
     </message>
     <message>
         <source>Seek backward</source>
-        <translation>Seek backbard</translation>
+        <translation>Arka planda arama</translation>
     </message>
     <message>
         <source>Seek forward</source>
-        <translation>Seek forword</translation>
+        <translation>Ileri arama</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
-        <translation>Play&amp;list </translation>
+        <translation>Oynatma listesi</translation>
     </message>
     <message>
         <source>&amp;Options</source>
-        <translation>&amp;Options</translation>
+        <translation>&amp;Ayarlar</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation>&amp;Yardım</translation>
     </message>
     <message>
         <source>&amp;Playback</source>
-        <translation>&amp;Playback</translation>
+        <translation>&amp;Oynatma</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -920,11 +920,11 @@
     </message>
     <message>
         <source>&amp;Add a playlist</source>
-        <translation>&amp;Add a playlist</translation>
+        <translation>&amp;Bir çalma listesi ekle</translation>
     </message>
     <message>
         <source>&amp;Customize appearance...</source>
-        <translation>&amp;Customize appearance...</translation>
+        <translation>&amp;Görünümü özelleştirme...</translation>
     </message>
     <message>
         <source>About &amp;Qt...</source>
@@ -932,23 +932,23 @@
     </message>
     <message>
         <source>&amp;Playlist manager...</source>
-        <translation>&amp;Playlist manager...</translation>
+        <translation>&amp;Oynatma listesi yöneticisi...</translation>
     </message>
     <message>
         <source>&amp;Rescan library</source>
-        <translation>&amp;Rescan library</translation>
+        <translation>&amp;Kütüphaneyi yeniden tara</translation>
     </message>
     <message>
         <source>&amp;Check for a new version is available</source>
-        <translation>&amp;Check for a new version is available</translation>
+        <translation>&amp;Yeni bir sürüm olup olmadığını kontrol edin</translation>
     </message>
     <message>
         <source>Customize general &amp;options...</source>
-        <translation>Customize general &amp;options...</translation>
+        <translation>Genel seçenekleri &amp;özelleştir...</translation>
     </message>
     <message>
         <source>&amp;Delete current playlist</source>
-        <translation>&amp;Delete current playlist</translation>
+        <translation>&amp;Geçerli çalma listesini sil</translation>
     </message>
     <message>
         <source>Show &amp;help...</source>
@@ -956,11 +956,11 @@
     </message>
     <message>
         <source>Skip &amp;backward</source>
-        <translation>Skip &amp;backward</translation>
+        <translation>Geriye atla</translation>
     </message>
     <message>
         <source>&amp;Play / pause</source>
-        <translation>&amp;Play / Pause</translation>
+        <translation>&amp;Oynat / Bekle</translation>
     </message>
     <message>
         <source>&amp;Stop</source>
@@ -968,23 +968,23 @@
     </message>
     <message>
         <source>Skip &amp;forward</source>
-        <translation>Skip &amp;forward</translation>
+        <translation>Öne atla</translation>
     </message>
     <message>
         <source>&amp;Repeat</source>
-        <translation type="vanished">&amp;Repeat</translation>
+        <translation>&amp;Tekrar et</translation>
     </message>
     <message>
         <source>S&amp;huffle</source>
-        <translation>&amp;Shuffle</translation>
+        <translation>&amp;Karıştır</translation>
     </message>
     <message>
         <source>Move selected track &amp;up</source>
-        <translation>Move selected track &amp;up</translation>
+        <translation>Seçilen parçayı ve yukarı taşı</translation>
     </message>
     <message>
         <source>Move selected track &amp;down</source>
-        <translation>Move selected track &amp;down</translation>
+        <translation>Seçilen parçayı ve aşağı taşı</translation>
     </message>
     <message>
         <source>&amp;Mute</source>
@@ -992,19 +992,19 @@
     </message>
     <message>
         <source>&amp;Increase volume</source>
-        <translation>&amp;Increase volume</translation>
+        <translation>&amp;Sesi artır</translation>
     </message>
     <message>
         <source>&amp;Decrease volume</source>
-        <translation>&amp;Decrease volume</translation>
+        <translation>&amp;Sesi azalt</translation>
     </message>
     <message>
         <source>&amp;Remove selected track</source>
-        <translation>&amp;Remove selected track</translation>
+        <translation>&amp;Seçilen parçayı kaldır</translation>
     </message>
     <message>
         <source>Current item &amp;once</source>
-        <translation>Current item &amp;once</translation>
+        <translation>Geçerli öğe bir kez</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -1012,39 +1012,36 @@
     </message>
     <message>
         <source>Current item in &amp;loop</source>
-        <translation type="vanished">Current item in &amp;loop</translation>
+        <translation>Döngüdeki geçerli öğe</translation>
     </message>
     <message numerus="yes">
         <source>&amp;Remove selected tracks</source>
         <comment>Number of tracks to remove</comment>
         <translation>
-            <numerusform>&amp;Remove selected track</numerusform>
-            <numerusform>&amp;Remove selected tracks</numerusform>
+            <numerusform>Seçilen parçayı kaldır</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>Move selected tracks &amp;up</source>
         <comment>Move upward</comment>
         <translation>
-            <numerusform>Move selected track &amp;up</numerusform>
-            <numerusform>Move selected tracks &amp;up</numerusform>
+            <numerusform>Seçilen parçayı yukarı taşı</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>Move selected tracks &amp;down</source>
         <comment>Move downward</comment>
         <translation>
-            <numerusform>Move selected track &amp;down</numerusform>
-            <numerusform>Move selected tracks &amp;down</numerusform>
+            <numerusform>Seçilen parçayı aşağı taşı</numerusform>
         </translation>
     </message>
     <message>
         <source>Playlist Mode</source>
-        <translation>Playlist Mode</translation>
+        <translation>Oynatma Listesi Modu</translation>
     </message>
     <message>
         <source>Unique library Mode</source>
-        <translation>Unique library Mode</translation>
+        <translation>Benzersiz kitaplık Modu</translation>
     </message>
     <message>
         <source>&amp;About Miam Player...</source>
@@ -1052,31 +1049,31 @@
     </message>
     <message>
         <source>This mode is currently under development</source>
-        <translation>This mode is currently under development</translation>
+        <translation>Bu mod şu anda geliştirme aşamasındadır</translation>
     </message>
     <message>
         <source>Tag Editor</source>
-        <translation>Tag Editor</translation>
+        <translation>Etiket Düzenleyici</translation>
     </message>
     <message>
         <source>&amp;Open files...</source>
-        <translation>&amp;Open files...</translation>
+        <translation>&amp;Dosya aç...</translation>
     </message>
     <message>
         <source>Open folder...</source>
-        <translation>Open folder...</translation>
+        <translation>Klasörü aç...</translation>
     </message>
     <message>
         <source>Show debug information...</source>
-        <translation>Show debug information...</translation>
+        <translation>Hata ayıklama bilgilerini göster...</translation>
     </message>
     <message>
         <source>Stop after current</source>
-        <translation>Stop after current</translation>
+        <translation>Akışı bitirdikten sonra dur</translation>
     </message>
     <message>
         <source>Directory to open.</source>
-        <translation>Directory to open.</translation>
+        <translation>Dizin açmak için.</translation>
     </message>
     <message>
         <source>dir</source>
@@ -1084,39 +1081,39 @@
     </message>
     <message>
         <source>Medias are added into a new playlist.</source>
-        <translation>Medias are added into a new playlist.</translation>
+        <translation>Ortamlar yeni bir çalma listesine eklenir.</translation>
     </message>
     <message>
         <source>Medias are sent to tag editor.</source>
-        <translation>Medias are sent to tag editor.</translation>
+        <translation>Ortamlar etiket editörüne gönderilir.</translation>
     </message>
     <message>
         <source>Directory is sent to library.</source>
-        <translation>Directory is sent to library.</translation>
+        <translation>Rehber kütüphaneye gönderilir.</translation>
     </message>
     <message>
         <source>Play or pause track in active playlist.</source>
-        <translation>Play or pause track in active playlist.</translation>
+        <translation>Aktif çalma listesinde parça çal veya duraklatın.</translation>
     </message>
     <message>
         <source>Stop playback.</source>
-        <translation>Stop playback.</translation>
+        <translation>Çalmayı durdurun.</translation>
     </message>
     <message>
         <source>Play next track.</source>
-        <translation>Play next track.</translation>
+        <translation>Bir sonraki parçayı çal.</translation>
     </message>
     <message>
         <source>Play previous track.</source>
-        <translation>Play previous track.</translation>
+        <translation>Önceki parçayı çal.</translation>
     </message>
     <message>
         <source>Set volume of the player.</source>
-        <translation>Set volume of the player.</translation>
+        <translation>Müzikçaların ses seviyesini ayarlayın.</translation>
     </message>
     <message>
         <source>volume</source>
-        <translation>volume</translation>
+        <translation>ses</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -1128,26 +1125,26 @@
     </message>
     <message>
         <source>Show Equalizer</source>
-        <translation>Show Equalizer</translation>
+        <translation>Ekolayzır&apos;ı Göster</translation>
     </message>
     <message>
         <source>Hide menu bar</source>
-        <translation>Hide menu bar</translation>
+        <translation>Menü çubuğunu gizle</translation>
     </message>
     <message>
         <source>&amp;Loop</source>
-        <translation>&amp;Loop</translation>
+        <translation>&amp;Döngü</translation>
     </message>
     <message>
         <source>Current item in l&amp;oop</source>
-        <translation>Current item in l&amp;oop</translation>
+        <translation>Döngüdeki geçerli öğe</translation>
     </message>
 </context>
 <context>
     <name>PluginManager</name>
     <message>
         <source>A plugin was found but was the player was unable to load it (file %1)</source>
-        <translation>A plugin was found but was the player was unable to load it (file %1)</translation>
+        <translation>Bir eklenti bulundu ancak oynstıcı dosyayı yükleyemedi (dosya %1)</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -1157,14 +1154,14 @@
         <source>Some plugins were found but the player was unable to load them.
 
 The API has changed and you need to update these plugins too!</source>
-        <translation>Some plugins were found but the player was unable to load them.
+        <translation>Bazı eklentiler bulundu, ancak oyuncu bunları yükleyemedi.
 
-The API has changed and you need to update these plugins too!</translation>
+API değişti ve bu eklentileri de güncellemeniz gerekiyor!</translation>
     </message>
     <message>
         <source>Incompatible plugins:
 </source>
-        <translation>Incompatible plugins:
+        <translation>Uyumsuz eklentiler:
 </translation>
     </message>
 </context>
@@ -1172,14 +1169,14 @@ The API has changed and you need to update these plugins too!</translation>
     <name>QCoreApplication</name>
     <message>
         <source>Command line helper for Miam-Player</source>
-        <translation>Command line helper for Miam-Player</translation>
+        <translation>Miam-Player için komut satırı yardımcı programı</translation>
     </message>
 </context>
 <context>
     <name>QuickStart</name>
     <message>
         <source>Would you like to add them? (you can uncheck some folders)</source>
-        <translation>Would you like to add them? (you can uncheck some folders)</translation>
+        <translation>Onları eklemek ister misiniz? (bazı klasörlerin işaretini kaldırabilirsiniz)</translation>
     </message>
     <message>
         <source>Click here to manually search for music</source>
@@ -1187,48 +1184,46 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>The following items were found in your default music folder</source>
-        <translation>The following items were found in your default music folder</translation>
+        <translation>Varsayılan müzik klasöründe aşağıdaki öğeler bulundu</translation>
     </message>
     <message numerus="yes">
         <source>%n elements</source>
         <translation>
-            <numerusform>%n element</numerusform>
-            <numerusform>%n elements</numerusform>
+            <numerusform>%n öğe</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n folders</source>
         <translation>
-            <numerusform>%n folder</numerusform>
-            <numerusform>%n folders</numerusform>
+            <numerusform>%n klasör</numerusform>
         </translation>
     </message>
     <message>
         <source>empty folder</source>
-        <translation>empty folder</translation>
+        <translation>boş klasör</translation>
     </message>
     <message>
         <source>A default music folder has been found</source>
-        <translation>A default music folder has been found</translation>
+        <translation>Varsayılan bir müzik klasörü bulundu</translation>
     </message>
     <message>
         <source>– or –</source>
-        <translation>– or –</translation>
+        <translation>– veya –</translation>
     </message>
     <message>
         <source>– otherwise –</source>
-        <translation>– otherwise –</translation>
+        <translation>– aksi takdirde –</translation>
     </message>
     <message>
         <source>Note: it&apos;s not possible to add your default location because 0 tracks where found</source>
-        <translation>Note: it&apos;s not possible to add your default location because 0 tracks where found</translation>
+        <translation>Not: Varsayılan konumunuzu eklemek mümkün değildir çünkü 0 parça bulundu</translation>
     </message>
 </context>
 <context>
     <name>TagConverter</name>
     <message>
         <source>From Tag to File</source>
-        <translation>From Tag to File</translation>
+        <translation>Etiketten Dosyaya</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -1236,7 +1231,7 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>#Track</source>
-        <translation>#Track</translation>
+        <translation>#İz</translation>
     </message>
     <message>
         <source>Title</source>
@@ -1244,38 +1239,38 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>Artist</source>
-        <translation>Artist</translation>
+        <translation>Sanatçı</translation>
     </message>
     <message>
         <source>Album</source>
-        <translation>Album</translation>
+        <translation>Albüm</translation>
     </message>
     <message>
         <source>Disc</source>
-        <translation>Disc</translation>
+        <translation>Disk</translation>
     </message>
     <message>
         <source>ArtistAlbum</source>
-        <translation>ArtistAlbum</translation>
+        <translation>Sanatçı albümü</translation>
     </message>
     <message>
         <source>Year</source>
-        <translation>Year</translation>
+        <translation>Yıl</translation>
     </message>
     <message>
         <source>From File to Tag</source>
-        <translation>From File to Tag</translation>
+        <translation>Dosyadan Etikete</translation>
     </message>
 </context>
 <context>
     <name>TagEditor</name>
     <message>
         <source>Converter</source>
-        <translation>Converter</translation>
+        <translation>Dönüştürücü</translation>
     </message>
     <message>
         <source>Save changes</source>
-        <translation>Save changes</translation>
+        <translation>Değişiklikleri Kaydet</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1299,7 +1294,7 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>Artist Album</source>
-        <translation>Artist Album</translation>
+        <translation>Sanatçı albümü</translation>
     </message>
     <message>
         <source>Album</source>
@@ -1307,7 +1302,7 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>Track</source>
-        <translation>Track</translation>
+        <translation>İz</translation>
     </message>
     <message>
         <source>Disc</source>
@@ -1319,23 +1314,23 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>Genre</source>
-        <translation>Genre</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Comment</translation>
+        <translation>Yorum Yap</translation>
     </message>
     <message>
         <source>Track: </source>
-        <translation>Track: </translation>
+        <translation>İz: </translation>
     </message>
     <message>
         <source>Genre: </source>
-        <translation>Genre: </translation>
+        <translation>Tür: </translation>
     </message>
     <message>
         <source>Comment: </source>
-        <translation>Comment: </translation>
+        <translation>Yorum: </translation>
     </message>
     <message>
         <source>Year: </source>
@@ -1347,15 +1342,15 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>Title: </source>
-        <translation>Title: </translation>
+        <translation>Başlık: </translation>
     </message>
     <message>
         <source>Artist Album: </source>
-        <translation>Artist Album: </translation>
+        <translation>Sanatçı albümü: </translation>
     </message>
     <message>
         <source>Album: </source>
-        <translation>Album: </translation>
+        <translation>Albüm: </translation>
     </message>
     <message>
         <source>Artist: </source>
@@ -1363,7 +1358,7 @@ The API has changed and you need to update these plugins too!</translation>
     </message>
     <message>
         <source>(Keep)</source>
-        <translation>(Keep)</translation>
+        <translation>(Tut)</translation>
     </message>
     <message>
         <source>(Delete)</source>
