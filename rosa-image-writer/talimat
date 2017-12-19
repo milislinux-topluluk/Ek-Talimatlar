@@ -2,6 +2,7 @@
 # URL: http://wiki.rosalab.ru
 # Paketçi: Cihan Alkan
 # Gerekler: 
+# Grup: 
 
 isim=rosa-image-writer
 surum=2.6.1
