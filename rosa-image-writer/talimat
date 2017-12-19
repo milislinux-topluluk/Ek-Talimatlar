@@ -26,7 +26,6 @@ derle() {
     make
 	
     mkdir -p $PKG/usr/bin
-    mkdir -p $PKG/usr/share/applications
     mkdir -p $PKG/usr/share/icons
     mkdir -p $PKG/usr/share/RosaImageWriter/lang
     cp -r $SRC/rosa-image-writer/RosaImageWriter $PKG/usr/share/RosaImageWriter/
@@ -46,7 +45,6 @@ Comment=Boot edebilir USB bellek hazırla
 EOF
 
 # Çeviri 
-mkdir -pv $PKG/usr/share/applications &&
 cat > $SRC/tr_TR.ts << "EOF" &&
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
