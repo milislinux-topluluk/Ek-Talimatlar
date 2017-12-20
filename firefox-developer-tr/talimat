@@ -1,0 +1,71 @@
+# Tanım: Firefox Developer Edition, CSS Grid desteği ve çerçeve hata ayıklama gibi gelişmiş geliştirici araçları ve en yeni özellikleri sunan çarpıcı hızlı tarayıcıdır
+# URL: https://www.mozilla.org/tr/firefox/developer/
+# Paketçi: Oltulu
+# Gerekler: dbus-glib gtk2 gtk3 xorg-libxt nss
+# Grup: 
+
+isim=firefox-developer-tr
+surum=58.0b12
+devir=1
+
+kaynak=https://ftp.mozilla.org/pub/firefox/releases/58.0b12/linux-x86_64/tr/firefox-58.0b12.tar.bz2::firefox-developer_$surum_x86_64.tar.bz2
+
+
+derle() {
+
+    OPT_PATH="opt/firefox-developer"
+	install -d "$PKG"/{usr/{bin,share/{applications,pixmaps}},opt}
+	cp -r firefox "$PKG/$OPT_PATH"
+
+	ln -s "/$OPT_PATH/firefox" "$PKG/usr/bin/firefox-developer"
+	# Icon Stuff
+	SRC_LOC="$SRC/firefox/browser"
+	DEST_LOC="$PKG/usr/share/icons/hicolor"
+	for i in 16 32 48
+	do
+		install -Dm644 "$SRC_LOC"/chrome/icons/default/default${i}.png "$DEST_LOC/${i}x${i}/apps/firefox-developer.png"
+	done
+	install -m644 "$SRC/firefox/browser/icons/mozicon128.png" "$PKG/usr/share/pixmaps/firefox-developer-icon.png"
+
+	# Use system-provided dictionaries
+	rm -rf "$PKG/$OPT_PATH/"{dictionaries,hyphenation}
+	ln -sf /usr/share/hunspell "$PKG/$OPT_PATH/dictionaries"
+	ln -sf /usr/share/hyphen "$PKG/$OPT_PATH/hyphenation"
+
+# vendor 
+cat > $SRC/vendor.js << "EOF" &&
+// Güncelleme kontrolü kapalı
+pref("app.update.enabled", false);
+
+EOF
+
+
+# Anasayfa 
+cat > $PKG/opt/firefox-developer/milis.cfg << "EOF" &&
+// Güncelleme kontrolü kapalı
+pref("browser.startup.homepage", "https://milislinux.org/");
+
+EOF
+# Başlatıcı 
+mkdir -pv $PKG/usr/share/applications &&
+cat > $PKG/usr/share/applications/isim.desktop << "EOF" &&
+[Desktop Entry]
+Name=Firefox Geliştirici Sürümü
+GenericName=Web Tarayıcı
+Icon=firefox-developer-icon
+Comment=İnternetten gezinin
+Type=Application
+Categories=Application;Network;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;
+Encoding=UTF-8
+Exec=firefox-developer --class=firefox-developer %u
+Terminal=false
+MultipleArgs=false
+StartupNotify=true
+Keywords=web;browser;internet;
+Actions=new-window;new-private-window;
+EOF
+
+	install -Dm644 "$SRC/vendor.js" "$PKG/opt/firefox-developer/browser/defaults/preferences/vendor.js"
+
+   }
