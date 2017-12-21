@@ -32,7 +32,7 @@ derle() {
     cp -r $SRC/rosa-image-writer/res/icon-rosa.svg $PKG/usr/share/icons/
 # Başlatıcı 
 mkdir -pv $PKG/usr/share/applications &&
-cat > $PKG/usr/share/applications/isim.desktop << "EOF" &&
+cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
 [Desktop Entry]
 Version=1.0
 Type=Application
