@@ -1,7 +1,7 @@
 # Tanım: Pythonic DBus kitaplığı
 # URL: https://github.com/LEW21/pydbus
 # Paketçi: Oltulu
-# Gerekler: dbus-python
+# Gerekler: python python3
 
 isim=python-pydbus
 surum=0.6.0
