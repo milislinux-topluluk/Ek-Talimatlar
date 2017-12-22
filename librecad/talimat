@@ -8,7 +8,7 @@ surum=2.1.3
 devir=1
 
 kaynak=(https://github.com/LibreCAD/LibreCAD/archive/${surum}.tar.gz::$isim.$surum.tar.gz
-        https://github.com/LibreCAD/LibreCAD/blob/master/librecad/ts/librecad_tr.ts)
+        https://github.com/LibreCAD/LibreCAD/raw/master/librecad/ts/librecad_tr.ts)
 
 derle() {
  cd "${SRC}/LibreCAD-${surum}"
