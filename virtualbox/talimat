@@ -1,1 +1,96 @@
-.
+# Tanım: VirtualBox güçlü bir 32 ve 64 bit sanallaştırma ürünüdür
+# URL: http://virtualbox.org
+# Paketçi: Oltulu
+# Gerekler: sdl
+
+isim=virtualbox
+surum=5.2.4
+devir=1
+kaynak=(http://download.virtualbox.org/virtualbox/$surum/VirtualBox-${surum}-119785-Linux_amd64.run
+	http://download.virtualbox.org/virtualbox/$surum/Oracle_VM_VirtualBox_Extension_Pack-${surum}-119785.vbox-extpack
+	virtualbox.60-vboxdrv.rules)
+
+derle() {
+
+	sh VirtualBox-${surum}-119785-Linux_amd64.run --keep --noexec --target $SRC/
+	mkdir -p $PKG/opt/VirtualBox $PKG/etc/vbox $PKG/usr/bin $PKG/etc/udev/rules.d/ \
+	$PKG/usr/share/applications/ $PKG/usr/share/pixmaps/
+	cd $PKG/opt/VirtualBox
+	tar xfj $SRC/VirtualBox.tar.bz2
+	rm -Rf $PKG/opt/VirtualBox/sdk
+	for i in VirtualBox VBoxManage VBoxSDL VBoxHeadless 
+		do ln -s /opt/VirtualBox/VBox.sh $PKG/usr/bin/$i
+	done
+	cd components
+	for i in VBoxDDU.so VBoxREM.so VBoxRT.so VBoxVMM.so VBoxXPCOM.so
+		do ln -s ../$i .
+	done
+	ln -s /opt/VirtualBox/rdesktop-vrdp $PKG/usr/bin/rdesktop-vrdp
+	mv $PKG/opt/VirtualBox/VBox.png $PKG/usr/share/pixmaps/VBox.png
+
+# Başlatıcı 
+mkdir -pv $PKG/usr/share/applications &&
+cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Oracle VM VirtualBox
+GenericName=Virtual Machine
+GenericName[de]=Virtuelle Maschine
+GenericName[ru]=Виртуальная машина
+GenericName[tr]=Sanal Makine
+Type=Application
+Exec=VirtualBox %U
+TryExec=VirtualBox
+Keywords=virtualization;
+Keywords[de]=Virtualisierung;
+Keywords[ru]=виртуализация;
+MimeType=application/x-virtualbox-vbox;application/x-virtualbox-vbox-extpack;application/x-virtualbox-ovf;application/x-virtualbox-ova;
+DocPath=file:// /opt/VirtualBox/UserManual.pdf
+Icon=virtualbox
+Categories=Emulator;System;
+Actions=Manager;
+Comment=Run several virtual systems on a single host computer
+Comment[de]=Mehrere virtuelle Maschinen auf einem einzigen Rechner ausführen
+Comment[it]=Esegui più macchine virtuali su un singolo computer
+Comment[ko]=가상 머신
+Comment[pl]=Uruchamianie wielu systemów wirtualnych na jednym komputerze gospodarza
+Comment[ru]=Запуск нескольких виртуальных машин на одном компьютере
+Comment[sv]=Kör flera virtuella system på en enda värddator
+Comment[tr]=Tek bir ana bilgisayarda birkaç sanal sistemi çalıştırın
+
+[Desktop Action Manager]
+Exec=VirtualBox
+Name=Open VM Manager
+Name[de]=VM Manager öffnen
+Name[tr]=VM Yönetici Aç
+EOF
+
+	chmod +s $PKG/opt/VirtualBox/{VirtualBox,VBoxSDL,VBoxHeadless}
+
+	mkdir -p $PKG/etc/sysconfig/modules.d
+	cat > $PKG/etc/sysconfig/modules.d/virtualbox.conf << "EOF"
+vboxdrv
+vboxnetadp
+vboxnetflt
+vboxpci
+EOF
+	mkdir -p $PKG/etc/udev/rules.d
+	cp $SRC/virtualbox.60-vboxdrv.rules $PKG/etc/udev/rules.d/60-vboxdrv.rules
+
+	echo "# VirtualBox installation directory" > \
+	$PKG/etc/vbox/vbox.cfg
+	echo "INSTALL_DIR="\"/opt/VirtualBox\" >> \
+		$PKG/etc/vbox/vbox.cfg
+
+	install -D -m 644 $SRC/Oracle_VM_VirtualBox_Extension_Pack-$surum-119785.vbox-extpack \
+		$PKG/opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack-$surum-119785.vbox-extpack
+	mkdir -p $PKG/etc/ld.so.conf.d
+	echo /opt/VirtualBox > $PKG/etc/ld.so.conf.d/virtualbox.conf
+	# Icon
+	ln -s VBox.png $PKG/usr/share/pixmaps/virtualbox.png
+	# Source code files obsolet
+	rm -r $PKG/opt/VirtualBox/src
+
+}
+

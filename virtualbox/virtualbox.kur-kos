@@ -1,0 +1,13 @@
+echo "USB 2.0 tesisi için, konsoldan:
+
+# VBoxManage extpack install  /opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack-*
+
+Güncellemeden önce USB 2.0 Oracle uzantılarını kaldırmak için:
+
+# VBoxManage list extpacks
+# VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
+# VBoxManage extpack cleanup
+
+Sonra yeni sürümü yukarıdaki gibi yükleyebilirsiniz. Yeniden başlatmaya gerek yok.
+
+Tadını çıkar :)"
