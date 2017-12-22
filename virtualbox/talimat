@@ -90,7 +90,6 @@ EOF
 	# Icon
 	ln -s VBox.png $PKG/usr/share/pixmaps/virtualbox.png
 	# Source code files obsolet
-	rm -r $PKG/opt/VirtualBox/src
 
 }
 
