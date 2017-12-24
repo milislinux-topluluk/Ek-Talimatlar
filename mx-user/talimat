@@ -1,0 +1,77 @@
+# Tanım: Kullanıcı yönetimi
+# URL: https://github.com/MX-Linux/mx-user
+# Paketçi: Cihan Alkan
+# Gerekler: qt5
+
+isim=mx-user
+surum=0.3
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/MX-Linux/mx-user $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+	qmake-qt5 src.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/pixmaps
+    mkdir -p $PKG/usr/share/$isim/locale
+    mkdir -p $PKG/var/lib/pkg
+
+# Başlatıcı 
+cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
+[Desktop Entry]
+Name=MX User Manager
+Name[ca]=Administrador d'Usuaris MX
+Name[cs]=MX Správa uživatelů
+Name[de]=Benutzer-Manager für MX
+Name[el]=διαχειριστής του χρήστη για MX
+Name[es]=MX Gestor de usuarios
+Name[fr]=MX Gestionnaire de l'utilisateur
+Name[it]=MX Manager Utenti
+Name[ja]=MX ユーザーマネージャー
+Name[lt]=MX naudotojų tvarkytuvė
+Name[nl]=MX Gebruikersbeheer
+Name[pt]=MX_Gestor de utilizadores
+Name[pt_BR]=Gerenciador de Usuários do MX
+Name[ro]=MX Manager Utilizator
+Name[ru]=MX Менеджер пользователей
+Name[sk]=MX Správca Užívateľov
+Name[sv]=Användarhanterare för MX
+Comment=Simple user configuration
+Comment[ca]=Configuració d'Usuari simple
+Comment[cs]=Jednoduchá správa uživatelů
+Comment[de]=Einfache Benutzer-Konfiguration
+Comment[el]=Απλή διαμόρφωση χρήστη
+Comment[es]=Configuración simple de usuarios
+Comment[fr]=Configuration simple d'utilisateur
+Comment[it]=Semplice gestore di configurazione degli utenti
+Comment[ja]=シンプルなユーザー設定
+Comment[lt]=Paprastas naudotojų konfigūravimas
+Comment[nl]=Eenvoudige gebruikersconfiguratie
+Comment[pt]=Configuração simples de utilizadores
+Comment[pt_BR]=Simple user configuration
+Comment[ro]=Simplu configurator de conturi utilizator
+Comment[ru]=Простая конфигурация пользователей
+Comment[sk]=Jednoduchá správa užívateľov
+Comment[sv]=Enkel användar-konfiguration
+Exec=sudo mx-user
+Icon=mx-user
+NoDisplay=false
+Categories=System;MX-Maintenance;
+Type=Application 
+EOF
+    mv $isim $PKG/usr/bin/
+    mv icons/logo.png $PKG/usr/share/pixmaps/$isim.png
+    /usr/lib/qt5/bin/lrelease translations/mx-user_tr.ts -qm $PKG/usr/share/$isim/locale/mx-user_tr.qm
+
+}
