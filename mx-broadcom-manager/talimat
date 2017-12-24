@@ -1,0 +1,73 @@
+# Tanım: Ağ yönetimi
+# URL: https://github.com/MX-Linux/mx-broadcom-manager
+# Paketçi: Cihan Alkan
+# Gerekler: qt5
+
+isim=mx-broadcom-manager
+surum=0.3
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/MX-Linux/mx-broadcom-manager $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+	qmake-qt5 src.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/pixmaps
+    mkdir -p $PKG/usr/share/$isim/locale
+    mkdir -p $PKG/var/lib/pkg
+
+# Başlatıcı 
+cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
+[Desktop Entry]
+Name=MX Broadcom Manager
+Name[ca]=MX Broadcom Manager
+Name[cs]=MX Nastavení bezdrátové sítě
+Name[de]=MX Broadcom Manager
+Name[el]=MX Broadcom Manager
+Name[es]=MX Broadcom Gestor
+Name[fr]=MX Gestionnaire du Broadcom
+Name[it]=MX Broadcom Manager
+Name[ja]=MX Broadcom マネージャー
+Name[lt]=MX Broadcom tvarkytuvė
+Name[nl]=MX Broadcom Beheer
+Name[pt]=MX_Gestor de Broadcom
+Name[ru]=MX Broadcom Менеджер
+Name[sv]=MX Broadcom-hanterare
+Name[tr]=MX Broadcom Yöneticisi
+Comment=Network configuration and troubleshooting
+Comment[ca]=Configuració de xarxa i resolució de problemes
+Comment[cs]=Nastavení sítě a řešení problémů se sítí
+Comment[de]=Netzwerk-Konfiguration und -Problemlösung
+Comment[el]=Διαμόρφωση του δικτύου και Αντιμετώπιση προβλημάτων
+Comment[es]=Configuración de red y resolución de problemas
+Comment[fr]=Configuration et dépannage des réseaux
+Comment[it]=Configurazione della rete e risoluzione dei problemi
+Comment[ja]=ネットワーク設定・トラブル解決
+Comment[lt]=Tinklo konfigūravimas ir nesklandumų šalinimas
+Comment[nl]=Netwerk Configuratie en Foutopsporing
+Comment[pt]=Configuração e resolução de problemas de redes
+Comment[ru]=Конфигурация сети и устранение неполадок
+Comment[sv]=Nätverkskonfiguration och felsökning
+Comment[tr]=Ağ yapılandırma ve Sorun giderme
+Exec=sudo mx-broadcom-manager
+Icon=mx-broadcom-manager
+NoDisplay=false
+Categories=System;MX-Setup;
+Type=Application
+EOF
+    mv $isim $PKG/usr/bin/
+    mv icons/logo.png $PKG/usr/share/pixmaps/$isim.png
+    /usr/lib/qt5/bin/lrelease translations/mx-broadcom-manager_tr.ts -qm $PKG/usr/share/$isim/locale/mx-broadcom-manager_tr.qm
+
+}
