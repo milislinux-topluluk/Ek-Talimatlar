@@ -1,0 +1,36 @@
+# Tanım: Milis Program Ekle Kaldır
+# URL: https://github.com/oltulu/milpek
+# Paketçi: Cihan Alkan
+# Gerekler: qt5
+
+isim=milpek
+surum=0.3
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/milislinux-topluluk/Milis-Paket-Yoneticisi $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+	qmake-qt5 mx-package-manager.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/pixmaps
+    mkdir -p $PKG/usr/share/milpek/pm
+    mkdir -p $PKG/usr/share/milpek/locale
+
+    mv mx-package-manager $PKG/usr/bin/milpek
+    mv mx-package-manager.desktop $PKG/usr/share/applications/$isim.desktop
+    mv icons/logo.png $PKG/usr/share/pixmaps/milpek.png
+    mv pm/* $PKG/usr/share/milpek/pm/
+    mv translations/* $PKG/usr/share/milpek/locale/
+
+}
