@@ -1,0 +1,77 @@
+# Tanım: Bilgisayarınızın açılışını onarın
+# URL: https://github.com/MX-Linux/mx-bootrepair
+# Paketçi: Oltulu
+# Gerekler: qt5
+
+isim=mx-bootrepair
+surum=0.3
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/MX-Linux/mx-bootrepair $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+	qmake-qt5 $isim.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/pixmaps
+    mkdir -p $PKG/usr/share/$isim/locale
+    mkdir -p $PKG/var/lib/pkg
+
+# Başlatıcı 
+cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
+[Desktop Entry]
+Name=MX Boot Repair
+Name[ca]=MX Boot Repair
+Name[cs]=MX Oprava zavaděče
+Name[de]=MX Bootreparatur
+Name[el]=Επισκευή Εκκίνησης του MX
+Name[es]=MX Reparar Inicio
+Name[fr]=Outil MX de Réparation du démarrage
+Name[it]=MX Ripara Boot
+Name[ja]=MX 起動処理の修正
+Name[lt]=MX paleidimo taisymas
+Name[nl]=MX Boot Reparatie
+Name[pt]=MX_Reparador de Iniciação (Boot)
+Name[ru]=MX Восстановление загрузчика
+Name[sk]=MX Oprava zavádzača
+Name[sv]=MX Boot-reparation
+Name[tr]=MX Önyükleme Onarımı
+Comment=Simple boot repair
+Comment[ca]=Reparació senzilla de l'arrencada
+Comment[cs]=Jednoduchá oprava zavaděče
+Comment[de]=einfache Boot-Reparatur
+Comment[el]=Απλή Επισκευή Εκκίνησης
+Comment[es]=Reparación de Inicialización
+Comment[fr]=Réparation du démarrage simple
+Comment[it]=Riparazione del boot di avvio del sistema
+Comment[ja]=シンプル起動(ブート)修理
+Comment[lt]=Paprastas paleidimo taisymas
+Comment[nl]=Eenvoudige Boot Reparatie
+Comment[pt]=Reparador de iniciação fácil de usar
+Comment[ru]=Простое восстановление загрузчика
+Comment[sk]=Opraviť zavádzač
+Comment[sv]=Enkel Boot-reparation
+Comment[tr]=Basit Önyükleme Onarımı
+Exec=sudo mx-bootrepair
+Icon=mx-bootrepair
+NoDisplay=false
+Categories=System;MX-Maintenance;
+Type=Application
+EOF
+
+    mv $isim $PKG/usr/bin/
+    mv icons/logo.png $PKG/usr/share/pixmaps/$isim.png
+    /usr/lib/qt5/bin/lrelease translations/mx-bootrepair_tr.ts -qm $PKG/usr/share/$isim/locale/mx-bootrepair_tr.qm
+
+
+}
