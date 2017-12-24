@@ -1,6 +1,6 @@
 # Tanım: Milis Program Ekle Kaldır
-# URL: https://github.com/oltulu/milpek
-# Paketçi: Cihan Alkan
+# URL: https://github.com/milislinux-topluluk/Milis-Paket-Yoneticisi
+# Paketçi: Oltulu
 # Gerekler: qt5
 
 isim=milpek
@@ -26,11 +26,13 @@ derle() {
     mkdir -p $PKG/usr/share/pixmaps
     mkdir -p $PKG/usr/share/milpek/pm
     mkdir -p $PKG/usr/share/milpek/locale
+    mkdir -p $PKG/var/lib/pkg
 
     mv mx-package-manager $PKG/usr/bin/milpek
     mv mx-package-manager.desktop $PKG/usr/share/applications/$isim.desktop
     mv icons/logo.png $PKG/usr/share/pixmaps/milpek.png
     mv pm/* $PKG/usr/share/milpek/pm/
     mv translations/* $PKG/usr/share/milpek/locale/
-
+    touch /var/lib/pkg/lock
+    
 }
