@@ -30,7 +30,7 @@ derle() {
 # Başlatıcı 
 cat > $PKG/usr/share/applications/$isim.desktop << "EOF" &&
 [Desktop Entry]
-Name=MX User Manager
+Name=MX Kullanıcı Yönetimi
 Name[ca]=Administrador d'Usuaris MX
 Name[cs]=MX Správa uživatelů
 Name[de]=Benutzer-Manager für MX
@@ -47,7 +47,7 @@ Name[ro]=MX Manager Utilizator
 Name[ru]=MX Менеджер пользователей
 Name[sk]=MX Správca Užívateľov
 Name[sv]=Användarhanterare för MX
-Comment=Simple user configuration
+Comment=Kullanıcı ayarlarınızı yapın
 Comment[ca]=Configuració d'Usuari simple
 Comment[cs]=Jednoduchá správa uživatelů
 Comment[de]=Einfache Benutzer-Konfiguration
