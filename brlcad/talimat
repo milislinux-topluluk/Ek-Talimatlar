@@ -1,7 +1,7 @@
 # Tanım: Kapsamlı bir 3B katı modelleme sistemi.
 # URL: https://brlcad.org
 # Paketçi: Cihan_Alkan
-# Gerekler: xorg-libxft xorg-libxi
+# Gerekler: xorg-libxft xorg-libxi cmake
 
 isim=brlcad
 surum=7.26.4
