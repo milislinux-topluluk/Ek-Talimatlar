@@ -82,8 +82,7 @@ derle() {
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.desktop
 
-  mv -v usr/lib/gambas3/gb.desktop.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.desktop.* $PKG/usr/share/gambas3/info/
+
   mv -v usr/share/gambas3/control/gb.desktop/* $PKG/usr/share/gambas3/control/gb.desktop
   mv -v usr/lib/gambas3/gb.eval.highlight.* $PKG/usr/lib/gambas3/
   mv -v usr/share/gambas3/info/gb.eval.highlight.* $PKG/usr/share/gambas3/info/
@@ -105,105 +104,20 @@ derle() {
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.form
 
-  mv -v usr/lib/gambas3/gb.form.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.form.* $PKG/usr/share/gambas3/info/
   mv -v usr/share/gambas3/control/gb.form/* $PKG/usr/share/gambas3/control/gb.form
 
-  # mv -v usr/lib/gambas3/gb.gmp.* $PKG/usr/lib/gambas3/
-  # mv -v usr/share/gambas3/info/gb.gmp.* $PKG/usr/share/gambas3/info/
-
-  mv -v usr/lib/gambas3/gb.gsl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.gsl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.gtk.opengl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.gtk.opengl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.gtk.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.gtk.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.gtk3.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.gtk3.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.httpd.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.httpd.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.image.effect.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.image.effect.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.image.imlib.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.image.imlib.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.image.io.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.image.io.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.image.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.image.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.inotify.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.inotify.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.libxml.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.libxml.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.logging.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.logging.* $PKG/usr/share/gambas3/info/
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.map
 
-  mv -v usr/lib/gambas3/gb.map.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.map.* $PKG/usr/share/gambas3/info/
   mv -v usr/share/gambas3/control/gb.map/* $PKG/usr/share/gambas3/control/gb.map
-  mv -v usr/lib/gambas3/gb.markdown.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.markdown.* $PKG/usr/share/gambas3/info/
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.media.form
 
-  mv -v usr/lib/gambas3/gb.media.form* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.media.form* $PKG/usr/share/gambas3/info/
   mv -v usr/share/gambas3/control/gb.media.form/* $PKG/usr/share/gambas3/control/gb.media.form
-  mv -v usr/lib/gambas3/gb.media.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.media.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.memcached.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.memcached.* $PKG/usr/share/gambas3/info/
- # mv -v usr/lib/gambas3/gb.mime.* $PKG/usr/lib/gambas3/
-#  mv -v usr/share/gambas3/info/gb.mime.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.mysql.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.mysql.* $PKG/usr/share/gambas3/info/
-#  mv -v usr/lib/gambas3/gb.ncurses.* $PKG/usr/lib/gambas3/
-#  mv -v usr/share/gambas3/info/gb.ncurses.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.net.curl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.net.curl.* $PKG/usr/share/gambas3/info/
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.net.pop3
 
-  mv -v usr/lib/gambas3/gb.net.pop3.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.net.pop3.* $PKG/usr/share/gambas3/info/
-  mv -v usr/share/gambas3/control/gb.net.pop3/* $PKG/usr/share/gambas3/control/gb.net.pop3
-
   install -dm755 $PKG/usr/share/gambas3/control/gb.net.smtp
-
-  mv -v usr/lib/gambas3/gb.net.smtp.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.net.smtp.* $PKG/usr/share/gambas3/info/
-  mv -v usr/share/gambas3/control/gb.net.smtp/* $PKG/usr/share/gambas3/control/gb.net.smtp
-  mv -v usr/lib/gambas3/gb.net.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.net.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.openal.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.openal.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.opengl.glu.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.opengl.glu.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.opengl.glsl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.opengl.glsl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.opengl.sge* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.opengl.sge* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.opengl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.opengl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.openssl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.openssl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.option.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.option.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.pcre.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.pcre.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.pdf.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.pdf.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.qt4.ext.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.qt4.ext.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.qt4.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.qt4.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.qt5.opengl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.qt5.opengl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.qt5.webkit.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.qt5.webkit.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.qt5.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.qt5.* $PKG/usr/share/gambas3/info/
 
   install -dm755 $PKG/usr/share/gambas3/control/gb.report{,2}
 
@@ -215,38 +129,8 @@ derle() {
   mv -v usr/share/gambas3/info/gb.scanner.* $PKG/usr/share/gambas3/info/
   mv -v usr/lib/gambas3/gb.sdl.sound.* $PKG/usr/lib/gambas3/
   mv -v usr/share/gambas3/info/gb.sdl.sound.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.sdl.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.sdl.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.sdl2.audio.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.sdl2.audio.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.sdl2.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.sdl2.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.settings.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.settings.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.signal.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.signal.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.util.web.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.util.web.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.util.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.util.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.v4l.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.v4l.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.vb.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.vb.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.web.feed.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.web.feed.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.web.form.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.web.form.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.web.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.web.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.xml.html.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.xml.html.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.xml.rpc.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.xml.rpc.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.xml.xslt.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.xml.xslt.* $PKG/usr/share/gambas3/info/
-  mv -v usr/lib/gambas3/gb.xml.* $PKG/usr/lib/gambas3/
-  mv -v usr/share/gambas3/info/gb.xml.* $PKG/usr/share/gambas3/info/
+
+
 
   install -dm755 $PKG/usr/bin
   install -dm755 $PKG/usr/share/gambas3/{icons,mime}
