@@ -1,0 +1,16 @@
+# Tanım: Deepin masaüstü uygulama motoru
+# URL: https://github.com/linuxdeepin/dae
+# Paketçi: Cihan_Alkan 
+# Gerekler: python3-qt5
+# Grup: deepin
+
+isim=python-dae
+surum=1.0.2
+devir=1
+kaynak=(https://github.com/linuxdeepin/dae/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd dae-$surum
+  python setup.py build
+  python setup.py install --root="$PKG" --optimize=1
+}
