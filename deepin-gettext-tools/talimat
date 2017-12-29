@@ -1,0 +1,21 @@
+# Tanım: Deepin gettext araçları
+# URL: https://github.com/linuxdeepin/deepin-gettext-tools
+# Paketçi: Cihan_Alkan 
+# Gerekler: gettext python
+# Grup: deepin
+
+isim=deepin-gettext-tools
+surum=1.0.7
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-gettext-tools/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd deepin-gettext-tools-$surum
+  sed -e 's/sudo cp/cp/' -i src/generate_mo.py
+  sed -e 's/qmake/qmake-qt5/' -e '/lupdate/d' -i Makefile
+ # perl src/desktop_ts_convert.pl --help
+  python src/generate_mo.py --help
+  python src/update_pot.py --help
+  make
+  make DESTDIR="$PKG" install
+}
