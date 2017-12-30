@@ -1,0 +1,17 @@
+# Tanım: Deepin kısayol görüntüleyici
+# URL: https://github.com/linuxdeepin/deepin-shortcut-viewer
+# Paketçi: Cihan Alkan
+# Gerekler: deepin-qt5integration qt5
+# Grup: deepin
+
+isim=deepin-shortcut-viewer
+surum=1.3.3
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$iism-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  qmake-qt5 PREFIX=/usr
+  make
+  make INSTALL_ROOT="${PKG}" install
+}
