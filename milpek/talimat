@@ -19,7 +19,7 @@ derle() {
 	fi
 	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
 	cd $SRC/$isim
-	qmake-qt5 mx-package-manager.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+	qmake-qt5 milpek.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
     make
     mkdir -p $PKG/usr/bin
     mkdir -p $PKG/usr/share/applications
