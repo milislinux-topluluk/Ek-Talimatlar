@@ -1,5 +1,5 @@
 # Tanım: Inno Setup tarafından oluşturulan yükleyicileri ayıklamak için kullanılan bir araç
-# URL: https://brlcad.org
+# URL: https://constexpr.org/innoextract
 # Paketçi: Cihan_Alkan
 # Gerekler: boost cmake
 # Grup:
