@@ -1,0 +1,28 @@
+# Tanım: Deepin için temel bileşen
+# URL: https://github.com/linuxdeepin/deepin-desktop-base
+# Paketçi: Cihan Alkan
+# Gerekler: 
+# Grup: deepin
+
+isim=deepin-desktop-base
+surum=2017.11.1
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  make
+  make DESTDIR="$PKG" install
+
+  # Remove Deepin distro's lsb-release
+ # rm "$PKG"/etc/lsb-release
+
+  # Don't override systemd timeouts
+  rm -r "$PKG"/etc/systemd
+
+  # Make a symlink for deepin-version
+  ln -s ../usr/lib/deepin/desktop-version "$PKG"/etc/deepin-version
+
+  # Remove apt-specific templates
+  rm -r "$PKG"/usr/share/python-apt
+}
