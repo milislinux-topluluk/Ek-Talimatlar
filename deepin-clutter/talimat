@@ -1,0 +1,31 @@
+# Tanım: Deepin için hızlı, taşınabilir, etkileyici dinamik arayüzler oluşturmak için bir araç seti
+# URL: https://github.com/sonald/clutter
+# Paketçi: Cihan_Alkan
+# Gerekler: gobject-introspection gtk-doc deepin-cogl libinput gtk3
+# Grup: deepin
+
+isim=deepin-clutter
+surum=1.26.2
+devir=1
+kaynak=(https://github.com/sonald/clutter/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd clutter-$surum
+  NOCONFIGURE=1 ./autogen.sh
+
+  ./configure --prefix=/usr \
+    --enable-introspection \
+    --enable-egl-backend \
+    --enable-gdk-backend \
+    --enable-wayland-backend \
+    --enable-x11-backend \
+    --enable-evdev-input \
+    --enable-wayland-compositor \
+    --enable-gtk-doc
+
+  # https://bugzilla.gnome.org/show_bug.cgi?id=655517
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR="${PKG}" install
+}
