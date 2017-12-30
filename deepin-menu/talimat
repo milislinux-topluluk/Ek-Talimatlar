@@ -1,0 +1,27 @@
+# Tanım: Güzel menüler oluşturmak için Deepin menü servisi
+# URL: https://github.com/linuxdeepin/deepin-menu
+# Paketçi: Cihan Alkan
+# Gerekler: qt5 dtkwidget python-qt5 deepin-qt-dbus-factory
+
+isim=deepin-menu
+surum=3.2.0
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-menu/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  python setup.py build
+  qmake-qt5 DEFINES+=QT_NO_DEBUG_OUTPUT
+  make
+  python setup.py install --root="$PKG" --optimize=1
+
+  make INSTALL_ROOT="$PKG" install
+
+  install -dm 755 "$PKG"/usr/share/dbus-1/services/
+  install -dm 755 "$PKG"/etc/xdg/autostart/
+
+  rm -r "$PKG"/usr/deepin_menu
+
+  install -m 644 data/*.service "$PKG"/usr/share/dbus-1/services/
+  install -m 644 *.desktop "$PKG"/etc/xdg/autostart/
+}
