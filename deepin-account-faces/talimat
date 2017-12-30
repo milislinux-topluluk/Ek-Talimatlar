@@ -1,0 +1,15 @@
+# Tanım: Linux Deepin için hesap yüzleri
+# URL: https://github.com/linuxdeepin/deepin-account-faces
+# Paketçi: Cihan Alkan
+# Gerekler: 
+# Grup: deepin
+
+isim=deepin-account-faces
+surum=1.0.10
+devir=1
+kaynak=(https://github.com/linuxdeepin/dde-account-faces/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+    cd dde-account-faces-$surum
+    make DESTDIR="$PKG" install
+}
