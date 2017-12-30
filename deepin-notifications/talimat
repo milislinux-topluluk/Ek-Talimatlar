@@ -1,0 +1,17 @@
+# Tanım: Deepin masaüstü ortamı için sistem bildirimleri
+# URL: https://github.com/linuxdeepin/deepin-notifications
+# Paketçi: Cihan Alkan
+# Gerekler: notification-daemon qt5
+# Grup: deepin
+
+isim=deepin-notifications
+surum=3.1.2
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$iism-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  qmake-qt5 PREFIX=/usr
+  make
+  make INSTALL_ROOT="${PKG}" install
+}
