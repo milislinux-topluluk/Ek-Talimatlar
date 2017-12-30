@@ -28,8 +28,10 @@ derle() {
     mkdir -p $PKG/usr/share/milpek/locale
     mkdir -p $PKG/usr/share/milpek/simge
     mkdir -p $PKG/var/lib/pkg
+    mkdir -p $PKG/usr/share/doc/milpek
 
     mv milis-paket-yoneticisi $PKG/usr/share/milpek/milpek
+    mv license.html $PKG/usr/share/doc/milpek/
     ln -s /usr/share/milpek/milpek $PKG/usr/bin/milpek
     mv $isim.desktop $PKG/usr/share/applications/
     tar -xzf arayuz.tar.gz -C $PKG/usr/share/milpek/arayuz/
