@@ -1,0 +1,22 @@
+# Tanım: GObject için statik golang bağları oluştur
+# URL: https://github.com/linuxdeepin/go-gir-generator
+# Paketçi: Cihan_Alkan
+# Gerekler: gobject-introspection go18 libgudev
+
+isim=deepin-gir-generator
+surum=1.0.2
+devir=1
+kaynak=(https://github.com/linuxdeepin/go-gir-generator/archive/$surum.tar.gz::$isim-$surum.tar.gz
+        SettingsBackendLike.patch)
+
+derle() {
+  export GOPATH="$SRC/go-gir-generator/vender:$SRC/go-gir-generator"
+
+  cd go-gir-generator-$surum
+  # Our gobject-introspection is too new
+  # https://cr.deepin.io/#/c/16880/
+  patch -p1 -i ../SettingsBackendLike.patch
+
+  make
+  make DESTDIR="$PKG" install
+}
