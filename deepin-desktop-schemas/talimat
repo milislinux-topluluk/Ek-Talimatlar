@@ -1,0 +1,17 @@
+# Tanım: Deepin Gsetting şemaları
+# URL: https://github.com/linuxdeepin/deepin-desktop-schemas
+# Paketçi: Cihan Alkan
+# Gerekler: python deepin-gtk-theme deepin-sound-theme deepin-artwork-themes
+# Grup: deepin
+
+isim=deepin-desktop-schemas
+surum=3.2.4
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  sed -i "s#^picture-uri.*#picture-uri='file:///usr/share/backgrounds/deepin/desktop.jpg'#" overrides/common/com.deepin.wrap.gnome.desktop.override
+  make ARCH=x86
+  make DESTDIR="${PKG}" install
+}
