@@ -1,7 +1,7 @@
 # Tanım: Deepin masaüstü ortamı için kullanımı kolay ekran görüntüsü aracı
 # URL: https://github.com/linuxdeepin/deepin-screenshot
 # Paketçi: Cihan Alkan
-# Gerekler: dtkwidget1 qt5 dtkwm
+# Gerekler: dtkwidget qt5 dtkwm
 # Grup: deepin
 
 isim=deepin-screenshot
