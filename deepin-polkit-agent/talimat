@@ -1,0 +1,19 @@
+# Tanım: Deepin Polkit Agent
+# URL: https://github.com/linuxdeepin/dde-polkit-agent
+# Paketçi: Cihan_Alkan 
+# Gerekler: qt5 python deepin-qt-dbus-factory polkit-qt5
+# Grup: deepin
+
+isim=deepin-polkit-agent
+surum=0.1.1
+devir=1
+kaynak=(https://github.com/linuxdeepin/dde-polkit-agent/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+
+  cd dde-polkit-agent-$surum
+  qmake-qt5 PREFIX=/usr
+  make
+
+  make INSTALL_ROOT="$PKG" install
+}
