@@ -1,0 +1,17 @@
+# Tanım: Glib, gettext, arşiv, grafik vb. Şeyler için birçok yararlı git rutini içeren bir kütüphane.
+# URL: https://github.com/linuxdeepin/go-lib
+# Paketçi: Cihan Alkan
+# Gerekler: pulseaudio gdk-pixbuf xorg-libx11 mobile-broadband-provider-info
+# Grup: deepin
+
+isim=deepin-go-lib
+surum=1.2.3
+devir=1
+kaynak=(https://github.com/linuxdeepin/go-lib/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  mkdir -p "$PKG"/usr/share/gocode/src/pkg.deepin.io
+  cp -a go-lib-$surum "$PKG"/usr/share/gocode/src/pkg.deepin.io/lib
+
+  rm -r "$PKG"/usr/share/gocode/src/pkg.deepin.io/lib/debian
+}
