@@ -1,0 +1,17 @@
+# Tanım: Linuxdeepin masaüstü ortamı için resim görüntüleyici
+# URL: https://github.com/linuxdeepin/deepin-image-viewer
+# Paketçi: Cihan Alkan 
+# Gerekler: dtkwidget1 qt5 deepin-shortcut-viewer libexif libraw freeimage
+# Grup: deepin
+
+isim=deepin-image-viewer
+surum=1.2.16.7
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  qmake-qt5 PREFIX=/usr QMAKE_CFLAGS_ISYSTEM=
+  make
+  make INSTALL_ROOT="${PKG}" install
+}
