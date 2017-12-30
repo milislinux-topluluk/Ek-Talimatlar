@@ -29,11 +29,12 @@ derle() {
     mkdir -p $PKG/usr/share/milpek/simge
     mkdir -p $PKG/var/lib/pkg
 
-    mv milis-paket-yoneticisi $PKG/usr/bin/milpek
+    mv milis-paket-yoneticisi $PKG/usr/share/milpek/milpek
+    ln -s /usr/share/milpek/milpek $PKG/usr/bin/milpek
     mv $isim.desktop $PKG/usr/share/applications/
     tar -xzf arayuz.tar.gz -C $PKG/usr/share/milpek/arayuz/
     mv simge/* $PKG/usr/share/milpek/simge/
     tar -xzf pm.tar.gz -C $PKG/usr/share/milpek/pm/
  #   mv translations/* $PKG/usr/share/milpek/locale/
-    touch /var/lib/pkg/lock
+    touch /var/lib/pkg/kilit
 }
