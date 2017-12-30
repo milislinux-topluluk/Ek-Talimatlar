@@ -1,0 +1,26 @@
+# Tanım: Deepin için nesne yönelimli GL/GLES Soyutlama / Yardımcı Sistem Katmanı
+# URL: https://github.com/linuxdeepin/deepin-cogl
+# Paketçi: Cihan_Alkan
+# Gerekler: gobject-introspection xorg-libdrm xorg-libxext xorg-libxdamage xorg-libxcomposite gdk-pixbuf pango xorg-libxrandr
+# Grup: deepin
+
+isim=deepin-cogl
+surum=1.22.5
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-cogl/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  NOCONFIGURE=1 ./autogen.sh
+
+  ./configure --prefix=/usr \
+    --enable-gles{1,2} \
+    --enable-{kms,wayland}-egl-platform \
+    --enable-wayland-egl-server
+
+  # https://bugzilla.gnome.org/show_bug.cgi?id=655517
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make -j1
+  make DESTDIR="${PKG}" install
+}
