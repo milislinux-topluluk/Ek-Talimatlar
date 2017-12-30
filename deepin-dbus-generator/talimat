@@ -1,0 +1,19 @@
+# Tanım: Dbus arabirimlerini go-lang veya qml sarmalayıcı koduna dönüştürün
+# URL: https://github.com/linuxdeepin/go-dbus-generator
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5 go18
+# Grup: deepin
+
+isim=deepin-dbus-generator
+surum=0.6.6
+devir=1
+kaynak=(https://github.com/linuxdeepin/go-dbus-generator/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  export GOPATH="$SRC/build:/usr/share/gocode"
+
+  cd go-dbus-generator-$surum
+  go build -o out/dbus-generator # -gccgoflags "$CFLAGS $LDFLAGS"
+
+  install -Dm 755 "$SRC"/go-dbus-generator-$surum/out/dbus-generator "$PKG"/usr/bin/dbus-generator
+}
