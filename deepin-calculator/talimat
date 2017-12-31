@@ -1,7 +1,7 @@
 # Tanım: Sıradan kullanıcılar için kullanımı kolay bir hesap makinesi
 # URL: https://github.com/linuxdeepin/deepin-calculator
 # Paketçi: Cihan Alkan
-# Gerekler: python qt5
+# Gerekler: python qt5 dtkwidget
 # Grup: deepin
 
 isim=deepin-calculator
