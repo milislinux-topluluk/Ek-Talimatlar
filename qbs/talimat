@@ -7,7 +7,7 @@ isim=qbs
 surum=1.10.0
 devir=1
 
-kaynak=(https://github.com/qbs/qbs/archive/v$surum.tar.gz::$surum-$surum.tar.gz)
+kaynak=(https://github.com/qbs/qbs/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
 
 derle() {
   cd qbs-$surum
