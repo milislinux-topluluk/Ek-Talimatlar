@@ -1,0 +1,18 @@
+# Tanım: Deepin için pencere yöneticisi değiştirici
+# URL: https://github.com/linuxdeepin/deepin-wm-switcher
+# Paketçi: Cihan Alkan
+# Gerekler: deepin-metacity qt5 deepin-daemon cmake deepin-wm
+# Grup: deepin
+
+isim=deepin-wm-switcher
+surum=1.1.9
+devir=1
+kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+   mkdir build
+  cd build
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ../$isim-$surum
+  make
+  make DESTDIR="${PKG}" install
+}
