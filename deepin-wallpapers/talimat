@@ -1,0 +1,20 @@
+# Tanım: Deepin masaüstü resimleri
+# URL: https://github.com/linuxdeepin/deepin-menu
+# Paketçi: Cihan Alkan
+# Gerekler: 
+# Grup: deepin
+
+isim=deepin-wallpapers
+surum=1.7
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-wallpapers/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  make
+   install -dm755 "$PKG"/usr/share/wallpapers
+   cp -r deepin "$PKG"/usr/share/wallpapers/
+
+   install -dm755 "$PKG"/var/cache
+   cp -r image-blur "$PKG"/var/cache/
+}
