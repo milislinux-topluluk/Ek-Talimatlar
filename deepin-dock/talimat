@@ -1,0 +1,17 @@
+# Tanım: Deepin masaüstü ortamı - dock modülü
+# URL: https://github.com/linuxdeepin/dde-dock
+# Paketçi: Cihan Alkan
+# Gerekler: dtkwidget1 qt5 deepin-qt-dbus-factory
+# Grup: deepin
+
+isim=deepin-dock
+surum=4.5.9
+devir=1
+kaynak=(https://github.com/linuxdeepin/dde-dock/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd dde-dock-$surum
+  qmake-qt5 PREFIX=/usr
+  make
+  make INSTALL_ROOT="${PKG}" install
+}
