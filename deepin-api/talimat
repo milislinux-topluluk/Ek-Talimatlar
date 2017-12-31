@@ -1,0 +1,28 @@
+# Tanım: Dde-daemon için go-lang bağları
+# URL: https://github.com/linuxdeepin/dde-api
+# Paketçi: Cihan_Alkan
+# Gerekler: gobject-introspection xorg-libdrm xorg-libxext xorg-libxdamage xorg-libxcomposite gdk-pixbuf pango xorg-libxrandr
+# Grup: deepin
+
+isim=deepin-api
+surum=3.1.18.1
+devir=1
+kaynak=(https://github.com/linuxdeepin/dde-api/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+ export GOPATH="$SRC/build:/usr/share/gocode"
+  mkdir -p build/src/pkg.deepin.io/dde/api
+  cp -a dde-api-$surum/* build/src/pkg.deepin.io/dde/api/
+
+  # https://github.com/niemeyer/gopkg/issues/50
+  git config --global http.https://gopkg.in.followRedirects true
+
+  cd "$SRC"/dde-api-$surum
+  make build-dep
+  go get gopkg.in/alecthomas/kingpin.v2 github.com/nfnt/resize github.com/cryptix/wav
+
+  make # USE_GCCGO=1
+
+ # make DESTDIR="$pkgdir" SYSTEMD_LIB_DIR=/usr/lib install
+  make DESTDIR="${PKG}" install
+}
