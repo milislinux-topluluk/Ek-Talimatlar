@@ -2,6 +2,7 @@
 # URL: https://wiki.qt.io/Qbs
 # Paketçi: Cihan_Alkan
 # Gerekler: qt5
+# Grup: geliştirme
 
 isim=qbs
 surum=1.10.0
