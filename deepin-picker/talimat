@@ -1,0 +1,17 @@
+# Tanım: Deepin Masaüstü Ortamı renk seçici araç
+# URL: https://github.com/linuxdeepin/deepin-picker
+# Paketçi: Cihan Alkan
+# Gerekler: deepin-gettext-tools qt5
+# Grup: deepin
+
+isim=deepin-picker
+surum=1.6.1
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-picker/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd deepin-picker-$surum
+  qmake-qt5 PREFIX=/usr
+  make
+  make INSTALL_ROOT="$PKG" install
+}
