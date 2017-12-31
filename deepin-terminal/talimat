@@ -1,0 +1,30 @@
+# Tanım: Deepin için varsayılan terminal emülasyonu uygulaması
+# URL: https://github.com/linuxdeepin/deepin-terminal
+# Paketçi: Cihan Alkan
+# Gerekler: vala cmake libgee vte3 libsecret libwnck3 expect
+# Grup: deepin
+
+isim=deepin-terminal
+surum=2.9.2
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-terminal/archive/$surum.tar.gz::$isim-$surum.tar.gz
+        remove-vendor.patch)
+
+derle() {
+  mkdir -p build
+
+  cd deepin-terminal-$surum
+  sed -i 's|return __FILE__;|return "/usr/share/deepin-terminal/project_path.c";|' project_path.c
+  sed -i 's|/usr/lib/deepin-terminal/zssh|/usr/bin/zssh|' ssh_login.sh
+
+  patch -p1 -i ../remove-vendor.patch
+ cd $SRC/build
+  cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    ../deepin-terminal-$surum
+  make
+  cd $SRC/
+  make -C build DESTDIR="$PKG" install
+  ln -s deepin-terminal "$PKG"/usr/bin/x-terminal-emulator
+}
