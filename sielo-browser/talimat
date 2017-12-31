@@ -1,0 +1,20 @@
+# Tanım: Basit, özelleştirilebilir ve hızlı bir web tarayıcısı
+# URL: https://feldrise.com/Sielo
+# Paketçi: Cihan Alkan
+# Gerekler: qt5
+# Grup: 
+
+isim=sielo-browser
+surum=1.8.00
+devir=1
+kaynak=(https://www.feldrise.com/Sielo/Linux/$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+	mkdir build && cd build && cmake .. && make -j2
+	cp -r ../usr $PKG/
+	cp sielo-browser $PKG/usr/bin
+	cp SNCompiler/sielo-compiler $PKG/usr/bin
+	chmod +x $PKG/usr/bin/sielo-browser
+	chmod +x $PKG/usr/bin/sielo-compiler
+}
