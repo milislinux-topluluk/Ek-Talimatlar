@@ -4,6 +4,7 @@ Name=WhatsApp Desktop
 Icon=whatsapp-desktop
 Exec=Whatsapp
 Comment=WhatsApp for Desktop
+Comment[TR]=Bilgisayarlar için WhatsApp
 Categories=Network;Chat;
 Terminal=false
 StartupNotify=true
