@@ -11,10 +11,7 @@ kaynak=(https://github.com/ungleich/cdist/releases/download/${surum}/${isim}-${s
 
 derle() {
 	echo "VERSION = \"${surum}\"" > ${isim}-${surum}/cdist/version.py
-
 	cd ${isim}-${surum}
-
 	python3 setup.py build
-
 	python3 setup.py install --root="${PKG}"
 }
