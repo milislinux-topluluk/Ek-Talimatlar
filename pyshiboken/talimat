@@ -1,0 +1,70 @@
+# Tanım: C ++ kitaplıkları için CPython bağlamaları üreteci
+# URL: http://www.pyside.org
+# Paketçi: Cihan_Alkan
+# Gerekler: qt4 libxslt python python3 cmake
+# Grup: kütüphane
+
+isim=pyshiboken
+surum=1.2.4
+devir=1
+kaynak=(https://github.com/PySide/Shiboken/archive/$surum.tar.gz::$isim-$surum.tar.gz
+        python-3.6.patch)
+
+derle() {
+   cd "$SRC/Shiboken-$surum"
+  patch -p1 -i ../python-3.6.patch
+    # build python2
+    mkdir -p build-py2 && cd build-py2
+    cmake ../ -DCMAKE_INSTALL_PREFIX=/usr  \
+              -DCMAKE_BUILD_TYPE=Release   \
+              -DBUILD_TESTS=OFF            \
+              -DPYTHON_EXECUTABLE=/usr/bin/python2 \
+              -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so \
+              -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 \
+              -DQT_QMAKE_EXECUTABLE=qmake-qt4
+    make
+
+    # build python3
+    cd "$SRC/Shiboken-$surum"
+    mkdir -p build-py3 && cd build-py3
+    cmake ../ -DCMAKE_INSTALL_PREFIX=/usr  \
+              -DCMAKE_BUILD_TYPE=Release   \
+              -DBUILD_TESTS=OFF            \
+              -DUSE_PYTHON3=yes            \
+              -DQT_QMAKE_EXECUTABLE=qmake-qt4
+    make
+
+  # Header files/ /usr/bin/shiboke, pkgconfig, man page
+  cd "$SRC/Shiboken-$surum/build-py3"
+  make DESTDIR="$PKG" install
+
+  cd "$SRC/Shiboken-$surum/build-py2"
+  cd data
+  install -Dm 644 ShibokenConfig-python2.7.cmake "$PKG/usr/lib/cmake/Shiboken-$surum/"
+  install -Dm 644 shiboken.pc "$PKG/usr/lib/pkgconfig/shiboken-py2.pc"
+
+  rm -rf "$PKG/usr/lib/python"*
+  rm -rf "$PKG/usr/lib/libshiboken"*
+  rm -rf "$PKG/usr/lib/pkgconfig/"
+  rm "$PKG"/usr/lib/cmake/Shiboken-$surum/ShibokenConfig*python*.cmake
+
+  cd "$SRC/Shiboken-$surum/build-py2"
+  make DESTDIR="$PKG" install
+
+  cd "$SRC/Shiboken-$surum/build-py2"
+  cd data
+  install -Dm 644 ShibokenConfig-python2.7.cmake "$PKG/usr/lib/cmake/Shiboken-$surum/"
+  mv "$PKG"/usr/lib/pkgconfig/shiboken{,-py2}.pc
+
+  rm -rf "$PKG"/usr/{include,bin,share}
+  rm "$PKG/usr/lib/cmake/Shiboken-$surum/ShibokenConfigVersion.cmake"
+  rm "$PKG/usr/lib/cmake/Shiboken-$surum/ShibokenConfig.cmake"
+
+  cd "$SRC/Shiboken-$surum/build-py3"
+  make DESTDIR="$PKG" install
+
+  rm -rf "$PKG"/usr/{include,bin,share}
+  rm "$PKG/usr/lib/cmake/Shiboken-$surum/ShibokenConfigVersion.cmake"
+  rm "$PKG/usr/lib/cmake/Shiboken-$surum/ShibokenConfig.cmake"
+
+}
