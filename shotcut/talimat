@@ -2,6 +2,7 @@
 # URL: https://www.shotcut.org/
 # Paketçi: Cihan_Alkan
 # Gerekler: qt5 mlt movit ffmpeg x264 lame frei0r-plugins ladspa
+# Grup: medya
 
 isim=shotcut
 surum=17.12
