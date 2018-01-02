@@ -1,7 +1,7 @@
 # Tanım: Qt ve FFmpeg'e dayalı çapraz platformlu çoklu oynatma çerçevesi
 # URL: http://www.qtav.org/
 # Paketçi: Oltulu
-# Gerekler: qt5 taglib
+# Gerekler: qt5 taglib ffmpeg desktop-file-utils xorg-libxv openal uchardet
 # Grup: multimedya
 
 isim=qtav
