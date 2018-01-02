@@ -10,10 +10,8 @@ devir=1
 kaynak=(http://www6.frugalware.org/mirrors/linux/frugalware/frugalware-current/source/lib-extra/gloox/gloox-$surum.tar.bz2)
 
 derle() {
-
   cd "$SRC"/gloox-$surum
   ./configure --prefix=/usr
   make
-
   make DESTDIR="$PKG" install
 }
