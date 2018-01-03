@@ -8,7 +8,7 @@ isim=youtube-dl
 surum=2017.12.31
 devir=1
 kaynak=(http://youtube-dl.org/downloads/${surum}/${isim}-${surum}.tar.gz
-        youtube-dl-mp3)
+        https://github.com/rst0git/youtube-dl-mp3/raw/master/youtube-dl-mp3)
 
 derle() {
 cd youtube-dl
