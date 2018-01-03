@@ -1,19 +1,21 @@
 # Tanım: WxPython'da yazılmış popüler youtube-dl nin çapraz platform arayüzü
 # URL: https://github.com/MrS0m30n3/youtube-dl-gui
 # Paketçi: Cihan_Alkan
-# Gerekler: python wxpython pytwodict gtk-update-icon-cache ffmpeg youtube-dl
-# Grup: 
+# Gerekler: python wxpython gtk-update-icon-cache ffmpeg youtube-dl
+# Grup: pytwodict
 
 isim=youtube-dl-gui
 surum=0.4
 devir=1
 kaynak=(https://github.com/MrS0m30n3/youtube-dl-gui/archive/0.4.tar.gz::$isim-$surum.tar.gz
-        youtube-dl-gui.desktop)
+        youtube-dl-gui.desktop
+        youtube_dl_gui.po)
 
 derle() {
+#msgfmt youtube_dl_gui.po -o youtube_dl_gui.mo
 cd $isim-$surum
+  install -Dm644 ../youtube_dl_gui.po $SRC/$isim-$surum/youtube_dl_gui/locale/ko_KR/LC_MESSAGES/youtube_dl_gui.po
   install -Dm644 ../youtube-dl-gui.desktop "$PKG/usr/share/applications/youtube-dl-gui.desktop"
-
   install -Dm644 LICENSE "$PKG/usr/share/licenses/$isim/LICENSE"
   python setup.py install --root="$PKG" --optimize=1
 }
