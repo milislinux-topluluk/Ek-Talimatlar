@@ -1,7 +1,8 @@
 # Tanım: Geliştirilmiş GNU Make - tracing, hata raporlama, hata ayıklama, profil oluşturma ve daha fazlası
 # URL: http://www.xfce.org/
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: guile
+# Grup: geliştirme
 
 isim=remake
 surum=4.2.1
