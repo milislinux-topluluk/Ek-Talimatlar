@@ -1,4 +1,4 @@
-# Tanım: Bir Açık Kaynaklı MQTT v3.1 Broker'ı
+# Tanım: Açık Kaynaklı  MQTT v3.1 Broker'ı
 # URL: http://mosquitto.org/
 # Paketçi: Cihan_Alkan
 # Gerekler: mercurial python docbook-xsl c-ares libwebsockets
@@ -16,7 +16,7 @@ derle() {
   sed -i 's|/sbin|/bin|g' src/Makefile
   make WITH_WEBSOCKETS=yes
 
-  make prefix=/usr DESTDIR="$PKG/" install
+  make prefix=/usr DESTDIR="$PKG" install
 
   # Shipped in git.
   install -Dm644 LICENSE.txt "$PKG/usr/share/licenses/$isim/LICENSE"
@@ -27,6 +27,4 @@ mkdir -pv $PKG/usr/lib/sysusers.d &&
 cat > $PKG/usr/lib/sysusers.d/mosquitto.conf << "EOF" &&
 u mosquitto - "Mosquitto MQTT Broker" /var/empty
 EOF
-
-  cd ..
 }
