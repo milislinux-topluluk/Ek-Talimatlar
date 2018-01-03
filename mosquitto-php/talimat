@@ -1,7 +1,8 @@
-# Tanım: Bir Açık Kaynaklı MQTT v3.1 Broker'ı
+# Tanım: Açık Kaynaklı MQTT v3.1 Broker Php kütüphanesi
 # URL: https://github.com/mgdm/Mosquitto-PHP
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: mosquitto php
+# Grup: kütüphane
 
 isim=mosquitto-php
 surum=0.2
