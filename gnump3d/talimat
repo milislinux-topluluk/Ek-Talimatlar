@@ -1,7 +1,7 @@
 # Tanım: MP3'ler, OGG vorbis dosyaları, filmler ve diğer medya formatları için bir akış sunucusu.
 # URL: http://www.gnu.org/software/gnump3d/
 # Paketçi: Cihan_Alkan
-# Gerekler: perl
+# Gerekler:
 
 isim=gnump3d
 surum=3.0
