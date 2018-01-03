@@ -2,6 +2,7 @@
 # URL: http://www.inspircd.org/
 # Paketçi: Cihan Alkan
 # Gerekler: pkg-config mariadb sqlite geoip gnutls openssl libgcrypt
+# Grup: ağ
 
 isim=inspircd
 surum=2.0.24
