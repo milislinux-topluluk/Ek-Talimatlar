@@ -2,7 +2,7 @@
 # URL: https://nomacs.org/
 # Paketçi: Cihan_Alkan
 # Gerekler: cmake qt5 exiv2 libraw opencv
-# Grup:
+# Grup: grafik_tasarım
 
 isim=nomacs
 surum=3.8.0
