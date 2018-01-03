@@ -1,7 +1,8 @@
 # Tanım: Minilock dosya biçiminin, şifrelenmiş miniLock dosyalarını okuyabilen ve yazabilen hızlı yerel bir uygulaması.
 # URL: http://andre-simon.de/doku/mlock/en/mlock.php
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: qt5 libsodium
+# Grup: güvenlik
 
 isim=mikrolock
 surum=1.1
@@ -10,7 +11,7 @@ kaynak=(http://andre-simon.de/zip/$isim-$surum.tar.bz2
         mikrolock_tr_TR.ts)
 
 derle() {
- mv /usr/bin/qmake-qt5 /usr/bin/qmake
+ [ ! -f /usr/bin/qmake ] && ln -s /usr/bin/qmake-qt5 /usr/bin/qmake
  cd $isim-$surum
   make help
   make
@@ -18,7 +19,6 @@ derle() {
 
   make DESTDIR="$PKG" install
   make DESTDIR="$PKG" install-gui
-  mv /usr/bin/qmake /usr/bin/qmake-qt5
 
 # Başlatıcı 
 mkdir -pv $PKG/usr/share/applications &&
@@ -35,6 +35,6 @@ Categories=Utility;TextTools;
 StartupNotify=true
 EOF
 
-  /usr/lib/qt5/bin/lrelease ../mikrolock_tr_TR.ts -qm $PKG/usr/share/mikrolock/l10n/mikrolock_tr_TR.qm
+lrelease-qt5 ../mikrolock_tr_TR.ts -qm $PKG/usr/share/mikrolock/l10n/mikrolock_tr_TR.qm
 
 }
