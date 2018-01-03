@@ -1,0 +1,22 @@
+# Tanım: Pdf belgelerini birleştirme veya bölme ve döndürme, kırpma ve sayfalarını yeniden düzenleme
+# URL: http://sourceforge.net/projects/pdfshuffler/
+# Paketçi: Cihan_Alkan
+# Gerekler: python-poppler pypdf
+# Grup:
+
+isim=pdfshuffler
+surum=0.6.0
+devir=1
+kaynak=(http://downloads.sourceforge.net/$isim/$isim-$surum.tar.gz)
+
+derle() {
+
+
+# python2 fix
+  find $isim-$surum -name "*.py" -exec \
+    sed -i "s/python/&2/" {} \;
+
+  cd $isim-$surum
+  python setup.py build
+  python setup.py install --root="$PKG"
+}
