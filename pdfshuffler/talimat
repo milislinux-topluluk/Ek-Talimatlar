@@ -7,7 +7,8 @@
 isim=pdfshuffler
 surum=0.6.0
 devir=1
-kaynak=(http://downloads.sourceforge.net/$isim/$isim-$surum.tar.gz)
+kaynak=(http://downloads.sourceforge.net/$isim/$isim-$surum.tar.gz
+        pdfshuffler-tr.po)
 
 derle() {
 
@@ -17,6 +18,7 @@ derle() {
     sed -i "s/python/&2/" {} \;
 
   cd $isim-$surum
+  mv ../pdfshuffler-tr.po $SRC/$isim-$surum/po/tr.po
   python setup.py build
   python setup.py install --root="$PKG"
 }
