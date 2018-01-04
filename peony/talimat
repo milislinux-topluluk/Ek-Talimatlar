@@ -1,0 +1,20 @@
+# Tanım: Peony dosya yöneticisi
+# URL: https://github.com/ukui/peony
+# Paketçi: Cihan Alkan
+# Gerekler: mate-desktop pango
+# Grup:
+
+isim=peony
+surum=1.0.4
+devir=1
+
+kaynak=(https://github.com/ukui/peony/archive/v1.0.4.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+	cd $isim-$surum
+    ./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --disable-schemas-compile \
+    --libexecdir=/usr/lib/$isim --disable-static   
+    make
+    make DESTDIR=$PKG install
+}
