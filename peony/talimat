@@ -1,7 +1,7 @@
 # Tanım: Peony dosya yöneticisi
 # URL: https://github.com/ukui/peony
 # Paketçi: Cihan Alkan
-# Gerekler: mate-desktop pango
+# Gerekler: mate-desktop pango mate-common libnotify
 # Grup:
 
 isim=peony
