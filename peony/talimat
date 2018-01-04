@@ -12,7 +12,9 @@ kaynak=(https://github.com/ukui/peony/archive/v1.0.4.tar.gz::$isim-$surum.tar.gz
 
 derle() {
 	cd $isim-$surum
-    ./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    ./autogen.sh 
+    ./configure \
+    --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
     --disable-schemas-compile \
     --libexecdir=/usr/lib/$isim --disable-static   
     make
