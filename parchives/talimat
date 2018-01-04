@@ -1,7 +1,7 @@
 # Tanım: Arşiv yöneticisi
 # URL: https://github.com/ukui/parchives
 # Paketçi: Cihan Alkan
-# Gerekler: peony-extensions
+# Gerekler: peony
 # Grup: ukui
 
 isim=parchives
