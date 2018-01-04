@@ -1,0 +1,30 @@
+# Tanım: Arşiv yöneticisi
+# URL: https://github.com/ukui/parchives
+# Paketçi: Cihan Alkan
+# Gerekler: peony-extensions
+# Grup: ukui
+
+isim=parchives
+surum=0.1.0
+devir=1
+
+kaynak=()
+
+derle() {
+
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/ukui/parchives $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+    sed -i '/PEONY_REQUIRED/s/1.0.4/1.0.2/g' configure.ac
+ #   cp ../configure.ac $SRC/$isim/
+    ./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --libexecdir=/usr/lib/$isim --disable-static   
+    make
+    make DESTDIR=$PKG install
+}
