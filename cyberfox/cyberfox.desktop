@@ -2,7 +2,7 @@
 Version=1.2
 Type=Application
 Name=Cyberfox
-Exec=cyberfox %u
+Exec=/opt/cyberfox/cyberfox
 Icon=cyberfox-icon
 Categories=Network;WebBrowser;
 Comment=Cyberfox: Firefoxtan çatallanmış hızlı ve gizlilik odaklı web tarayıcı
