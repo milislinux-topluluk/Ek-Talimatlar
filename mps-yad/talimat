@@ -1,0 +1,49 @@
+# Tanım: Milis Paket Yöneticisi
+# URL: https://github.com/milislinux-topluluk/mps-yad
+# Paketçi: Cihan Alkan
+# Gerekler: yad
+# Grup:
+
+isim=mps-yad
+surum=1.0
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/milislinux-topluluk/mps-yad $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+
+# Place files
+	install -dm755 ${PKG}/usr/share/${isim}
+	cp "${SRC}/${isim}/${isim}".sh "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"update-sys.sh "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"libfuncs.sh "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"LICENSE "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"bilgi.ogg "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"hata.ogg "${PKG}/usr/share/${isim}/"
+	cp "${SRC}/${isim}/"kullanici-paketleri "${PKG}/usr/share/${isim}/"
+
+	# Place desktop entry
+	install -d "${PKG}/usr/share/applications"
+	desktop-file-install -m 644 --dir "${PKG}/usr/share/applications/" "${SRC}/${isim}/${isim}.desktop"
+
+	# Symlink main binaries
+	install -d "${PKG}/usr/bin"
+	ln -fs "/usr/share/${isim}/${isim}".sh "${PKG}/usr/bin/${isim}"
+	ln -fs "/usr/share/${isim}/"update-sys.sh "${PKG}/usr/bin/"update-sys
+	ln -fs "/usr/share/${isim}/"libfuncs.sh "${PKG}/usr/bin/"libfuncs
+	chmod +x "${PKG}/usr/share/${isim}"
+	chmod +x "${PKG}/usr/share/${isim}/kullanici-paketleri"
+
+	# Place license file
+	install -D -m644 "${PKG}/usr/share/${isim}/"LICENSE "${PKG}/usr/share/licenses/${isim}/LICENSE.GPL"
+	
+}
