@@ -2,12 +2,12 @@
 # URL: http://sourceforge.net/projects/hardinfo.berlios/
 # Paketçi: Cihan_Alkan
 # Gerekler: gtk2 libsoup glib
-# Grup: sistem
+# Grup: 
 
 isim=hardinfo
 surum=0.6
 devir=1
-kaynak=()
+kaynak=(hardinfo-tr.po)
 
 derle() {
 
@@ -20,7 +20,7 @@ derle() {
 	fi
 	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
 	cd $SRC/$isim
-
+ cp ../hardinfo-tr.po po/tr.po
   mkdir build  
   cd build
   cmake .. -DCMAKE_INSTALL_PREFIX=/usr
