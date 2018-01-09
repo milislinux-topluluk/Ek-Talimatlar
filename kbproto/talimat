@@ -1,0 +1,19 @@
+# Tanım: X11 XKB uzatma kablosu protokolü
+# URL: https://xorg.freedesktop.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: 
+
+
+isim=kbproto
+surum=1.0.7
+devir=1
+kaynak=(https://xorg.freedesktop.org/releases/individual/proto/${isim}-${surum}.tar.bz2)
+
+derle() {
+  cd ${isim}-${surum}
+  ./configure --prefix=/usr
+  make
+  make DESTDIR="${PKG}" install
+  install -Dm644 COPYING "${PKG}/usr/share/licenses/${isim}/COPYING"
+}
