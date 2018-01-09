@@ -1,0 +1,22 @@
+# Tanım: X11 çekirdek tel protokolü ve yardımcı başlıkları
+# URL: https://xorg.freedesktop.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: xorg-util-macros
+# Grup: 
+
+
+isim=xproto
+surum=7.0.31
+devir=1
+kaynak=(https://xorg.freedesktop.org/releases/individual/proto/${isim}-${surum}.tar.bz2)
+
+derle() {
+
+  cd ${isim}-${surum}
+  ./configure --prefix=/usr
+  make
+
+  make DESTDIR="${PKG}" install
+  install -m755 -d "${PKG}/usr/share/licenses/${isim}"
+  install -m644 COPYING "${PKG}/usr/share/licenses/${isim}/"
+}
