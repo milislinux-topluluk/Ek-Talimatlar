@@ -1,0 +1,18 @@
+# Tanım: X11 çeşitli uzatma kablosu protokolü
+# URL: https://xorg.freedesktop.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: xmlto xorg-util-macros docbook-xsl
+# Grup: 
+
+isim=xextproto
+surum=7.3.0
+devir=1
+kaynak=(https://xorg.freedesktop.org/releases/individual/proto/${isim}-${surum}.tar.bz2)
+
+derle() {
+  cd ${isim}-${surum}
+  ./configure --prefix=/usr
+  make
+  make DESTDIR="${PKG}" install
+  install -Dm644 COPYING "${PKG}/usr/share/licenses/${isim}/COPYING"
+}
