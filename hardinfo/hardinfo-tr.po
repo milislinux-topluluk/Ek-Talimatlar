@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <cihanalk@gmail.com>, 2018.
 #
 #, fuzzy
 msgid ""
@@ -25,6 +25,8 @@ msgid ""
 "Copyright (C) 2003-%d Leandro A. F. Pereira. See COPYING for details.\n"
 "\n"
 msgstr ""
+"Telif(C) 2003-%d Leandro A. F. Pereira. Ayrıntılar için COPYING bölümüne bakın.\n"
+"\n"
 
 #: hardinfo/hardinfo.c:51
 #, c-format
@@ -36,17 +38,23 @@ msgid ""
 "  Library prefix:    %s\n"
 "  Compiled for:      %s\n"
 msgstr ""
+"Derleme zamanı seçenekleri:\n"
+"  Dağıtım sürümü:   %s (%s)\n"
+"  BinReloc etkin:  %s\n"
+"  Veri öneki:       %s\n"
+"  Kütüphane öneki:    %s\n"
+"  Için derlendi:      %s\n"
 
 #: hardinfo/hardinfo.c:57 hardinfo/hardinfo.c:58 modules/computer.c:605
 #: modules/devices/inputdevices.c:128 modules/devices/pci.c:112
 #: modules/devices/printers.c:138
 msgid "Yes"
-msgstr ""
+msgstr "Evet"
 
 #: hardinfo/hardinfo.c:58 modules/computer.c:605 modules/devices/pci.c:112
 #: modules/devices/printers.c:138
 msgid "No"
-msgstr ""
+msgstr "Hayır"
 
 #: hardinfo/hardinfo.c:69
 #, c-format
@@ -56,6 +64,10 @@ msgid ""
 "• Is HardInfo correctly installed?\n"
 "• See if %s and %s exists and you have read permission."
 msgstr ""
+"Çalışma zamanı verileri bulunamadı.\n"
+"\n"
+"• HardInfo doğru kurulmuş mu?\n"
+"• See if %s and %s exists and you have read permission."
 
 #: hardinfo/hardinfo.c:76
 #, c-format
@@ -90,35 +102,35 @@ msgstr ""
 
 #: hardinfo/hardinfo.c:152
 msgid "Don't know what to do. Exiting."
-msgstr ""
+msgstr "Ne yapacağımı bilmiyorum. Çıkılıyor."
 
 #: hardinfo/util.c:104 modules/computer/uptime.c:53
 #, c-format
 msgid "%d day"
 msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d gün"
+msgstr[1] "%d gün"
 
 #: hardinfo/util.c:105 modules/computer/uptime.c:54
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d saat"
+msgstr[1] "%d saat"
 
 #: hardinfo/util.c:106 modules/computer/uptime.c:55
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d dakika"
+msgstr[1] "%d dakika"
 
 #: hardinfo/util.c:107
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d saniye"
+msgstr[1] "%d saniye"
 
 #: hardinfo/util.c:128
 #, c-format
@@ -152,51 +164,51 @@ msgstr ""
 
 #: hardinfo/util.c:361
 msgid "Error"
-msgstr ""
+msgstr "Hata"
 
 #: hardinfo/util.c:361 hardinfo/util.c:377
 msgid "Warning"
-msgstr ""
+msgstr "Uyarı"
 
 #: hardinfo/util.c:376
 msgid "Fatal Error"
-msgstr ""
+msgstr "Ölümcül Hata"
 
 #: hardinfo/util.c:401
 msgid "creates a report and prints to standard output"
-msgstr ""
+msgstr "bir rapor oluşturur ve standart çıktıya basar"
 
 #: hardinfo/util.c:407
 msgid "chooses a report format (text, html)"
-msgstr ""
+msgstr "bir rapor biçimi seçer (metin, html)"
 
 #: hardinfo/util.c:413
 msgid "run benchmark; requires benchmark.so to be loaded"
-msgstr ""
+msgstr "kriter çalıştır; Benchmark.so'nin yüklenmesi gerekiyor"
 
 #: hardinfo/util.c:419
 msgid "lists modules"
-msgstr ""
+msgstr "modülleri listeler"
 
 #: hardinfo/util.c:425
 msgid "specify module to load"
-msgstr ""
+msgstr "yüklenecek modülü belirt"
 
 #: hardinfo/util.c:431
 msgid "automatically load module dependencies"
-msgstr ""
+msgstr "modül bağımlılıklarını otomatik olarak yükle"
 
 #: hardinfo/util.c:438
 msgid "run in XML-RPC server mode"
-msgstr ""
+msgstr "XML-RPC sunucu modunda çalıştır"
 
 #: hardinfo/util.c:445
 msgid "shows program version and quit"
-msgstr ""
+msgstr "program sürümünü gösterir ve çıkış"
 
 #: hardinfo/util.c:450
 msgid "- System Profiler and Benchmark tool"
-msgstr ""
+msgstr "- Sistem Profiler ve Karşılaştırma aracı"
 
 #: hardinfo/util.c:460
 #, c-format
@@ -244,7 +256,7 @@ msgstr "Bitti"
 #: shell/callbacks.c:117
 #, c-format
 msgid "%s Module"
-msgstr ""
+msgstr "%s Modül"
 
 #: shell/callbacks.c:128
 #, c-format
@@ -256,31 +268,31 @@ msgstr ""
 #: shell/callbacks.c:142
 #, c-format
 msgid "No about information is associated with the %s module."
-msgstr ""
+msgstr "%s modülü ile ilgili bilgi yok."
 
 #: shell/callbacks.c:158
 msgid "Author:"
-msgstr ""
+msgstr "Yazar:"
 
 #: shell/callbacks.c:161
 msgid "Contributors:"
-msgstr ""
+msgstr "Katkı sağlayanlar"
 
 #: shell/callbacks.c:166
 msgid "Based on work by:"
-msgstr ""
+msgstr "Tarafından yapılan çalışmaya göre"
 
 #: shell/callbacks.c:167
 msgid "MD5 implementation by Colin Plumb (see md5.c for details)"
-msgstr ""
+msgstr "Colin Plumb tarafından MD5 uygulaması (ayrıntılar için md5.c'ye bakın)"
 
 #: shell/callbacks.c:168
 msgid "SHA1 implementation by Steve Reid (see sha1.c for details)"
-msgstr ""
+msgstr "Steve Reid'in SHA1 uygulaması (ayrıntılar için sha1.c'ye bakın)"
 
 #: shell/callbacks.c:169
 msgid "Blowfish implementation by Paul Kocher (see blowfich.c for details)"
-msgstr ""
+msgstr "Paul Kocher tarafından yapılan Blowfish uygulaması (ayrıntılar için blowfich.c'ye bakın)"
 
 #: shell/callbacks.c:170
 msgid "Raytracing benchmark by John Walker (see fbench.c for details)"
@@ -308,11 +320,11 @@ msgstr ""
 
 #: shell/callbacks.c:180
 msgid "Tango Project"
-msgstr ""
+msgstr "Tango Projesi"
 
 #: shell/callbacks.c:181
 msgid "The GNOME Project"
-msgstr ""
+msgstr "GNOME Projesi"
 
 #: shell/callbacks.c:182
 msgid "VMWare, Inc. (USB icon from VMWare Workstation 6)"
@@ -340,7 +352,7 @@ msgstr ""
 
 #: shell/callbacks.c:220
 msgid "translator-credits"
-msgstr ""
+msgstr "çevirmen-kredisi"
 
 #: shell/menu.c:35
 msgid "_Information"
@@ -400,7 +412,7 @@ msgstr "HardInfo Hakkında"
 
 #: shell/menu.c:79
 msgid "Displays program version information"
-msgstr ""
+msgstr "Program sürüm bilgilerini görüntüler"
 
 #: shell/menu.c:83
 msgid "_Quit"
@@ -412,7 +424,7 @@ msgstr "Yan Panel"
 
 #: shell/menu.c:91
 msgid "Toggles side pane visibility"
-msgstr ""
+msgstr "Yan bölmenin görünürlüğünü açar veya kapatır"
 
 #: shell/menu.c:94
 msgid "_Toolbar"
@@ -424,23 +436,23 @@ msgstr "Dosya Kaydet"
 
 #: shell/report.c:629
 msgid "Cannot create ReportContext. Programming bug?"
-msgstr ""
+msgstr "ReportContext oluşturulamıyor. Hatalı programlama mı?"
 
 #: shell/report.c:648
 msgid "Open the report with your web browser?"
-msgstr ""
+msgstr "Raporu web tarayıcınızla açın?"
 
 #: shell/report.c:682
 msgid "Generating report..."
-msgstr ""
+msgstr "Rapor üretiliyor ..."
 
 #: shell/report.c:692
 msgid "Report saved."
-msgstr ""
+msgstr "Rapor kaydedildi."
 
 #: shell/report.c:694
 msgid "Error while creating the report."
-msgstr ""
+msgstr "Rapor oluşturulurken hata oluştu."
 
 #: shell/report.c:796
 msgid "Generate Report"
@@ -452,15 +464,15 @@ msgid ""
 "Please choose the information that you wish to view in your report:"
 msgstr ""
 "<big><b>Rapor Oluştur</b></big>\n"
-"Please choose the information that you wish to view in your report:"
+"Lütfen raporunuzda görmek istediğiniz bilgileri seçin:"
 
 #: shell/report.c:893
 msgid "Select _None"
-msgstr ""
+msgstr "Seçim Yok"
 
 #: shell/report.c:904
 msgid "Select _All"
-msgstr ""
+msgstr "Tümünü Seç"
 
 #: shell/report.c:929 shell/syncmanager.c:748
 msgid "_Cancel"
@@ -481,7 +493,7 @@ msgstr "Sistem Bilgisi"
 
 #: shell/shell.c:747
 msgid "Loading modules..."
-msgstr ""
+msgstr "Modüller yükleniyor..."
 
 #: shell/shell.c:1660
 #, c-format
@@ -517,7 +529,7 @@ msgstr ""
 
 #: shell/syncmanager.c:170 shell/syncmanager.c:198
 msgid "Could not parse XML-RPC response"
-msgstr ""
+msgstr "XML-RPC yanıtı ayrıştırılamadı"
 
 #: shell/syncmanager.c:280
 #, c-format
@@ -532,15 +544,15 @@ msgstr "HardInfo Merkez Veritabanı ile Bağlantı Kuruluyor"
 
 #: shell/syncmanager.c:376
 msgid "Cleaning up"
-msgstr ""
+msgstr "Temizle"
 
 #: shell/syncmanager.c:493
 msgid "(canceled)"
-msgstr ""
+msgstr "(vazgeçildi)"
 
 #: shell/syncmanager.c:510
 msgid "(failed)"
-msgstr ""
+msgstr "(hatalı)"
 
 #: shell/syncmanager.c:521
 #, c-format
@@ -560,11 +572,11 @@ msgstr ""
 
 #: shell/syncmanager.c:658
 msgid "Network Updater"
-msgstr ""
+msgstr "Ağ Güncelleyicisi"
 
 #: shell/syncmanager.c:757
 msgid "_Synchronize"
-msgstr ""
+msgstr "Senkronize Et"
 
 #: modules/benchmark.c:52
 msgid "CPU Blowfish"
@@ -614,7 +626,7 @@ msgstr ""
 #: modules/benchmark.c:381
 #, c-format
 msgid "Benchmarking: <b>%s</b>."
-msgstr ""
+msgstr "Karşılaştırılıyor: <b>%s</b>."
 
 #: modules/benchmark.c:395
 msgid "Benchmarking. Please do not move your mouse or press any keys."
@@ -626,15 +638,15 @@ msgstr "İptal"
 
 #: modules/benchmark.c:536
 msgid "Results in MiB/second. Higher is better."
-msgstr ""
+msgstr "MiB / saniye olarak sonuçlanır. Üstte olanlar daha iyidir."
 
 #: modules/benchmark.c:540
 msgid "Results in HIMarks. Higher is better."
-msgstr ""
+msgstr "HIMarks sonuçları. Üstte olanlar daha iyidir."
 
 #: modules/benchmark.c:547
 msgid "Results in seconds. Lower is better."
-msgstr "Saniyeler içinde sonuçlandı. Orta seviye."
+msgstr "Saniyeler içinde sonuçlandı. Altta olanlar daha iyidir."
 
 #: modules/benchmark.c:555
 msgid "Benchmarks"
@@ -650,7 +662,7 @@ msgstr ""
 
 #: modules/benchmark.c:668
 msgid "Receive benchmark results"
-msgstr ""
+msgstr "Benchmark results gönder"
 
 #: modules/computer/alsa.c:26 modules/computer.c:489
 msgid "Audio Devices"
@@ -658,7 +670,7 @@ msgstr "Ses Aygıtları"
 
 #: modules/computer/alsa.c:34
 msgid "Audio Adapter"
-msgstr ""
+msgstr "Ses Adaptörü"
 
 #: modules/computer/boots.c:33 modules/computer.c:73 modules/computer.c:546
 msgid "Boots"
@@ -712,11 +724,11 @@ msgstr "Hafıza"
 #: modules/computer.c:106
 #, c-format
 msgid "%dMB (%dMB used)"
-msgstr ""
+msgstr "%dMB (%dMB kullanılan)"
 
 #: modules/computer.c:108 modules/computer.c:520
 msgid "Uptime"
-msgstr ""
+msgstr "Çalışma Süresi"
 
 #: modules/computer.c:110 modules/computer.c:478
 msgid "Date/Time"
@@ -732,7 +744,7 @@ msgstr ""
 
 #: modules/computer.c:203
 msgid "Scripting Languages"
-msgstr ""
+msgstr "Komut Oluşturma Dilleri"
 
 #: modules/computer.c:204
 msgid "Gambas3 (gbr3)"
@@ -824,7 +836,7 @@ msgstr ""
 
 #: modules/computer.c:226
 msgid "Tools"
-msgstr ""
+msgstr "Araçlar"
 
 #: modules/computer.c:227
 msgid "make"
@@ -861,7 +873,7 @@ msgstr "Bulunamadı"
 #: modules/computer.c:279
 #, c-format
 msgid "Detecting version: %s"
-msgstr ""
+msgstr "Sürüm algılanıyor: %s"
 
 #: modules/computer.c:296
 msgid "Program"
@@ -873,15 +885,15 @@ msgstr ""
 
 #: modules/computer.c:309 modules/computer.c:310
 msgid "Unknown chassis type"
-msgstr ""
+msgstr "Bilinmeyen şasi tipi"
 
 #: modules/computer.c:311
 msgid "Desktop"
-msgstr ""
+msgstr "Masaüstü"
 
 #: modules/computer.c:312
 msgid "Low-profile Desktop"
-msgstr ""
+msgstr "Düşük profilli Masaüstü"
 
 #: modules/computer.c:313
 msgid "Pizza Box"
@@ -897,7 +909,7 @@ msgstr ""
 
 #: modules/computer.c:316
 msgid "Portable"
-msgstr ""
+msgstr "Taşınabilir"
 
 #: modules/computer.c:317 modules/computer.c:341 modules/computer.c:350
 #: modules/computer.c:372
@@ -914,11 +926,11 @@ msgstr ""
 
 #: modules/computer.c:320
 msgid "Docking Station"
-msgstr ""
+msgstr "Yerleştirme İstasyonu"
 
 #: modules/computer.c:321
 msgid "All-in-one"
-msgstr ""
+msgstr "Hepsi Bir Arada"
 
 #: modules/computer.c:322
 msgid "Subnotebook"
@@ -938,7 +950,7 @@ msgstr ""
 
 #: modules/computer.c:326
 msgid "Expansion Chassis"
-msgstr ""
+msgstr "Genişletme Şasisi"
 
 #: modules/computer.c:327
 msgid "Sub Chassis"
@@ -994,12 +1006,12 @@ msgstr "Kullanıcı Adı"
 
 #: modules/computer.c:482 modules/computer.c:591
 msgid "Resolution"
-msgstr ""
+msgstr "Çözünürlük"
 
 #: modules/computer.c:483 modules/computer.c:592
 #, c-format
 msgid "%dx%d pixels"
-msgstr ""
+msgstr "%dx%d piksel"
 
 #: modules/computer.c:485
 msgid "OpenGL Renderer"
@@ -1027,7 +1039,7 @@ msgstr "Çekirdek"
 
 #: modules/computer.c:508
 msgid "C Library"
-msgstr ""
+msgstr "C Kütüphanesi"
 
 #: modules/computer.c:509
 msgid "Distribution"
@@ -1062,7 +1074,7 @@ msgstr "Yüklü Modüller"
 #: modules/computer/modules.c:147 modules/devices/arm/processor.c:337
 #: modules/devices.c:559 modules/devices/x86/processor.c:456
 msgid "Description"
-msgstr ""
+msgstr "Tanım"
 
 #: modules/computer.c:548
 msgid "Date & Time"
@@ -1101,7 +1113,7 @@ msgstr "Aygıt"
 #: modules/devices/pci.c:225 modules/devices/usb.c:349
 #: modules/devices/x86/processor.c:416
 msgid "Vendor"
-msgstr ""
+msgstr "Satıcı"
 
 #: modules/computer.c:598
 msgid "Monitors"
@@ -1121,7 +1133,7 @@ msgstr ""
 
 #: modules/computer.c:608
 msgid "Extensions"
-msgstr ""
+msgstr "Eklentiler"
 
 #: modules/computer.c:628
 msgid "Group"
@@ -1149,7 +1161,7 @@ msgstr "Ses"
 
 #: modules/computer.c:807
 msgid "Gathers high-level computer information"
-msgstr ""
+msgstr "Üst düzey bilgisayar bilgilerini toplar"
 
 #: modules/computer/display.c:122
 #, c-format
@@ -1166,11 +1178,11 @@ msgstr ""
 
 #: modules/computer/filesystem.c:84
 msgid "Read-Write"
-msgstr ""
+msgstr "Okuma-Yazma"
 
 #: modules/computer/filesystem.c:84
 msgid "Read-Only"
-msgstr ""
+msgstr "Salt Okunur"
 
 #: modules/computer/filesystem.c:86 modules/devices/spd-decode.c:1510
 msgid "Size"
@@ -1178,11 +1190,11 @@ msgstr "Boyut"
 
 #: modules/computer/filesystem.c:87
 msgid "Used"
-msgstr ""
+msgstr "Kullanılan"
 
 #: modules/computer/filesystem.c:88
 msgid "Available"
-msgstr ""
+msgstr "Uygulanabilir"
 
 #: modules/computer/languages.c:103
 msgid "Locale Information"
@@ -1208,7 +1220,7 @@ msgstr "Bölge"
 #: modules/devices/ia64/processor.c:166 modules/devices/ppc/processor.c:159
 #: modules/devices/usb.c:236
 msgid "Revision"
-msgstr ""
+msgstr "Revizyon"
 
 #: modules/computer/languages.c:111
 msgid "Date"
@@ -1220,13 +1232,13 @@ msgstr ""
 
 #: modules/computer/loadavg.c:64
 msgid "Couldn't obtain load average"
-msgstr ""
+msgstr "Yük ortalaması alınamadı"
 
 #: modules/computer/modules.c:125 modules/computer/modules.c:126
 #: modules/computer/modules.c:127 modules/computer/modules.c:128
 #: modules/computer/modules.c:129
 msgid "(Not available)"
-msgstr ""
+msgstr "(Uygun değil)"
 
 #: modules/computer/modules.c:142
 msgid "Module Information"
@@ -1296,7 +1308,7 @@ msgstr "Sürüm"
 #: modules/computer/os.c:157
 #, c-format
 msgid "Unknown (Window Manager: %s)"
-msgstr ""
+msgstr "Bilinmeyen (Pencere Yöneticisi: %s)""
 
 #. /{desktop environment} on {session type}
 #: modules/computer/os.c:168
@@ -1311,7 +1323,7 @@ msgstr ""
 #. /bits of entropy for rng (0)
 #: modules/computer/os.c:241
 msgid "(None or not available)"
-msgstr ""
+msgstr "(Yok veya uygun değil)"
 
 #. /bits of entropy for rng (low/poor value)
 #: modules/computer/os.c:242
@@ -1334,7 +1346,7 @@ msgstr ""
 #: modules/computer/os.c:279 modules/devices/usb.c:48 modules/devices/usb.c:307
 #: modules/devices/usb.c:310 modules/network/net.c:442 includes/cpu_util.h:11
 msgid "(Unknown)"
-msgstr ""
+msgstr "(Bilinmeyen)"
 
 #: modules/computer/users.c:47
 msgid "User Information"
@@ -1368,7 +1380,7 @@ msgstr ""
 #: modules/devices/riscv/processor.c:186 modules/devices/sh/processor.c:87
 #: modules/devices/x86/processor.c:420
 msgid "Frequency"
-msgstr ""
+msgstr "Frekans"
 
 #: modules/devices/alpha/processor.c:90 modules/devices/arm/processor.c:240
 #: modules/devices/arm/processor.c:365 modules/devices.c:299
@@ -1608,7 +1620,7 @@ msgstr ""
 #: modules/devices/arm/processor.c:248 modules/devices/ia64/processor.c:162
 #: modules/devices/parisc/processor.c:156 modules/devices/riscv/processor.c:183
 msgid "Architecture"
-msgstr ""
+msgstr "Mimari"
 
 #: modules/devices/arm/processor.c:249
 msgid "Variant"
@@ -1717,7 +1729,7 @@ msgstr "SPD Hafıza"
 
 #: modules/devices.c:111
 msgid "Device Tree"
-msgstr ""
+msgstr "Aygıt Ağacı"
 
 #: modules/devices.c:113
 msgid "Resources"
@@ -1752,7 +1764,7 @@ msgstr ""
 
 #: modules/devices.c:372
 msgid " (model unknown)"
-msgstr ""
+msgstr "(model bilinmiyor)"
 
 #: modules/devices.c:374
 msgid " (vendor unknown)"
@@ -1784,11 +1796,11 @@ msgstr ""
 
 #: modules/devices.c:661
 msgid "Update CPU feature database"
-msgstr ""
+msgstr "CPU özellik veritabanını güncelle"
 
 #: modules/devices.c:689
 msgid "Gathers information about hardware devices"
-msgstr ""
+msgstr "Donanım aygıtları hakkında bilgi toplar"
 
 #: modules/devices.c:708
 msgid "Resource information requires superuser privileges"
@@ -1817,11 +1829,11 @@ msgstr ""
 
 #: modules/devices/cpu_util.c:180
 msgid "Maximum"
-msgstr ""
+msgstr "En Fazla"
 
 #: modules/devices/cpu_util.c:181
 msgid "Current"
-msgstr ""
+msgstr "Güncel"
 
 #: modules/devices/cpu_util.c:182
 msgid "Transition Latency"
@@ -1837,7 +1849,7 @@ msgstr ""
 
 #: modules/devices/cpu_util.c:184 modules/devices/cpu_util.c:190
 msgid "Driver"
-msgstr ""
+msgstr "Sürücü"
 
 #: modules/devices/cpu_util.c:196 modules/devices/x86/processor.c:297
 msgid "(Not Available)"
@@ -2014,11 +2026,11 @@ msgstr ""
 
 #: modules/devices/devmemory.c:93
 msgid "Total Memory"
-msgstr ""
+msgstr "Toplam Hafıza"
 
 #: modules/devices/devmemory.c:94
 msgid "Free Memory"
-msgstr ""
+msgstr "Boş Hafıza"
 
 #: modules/devices/devmemory.c:95
 msgid "Cached Swap"
@@ -2050,7 +2062,7 @@ msgstr ""
 
 #: modules/devices/dmi.c:188
 msgid "(Not available; Perhaps try running HardInfo as root.)"
-msgstr ""
+msgstr "(Mevcut değil, belki de HardInfo'u kök olarak çalıştırmalısınız.)"
 
 #: modules/devices/ia64/processor.c:108
 msgid "IA64 Processor"
@@ -2502,7 +2514,7 @@ msgstr ""
 
 #: modules/devices/usb.c:85 modules/devices/usb.c:232
 msgid "Speed"
-msgstr ""
+msgstr "Hız"
 
 #: modules/devices/usb.c:85 modules/devices/usb.c:232
 msgid "Mbit/s"
@@ -2635,7 +2647,7 @@ msgstr ""
 #: modules/devices/x86/x86_data.c:49
 msgctxt "x86-flag"
 msgid "Physical Address Extensions (support for more than 4GB of RAM)"
-msgstr ""
+msgstr "Fiziksel Adres Uzantıları (4GB'dan fazla RAM desteği)"
 
 #. /flag:mce
 #: modules/devices/x86/x86_data.c:50
