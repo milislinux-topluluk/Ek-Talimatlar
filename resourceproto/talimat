@@ -1,0 +1,21 @@
+# Tanım: X11 Kaynak uzatma kablosu protokolü
+# URL: https://xorg.freedesktop.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: xorg-util-macros
+# Grup: 
+
+isim=resourceproto
+surum=1.2.0
+devir=1
+kaynak=(https://www.x.org/releases/individual/proto/resourceproto-1.2.0.tar.gz)
+
+derle() {
+
+  cd $isim-$surum
+
+  ./configure --prefix=/usr
+  make
+  make DESTDIR="${PKG}" install
+  install -m755 -d "${PKG}/usr/share/licenses/${isim}"
+  install -Dm644 COPYING "${PKG}/usr/share/licenses/${isim}/"
+}
