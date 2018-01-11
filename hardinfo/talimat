@@ -1,8 +1,8 @@
-# Tanım: Bir sistem bilgisi ve benchmark aracı.
+# Tanım: Bir sistem bilgisi ve performans aracı.
 # URL: http://sourceforge.net/projects/hardinfo.berlios/
 # Paketçi: Cihan_Alkan
 # Gerekler: gtk2 libsoup glib
-# Grup: 
+# Grup: sistem
 
 isim=hardinfo
 surum=0.6
