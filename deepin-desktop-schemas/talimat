@@ -5,7 +5,7 @@
 # Grup: deepin
 
 isim=deepin-desktop-schemas
-surum=3.2.4
+surum=3.2.5
 devir=1
 kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
 
