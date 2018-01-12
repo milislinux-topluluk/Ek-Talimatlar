@@ -2,12 +2,13 @@
 # URL: https://github.com/lupoDharkael/flameshot
 # Paketçi: Cihan_Alkan
 # Gerekler: qt5
+# Grup: grafik_tasarım
 
 isim=flameshot
 surum=0.5.0
 devir=1
 
-kaynak=(https://github.com/lupoDharkael/flameshot/archive/v${surum}.tar.gz)
+kaynak=(https://github.com/lupoDharkael/flameshot/archive/v${surum}.tar.gz::$isim-$surum.tar.gz)
 
 derle() {
 cd $isim-$surum
