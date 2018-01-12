@@ -1,0 +1,14 @@
+# Tanım: Özgür pascal derleyicisi
+# URL: http://www.freepascal.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: geliştirme
+
+isim=fpc3
+surum=3.0.4
+devir=1
+kaynak=(https://ftp.gnome.org/mirror/archlinux/community/os/x86_64/fpc-3.0.4-1-x86_64.pkg.tar.xz)
+derle() {
+
+ cp -r $SRC/* $PKG/
+}
