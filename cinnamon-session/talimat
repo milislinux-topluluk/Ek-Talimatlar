@@ -1,7 +1,8 @@
 # Tanım: Cinnamon Oturumu
 # URL: https://github.com/linuxmint/cinnamon-session
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: intltool dbus-glib cinnamon-desktop xorg-libsm libcanberra gtk3 tdb
+# Grup: cinnamon
 
 isim=cinnamon-session
 surum=3.6.1
