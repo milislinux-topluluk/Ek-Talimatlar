@@ -1,7 +1,8 @@
 # Tanım: Cinnamon masaüstü ile entegre olacak şekilde tasarlanan ekran koruyucu
 # URL: https://github.com/linuxmint/cinnamon-screensaver
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: intltool gobject-introspection python-gobject python-cairo python3 gtk3
+# Grup: cinnamon
 
 isim=cinnamon-screensaver
 surum=3.6.1
