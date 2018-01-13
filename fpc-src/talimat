@@ -5,7 +5,7 @@
 # Grup: geliştirme
 
 isim=fpc-src
-surum=3.0.4-1
+surum=3.0.4
 devir=1
 kaynak=(https://ftp.gnome.org/mirror/archlinux/community/os/x86_64/fpc-src-3.0.4-1-any.pkg.tar.xz)
 
