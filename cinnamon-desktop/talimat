@@ -1,7 +1,8 @@
-# Tanım: Cinnamon Masaüstü
+# Tanım: Çeşitli Cinnamon modülleri için ortak API'li kütüphane
 # URL: https://github.com/linuxmint/cinnamon-desktop
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: xorg-xkeyboard-config accountsservice pulseaudio python intltool
+# Grup: cinnamon
 
 isim=cinnamon-desktop
 surum=3.6.2
@@ -13,8 +14,12 @@ derle() {
  
   cd $isim-$surum
   patch -Np1 -i $SRC/config.patch
-  ./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-    --libexecdir=/usr/lib/$isim --disable-static
+  ./autogen.sh \
+  --prefix=/usr   \
+  --sysconfdir=/etc   \
+  --localstatedir=/var \
+  --libexecdir=/usr/lib/$isim \
+  --disable-static
 
   #https://bugzilla.gnome.org/show_bug.cgi?id=656231
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
