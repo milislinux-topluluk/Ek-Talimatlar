@@ -1,0 +1,13 @@
+# Tanım: fpc için arayüz
+# URL: http://www.lazarus-ide.org/
+# Paketçi: milisarge
+# Gerekler: fpc fpc-src gdb gtk2
+
+isim=lazarus
+surum=1.8.0
+devir=1
+kaynak=(https://ftp.gnome.org/mirror/archlinux/community/os/x86_64/lazarus-1.8.0-1-x86_64.pkg.tar.xz)
+
+derle() {
+ cp -r $SRC/* $PKG/
+}
