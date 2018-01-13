@@ -1,0 +1,14 @@
+# Tanım: Lazarus için qt arayüz
+# URL: http://www.lazarus-ide.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: fpc qt5 lazarus fpc3
+# Grup: geliştirme
+
+isim=lazarus-qt5-bin
+surum=1.8.0
+devir=1
+kaynak=(https://ftp.gnome.org/mirror/archlinux/community/os/x86_64/lazarus-qt5-1.8.0-1-x86_64.pkg.tar.xz)
+
+derle() {
+ cp -r $SRC/* $PKG/
+}
