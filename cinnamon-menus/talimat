@@ -1,7 +1,8 @@
 # Tanım: Cinnamon Menüsü
 # URL: https://github.com/linuxmint/cinnamon-menus
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: gobject-introspection intltool
+# Grup: cinnamon
 
 isim=cinnamon-menus
 surum=3.6.0
@@ -10,8 +11,11 @@ kaynak=(https://github.com/linuxmint/$isim/archive/$surum.tar.gz::$isim-$surum.t
 
 derle() {
   cd $isim-$surum
-  ./autogen.sh --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var --disable-static \
+  ./autogen.sh \
+      --prefix=/usr  \
+      --sysconfdir=/etc \
+      --localstatedir=/var  \
+      --disable-static \
       --sbindir=/usr/bin
     
   make
