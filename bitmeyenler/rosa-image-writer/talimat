@@ -1,8 +1,8 @@
 # Tanım: USB kurulum Belleği Hazırlama
 # URL: http://wiki.rosalab.ru
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: qt5
-# Grup: 
+# Grup: sistem
 
 isim=rosa-image-writer
 surum=2.6.1
