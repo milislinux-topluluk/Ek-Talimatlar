@@ -28,5 +28,4 @@ derle() {
     mv src/$isim $PKG/usr/bin/
     mv $isim.desktop $PKG/usr/share/applications/
     mv src/res/$isim.png $PKG/usr/share/icons/
-
 }
