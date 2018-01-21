@@ -1,10 +1,8 @@
 # Tanım: Çapraz platform, üç boyutlu ve tarihsel temelli gerçek zamanlı strateji oyunu
 # URL: http://play0ad.com/
 # Paketçi: Cihan_Alkan
-# Gerekler: binutils boost enet curl libogg libpng libvorbis libxml2 openal sdl2 wxgtk zlib  0ad-data xorg-glu miniupnpc icu nspr cmake xorg-mesa python xorg-libsm gloox
+# Gerekler: binutils boost curl 0ad-data libogg libpng libvorbis libxml2 openal sdl2 wxgtk zlib xorg-glu miniupnpc icu nspr cmake xorg-mesa python xorg-libsm gloox enet
 # Grup: oyun
-
-#libgl  
 
 isim=0ad
 surum=a22
@@ -23,7 +21,9 @@ cp update-workspaces.sh $SRC/$isim-0.0.22-alpha/build/workspaces/
 
   unset CPPFLAGS # for le spidermonkey
 
-  ./update-workspaces.sh FORCE_UNSAFE_CONFIGURE="1"\
+ # sed "/^2/,/13$/d" update-workspaces.sh 
+
+  ./update-workspaces.sh \
       --bindir=/usr/bin \
       --libdir=/usr/lib/0ad \
       --datadir=/usr/share/${isim}/data
@@ -31,6 +31,8 @@ cp update-workspaces.sh $SRC/$isim-0.0.22-alpha/build/workspaces/
   cd gcc
 
   make
+
+  cd $SRC
 
   install -d "${PKG}"/usr/{bin,lib/0ad,share/"${isim}"/data}
   cd "$SRC/$isim-0.0.22-alpha"
