@@ -11,7 +11,6 @@ kaynak=(http://slackware.uk/slacky/slackware-12.1/multimedia/${isim}/${surum}/sr
         update.patch)
 
 derle() {
-
   cd ${isim}-${surum}
   patch -p1 -i ../update.patch
   ./configure --prefix=/usr
