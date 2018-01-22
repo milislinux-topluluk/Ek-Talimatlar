@@ -16,7 +16,7 @@ cd $isim-$surum
   mkdir -p build; cd build
 
   cmake -DCMAKE_INSTALL_PREFIX="/usr" \
-    -DOBS_VERSION_OVERRIDE="$pkgver-$pkgrel" ..
+    -DOBS_VERSION_OVERRIDE="$surum-$devir" ..
 
   make
   make install DESTDIR="$PKG"
