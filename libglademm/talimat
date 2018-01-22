@@ -1,0 +1,20 @@
+# Tanım: Libglade için bir C ++ sarmalayıcı.
+# URL: http://gtkmm.sourceforge.net/
+# Paketçi: Cihan_Alkan
+# Gerekler: libglade gtkmm pkgconfig
+# Grup: kütüphane
+
+isim=libglademm
+surum=2.6.7
+devir=1
+
+kaynak=(https://download.gnome.org/sources/${isim}/2.6/${isim}-${surum}.tar.bz2)
+
+derle() {
+  cd ${isim}-${surum}
+  CXXFLAGS+=' -std=c++11'
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+  make
+
+  make DESTDIR="${PKG}" install
+}
