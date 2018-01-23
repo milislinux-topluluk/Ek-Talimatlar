@@ -2,6 +2,7 @@
 # URL: http://pkgs.fedoraproject.org/cgit/rpms/ca-certificates.git
 # Paketçi: Cihan Alkan
 # Gerekler: asciidoc p11-kit
+# Grup: sistem
 
 isim=ca-certificates-utils
 surum=20170307
