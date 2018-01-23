@@ -1,0 +1,23 @@
+# Tanım: GNOME için basit web tarayıcısı
+# URL: https://wiki.gnome.org/Apps/Eolie
+# Paketçi: Cihan_Alkan
+# Gerekler: gtkspell python-cairo pydateutil python-gobject webkit2gtk3 gobject-introspection meson
+# Grup: ağ
+
+
+isim=eolie
+surum=0.9.18
+devir=1
+kaynak=(https://gitlab.gnome.org/gnumdk/eolie/repository/master/archive.tar.gz::$isim-${surum}.tar.gz
+        https://gitlab.gnome.org/gnumdk/eolie-po/repository/master/archive.tar.gz::eolie-po.tar.gz)
+
+derle() {
+    mv $isim-master* $isim-${surum}
+    mv $isim-po* $isim-po
+    cd $isim-${surum}
+	mkdir build
+	cd build
+	meson --prefix=/usr --libexecdir=/usr/lib/$isim --buildtype=release ../$isim-${surum}
+	ninja
+	DESTDIR="$PKG" ninja install
+}
