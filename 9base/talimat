@@ -1,8 +1,8 @@
 # Tanım: Unix'e çeşitli orijinal Plan9 araçlarının portu
 # URL: http://tools.suckless.org/9base
 # Paketçi: Cihan_Alkan
-# Gerekler: 
-# Grup: 
+# Gerekler: python
+# Grup: oyun
 
 
 isim=9base
