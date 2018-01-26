@@ -1,0 +1,30 @@
+# Tanım: Pantheon Dosya yöneticisi
+# URL: https://launchpad.net/pantheon-files
+# Paketçi: Cihan_Alkan
+# Gerekler: atk cairo gdk-pixbuf2 glib2 glibc gtk3 libcanberra libgee libnotify pango sqlite zeitgeist granite cmake gnome-common vala
+# Grup: pantheon
+
+isim=pantheon-files
+surum=0.3.5
+devir=1
+kaynak=(https://launchpad.net/pantheon-files/0.3.x/${surum}/+download/pantheon-files-${surum}.tar.xz)
+
+derle() {
+  cd pantheon-files-${surum}
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+  cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DCMAKE_INSTALL_LIBDIR='/usr/lib' \
+    -DCMAKE_SKIP_RPATH='TRUE' \
+    -DGSETTINGS_COMPILE='FALSE'
+  make
+
+  make DESTDIR="${PKG}" install
+}
