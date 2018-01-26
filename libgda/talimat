@@ -1,12 +1,13 @@
 # Tanım: Veritabanı erişim kitaplığı
 # URL: https://git.gnome.org/browse/libgda
 # Paketçi: Cihan_Alkan
-# Gerekler: gtksourceview3 libxslt python libsecret graphviz goocanvas iso-codes
+# Gerekler: gtksourceview3 libxslt python libsecret graphviz goocanvas iso-codes openjdk
 # Grup: kütüphane
 
 isim=libgda
 surum=5.2.4
 devir=1
+_apiver=5.0
 
 kaynak=(https://git.gnome.org/browse/libgda/snapshot/LIBGDA_5_2_4.tar.xz
         fix-crash.diff
@@ -16,6 +17,7 @@ kaynak=(https://git.gnome.org/browse/libgda/snapshot/LIBGDA_5_2_4.tar.xz
         glib-2.54-ftbfs-2.patch)
 
 derle() {
+  mkdir providers
   cd LIBGDA_5_2_4
 
   patch -Np1 -i ../java.patch
@@ -23,6 +25,8 @@ derle() {
   patch -Np1 -i ../glib-2.54-ftbfs.patch
   patch -Np1 -i ../glib-2.54-ftbfs-2.patch
   patch -Np1 -i ../fix-crash.diff
+  /opt/OpenJDK-8u60-bin/bin/javac getsp.java
+    
   find -name '*.py' -exec sed -i '1s/python$/&2/' {} +
 
   NOCONFIGURE=1 ./autogen.sh
@@ -36,4 +40,5 @@ derle() {
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
   make
   make DESTDIR="$PKG" install
+
 }
