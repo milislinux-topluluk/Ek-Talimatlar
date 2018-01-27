@@ -1,0 +1,25 @@
+# Tanım: Pantheon Terminal Emulatörü
+# URL: https://github.com/elementary/terminal
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake intltool vala glib2 glibc gtk3 pango vte3 granite
+# Grup: pantheon
+
+isim=pantheon-terminal
+surum=0.4.3
+devir=1
+kaynak=(https://github.com/elementary/terminal/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+  cd build
+
+  cmake ../terminal-${surum} \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DGSETTINGS_COMPILE='OFF'
+  make
+  make DESTDIR="${PKG}" install
+}
