@@ -1,0 +1,26 @@
+# Tanım: Pantheon Hesap Makinesi
+# URL: https://launchpad.net/pantheon-calculator
+# Paketçi: Cihan_Alkan
+# Gerekler: glib2 granite glibc gtk3 bzr cmake intltool vala
+# Grup: pantheon
+
+isim=pantheon-calculator
+surum=0.1.3
+devir=1
+kaynak=(https://launchpad.net/pantheon-calculator/0.4-loki/${surum}/+download/pantheon-calculator-${surum}.tar.xz)
+
+derle() {
+ cd pantheon-calculator-${surum}
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+
+  cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr'
+  make
+  make DESTDIR="${PKG}" install
+}
