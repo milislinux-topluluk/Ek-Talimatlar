@@ -1,0 +1,19 @@
+# Tanım: Pantheon Pencere Yöneticisi
+# URL: https://github.com/elementary/gala
+# Paketçi: Cihan_Alkan
+# Gerekler: atk bamf cairo gdk-pixbuf2 glib2 glibc gnome-desktop gtk3 json-glib libdrm libgee xorg-libx11 xorg-libxcomposite xorg-libxdamage xorg-libxext xorg-libxfixes xorg-libxi xorg-libxrandr xorg-libxtst xorg-mesa mutter pango plank wayland gnome-common granite intltool vala
+# Grup: pantheon
+
+isim=gala
+surum=0.3.0
+devir=1
+kaynak=(https://github.com/elementary/gala/archive/0.3.0.tar.gz::gala-${surum}.tar.gz)
+
+derle() {
+  cd gala-$surum
+  ./autogen.sh \
+    --prefix='/usr' \
+    --disable-schemas-compile
+  make
+  make DESTDIR=$PKG install
+}
