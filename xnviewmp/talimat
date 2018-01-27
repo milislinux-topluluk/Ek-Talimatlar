@@ -1,8 +1,8 @@
-# Tanım: Etkili bir multimedya görüntüleyici, tarayıcı ve dönüştürücü.
+# Tanım: Etkili bir multimedya görüntüleyici,tarayıcı ve dönüştürücü.
 # URL: http://www.xnview.com/en/xnviewmp/
 # Paketçi: Cihan_Alkan
 # Gerekler: qt5 desktop-file-utils
-# Grup: 
+# Grup: medya
 
 isim=xnviewmp
 surum=0.89
