@@ -1,0 +1,28 @@
+# Tanım: Panteon Posta İstemcisi
+# URL: https://github.com/elementary/mail
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake intltool vala granite gnome-doc-utils gobject-introspection cairo gcr gdk-pixbuf2 glib2 glibc gmime libcanberra gtk3 libgee libsecret libaccounts-glib libgsignon-glib pango libxml2 granite webkitgtk3
+# Grup: pantheon
+
+isim=pantheon-mail
+surum=1.0.6
+devir=1
+kaynak=(https://github.com/elementary/mail/archive/1.0.6.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+cd mail-$surum
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+  cd build
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DDESKTOP_UPDATE='FALSE' \
+    -DGSETTINGS_COMPILE='FALSE' \
+    -DGSETTINGS_COMPILE_IN_PLACE='FALSE'
+  make
+    make DESTDIR="${PKG}" install
+}
