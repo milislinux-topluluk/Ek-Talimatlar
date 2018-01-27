@@ -1,0 +1,17 @@
+# Tanım: Panteon Oturum Görevlisi
+# URL: https://github.com/elementary/session-settings
+# Paketçi: Cihan_Alkan
+# Gerekler:  dconf gconf gnome-keyring gnome-session gnome-user-share pantheon-applications-menu pantheon-dpms-helper plank wingpanel xdg-user-dirs-gtk
+# Grup: pantheon
+
+isim=pantheon-session
+surum=0.1
+devir=1
+kaynak=(session-settings-meson.zip)
+#kaynak=(https://github.com/elementary/session-settings/tree/meson)
+
+derle() {
+	cd $SRC/session-settings-meson
+  meson --prefix=/usr --datadir=share builddir
+  DESTDIR=$PKG ninja -C builddir install
+}
