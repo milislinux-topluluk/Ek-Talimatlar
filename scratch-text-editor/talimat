@@ -1,0 +1,37 @@
+# Tanım: Pantheon Metin Düzenleyici
+# URL: https://launchpad.net/scratch
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake intltool vala glib2 glibc gtk3 libpeas pango zeitgeist libgee xorg-libx11 granite desktop-file-utils gtksourceview3 vte3 webkit2gtk gobject-introspection gtkspell3 libsoup
+# Grup: pantheon
+
+isim=scratch-text-editor
+surum=2.4.1
+devir=1
+kaynak=(https://launchpad.net/scratch/2.x/${surum}/+download/scratch-text-editor-${surum}.tar.xz
+        rewrite-gtk-dialog.patch
+        disable-source-tree-plugin.patch
+        disable-clipboard-plugin.patch)
+
+derle() {
+
+  cd scratch-text-editor-${surum}
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+  patch -Np1 -i ../rewrite-gtk-dialog.patch
+  patch -Np1 -i ../disable-source-tree-plugin.patch
+  patch -Np1 -i ../disable-clipboard-plugin.patch
+
+  cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DCMAKE_INSTALL_LIBDIR='/usr/lib' \
+    -DGSETTINGS_COMPILE='FALSE'
+  make
+
+  make DESTDIR="${PKG}" install
+}
