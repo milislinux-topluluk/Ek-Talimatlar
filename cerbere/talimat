@@ -1,0 +1,27 @@
+# Tanım: Pantheon Watchdog
+# URL: https://launchpad.net/cerbere
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake vala libgee dconf
+# Grup: pantheon
+
+isim=cerbere
+surum=0.2.1
+devir=1
+kaynak=(https://launchpad.net/cerbere/${surum%%.*}.x/${surum}/+download/cerbere-${surum}.tgz)
+
+derle() {
+  cd cerbere-${surum}
+  sed "s/'wingpanel','plank','slingshot-launcher --silent'/'gala','wingpanel','plank','slingshot-launcher --silent'/" -i org.pantheon.cerbere.gschema.xml
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+  cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DGSETTINGS_COMPILE='OFF'
+  make
+  make DESTDIR=$PKG install
+}
