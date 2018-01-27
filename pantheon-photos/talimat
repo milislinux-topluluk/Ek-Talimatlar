@@ -1,0 +1,29 @@
+# Tanım: Pantheon Fotoğraf yöneticisi
+# URL: https://github.com/elementary/photos
+# Paketçi: Cihan_Alkan
+# Gerekler: cairo gdk-pixbuf2 glib2 libraw libgexiv2 libgudev geocode-glib sqlite granite gudev glibc gstreamer-plugins-base gstreamer gtk3 json-glib libexif libgee librest libgphoto2 libsoup pango libxml2 cmake intltool vala webkit2gtk3
+# Grup: pantheon
+
+isim=pantheon-photos
+surum=0.2.4
+devir=1
+kaynak=(https://github.com/elementary/photos/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+
+  cd build
+
+  cmake ../photos-${surum} \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DCMAKE_INSTALL_LIBDIR='/usr/lib' \
+    -DCMAKE_INSTALL_LIBEXECDIR='/usr/lib' \
+    -DGSETTINGS_COMPILE='OFF'
+  make
+  make DESTDIR="${PKG}" install
+}
