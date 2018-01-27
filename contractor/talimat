@@ -1,0 +1,25 @@
+# Tanım: Pantheon için bir masaüstü genişleme uzantısı hizmeti
+# URL: https://launchpad.net/contractor
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake bzr vala libgee
+# Grup: pantheon
+
+isim=contractor
+surum=0.3.2
+devir=1
+kaynak=(https://launchpad.net/contractor/loki/${surum}/+download/contractor-${surum}.tar.xz)
+
+derle() {
+  cd contractor-${surum}
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build && cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr'
+  make
+  make DESTDIR="${PKG}" install
+}
