@@ -1,0 +1,25 @@
+# Tanım: elementary Tema Simgesi
+# URL: https://launchpad.net/pantheon-calculator
+# Paketçi: Cihan_Alkan
+# Gerekler: glib2 granite glibc gtk3 bzr cmake intltool vala
+# Grup: pantheon
+
+isim=elementary-icon-theme
+surum=4.3.1
+devir=1
+kaynak=(https://github.com/elementary/icons/archive/${surum}.tar.gz::elementary-icon-theme-${surum}.tar.gz)
+
+derle() {
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build
+
+  cd build
+
+  cmake ../icons-${surum} \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr'
+  make
+  make DESTDIR="${PKG}" install
+}
