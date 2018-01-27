@@ -1,7 +1,7 @@
 # Tanım: Basit, özelleştirilebilir ve hızlı bir web tarayıcısı
 # URL: https://feldrise.com/Sielo
 # Paketçi: Cihan Alkan
-# Gerekler: qt5
+# Gerekler: qt5 qt5-webengine
 # Grup: 
 
 isim=sielo-browser
