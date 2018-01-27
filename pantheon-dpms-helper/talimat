@@ -1,0 +1,28 @@
+# Tanım: X DPMS için komut dosyası ve ayarlar
+# URL: https://github.com/elementary/dpms-helper
+# Paketçi: Cihan_Alkan
+# Gerekler: meson gnome-setting-daemon
+# Grup: pantheon
+
+isim=pantheon-dpms-helper
+surum=0.1
+devir=1
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/elementary/dpms-helper $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+  meson build --prefix=/usr
+  ninja -C build
+    DESTDIR="${PKG}" ninja -C build install
+
+  install -dm 755 "${PKG}"/etc/xdg/autostart
+  install -m 644 data/elementary-dpms-helper.desktop "${pkgdir}"/etc/xdg/autostart/pantheon-dpms-helper.desktop
+}
