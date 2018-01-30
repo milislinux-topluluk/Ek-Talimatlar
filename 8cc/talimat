@@ -1,0 +1,31 @@
+# Tanım: Basit bir c11 derleyici
+# URL: https://github.com/rui314/8cc
+# Paketçi: Cihan_Alkan
+# Gerekler: glibc
+# Grup: geliştirme
+
+isim=8cc
+surum=r742
+devir=1
+
+kaynak=(fix_cflags.patch)
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/rui314/8cc $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+
+  patch -p1 < ../fix_cflags.patch
+  find -name '*.py' -exec sed -i 's|^#!/usr/bin/python$|#!/usr/bin/python2|' {} \;
+
+  make
+
+  install -Dm755 8cc "$PKG/usr/bin/8cc"
+  install -Dm644 LICENSE "$PKG/usr/share/licenses/$isim/LICENSE"
+}
