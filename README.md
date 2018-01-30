@@ -1,2 +1,2 @@
 # Ek-Talimatlar
-Milis Linux için resmi depoda olmayan paket talimatları
+Milis Linux için resmi depoda olmayan test paket talimatları
