@@ -1,0 +1,21 @@
+# Tanım: GNOME için görsel bir uygulama başlatıcısı.
+# URL: https://github.com/Simmesimme/Gnome-Pie
+# Paketçi: Cihan_Alkan
+# Gerekler: vala cmake gtk3 libunique3 gnome-menus cairo libgee libxml2 libxtst libunique1 gdk-pixbuf2 hicolor-icon-theme bamf
+# Grup: 
+
+
+isim=gnome-pie
+surum=0.7.1
+devir=1
+kaynak=(https://github.com/Simmesimme/Gnome-Pie/archive/v0.7.1.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd Gnome-Pie-$surum
+  mkdir -p build
+  cd build
+  cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+  make
+
+  make DESTDIR=${PKG} install
+}
