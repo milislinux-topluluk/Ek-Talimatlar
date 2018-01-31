@@ -1,0 +1,22 @@
+# Tanım: Bir semantik dosya başlatıcısı
+# URL: https://launchpad.net/synapse-project
+# Paketçi: Cihan_Alkan
+# Gerekler: libkeybinder3 hicolor-icon-theme json-glib libgee libnotify zeitgeist rest xdg-utils vala intltool
+# Grup: 
+
+isim=synapse
+surum=0.2.99.2
+devir=1
+kaynak=(https://launchpad.net/$isim-project/0.3/$surum/+download/$isim-$surum.tar.xz
+        fix-build.patch)
+
+derle() {
+
+  cd $isim-$surum
+
+  patch -Np1 -i ../fix-build.patch
+
+  ./configure --prefix=/usr
+  make
+  make DESTDIR="$PKG/" install
+}
