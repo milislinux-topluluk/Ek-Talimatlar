@@ -2,7 +2,6 @@
 # URL: https://github.com/ukui/kylin-video
 # Paketçi: Cihan Alkan
 # Gerekler: mpv ffmpeg qt5
-# Grup: medya
 
 isim=kylin-video
 surum=1.1.1
