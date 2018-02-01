@@ -1,7 +1,8 @@
 # Tanım: Ukui için gelişmiş menü
 # URL: https://github.com/ukui/ukui-menu
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: python-gobject python-notify python-xdg xdg-utils python-distutils-extra python-setuptools
+# Grup: ukui
 
 isim=ukui-menu
 surum=1.0.3
