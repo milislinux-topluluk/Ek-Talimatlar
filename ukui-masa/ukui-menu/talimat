@@ -1,0 +1,16 @@
+# Tanım: Ukui için gelişmiş menü
+# URL: https://github.com/ukui/ukui-menu
+# Paketçi: Cihan_Alkan
+# Gerekler: python-gobject python-notify python-xdg xdg-utils python-distutils-extra python-setuptools
+# Grup: ukui
+
+isim=ukui-menu
+surum=1.0.3
+devir=1
+kaynak=(https://github.com/ukui/ukui-menu/archive/v1.0.3.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  sed -i 's@^#!.*python$@#!/usr/bin/python3@' lib/*.py
+  python setup.py install --root="$PKG" --optimize=1
+}
