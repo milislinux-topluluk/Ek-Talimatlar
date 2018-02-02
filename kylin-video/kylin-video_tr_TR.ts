@@ -53,11 +53,11 @@
     </message>
     <message>
         <source>You can also help to translate SMPlayer into your own language.</source>
-        <translation type="vanished">Ayrıca SMPlayer'ı kendi dilinize çevirmeye yardımcı olabilirsiniz.</translation>
+        <translation type="vanished">Ayrıca SMPlayer&apos;ı kendi dilinize çevirmeye yardımcı olabilirsiniz.</translation>
     </message>
     <message>
         <source>Visit %1 and join a translation team.</source>
-        <translation type="vanished">%1'i ziyaret edin ve bir çeviri ekibine katılın.</translation>
+        <translation type="vanished">%1&apos;i ziyaret edin ve bir çeviri ekibine katılın.</translation>
     </message>
     <message>
         <source>Using %1</source>
@@ -147,11 +147,11 @@
     </message>
     <message>
         <source>Many other people contributed with patches. See the Changelog for details.</source>
-        <translation type="vanished">Yamalarla birçok kişi katkıda bulundu. Ayrıntılar için Günlüğe'e bakın.(Changelog)。</translation>
+        <translation type="vanished">Yamalarla birçok kişi katkıda bulundu. Ayrıntılar için Günlüğe&apos;e bakın.(Changelog)。</translation>
     </message>
     <message>
         <source>You can also help to translate Kylin Video into your own language.</source>
-        <translation type="vanished">Ayrıca Kylin Video'yu kendi dilinize çevirmeye yardımcı olabilirsiniz.</translation>
+        <translation type="vanished">Ayrıca Kylin Video&apos;yu kendi dilinize çevirmeye yardımcı olabilirsiniz.</translation>
     </message>
     <message>
         <location filename="../aboutdialog.ui" line="26"/>
@@ -171,7 +171,7 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -227,15 +227,15 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>The file couldn&apos;t be saved</source>
-        <translation type="vanished">无法保存该文件</translation>
+        <translation type="vanished">Dosya kaydedilemedi</translation>
     </message>
     <message>
         <source>The file couldn&apos;t be loaded</source>
-        <translation type="vanished">无法加载该文件</translation>
+        <translation type="vanished">Dosya yüklenemedi</translation>
     </message>
     <message>
         <source>&amp;Change shortcut...</source>
-        <translation type="vanished">更改快捷键(&amp;C)...</translation>
+        <translation type="vanished">Kısayolu değiştir...</translation>
     </message>
 </context>
 <context>
@@ -250,7 +250,7 @@ Do you want to overwrite?</source>
         <location filename="../audiodelaydialog.ui" line="38"/>
         <location filename="../audiodelaydialog.cpp" line="58"/>
         <source>OK</source>
-        <translation>Tamam</translation>
+        <translation type="unfinished">Tamam</translation>
     </message>
     <message>
         <location filename="../audiodelaydialog.ui" line="51"/>
@@ -300,11 +300,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Classical</source>
-        <translation type="vanished">古典</translation>
+        <translation type="vanished">Klasik</translation>
     </message>
     <message>
         <source>Club</source>
-        <translation type="vanished">俱乐部</translation>
+        <translation type="vanished">Klüp</translation>
     </message>
     <message>
         <source>Dance</source>
@@ -312,31 +312,31 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Full bass</source>
-        <translation type="vanished">重低音</translation>
+        <translation type="vanished">Tam bas</translation>
     </message>
     <message>
         <source>Full bass and treble</source>
-        <translation type="vanished">超重低音</translation>
+        <translation type="vanished">Tam bas ve tiz</translation>
     </message>
     <message>
         <source>Full treble</source>
-        <translation type="vanished">超高音</translation>
+        <translation type="vanished">Tam tiz</translation>
     </message>
     <message>
         <source>Headphones</source>
-        <translation type="vanished">耳机</translation>
+        <translation type="vanished">Kulaklık</translation>
     </message>
     <message>
         <source>Large hall</source>
-        <translation type="vanished">大厅</translation>
+        <translation type="vanished">Büyük salon</translation>
     </message>
     <message>
         <source>Live</source>
-        <translation type="vanished">现场</translation>
+        <translation type="vanished">Canlı</translation>
     </message>
     <message>
         <source>Party</source>
-        <translation type="vanished">派对</translation>
+        <translation type="vanished">Parti</translation>
     </message>
     <message>
         <source>Pop</source>
@@ -344,31 +344,31 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Reggae</source>
-        <translation type="vanished">雷盖舞曲</translation>
+        <translation type="vanished">Reggae</translation>
     </message>
     <message>
         <source>Rock</source>
-        <translation type="vanished">摇滚</translation>
+        <translation type="vanished">Rock</translation>
     </message>
     <message>
         <source>Ska</source>
-        <translation type="vanished">斯卡</translation>
+        <translation type="vanished">Ska</translation>
     </message>
     <message>
         <source>Soft</source>
-        <translation type="vanished">轻柔</translation>
+        <translation type="vanished">Hafif</translation>
     </message>
     <message>
         <source>Soft rock</source>
-        <translation type="vanished">轻摇滚</translation>
+        <translation type="vanished">Hafif Rock</translation>
     </message>
     <message>
         <source>Techno</source>
-        <translation type="vanished"> 电子舞曲</translation>
+        <translation type="vanished"> Tekno</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation type="vanished">自定义</translation>
+        <translation type="vanished">Özel</translation>
     </message>
     <message>
         <source>Use the current values as default values for new videos.</source>
@@ -376,7 +376,7 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Set all controls to zero.</source>
-        <translation type="vanished">将所有的控制都设置为零。</translation>
+        <translation type="vanished">Tüm denetimleri sıfıra ayarla.</translation>
     </message>
     <message>
         <source>Information</source>
@@ -432,61 +432,61 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../basegui.cpp" line="662"/>
         <source>&amp;File...</source>
-        <translation>Dosya(&amp;F)...</translation>
+        <translation>Dosya...</translation>
     </message>
     <message>
         <source>D&amp;irectory...</source>
-        <translation type="vanished">Dizin(&amp;i)...</translation>
+        <translation type="vanished">Dizin...</translation>
     </message>
     <message>
         <source>&amp;Playlist...</source>
-        <translation type="vanished">Oynatma Listesi(&amp;P)...</translation>
+        <translation type="vanished">Oynatma Listesi...</translation>
     </message>
     <message>
         <source>&amp;DVD from drive</source>
-        <translation type="vanished">Sürücüden DVD(&amp;D)</translation>
+        <translation type="vanished">Sürücüden DVD</translation>
     </message>
     <message>
         <source>D&amp;VD from folder...</source>
-        <translation type="vanished">Klasörden DVD(&amp;V)...</translation>
+        <translation type="vanished">Klasörden DVD...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="674"/>
         <source>&amp;URL...</source>
-        <translation>URL(&amp;U)...</translation>
+        <translation>URL...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="682"/>
         <source>&amp;Clear</source>
-        <translation>Temizle(&amp;C)</translation>
+        <translation>Temizle</translation>
     </message>
     <message>
         <source>&amp;Recent files</source>
-        <translation type="vanished">Önceki Dosyalar(&amp;R)</translation>
+        <translation type="vanished">Önceki Dosyalar</translation>
     </message>
     <message>
         <source>P&amp;lay</source>
-        <translation type="vanished">Oynat(&amp;L)</translation>
+        <translation type="vanished">Oynat</translation>
     </message>
     <message>
         <source>&amp;Pause</source>
-        <translation type="vanished">Bekle(&amp;P)</translation>
+        <translation type="vanished">Bekle</translation>
     </message>
     <message>
         <source>&amp;Stop</source>
-        <translation type="vanished">Dur(&amp;S)</translation>
+        <translation type="vanished">Dur</translation>
     </message>
     <message>
         <source>&amp;Frame step</source>
-        <translation type="vanished">Çerçeve adımı(&amp;F)</translation>
+        <translation type="vanished">Çerçeve adımı</translation>
     </message>
     <message>
         <source>&amp;Normal speed</source>
-        <translation type="vanished">Normal Hız(&amp;N)</translation>
+        <translation type="vanished">Normal Hız</translation>
     </message>
     <message>
         <source>&amp;Double speed</source>
-        <translation type="vanished">İki Kat Hız(&amp;D)</translation>
+        <translation type="vanished">İki Kat Hız</translation>
     </message>
     <message>
         <source>Speed &amp;-10%</source>
@@ -499,11 +499,11 @@ Do you want to overwrite?</source>
     <message>
         <source>&amp;Off</source>
         <comment>closed captions menu</comment>
-        <translation type="vanished">Kapalı(&amp;O)</translation>
+        <translation type="vanished">Kapalı</translation>
     </message>
     <message>
         <source>Sp&amp;eed</source>
-        <translation type="vanished">Hız(&amp;E)</translation>
+        <translation type="vanished">Hız</translation>
     </message>
     <message>
         <source>&amp;Repeat</source>
@@ -527,15 +527,15 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;None</source>
-        <translation type="vanished">Hiçbiri(&amp;N)</translation>
+        <translation type="vanished">Hiçbiri</translation>
     </message>
     <message>
         <source>&amp;Lowpass5</source>
-        <translation type="vanished">Lowpass5(&amp;L)</translation>
+        <translation type="vanished">Lowpass5</translation>
     </message>
     <message>
         <source>Linear &amp;Blend</source>
-        <translation type="vanished">线性混合(&amp;B)</translation>
+        <translation type="vanished">Doğrusal Karışım</translation>
     </message>
     <message>
         <source>&amp;Deinterlace</source>
@@ -543,41 +543,41 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;Postprocessing</source>
-        <translation type="vanished">后期处理(&amp;P)</translation>
+        <translation type="vanished">Rötuş</translation>
     </message>
     <message>
         <source>&amp;Autodetect phase</source>
-        <translation type="vanished">自动检测相位(&amp;A)</translation>
+        <translation type="vanished">Otomatik tespit</translation>
     </message>
     <message>
         <source>&amp;Deblock</source>
-        <translation type="vanished">去块(&amp;D)</translation>
+        <translation type="vanished">Serbest bırak</translation>
     </message>
     <message>
         <source>De&amp;ring</source>
-        <translation type="vanished">去环(&amp;R)</translation>
+        <translation type="vanished">Dering</translation>
     </message>
     <message>
         <source>Add n&amp;oise</source>
-        <translation type="vanished">Ses ekle</translation>
+        <translation type="vanished">Gürültü ekle</translation>
     </message>
     <message>
         <source>F&amp;ilters</source>
-        <translation type="vanished">Filtreler(&amp;I)</translation>
+        <translation type="vanished">Filtreler</translation>
     </message>
     <message>
         <source>&amp;Equalizer</source>
-        <translation type="vanished">Ekolayzır(&amp;E)</translation>
+        <translation type="vanished">Ekolayzer</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="865"/>
         <source>&amp;Screenshot</source>
-        <translation>Ekran Kaydı(&amp;S)</translation>
+        <translation>Ekran Kaydı</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="880"/>
         <source>S&amp;tay on top</source>
-        <translation>Her Zaman Üstte(&amp;T)</translation>
+        <translation>Her Zaman Üstte</translation>
     </message>
     <message>
         <source>&amp;Extrastereo</source>
@@ -585,17 +585,17 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;Karaoke</source>
-        <translation type="vanished">Karaoke(&amp;K)</translation>
+        <translation type="vanished">Karaoke</translation>
     </message>
     <message>
         <source>&amp;Filters</source>
-        <translation type="vanished">Filtreler(&amp;F)</translation>
+        <translation type="vanished">Filtreler</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="906"/>
         <location filename="../basegui.cpp" line="952"/>
         <source>&amp;Stereo</source>
-        <translation>Steryo(&amp;S)</translation>
+        <translation>Steryo</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="907"/>
@@ -615,22 +615,22 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../basegui.cpp" line="953"/>
         <source>&amp;Left channel</source>
-        <translation>Sol Kanal(&amp;L)</translation>
+        <translation>Sol Kanal</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="954"/>
         <source>&amp;Right channel</source>
-        <translation>Sağ Kanal(&amp;R)</translation>
+        <translation>Sağ Kanal</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="962"/>
         <source>&amp;Stereo mode</source>
-        <translation>Siteryo Mod(&amp;S)</translation>
+        <translation>Siteryo Mod</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="926"/>
         <source>&amp;Mute</source>
-        <translation>Sessiz(&amp;M)</translation>
+        <translation>Sessiz</translation>
     </message>
     <message>
         <source>Volume &amp;-</source>
@@ -642,19 +642,19 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;Delay -</source>
-        <translation type="vanished">Gecikme-(&amp;D)</translation>
+        <translation type="vanished">Gecikme -</translation>
     </message>
     <message>
         <source>D&amp;elay +</source>
-        <translation type="vanished">Gecikme+(&amp;E)</translation>
+        <translation type="vanished">Gecikme +</translation>
     </message>
     <message>
         <source>&amp;Select</source>
-        <translation type="vanished">Seç(&amp;S)</translation>
+        <translation type="vanished">Seç</translation>
     </message>
     <message>
         <source>&amp;Load...</source>
-        <translation type="vanished">Yükle(&amp;L)...</translation>
+        <translation type="vanished">Yükle...</translation>
     </message>
     <message>
         <source>Delay &amp;-</source>
@@ -686,24 +686,24 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;Playlist</source>
-        <translation type="vanished">Oynatma Listesi(&amp;P)</translation>
+        <translation type="vanished">Oynatma Listesi</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="814"/>
         <source>&amp;Disabled</source>
-        <translation>Kapalı(&amp;D)</translation>
+        <translation>Kapalı</translation>
     </message>
     <message>
         <source>&amp;OSD</source>
-        <translation type="vanished">OSD(&amp;O)</translation>
+        <translation type="vanished">OSD</translation>
     </message>
     <message>
         <source>&amp;View logs</source>
-        <translation type="vanished">Günlüğü Göster(&amp;V)</translation>
+        <translation type="vanished">Günlüğü Göster</translation>
     </message>
     <message>
         <source>P&amp;references</source>
-        <translation type="vanished">Seçenekler(&amp;R)</translation>
+        <translation type="vanished">Seçenekler</translation>
     </message>
     <message>
         <source>About &amp;SMPlayer</source>
@@ -739,7 +739,7 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../basegui.cpp" line="666"/>
         <source>Open &amp;File...</source>
-        <translation>Dosya Aç(&amp;F)...</translation>
+        <translation>Dosya Aç...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="691"/>
@@ -777,11 +777,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;YouTube%1 browser</source>
-        <translation type="vanished">YouTube%1 Browser(&amp;Y)</translation>
+        <translation type="vanished">YouTube%1 tarayıcı</translation>
     </message>
     <message>
         <source>&amp;Donate / Share with your friends</source>
-        <translation type="vanished">Bağış yapın / Arkadaşlarınızla paylaşın</translation>
+        <translation type="vanished">Bağış yapın/Arkadaşlarınızla paylaşın</translation>
     </message>
     <message>
         <source>SMPlayer - Information</source>
@@ -859,11 +859,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>V&amp;CD</source>
-        <translation type="vanished">VCD(&amp;C)</translation>
+        <translation type="vanished">VCD</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation type="vanished">Kapat(&amp;L)</translation>
+        <translation type="vanished">Kapat</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="997"/>
@@ -998,23 +998,23 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation type="vanished">Sıfırla(&amp;R)</translation>
+        <translation type="vanished">Sıfırla</translation>
     </message>
     <message>
         <source>Move &amp;left</source>
-        <translation type="vanished">Sola oynat(&amp;L)</translation>
+        <translation type="vanished">Sola oynat</translation>
     </message>
     <message>
         <source>Move &amp;right</source>
-        <translation type="vanished">Sağa oynat(&amp;R)</translation>
+        <translation type="vanished">Sağa oynat</translation>
     </message>
     <message>
         <source>Move &amp;up</source>
-        <translation type="vanished">Yukarı al(&amp;U)</translation>
+        <translation type="vanished">Yukarı al</translation>
     </message>
     <message>
         <source>Move &amp;down</source>
-        <translation type="vanished">Aşağı al(&amp;d)</translation>
+        <translation type="vanished">Aşağı al</translation>
     </message>
     <message>
         <source>Zoom</source>
@@ -1031,7 +1031,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Autodetect phase</source>
-        <translation type="vanished">Otomatik tespit aşaması</translation>
+        <translation type="vanished">Otomatik tespit</translation>
     </message>
     <message>
         <source>Deblock</source>
@@ -1055,7 +1055,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Software scaling</source>
-        <translation type="vanished">软件缩放</translation>
+        <translation type="vanished">Yazılım ölçekleme</translation>
     </message>
     <message>
         <source>Filters</source>
@@ -1145,15 +1145,15 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Blu-ray from drive</source>
-        <translation type="vanished">Blu-ray from drive</translation>
+        <translation type="vanished">Sürücüden Blu-ray</translation>
     </message>
     <message>
         <source>Blu-&amp;ray from folder...</source>
-        <translation type="vanished">Blu-&amp;ray from folder...</translation>
+        <translation type="vanished">Klasörden Blu-ray...</translation>
     </message>
     <message>
         <source>Fra&amp;me back step</source>
-        <translation type="vanished">Fra&amp;me back step</translation>
+        <translation type="vanished">Çerçeve geri adım</translation>
     </message>
     <message>
         <source>&amp;Half speed</source>
@@ -1161,11 +1161,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Thumb&amp;nail Generator...</source>
-        <translation type="vanished">Thumb&amp;nail Generator...</translation>
+        <translation type="vanished">Tırnak Resim Oluşturucu...</translation>
     </message>
     <message>
         <source>Stereo &amp;3D filter</source>
-        <translation type="vanished">Stereo &amp;3D filter</translation>
+        <translation type="vanished">Stereo 3D filtre</translation>
     </message>
     <message>
         <source>Debanding (&amp;gradfun)</source>
@@ -1173,36 +1173,36 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Seek to next subtitle</source>
-        <translation type="vanished">Seek to next subtitle</translation>
+        <translation type="vanished">Bir sonraki altyazı isteyin</translation>
     </message>
     <message>
         <source>Seek to previous subtitle</source>
-        <translation type="vanished">Seek to previous subtitle</translation>
+        <translation type="vanished">Bir önceki altyazı isteyin</translation>
     </message>
     <message>
         <source>Use custo&amp;m style</source>
-        <translation type="vanished">Use custo&amp;m style</translation>
+        <translation type="vanished">Özel stil kullan</translation>
     </message>
     <message>
         <source>Find subtitles at &amp;OpenSubtitles.org...</source>
-        <translation type="vanished">Find subtitles at &amp;OpenSubtitles.org...</translation>
+        <translation type="vanished">OpenSubtitles.org'da altyazı bul...</translation>
     </message>
     <message>
         <source>&amp;Default</source>
         <comment>subfps menu</comment>
-        <translation type="vanished">Varsayılan(&amp;D)</translation>
+        <translation type="vanished">Varsayılan</translation>
     </message>
     <message>
         <source>First Steps &amp;Guide</source>
-        <translation type="vanished">First Steps &amp;Guide</translation>
+        <translation type="vanished">İlk Adım Kılavuzu</translation>
     </message>
     <message>
         <source>Update &amp;Youtube code</source>
-        <translation type="vanished">Update &amp;Youtube code</translation>
+        <translation type="vanished">Youtube kodunu güncelle</translation>
     </message>
     <message>
         <source>&amp;Open configuration folder</source>
-        <translation type="vanished">Open configuration folder</translation>
+        <translation type="vanished">Yapılandırma klasörünü aç</translation>
     </message>
     <message>
         <source>Size &amp;+</source>
@@ -1226,35 +1226,35 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Dec contrast</source>
-        <translation type="vanished">降低对比度</translation>
+        <translation type="vanished">Kontrastı azalt</translation>
     </message>
     <message>
         <source>Inc contrast</source>
-        <translation type="vanished">增加对比度</translation>
+        <translation type="vanished">Kontrastı artır</translation>
     </message>
     <message>
         <source>Dec brightness</source>
-        <translation type="vanished">降低亮度</translation>
+        <translation type="vanished">Parlaklığı azalt</translation>
     </message>
     <message>
         <source>Inc brightness</source>
-        <translation type="vanished">增加亮度</translation>
+        <translation type="vanished">Parlaklığı artır</translation>
     </message>
     <message>
         <source>Dec hue</source>
-        <translation type="vanished">降低色调</translation>
+        <translation type="vanished">Renk azalt</translation>
     </message>
     <message>
         <source>Inc hue</source>
-        <translation type="vanished">增加色调</translation>
+        <translation type="vanished">Renk artır</translation>
     </message>
     <message>
         <source>Dec saturation</source>
-        <translation type="vanished">Dec saturation</translation>
+        <translation type="vanished">Canlılığı azalt</translation>
     </message>
     <message>
         <source>Dec gamma</source>
-        <translation type="vanished">Dec gamma</translation>
+        <translation type="vanished">Gama azalt</translation>
     </message>
     <message>
         <source>Next audio</source>
@@ -1266,15 +1266,15 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Next chapter</source>
-        <translation type="vanished">Next chapter</translation>
+        <translation type="vanished">Sonraki bölüm</translation>
     </message>
     <message>
         <source>Previous chapter</source>
-        <translation type="vanished">Previous chapter</translation>
+        <translation type="vanished">Önceki bölüm</translation>
     </message>
     <message>
         <source>Show playback time on OSD</source>
-        <translation type="vanished">Show playback time on OSD</translation>
+        <translation type="vanished">OSD'de oynatma süresini göster</translation>
     </message>
     <message>
         <source>De&amp;noise</source>
@@ -1282,7 +1282,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Blur/S&amp;harp</source>
-        <translation type="vanished">Blur/S&amp;harp</translation>
+        <translation type="vanished">Bulanıklık/Keskinlik</translation>
     </message>
     <message>
         <source>&amp;Off</source>
@@ -1307,12 +1307,12 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <source>&amp;Blur</source>
         <comment>unsharp menu</comment>
-        <translation type="vanished">Blur</translation>
+        <translation type="vanished">Bulanıklık</translation>
     </message>
     <message>
         <source>&amp;Sharpen</source>
         <comment>unsharp menu</comment>
-        <translation type="vanished">Sharpen</translation>
+        <translation type="vanished">Keskinlik</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="909"/>
@@ -1336,39 +1336,39 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Secondary trac&amp;k</source>
-        <translation type="vanished">Secondary trac&amp;k</translation>
+        <translation type="vanished">İkincil yol</translation>
     </message>
     <message>
         <source>F&amp;rames per second</source>
-        <translation type="vanished">F&amp;rames per second</translation>
+        <translation type="vanished">Saniyedeki çerçeve</translation>
     </message>
     <message>
         <source>Connection failed</source>
-        <translation type="vanished">Connection failed</translation>
+        <translation type="vanished">Bağlantı başarısız oldu</translation>
     </message>
     <message>
         <source>The video you requested needs to open a HTTPS connection.</source>
-        <translation type="vanished">The video you requested needs to open a HTTPS connection.</translation>
+        <translation type="vanished">Talep ettiğiniz videonun bir HTTPS bağlantısı açması gerekiyor.</translation>
     </message>
     <message>
         <source>Unfortunately the OpenSSL component, required for it, is not available in your system.</source>
-        <translation type="vanished">Unfortunately the OpenSSL component, required for it, is not available in your system.</translation>
+        <translation type="vanished">Maalesef bunun için gerekli olan OpenSSL bileşeni sisteminizde mevcut değildir.</translation>
     </message>
     <message>
         <source>Please, visit %1 to know how to fix this problem.</source>
-        <translation type="vanished">Please, visit %1 to know how to fix this problem.</translation>
+        <translation type="vanished">Lütfen bu sorunun nasıl çözüleceğini öğrenmek için %1 adresini ziyaret edin.</translation>
     </message>
     <message>
         <source>this link</source>
-        <translation type="vanished">this link</translation>
+        <translation type="vanished">bu link</translation>
     </message>
     <message>
         <source>Unfortunately due to changes in the Youtube page, this video can&apos;t be played.</source>
-        <translation type="vanished">Unfortunately due to changes in the Youtube page, this video can&apos;t be played.</translation>
+        <translation type="vanished">Maalesef Youtube sayfasındaki değişiklikler nedeniyle bu video oynatılamaz..</translation>
     </message>
     <message>
         <source>Problems with Youtube</source>
-        <translation type="vanished">Problems with Youtube</translation>
+        <translation type="vanished">Youtube ile ilgili sorunlar</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2717"/>
@@ -1387,12 +1387,12 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../basegui.cpp" line="2731"/>
         <source>%1 has finished unexpectedly.</source>
-        <translation>%1 has finished unexpectedly.</translation>
+        <translation>%1 beklenmedik şekilde bitti.</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2753"/>
         <source>%1 failed to start.</source>
-        <translation>%1 failed to start.</translation>
+        <translation>%1 başlatılamadı.</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2754"/>
@@ -1402,7 +1402,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../basegui.cpp" line="2756"/>
         <source>%1 has crashed.</source>
-        <translation>%1 has crashed.</translation>
+        <translation>%1 çöktü.</translation>
     </message>
     <message>
         <source>The YouTube Browser is not installed.</source>
@@ -1410,11 +1410,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Visit %1 to get it.</source>
-        <translation type="vanished">Visit %1 to get it.</translation>
+        <translation type="vanished">Almak için %1 adresini ziyaret et.</translation>
     </message>
     <message>
         <source>Unfortunately due to changes in the Youtube page, the video &apos;%1&apos; can&apos;t be played.</source>
-        <translation type="vanished">Unfortunately due to changes in the Youtube page, the video &apos;%1&apos; can&apos;t be played.</translation>
+        <translation type="vanished">Maalesef Youtube sayfasındaki değişiklikler nedeniyle video %1 çalınamıyor.</translation>
     </message>
     <message>
         <source>Do you want to update the Youtube code? This may fix the problem.</source>
@@ -1422,7 +1422,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Maybe updating SMPlayer could fix the problem.</source>
-        <translation type="vanished">Belki SMPlayer'ı güncellemek sorunu çözebilir.。</translation>
+        <translation type="vanished">Belki SMPlayer&apos;ı güncellemek sorunu çözebilir.。</translation>
     </message>
     <message>
         <source>S&amp;hare SMPlayer with your friends</source>
@@ -1434,7 +1434,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>You need to restart SMPlayer to use the new GUI.</source>
-        <translation type="vanished">Yeni GUI'yi kullanmak için SMPlayer'ı yeniden başlatmanız gerekir.</translation>
+        <translation type="vanished">Yeni GUIyi kullanmak için SMPlayeri yeniden başlatmanız gerekir.</translation>
     </message>
     <message>
         <source>Confirm deletion - SMPlayer</source>
@@ -1451,15 +1451,15 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Inc saturation</source>
-        <translation type="vanished">增加饱和度</translation>
+        <translation type="vanished">Canlılığı artır</translation>
     </message>
     <message>
         <source>Inc gamma</source>
-        <translation type="vanished">增加伽玛</translation>
+        <translation type="vanished">Gamayı artır</translation>
     </message>
     <message>
         <source>&amp;Load external file...</source>
-        <translation type="vanished">Load external file...</translation>
+        <translation type="vanished">Harici dosya yükle...</translation>
     </message>
     <message>
         <source>&amp;Kerndeint</source>
@@ -1467,31 +1467,31 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Yadif (normal)</source>
-        <translation type="vanished">Yadif (标准)(&amp;Y)</translation>
+        <translation type="vanished">Yadif (normal)(&amp;Y)</translation>
     </message>
     <message>
         <source>Y&amp;adif (double framerate)</source>
-        <translation type="vanished">Yadif (双倍帧率)(&amp;A)</translation>
+        <translation type="vanished">Yadif (Çift kare hız)</translation>
     </message>
     <message>
         <source>&amp;Next</source>
-        <translation type="vanished">Sonraki(&amp;N)</translation>
+        <translation type="vanished">Sonraki</translation>
     </message>
     <message>
         <source>Pre&amp;vious</source>
-        <translation type="vanished">Önceki(&amp;V)</translation>
+        <translation type="vanished">Önceki</translation>
     </message>
     <message>
         <source>Volume &amp;normalization</source>
-        <translation type="vanished">Volume &amp;normalization</translation>
+        <translation type="vanished">Ses normalizasyonu</translation>
     </message>
     <message>
         <source>&amp;Audio CD</source>
-        <translation type="vanished">Ses CD(&amp;A)</translation>
+        <translation type="vanished">Ses CD</translation>
     </message>
     <message>
         <source>&amp;Toggle double size</source>
-        <translation type="vanished">Toggle double size</translation>
+        <translation type="vanished">Çift boyutunu değiştir</translation>
     </message>
     <message>
         <source>S&amp;ize -</source>
@@ -1503,36 +1503,36 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Add &amp;black borders</source>
-        <translation type="vanished">添加黑边(&amp;B)</translation>
+        <translation type="vanished">Siyah kenarlıklar ekle</translation>
     </message>
     <message>
         <source>Soft&amp;ware scaling</source>
-        <translation type="vanished">软件缩放(&amp;W)</translation>
+        <translation type="vanished">Yazılım ölçekleme</translation>
     </message>
     <message>
         <source>&amp;FAQ</source>
-        <translation type="vanished">FAQ(&amp;F)</translation>
+        <translation type="vanished">FAQ</translation>
     </message>
     <message>
         <source>&amp;Command line options</source>
-        <translation type="vanished">命令行选项(&amp;C)</translation>
+        <translation type="vanished">Komut satırı seçenekleri</translation>
     </message>
     <message>
         <source>SMPlayer command line options</source>
-        <translation type="vanished">视频播放器命令行选项</translation>
+        <translation type="vanished">SMPlayer komut satırı seçenekleri</translation>
     </message>
     <message>
         <source>&amp;Forced subtitles only</source>
-        <translation type="vanished">Forced subtitles only</translation>
+        <translation type="vanished">Yalnızca zorla altyazılar</translation>
     </message>
     <message>
         <source>Reset video equalizer</source>
-        <translation type="vanished">Reset video equalizer</translation>
+        <translation type="vanished">Video ekolayzerini sıfırla</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2210"/>
         <source>The server returned &apos;%1&apos;</source>
-        <translation>The server returned &apos;%1&apos;</translation>
+        <translation>Sunucu, &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2719"/>
@@ -1608,7 +1608,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../basegui.cpp" line="803"/>
         <source>&amp;Auto</source>
-        <translation>Oto(&amp;A)</translation>
+        <translation>Oto</translation>
     </message>
     <message>
         <source>Speed -&amp;4%</source>
@@ -1646,12 +1646,12 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <source>&amp;Track</source>
         <comment>video</comment>
-        <translation type="vanished">İz(&amp;T)</translation>
+        <translation type="vanished">İz</translation>
     </message>
     <message>
         <source>&amp;Track</source>
         <comment>audio</comment>
-        <translation type="vanished">İz(&amp;T)</translation>
+        <translation type="vanished">İz</translation>
     </message>
     <message>
         <source>Warning - Using old MPlayer</source>
@@ -1659,11 +1659,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>The version of MPlayer (%1) installed on your system is obsolete. SMPlayer can&apos;t work well with it: some options won&apos;t work, subtitle selection may fail...</source>
-        <translation type="vanished">Sisteminizde yüklü olan MPlayer'ın (%1) sürümü geçersiz. SMPlayer onunla iyi çalışmıyor: bazı seçenekler çalışmıyor, altyazı seçimi başarısız olabilir...</translation>
+        <translation type="vanished">Sisteminizde yüklü olan MPlayer&apos;ın (%1) sürümü geçersiz. SMPlayer onunla iyi çalışmıyor: bazı seçenekler çalışmıyor, altyazı seçimi başarısız olabilir...</translation>
     </message>
     <message>
         <source>Please, update your MPlayer.</source>
-        <translation type="vanished">Lütfen, MPlayer'ınızı güncelleyin.</translation>
+        <translation type="vanished">Lütfen, MPlayer&apos;ınızı güncelleyin.</translation>
     </message>
     <message>
         <source>(This warning won&apos;t be displayed anymore)</source>
@@ -1706,40 +1706,40 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>DVD &amp;previous menu</source>
-        <translation type="vanished">上一级 DVD 菜单(&amp;P)</translation>
+        <translation type="vanished">DVD önceki menüsü</translation>
     </message>
     <message>
         <source>DVD menu, move up</source>
-        <translation type="vanished">DVD 菜单，上移</translation>
+        <translation type="vanished">DVD menüsü, yukarı taşı</translation>
     </message>
     <message>
         <source>DVD menu, move down</source>
-        <translation type="vanished">DVD 菜单，下移</translation>
+        <translation type="vanished">DVD menüsü, aşağı taşı</translation>
     </message>
     <message>
         <source>DVD menu, move left</source>
-        <translation type="vanished">DVD 菜单，左移</translation>
+        <translation type="vanished">DVD menüsü, sola taşı</translation>
     </message>
     <message>
         <source>DVD menu, move right</source>
-        <translation type="vanished">DVD menu, move right</translation>
+        <translation type="vanished">DVD menüsü, sağa taşı</translation>
     </message>
     <message>
         <source>DVD menu, select option</source>
-        <translation type="vanished">DVD menu, select option</translation>
+        <translation type="vanished">DVD menüsü, seçeneği seçin</translation>
     </message>
     <message>
         <source>DVD menu, mouse click</source>
-        <translation type="vanished">DVD menu, mouse click</translation>
+        <translation type="vanished">DVD menüsü, fare tıklama</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="942"/>
         <source>Set dela&amp;y...</source>
-        <translation>Gecikme Ayarı(&amp;Y)...</translation>
+        <translation>Gecikme Ayarı...</translation>
     </message>
     <message>
         <source>Se&amp;t delay...</source>
-        <translation type="vanished">Gecikme Ayarı(&amp;T)...</translation>
+        <translation type="vanished">Gecikme Ayarı...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="1934"/>
@@ -1752,11 +1752,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>SMPlayer - Audio delay</source>
-        <translation type="vanished">SMPlayer - Audio delay</translation>
+        <translation type="vanished">SMPlayer - Ses Gecikmesi</translation>
     </message>
     <message>
         <source>Audio delay (in milliseconds):</source>
-        <translation type="vanished">Audio delay (in milliseconds):</translation>
+        <translation type="vanished">Ses gecikmesi (ms):</translation>
     </message>
     <message>
         <source>SMPlayer - Subtitle delay</source>
@@ -1766,7 +1766,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
         <location filename="../basegui.cpp" line="1962"/>
         <location filename="../basegui.cpp" line="1966"/>
         <source>Subtitle delay (in milliseconds):</source>
-        <translation>Altyazı gecikmesi (milisaniye cinsinden):</translation>
+        <translation>Altyazı gecikmesi (ms):</translation>
     </message>
     <message>
         <source>Toggle stay on top</source>
@@ -1779,7 +1779,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Start/stop takin&amp;g screenshots</source>
-        <translation type="vanished">Start/stop takin&amp;g screenshots</translation>
+        <translation type="vanished">Ekran görüntülerini çekmeye başla/durma</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="987"/>
@@ -1788,7 +1788,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Next wheel function</source>
-        <translation type="vanished">Next wheel function</translation>
+        <translation type="vanished">Sonraki tekerlek işlevi</translation>
     </message>
     <message>
         <source>P&amp;rogram</source>
@@ -1797,15 +1797,15 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;TV</source>
-        <translation type="vanished">TV(&amp;T)</translation>
+        <translation type="vanished">TV</translation>
     </message>
     <message>
         <source>Radi&amp;o</source>
-        <translation type="vanished">Radyo(&amp;O)</translation>
+        <translation type="vanished">Radyo</translation>
     </message>
     <message>
         <source>Subtitles onl&amp;y</source>
-        <translation type="vanished">Sadece altyazı(&amp;Y)</translation>
+        <translation type="vanished">Sadece altyazı</translation>
     </message>
     <message>
         <source>Volume + &amp;Seek</source>
@@ -1817,7 +1817,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Volume + Seek + Timer + T&amp;otal time</source>
-        <translation type="vanished">Volume + Seek + Timer + T&amp;otal time</translation>
+        <translation type="vanished">Ses + Seek + Zamanlayıcı + Toplam Süre</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="1142"/>
@@ -1827,7 +1827,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../basegui.cpp" line="838"/>
         <source>Fli&amp;p image</source>
-        <translation>Fli&amp;p image</translation>
+        <translation>Resmi çevir</translation>
     </message>
     <message>
         <source>Zoo&amp;m</source>
@@ -1835,23 +1835,23 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Show filename on OSD</source>
-        <translation type="vanished">OSD'de dosya adını göster</translation>
+        <translation type="vanished">OSD&apos;de dosya adını göster</translation>
     </message>
     <message>
         <source>Set &amp;A marker</source>
-        <translation type="vanished">Set &amp;A marker</translation>
+        <translation type="vanished">A işaretleyici ayarla</translation>
     </message>
     <message>
         <source>Set &amp;B marker</source>
-        <translation type="vanished">Set &amp;B marker</translation>
+        <translation type="vanished">B işaretleyici ayarla</translation>
     </message>
     <message>
         <source>&amp;Clear A-B markers</source>
-        <translation type="vanished">Clear A-B markers</translation>
+        <translation type="vanished">A-B işaretleyiciyi temizle</translation>
     </message>
     <message>
         <source>&amp;A-B section</source>
-        <translation type="vanished">A-B section</translation>
+        <translation type="vanished">A-B Seçimi</translation>
     </message>
     <message>
         <source>Toggle deinterlacing</source>
@@ -1985,7 +1985,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Success</source>
-        <translation type="vanished">Success</translation>
+        <translation type="vanished">Başarılı</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1993,7 +1993,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>An error happened writing %1</source>
-        <translation type="vanished">An error happened writing %1</translation>
+        <translation type="vanished">%1 yazarken bir hata oluştu</translation>
     </message>
     <message>
         <source>An error happened while downloading the file:&lt;br&gt;%1</source>
@@ -2005,12 +2005,12 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../core.cpp" line="2671"/>
         <source>Brightness: %1</source>
-        <translation>Brightness: %1</translation>
+        <translation>Parlaklık: %1</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2687"/>
         <source>Contrast: %1</source>
-        <translation>Contrast: %1</translation>
+        <translation>Kontrast: %1</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2702"/>
@@ -2020,17 +2020,17 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../core.cpp" line="2717"/>
         <source>Hue: %1</source>
-        <translation>Hue: %1</translation>
+        <translation>Renk: %1</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2732"/>
         <source>Saturation: %1</source>
-        <translation>Saturation: %1</translation>
+        <translation>Canlılık: %1</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2887"/>
         <source>Volume: %1</source>
-        <translation>ses: %1</translation>
+        <translation>Ses: %1</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="3828"/>
@@ -2077,7 +2077,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Unable to locate the URL of the video</source>
-        <translation type="vanished">Videonun URL'si bulunamadı</translation>
+        <translation type="vanished">Videonun URL&apos;si bulunamadı</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="3109"/>
@@ -2132,12 +2132,12 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../core.cpp" line="2340"/>
         <source>&quot;A&quot; marker set to %1</source>
-        <translation>&quot;A&quot;标记设置到 %1</translation>
+        <translation>&quot;A&quot;markeri %1 olarak ayarlandı</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2357"/>
         <source>&quot;B&quot; marker set to %1</source>
-        <translation>&quot;B&quot;标记设置到 %1</translation>
+        <translation>&quot;B&quot;markeri %1 olarak ayarlandı</translation>
     </message>
     <message>
         <location filename="../core.cpp" line="2372"/>
@@ -2146,7 +2146,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Connecting to %1</source>
-        <translation type="vanished">1%'a bağlanıyor</translation>
+        <translation type="vanished">1%&apos;a bağlanıyor</translation>
     </message>
 </context>
 <context>
@@ -2161,15 +2161,15 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Main toolbar</source>
-        <translation type="vanished">Ana Araç Çubuğu(&amp;M)</translation>
+        <translation type="vanished">Ana Araç Çubuğu</translation>
     </message>
     <message>
         <source>&amp;Language toolbar</source>
-        <translation type="vanished">Dil Araç Çubuğu(&amp;L)</translation>
+        <translation type="vanished">Dil Araç Çubuğu</translation>
     </message>
     <message>
         <source>&amp;Toolbars</source>
-        <translation type="vanished">Araç Çubukları(&amp;T)</translation>
+        <translation type="vanished">Araç Çubukları</translation>
     </message>
     <message>
         <source>Ready</source>
@@ -2185,23 +2185,23 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Status&amp;bar</source>
-        <translation type="vanished">Durum Çubuğu(&amp;B)</translation>
+        <translation type="vanished">Durum Çubuğu</translation>
     </message>
     <message>
         <source>&amp;Video info</source>
-        <translation type="vanished">Video Bilgisi(&amp;V)</translation>
+        <translation type="vanished">Video Bilgisi</translation>
     </message>
     <message>
         <source>&amp;Frame counter</source>
-        <translation type="vanished">帧计数器(&amp;F)</translation>
+        <translation type="vanished">Çerçeve sayacı</translation>
     </message>
     <message>
         <source>Edit main &amp;toolbar</source>
-        <translation type="vanished">编辑主工具栏(&amp;T)</translation>
+        <translation type="vanished">Ana araç çubuğunu düzenle</translation>
     </message>
     <message>
         <source>Edit &amp;control bar</source>
-        <translation type="vanished">编辑控制条(&amp;C)</translation>
+        <translation type="vanished">Denetim çubuğunu düzenle</translation>
     </message>
     <message>
         <source>Edit m&amp;ini control bar</source>
@@ -2221,7 +2221,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <name>EqSlider</name>
     <message>
         <source>icon</source>
-        <translation type="vanished">icon</translation>
+        <translation type="vanished">simge</translation>
     </message>
 </context>
 <context>
@@ -2269,7 +2269,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../esctip.cpp" line="50"/>
         <source>Press ESC to exit full screen mode</source>
-        <translation>Tam ekran modundan çıkmak için ESC'ye basın</translation>
+        <translation>Tam ekran modundan çıkmak için ESC&apos;ye basın</translation>
     </message>
 </context>
 <context>
@@ -2312,19 +2312,19 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>D&amp;elete</source>
-        <translation type="vanished">Sil(&amp;E)</translation>
+        <translation type="vanished">Sil</translation>
     </message>
     <message>
         <source>Delete &amp;all</source>
-        <translation type="vanished">Tümünü Sil(&amp;A)</translation>
+        <translation type="vanished">Tümünü Sil</translation>
     </message>
     <message>
         <source>&amp;Up</source>
-        <translation type="vanished">Yukarı(&amp;U)</translation>
+        <translation type="vanished">Yukarı</translation>
     </message>
     <message>
         <source>&amp;Down</source>
-        <translation type="vanished">Aşağı(&amp;D)</translation>
+        <translation type="vanished">Aşağı</translation>
     </message>
     <message>
         <source>&amp;New item</source>
@@ -2347,19 +2347,19 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Edit...</source>
-        <translation type="vanished">Düzenle(&amp;E)...</translation>
+        <translation type="vanished">Düzenle...</translation>
     </message>
     <message>
         <source>&amp;Jump...</source>
-        <translation type="vanished">Git(&amp;J)...</translation>
+        <translation type="vanished">Git...</translation>
     </message>
     <message>
         <source>&amp;Next</source>
-        <translation type="vanished">Sonraki(&amp;N)</translation>
+        <translation type="vanished">Sonraki</translation>
     </message>
     <message>
         <source>&amp;Previous</source>
-        <translation type="vanished">Önceki(&amp;P)</translation>
+        <translation type="vanished">Önceki</translation>
     </message>
     <message>
         <source>&amp;Add current media</source>
@@ -2382,7 +2382,7 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>Connecting to %1</source>
-        <translation type="vanished">1%'e bağlanıyor</translation>
+        <translation type="vanished">1%&apos;e bağlanıyor</translation>
     </message>
 </context>
 <context>
@@ -2393,11 +2393,11 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation type="vanished">Bilgi(&amp;I)</translation>
+        <translation type="vanished">Bilgi</translation>
     </message>
     <message>
         <source>&amp;Demuxer</source>
-        <translation type="vanished">解复用器(&amp;D)</translation>
+        <translation type="vanished">Demuxer</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="14"/>
@@ -2420,13 +2420,13 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     <message>
         <location filename="../filepropertiesdialog.ui" line="124"/>
         <source>&amp;Select the demuxer that will be used for this file:</source>
-        <translation>Bu dosya için kullanılacak demuxer'ı seçin:</translation>
+        <translation>Bu dosya için kullanılacak demuxer&apos;ı seçin:</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="153"/>
         <location filename="../filepropertiesdialog.ui" line="200"/>
         <source>&amp;Reset</source>
-        <translation>Sıfırla(&amp;R)</translation>
+        <translation>Sıfırla)</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="244"/>
@@ -2435,47 +2435,47 @@ Yapılandırma iletişim kutusu şimdi gösterilecek, böylece bunu yapabilirsin
     </message>
     <message>
         <source>&amp;Video codec</source>
-        <translation type="vanished">视频编解码器(&amp;V)</translation>
+        <translation type="vanished">Video kodec</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="181"/>
         <source>&amp;Select the video codec:</source>
-        <translation>选择视频编解码器(&amp;S):</translation>
+        <translation>Video codec seç</translation>
     </message>
     <message>
         <source>A&amp;udio codec</source>
-        <translation type="vanished">音频编解码器(&amp;U)</translation>
+        <translation type="vanished">Ses codec</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="225"/>
         <source>&amp;Select the audio codec:</source>
-        <translation>选择音频编解码器(&amp;S):</translation>
+        <translation>Ses codec'ini seçin:</translation>
     </message>
     <message>
         <source>You can also pass additional video filters.
 Separate them with &quot;,&quot;. Do not use spaces!
 Example: scale=512:-2,mirror</source>
-        <translation type="vanished">您还可以传送额外的视频过滤器。
-请用&quot; , &quot;隔开它们。不要使用空格!
-示例:  scale=512:-2,mirror</translation>
+        <translation type="vanished">Ayrıca ek video filtreleri de iletebilirsiniz.
+&quot; , &quot; ile ayırın. Boşluk kullanmayın!
+Örnek:  scale=512:-2,mirror</translation>
     </message>
     <message>
         <source>And finally audio filters. Same rule as for video filters.
 Example: extrastereo,karaoke</source>
-        <translation type="vanished">最后是音频过滤器。和视频过滤器的规则相同。
-示例: extrastereo,karaoke</translation>
+        <translation type="vanished">Sonunda ses filtreleri. Video filtresi ile aynı.
+Örnek: extrastereo,karaoke</translation>
     </message>
     <message>
         <source>&amp;Options:</source>
-        <translation type="vanished">Ayarlar(&amp;O):</translation>
+        <translation type="vanished">Ayarlar:</translation>
     </message>
     <message>
         <source>V&amp;ideo filters:</source>
-        <translation type="vanished">Video Filtreleri(&amp;I):</translation>
+        <translation type="vanished">Video Filtreleri:</translation>
     </message>
     <message>
         <source>Audio &amp;filters:</source>
-        <translation type="vanished">Ses Videoları(&amp;F):</translation>
+        <translation type="vanished">Ses Videoları:</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.cpp" line="102"/>
@@ -2485,17 +2485,17 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../filepropertiesdialog.cpp" line="107"/>
         <source>Demuxer</source>
-        <translation>解复用器</translation>
+        <translation>Demuxer</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.cpp" line="111"/>
         <source>Video codec</source>
-        <translation>视频编解码器</translation>
+        <translation>Video codec</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.cpp" line="115"/>
         <source>Audio codec</source>
-        <translation>音频编解码器</translation>
+        <translation>Audio codec</translation>
     </message>
     <message>
         <location filename="../filepropertiesdialog.ui" line="272"/>
@@ -2521,15 +2521,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Additional Options for %1</source>
-        <translation type="vanished">%1 的额外参数项</translation>
+        <translation type="vanished">%1 için ek seçenekler</translation>
     </message>
     <message>
         <source>Here you can pass extra options to %1.</source>
-        <translation type="vanished">你可以在这里为 %1 设置额外的参数。</translation>
+        <translation type="vanished">Burada %1'e ekstra seçenekler iletebilirsiniz.</translation>
     </message>
     <message>
         <source>Write them separated by spaces.</source>
-        <translation type="vanished">在这里输入，使用空格隔开。</translation>
+        <translation type="vanished">Onları boşluklarla ayırarak yazın.</translation>
     </message>
     <message>
         <source>Example:</source>
@@ -2548,27 +2548,27 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enable/disable the use of the proxy.</source>
-        <translation type="vanished">启用/禁用使用代理。</translation>
+        <translation type="vanished">Vekilin kullanımını etkinleştir/devre dışı bırak.</translation>
     </message>
     <message>
         <source>The host name of the proxy.</source>
-        <translation type="vanished">代理的主机名。</translation>
+        <translation type="vanished">Vekilin ana makine adı.</translation>
     </message>
     <message>
         <source>The port of the proxy.</source>
-        <translation type="vanished">代理的端口。</translation>
+        <translation type="vanished">Vekilin limanı.</translation>
     </message>
     <message>
         <source>If the proxy requires authentication, this sets the username.</source>
-        <translation type="vanished">如果代理需要身份验证，请在这里设置用户名。</translation>
+        <translation type="vanished">Proxy kimlik doğrulaması gerektiriyorsa kullanıcı adı belirlenir.</translation>
     </message>
     <message>
         <source>The password for the proxy. &lt;b&gt;Warning:&lt;/b&gt; the password will be saved as plain text in the configuration file.</source>
-        <translation type="vanished">代理的密码。&lt;b&gt;警告:&lt;/b&gt; 密码将被作为纯文本保存在配置文件中。</translation>
+        <translation type="vanished">Proxy için şifre. &lt;b&gt;Uyarı:&lt;/b&gt; the password will be saved as plain text in the configuration file.</translation>
     </message>
     <message>
         <source>Select the proxy type to be used.</source>
-        <translation type="vanished">选择要使用的代理类型。</translation>
+        <translation type="vanished">Kullanılacak proxy türünü seçin.</translation>
     </message>
     <message>
         <source>Options</source>
@@ -2576,11 +2576,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Server</source>
-        <translation type="vanished">服务器</translation>
+        <translation type="vanished">Server</translation>
     </message>
     <message>
         <source>&amp;OpenSubtitles server:</source>
-        <translation type="vanished">OpenSubtitles 服务器(&amp;O):</translation>
+        <translation type="vanished">OpenSubtitles sunucusu:</translation>
     </message>
     <message>
         <source>Proxy</source>
@@ -2588,7 +2588,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Enable proxy</source>
-        <translation type="vanished">启用代理(&amp;E)</translation>
+        <translation type="vanished">Proxy etkin</translation>
     </message>
     <message>
         <source>&amp;Host:</source>
@@ -2616,11 +2616,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>A&amp;ppend language code to the subtitle filename</source>
-        <translation type="vanished">将语言代码附加到字幕文件名中(&amp;p)</translation>
+        <translation type="vanished">Altyazı adına dosya dil kodu ekleme</translation>
     </message>
     <message>
         <source>Number of &amp;retries:</source>
-        <translation type="vanished">条目数(&amp;r)：</translation>
+        <translation type="vanished">Yeniden deneme sayısı:</translation>
     </message>
 </context>
 <context>
@@ -2651,7 +2651,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Portuguese - Brasil</source>
-        <translation type="vanished">葡萄牙语-巴西</translation>
+        <translation type="vanished">Portekizce - Brezilya</translation>
     </message>
     <message>
         <source>All</source>
@@ -2663,21 +2663,21 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Login to opensubtitles.org has failed</source>
-        <translation type="vanished">Opensubtitles.org'a giriş başarısız oldu</translation>
+        <translation type="vanished">Opensubtitles.org&apos;a giriş başarısız oldu</translation>
     </message>
     <message>
         <source>Search has failed</source>
-        <translation type="vanished">搜索失败</translation>
+        <translation type="vanished">Arama başarısız oldu</translation>
     </message>
     <message numerus="yes">
         <source>%n subtitle(s) extracted</source>
         <translation type="vanished">
-            <numerusform>已提取%n个字幕</numerusform>
+            <numerusform>%n altyazı çıkarıldı</numerusform>
         </translation>
     </message>
     <message>
         <source>Error fixing the subtitle lines</source>
-        <translation type="vanished">修复字幕行时出错</translation>
+        <translation type="vanished">Altyazı satırlarını düzeltme hatası</translation>
     </message>
     <message>
         <source>&amp;Download</source>
@@ -2693,11 +2693,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Download failed: %1.</source>
-        <translation type="vanished">下载失败: %1。</translation>
+        <translation type="vanished">Yükleme başarısız: %1。</translation>
     </message>
     <message>
         <source>Connecting to %1...</source>
-        <translation type="vanished">正在连接到 %1...</translation>
+        <translation type="vanished">%1'e bağlanıyor...</translation>
     </message>
     <message>
         <source>Downloading...</source>
@@ -2709,19 +2709,19 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>%1 files available</source>
-        <translation type="vanished">%1个文件可用</translation>
+        <translation type="vanished">%1 dosya var</translation>
     </message>
     <message>
         <source>Failed to parse the received data.</source>
-        <translation type="vanished">无法分析接收到的数据。</translation>
+        <translation type="vanished">Alınan veriler ayrıştırılamadı.</translation>
     </message>
     <message>
         <source>Find Subtitles</source>
-        <translation type="vanished">查找字幕</translation>
+        <translation type="vanished">Altyazıları Bul</translation>
     </message>
     <message>
         <source>&amp;Subtitles for</source>
-        <translation type="vanished">字幕用于(&amp;S)</translation>
+        <translation type="vanished">Için altyazılar</translation>
     </message>
     <message>
         <source>&amp;Language:</source>
@@ -2733,19 +2733,19 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Subtitle saved as %1</source>
-        <translation type="vanished">字幕已保存为 %1</translation>
+        <translation type="vanished">Altyazı %1 olarak kaydedildi</translation>
     </message>
     <message>
         <source>Overwrite?</source>
-        <translation type="vanished">是否覆盖?</translation>
+        <translation type="vanished">Üzerine Yaz?</translation>
     </message>
     <message>
         <source>The file %1 already exits, overwrite?</source>
-        <translation type="vanished">文件 %1 已存在，是否覆盖?</translation>
+        <translation type="vanished">%1 dosyası zaten mevcut, üstüne yazılsın mı?</translation>
     </message>
     <message>
         <source>Error saving file</source>
-        <translation type="vanished">保存文件时出错</translation>
+        <translation type="vanished">Dosya kaydedilirken hata oluştu</translation>
     </message>
     <message>
         <source>It wasn&apos;t possible to save the downloaded
@@ -2753,15 +2753,15 @@ file in folder %1
 Please check the permissions of that folder.</source>
         <translation type="vanished">无法在文件夹 %1
 中保存下载的文件
-请检查该文件夹的权限。</translation>
+Lütfen o klasörün izinlerini kontrol edin.</translation>
     </message>
     <message>
         <source>Download failed</source>
-        <translation type="vanished">下载失败</translation>
+        <translation type="vanished">Yükleme başarısız</translation>
     </message>
     <message>
         <source>Temporary file %1</source>
-        <translation type="vanished">临时文件 %1</translation>
+        <translation type="vanished">Geçici dosya %1</translation>
     </message>
     <message>
         <source>&amp;Options</source>
@@ -2772,11 +2772,11 @@ Please check the permissions of that folder.</source>
     <name>FontCacheDialog</name>
     <message>
         <source>SMPlayer is initializing</source>
-        <translation type="vanished">视频播放器正在初始化</translation>
+        <translation type="vanished">SMPlayer başlatılıyor</translation>
     </message>
     <message>
         <source>Creating a font cache...</source>
-        <translation type="vanished">正在创建字体缓存...</translation>
+        <translation type="vanished">Yazı tipi önbellek oluşturma...</translation>
     </message>
 </context>
 <context>
@@ -2837,7 +2837,7 @@ Please check the permissions of that folder.</source>
     <message>
         <location filename="../infofile.cpp" line="79"/>
         <source>Length</source>
-        <translation>长度</translation>
+        <translation>Uzunluk</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="80"/>
@@ -2869,7 +2869,7 @@ Please check the permissions of that folder.</source>
     <message>
         <location filename="../infofile.cpp" line="90"/>
         <source>Genre</source>
-        <translation>流派</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="91"/>
@@ -2889,7 +2889,7 @@ Please check the permissions of that folder.</source>
     <message>
         <location filename="../infofile.cpp" line="94"/>
         <source>Comment</source>
-        <translation>注释</translation>
+        <translation>Yorum Yap</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="95"/>
@@ -2909,12 +2909,12 @@ Please check the permissions of that folder.</source>
     <message>
         <location filename="../infofile.cpp" line="108"/>
         <source>Resolution</source>
-        <translation>分辨率</translation>
+        <translation>Çözüm</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="109"/>
         <source>Aspect ratio</source>
-        <translation>纵横比</translation>
+        <translation>En-boy oranı</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="110"/>
@@ -2926,7 +2926,7 @@ Please check the permissions of that folder.</source>
         <location filename="../infofile.cpp" line="111"/>
         <location filename="../infofile.cpp" line="120"/>
         <source>Bitrate</source>
-        <translation>比特率</translation>
+        <translation>Bit Hızı</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="111"/>
@@ -2937,23 +2937,23 @@ Please check the permissions of that folder.</source>
     <message>
         <location filename="../infofile.cpp" line="112"/>
         <source>Frames per second</source>
-        <translation>每秒帧数</translation>
+        <translation>Saniyedeki Çerçeve</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="113"/>
         <location filename="../infofile.cpp" line="123"/>
         <source>Selected codec</source>
-        <translation>已选编解码器</translation>
+        <translation>Seçilen codec</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="118"/>
         <source>Initial Audio Stream</source>
-        <translation>初始音频流</translation>
+        <translation>İlk Ses Akışı</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="121"/>
         <source>Rate</source>
-        <translation>采样率</translation>
+        <translation>Oran</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="121"/>
@@ -4352,7 +4352,7 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Enter the URL(s) to be added to the playlist. One per line.</source>
-        <translation type="vanished">Oynatma listesine eklenecek URL'leri girin. Her satıra bir tane.</translation>
+        <translation type="vanished">Oynatma listesine eklenecek URL&apos;leri girin. Her satıra bir tane.</translation>
     </message>
 </context>
 <context>
@@ -4902,7 +4902,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Switches %1 to an experimental mode where timestamps for video frames are calculated differently and video filters which add new frames or modify timestamps of existing ones are supported. The more accurate timestamps can be visible for example when playing subtitles timed to scene changes with the SSA/ASS library enabled. Without correct pts the subtitle timing will typically be off by some frames. This option does not work correctly with some demuxers and codecs.</source>
-        <translation type="vanished">%1'i, video kareleri için zaman damgalarının farklı şekilde hesaplandığı ve yeni kareleri ekleyen veya mevcutların zaman damgalarını değiştiren video filtrelerinin denendiği bir moda geçirilmesi desteklenir. Örneğin SSA / ASS kitaplığı etkinleştirildiğinde sahne değişikliklerine göre zamanlı olarak altyazı çalınırken daha doğru zaman damgaları görünebilir. Doğru pt olmadan altyazı zamanlaması tipik olarak bazı kareler tarafından kapatılır. Bu seçenek, bazı demuxer'lar ve codec bileşenleri ile doğru şekilde çalışmıyor.</translation>
+        <translation type="vanished">%1&apos;i, video kareleri için zaman damgalarının farklı şekilde hesaplandığı ve yeni kareleri ekleyen veya mevcutların zaman damgalarını değiştiren video filtrelerinin denendiği bir moda geçirilmesi desteklenir. Örneğin SSA / ASS kitaplığı etkinleştirildiğinde sahne değişikliklerine göre zamanlı olarak altyazı çalınırken daha doğru zaman damgaları görünebilir. Doğru pt olmadan altyazı zamanlaması tipik olarak bazı kareler tarafından kapatılır. Bu seçenek, bazı demuxer&apos;lar ve codec bileşenleri ile doğru şekilde çalışmıyor.</translation>
     </message>
     <message>
         <source>Actions list</source>
@@ -5225,7 +5225,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefaudio.cpp" line="285"/>
         <source>Sets the maximum amplification level in percent (default: 110). A value of 200 will allow you to adjust the volume up to a maximum of double the current level. With values below 100 the initial volume (which is 100%) will be above the maximum, which e.g. the OSD cannot display correctly.</source>
-        <translation>Maksimum yükseltme düzeyini yüzde olarak ayarlar (varsayılan: 110). 200 değeri, ses düzeyini geçerli seviyenin iki katına çıkarmanıza olanak tanır. 100'ün altındaki değerlerde, başlangıç hacmi (% 100'dür) maksimumun üzerine çıkacaktır; OSD doğru şekilde görüntülenemiyor.</translation>
+        <translation>Maksimum yükseltme düzeyini yüzde olarak ayarlar (varsayılan: 110). 200 değeri, ses düzeyini geçerli seviyenin iki katına çıkarmanıza olanak tanır. 100&apos;ün altındaki değerlerde, başlangıç hacmi (% 100&apos;dür) maksimumun üzerine çıkacaktır; OSD doğru şekilde görüntülenemiyor.</translation>
     </message>
     <message>
         <location filename="../prefaudio.ui" line="119"/>
@@ -5251,7 +5251,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Choose your CDROM device. It will be used to play VCDs and Audio CDs.</source>
-        <translation type="vanished">CD-ROM aygıtınızı seçin. VCD'leri ve Ses CD'lerini çalmak için kullanılacaktır.</translation>
+        <translation type="vanished">CD-ROM aygıtınızı seçin. VCD&apos;leri ve Ses CD&apos;lerini çalmak için kullanılacaktır.</translation>
     </message>
     <message>
         <source>DVD device</source>
@@ -5263,7 +5263,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If this option is checked, SMPlayer will play DVDs using dvdnav. Requires a recent version of MPlayer compiled with dvdnav support.</source>
-        <translation type="vanished">Bu seçenek işaretlenirse, SMPlayer dvdnav kullanarak DVD oynatacaktır. Dvdnav desteğiyle derlenmiş MPlayer'ın son sürümünü gerektirir.</translation>
+        <translation type="vanished">Bu seçenek işaretlenirse, SMPlayer dvdnav kullanarak DVD oynatacaktır. Dvdnav desteğiyle derlenmiş MPlayer&apos;ın son sürümünü gerektirir.</translation>
     </message>
     <message>
         <source>Select your &amp;CD device:</source>
@@ -5374,7 +5374,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Here you must specify the %1 executable that SMPlayer will use.</source>
-        <translation type="vanished">Burada, SMPlayer'ın kullanacağı %1 yürütülebilir dosyayı belirtmeniz gerekir.</translation>
+        <translation type="vanished">Burada, SMPlayer&apos;ın kullanacağı %1 yürütülebilir dosyayı belirtmeniz gerekir.</translation>
     </message>
     <message>
         <source>Screenshots folder</source>
@@ -7339,7 +7339,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Try to use non-free CoreAVC codec when no other codec is specified and non-VDPAU video output selected. Requires MPlayer build with CoreAVC support.</source>
-        <translation type="vanished">Başka codec'i belirtilmediğinde ve VDPAU dışı video çıkışı seçildiğinde ücretsiz olmayan CoreAVC codec bileşenini kullanmaya çalışın. CoreAVC desteği ile MPlayer yapımı gerektirir.</translation>
+        <translation type="vanished">Başka codec&apos;i belirtilmediğinde ve VDPAU dışı video çıkışı seçildiğinde ücretsiz olmayan CoreAVC codec bileşenini kullanmaya çalışın. CoreAVC desteği ile MPlayer yapımı gerektirir.</translation>
     </message>
     <message>
         <source>This option allows you to skips the loop filter (AKA deblocking) during H.264 decoding. Since the filtered frame is supposed to be used as reference for decoding dependent frames this has a worse effect on quality than not doing deblocking on e.g. MPEG-2 video. But at least for high bitrate HDTV this provides a big speedup with no visible quality loss.</source>
@@ -7364,7 +7364,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.cpp" line="140"/>
         <source>Sets the hardware video decoding API. If hardware decoding is not possible, software decoding will be used instead.</source>
-        <translation>Donanım video kod çözme API'sını ayarlar. Donanım şifre çözme mümkün değilse bunun yerine yazılım kod çözme kullanılacaktır.</translation>
+        <translation>Donanım video kod çözme API&apos;sını ayarlar. Donanım şifre çözme mümkün değilse bunun yerine yazılım kod çözme kullanılacaktır.</translation>
     </message>
     <message>
         <location filename="../prefperformance.cpp" line="142"/>
@@ -8577,11 +8577,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enqueue in SMPlayer</source>
-        <translation type="vanished">SMPlayer'da sırala</translation>
+        <translation type="vanished">SMPlayer&apos;da sırala</translation>
     </message>
     <message>
         <source>opens the mini gui instead of the default one.</source>
-        <translation type="vanished">varsayılan yerine mini gui'yi açar.</translation>
+        <translation type="vanished">varsayılan yerine mini gui&apos;yi açar.</translation>
     </message>
     <message>
         <source>Restores the old associations and cleans up the registry.</source>
@@ -8605,7 +8605,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>opens the default gui.</source>
-        <translation type="vanished">varsayılan gui'yi açar.</translation>
+        <translation type="vanished">varsayılan gui&apos;yi açar.</translation>
     </message>
     <message>
         <source>subtitle_file</source>
@@ -8638,7 +8638,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>specifies the directory where smplayer will store its configuration files (smplayer.ini, smplayer_files.ini...)</source>
-        <translation type="vanished">smplayer'ın yapılandırma dosyalarını depoladığı dizini belirtir.(smplayer.ini、smplayer_files.ini...)</translation>
+        <translation type="vanished">smplayer&apos;ın yapılandırma dosyalarını depoladığı dizini belirtir.(smplayer.ini、smplayer_files.ini...)</translation>
     </message>
     <message>
         <location filename="../mediasettings.cpp" line="174"/>
@@ -9796,7 +9796,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enter here the DVD device or a folder with a DVD image.</source>
-        <translation type="vanished">在这里输入 DVD 驱动器或 DVD 镜像文件夹。</translation>
+        <translation type="vanished">DVD cihazını veya DVD görüntüsü olan bir klasörü buraya girin.</translation>
     </message>
     <message>
         <source>&amp;DVD device:</source>
@@ -9804,7 +9804,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Remember folder used to &amp;save the preview</source>
-        <translation type="vanished">记住用来保存预览的文件夹(&amp;S)</translation>
+        <translation type="vanished">Önizlemeyi kaydetmek için kullanılan klasörü hatırla</translation>
     </message>
 </context>
 <context>
