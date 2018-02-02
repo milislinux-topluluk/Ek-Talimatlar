@@ -20,6 +20,7 @@ derle() {
 	fi
 	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
     cd $SRC/$isim
+    cp ../$isim.desktop ./
     cp ../milis-logo.png src/res/background.png
 	qmake-qt5 kylin-video.pro
     make
