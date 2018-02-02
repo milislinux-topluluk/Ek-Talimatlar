@@ -5558,7 +5558,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Double buffering fixes flicker by storing two frames in memory, and displaying one while decoding another. If disabled it can affect OSD negatively, but often removes OSD flickering.</source>
-        <translation type="vanished">通过在内存中存储两帧，在显示一帧的同时解码另一帧的双缓冲来修复闪烁问题。如果禁用它会对 OSD (屏幕显示)产生负面影响，但常常能去除 OSD (屏幕显示)的闪烁。</translation>
+        <translation type="vanished">Çifte arabellekleme, iki kareyi bellekte saklar ve diğerini çözerken diğerini titreşir. Devre dışı bırakılırsa, OSD'yi olumsuz etkileyebilir, ancak sıklıkla OSD titreşimini ortadan kaldırır.</translation>
     </message>
     <message>
         <source>&amp;Enable postprocessing by default</source>
@@ -5648,11 +5648,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Sets the maximum amplification level in percent (default: 110). A value of 200 will allow you to adjust the volume up to a maximum of double the current level. With values below 100 the initial volume (which is 100%) will be above the maximum, which e.g. the OSD cannot display correctly.</source>
-        <translation type="vanished">设置最大放大级别的百分比(默认值: 110)。该值为 200 时允许您调整的最大音量为目前级别的两倍。该值低于 100 时，初始音量(为100%)将高于可调整的最大值，这时例如 OSD (屏幕显示)将不能正确显示。</translation>
+        <translation type="vanished">Maksimum yükseltme düzeyini yüzde olarak ayarlar (varsayılan: 110). 200 değeri, ses seviyesini geçerli seviyeye iki katına çıkarmanızı sağlar. 100'ün altındaki değerlerde başlangıç hacmi (% 100) maksimumun üzerine çıkar; OSD doğru görüntülenemiyor.</translation>
     </message>
     <message>
         <source>Postprocessing will be used by default on new opened files.</source>
-        <translation type="vanished">默认在新打开的文件上使用后期处理。</translation>
+        <translation type="vanished">Postprocessing, yeni açılan dosyalarda varsayılan olarak kullanılacaktır.</translation>
     </message>
     <message>
         <source>Audio track</source>
@@ -5792,7 +5792,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enable/disable drawing video by 16-pixel height slices/bands. If disabled, the whole frame is drawn in a single run. May be faster or slower, depending on video card and available cache. It has effect only with libmpeg2 and libavcodec codecs.</source>
-        <translation type="vanished">启用/禁用以 16-像素高的片/带方式绘制视频。如果禁用，将一次运行绘制整个帧。可能更快或更慢，这取决于显卡和可用的缓存。它只对 libmpeg2 和 libavcodec 编解码器有效果。</translation>
+        <translation type="vanished">Videoyu 16 piksellik yükseklik dilim / bantlarla çizmeyi etkinleştirin / devre dışı bırakın. Devre dışı bırakıldığında, tüm çerçeve tek bir kere çalıştırılır. Video kartına ve kullanılabilir ön belleğe bağlı olarak daha hızlı veya daha yavaş olabilir. Yalnızca libmpeg2 ve libavcodec codec bileşenleri ile etkiye sahiptir.</translation>
     </message>
     <message>
         <source>Dra&amp;w video using slices</source>
@@ -5800,7 +5800,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Close when finished playback</source>
-        <translation type="vanished">结束播放时关闭(&amp;C)</translation>
+        <translation type="vanished">Çalmayı bitirdikten sonra kapat</translation>
     </message>
     <message>
         <source>fast</source>
@@ -5816,11 +5816,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>User defined...</source>
-        <translation type="vanished">用户定义...</translation>
+        <translation type="vanished">Kullanıcı tanımlı...</translation>
     </message>
     <message>
         <source>Default zoom</source>
-        <translation type="vanished">默认缩放</translation>
+        <translation type="vanished">Varsayılan Yakınlaştırma</translation>
     </message>
     <message>
         <source>This option sets the default zoom which will be used for new videos.</source>
@@ -5864,22 +5864,22 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefgeneral.cpp" line="134"/>
         <source>Select MPlayer as playback engine</source>
-        <translation>选择 MPlayer 作为播放引擎</translation>
+        <translation>Oynatma motoru olarak MPlayer'i seçin</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="135"/>
         <source>If you change the playback engine to MPlayer, please restart Kylin Video.</source>
-        <translation>如果你切换播放引擎为MPlayer，请重启麒麟影音。</translation>
+        <translation>Oynatma motorunu MPlayer'e değiştirirseniz, lütfen Kylin Video'yu yeniden başlatın.</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="136"/>
         <source>Select MPV as playback engine</source>
-        <translation>选择 MPV 作为播放引擎</translation>
+        <translation>Oynatma motoru olarak MPV'yi seçin</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="137"/>
         <source>If you change the playback engine to MPV, please restart Kylin Video.</source>
-        <translation>如果你切换播放引擎为MPV，请重启麒麟影音。</translation>
+        <translation>Oynatma motorunu MPV'ye değiştirirseniz, lütfen Kylin Video'yu yeniden başlatın.</translation>
     </message>
     <message>
         <source>Check this option to disable the screensaver while playing.&lt;br&gt;The screensaver will enabled again when play finishes.</source>
@@ -5899,11 +5899,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Add black borders on fullscreen</source>
-        <translation type="vanished">全屏时添加黑边</translation>
+        <translation type="vanished">Tam ekrana siyah kenarlıklar ekleyin</translation>
     </message>
     <message>
         <source>If this option is enabled, black borders will be added to the image in fullscreen mode. This allows subtitles to be displayed on the black borders.</source>
-        <translation type="vanished">如果启用此选项，则会在全屏模式的图像上添加黑色边框。这将允许字幕显示在黑色边框上。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse, tam ekran modunda görüntüye siyah kenarlıklar eklenecektir. Bu altyazıların siyah kenarlarda görüntülenmesine olanak tanır.</translation>
     </message>
     <message>
         <source>&amp;Add black borders on fullscreen</source>
@@ -5931,11 +5931,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>The latter method could be faster if there is info for a lot of files.</source>
-        <translation type="vanished">如果有大量的文件信息，后一种方法可能会更快。</translation>
+        <translation type="vanished">Birçok dosya için bilgi varsa ikinci yöntem daha hızlı olabilir.</translation>
     </message>
     <message>
         <source>&amp;Store settings in</source>
-        <translation type="vanished">存储设置于(&amp;S)</translation>
+        <translation type="vanished">Içinde ayarları sakla</translation>
     </message>
     <message>
         <source>&lt;b&gt;multiple ini files&lt;/b&gt;: one ini file will be used for each played file. Those ini files will be saved in the folder %1</source>
@@ -5943,11 +5943,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If you check this option, SMPlayer will remember the last position of the file when you open it again. This option works only with regular files (not with DVDs, CDs, URLs...).</source>
-        <translation type="vanished">如果您勾选此选项，视频播放器将记住文件的最后播放位置，当您再次打开它时可由该位置开始播放。此选项仅适用于常规文件(不包括 DVD、CD、URL...)。</translation>
+        <translation type="vanished">Bu seçeneğe işaret ederseniz, SMPlayer yeniden açtığınızda dosyanın son konumunu hatırlar. Bu seçenek yalnızca normal dosyalarla (DVD'ler, CD'ler, URL'ler ...) çalışır</translation>
     </message>
     <message>
         <source>If checked, turns on direct rendering (not supported by all codecs and video outputs)&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; May cause OSD/SUB corruption!</source>
-        <translation type="vanished">如果勾选，将打开直接渲染(还不被所有的编解码器和视频输出支持)&lt;br&gt;&lt;b&gt;警告:&lt;/b&gt; 可能会导致 OSD (屏幕显示)/SUB 的讹误!</translation>
+        <translation type="vanished">İşaretlenirse, doğrudan açılır (tüm codec bileşenleri ve video çıkışı tarafından desteklenmez) &lt;br&gt;&lt;b&gt;:&lt;/b&gt; OSD / SUB bozulmasına neden olabilir!</translation>
     </message>
     <message>
         <source>Requests the number of playback channels. MPlayer asks the decoder to decode the audio into as many channels as specified. Then it is up to the decoder to fulfill the requirement. This is usually only important when playing videos with AC3 audio (like DVDs). In that case liba52 does the decoding by default and correctly downmixes the audio into the requested number of channels. &lt;b&gt;Note&lt;/b&gt;: This option is honored by codecs (AC3 only), filters (surround) and audio output drivers (OSS at least).</source>
@@ -7860,7 +7860,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the color for the text of the subtitles.</source>
-        <translation type="vanished">选择字幕的文本颜色。</translation>
+        <translation type="vanished">Altyazı metninin rengini seçin.</translation>
     </message>
     <message>
         <source>Border color</source>
@@ -7868,12 +7868,12 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the color for the border of the subtitles.</source>
-        <translation type="vanished">选择字幕的边框颜色。</translation>
+        <translation type="vanished">Altyazıların kenarlık rengini seçin.</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="155"/>
         <source>Select the subtitle autoload method.</source>
-        <translation>选择字幕的自动加载方法。</translation>
+        <translation>Altyazı otomatik yükleme yöntemini seçin.</translation>
     </message>
     <message>
         <source>If there are one or more subtitle tracks available, one of them will be automatically selected, usually the first one, although if one of them matches the user&apos;s preferred language that one will be used instead.</source>
@@ -7887,7 +7887,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.cpp" line="161"/>
         <source>Try to autodetect for this language</source>
-        <translation>尝试自动检测此语言</translation>
+        <translation>Bu dil için otomatik algılamayı deneyin</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="162"/>
@@ -7907,7 +7907,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.ui" line="104"/>
         <source>Encoding</source>
-        <translation>编码</translation>
+        <translation>Kodlama</translation>
     </message>
     <message>
         <source>Try to a&amp;utodetect for this language:</source>
@@ -7919,7 +7919,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the font for the subtitles.</source>
-        <translation type="vanished">选择字幕的字体。</translation>
+        <translation type="vanished">Altyazıların yazı tipini seçin.</translation>
     </message>
     <message>
         <source>Use the ASS library</source>
@@ -7935,19 +7935,19 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enable Windows fonts</source>
-        <translation type="vanished">启用 Windows 字体</translation>
+        <translation type="vanished">Windows yazı tiplerini etkinleştir</translation>
     </message>
     <message>
         <source>If this option is enabled the Windows system fonts will be available for subtitles. There&apos;s an inconvenience: a font cache have to be created which can take some time.</source>
-        <translation type="vanished">如果启用此项那么Windows 系统字体将会用于字幕显示。不过有个不便：需要花时间创建字体缓存。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse altyazı için Windows sistem yazı tipleri kullanılabilir olacaktır. Bir rahatsızlıktan dolayı biraz zaman alabilecek bir yazı tipi önbellek oluşturulmalıdır.</translation>
     </message>
     <message>
         <source>If this option is not checked then only a few fonts bundled with SMPlayer can be used, but this is faster.</source>
-        <translation type="vanished">如果不勾选此项，那只有视频播放器内置的字体可用，但是更快。</translation>
+        <translation type="vanished">Bu seçenek işaretli değilse, yalnızca SMPlayer ile birlikte verilen birkaç yazı tipi kullanılabilir ancak bu daha hızlı.</translation>
     </message>
     <message>
         <source>The size in pixels.</source>
-        <translation type="vanished">以像素为单位的大小。</translation>
+        <translation type="vanished">Piksel cinsinden boyutu.</translation>
     </message>
     <message>
         <source>Bold</source>
