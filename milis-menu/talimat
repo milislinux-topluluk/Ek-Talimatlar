@@ -1,0 +1,28 @@
+# Tanım: Milis linux menü uygulaması
+# URL: https://github.com/sonakinci41/Milis_Menu
+# Paketçi: Cihan_Alkan
+# Gerekler: pyidna, pycertifi, pychardet, pyurllibs, pyrequests python3 python3-qt5
+# Grup:
+
+isim=milis-menu
+surum=0.1
+devir=1
+
+kaynak=($isim.desktop)
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/sonakinci41/Milis_Menu $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/milis-menu
+    cp -r $SRC/$isim $PKG/usr/share/
+    mv ../$isim.desktop $PKG/usr/share/applications/
+}
