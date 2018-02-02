@@ -5164,22 +5164,22 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefaudio.cpp" line="253"/>
         <source>Audio output driver</source>
-        <translation>音频输出驱动</translation>
+        <translation>Ses çıkış sürücüsü</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="254"/>
         <source>Select the audio output driver.</source>
-        <translation>选择音频输出驱动。</translation>
+        <translation>Ses çıkışı sürücüsünü seçin.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="256"/>
         <source>%1 is the recommended one. Try to avoid %2 and %3, they are slow and can have an impact on performance.</source>
-        <translation>推荐使用 %1。尽量避免 %2 和 %3，它们速度很慢，且会影响性能。</translation>
+        <translation>Önerilen %1'dir. %2 ve %3'ten kaçınmaya çalışın; bunlar yavaştır ve performansı etkileyebilir.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="263"/>
         <source>Channels by default</source>
-        <translation>默认声道</translation>
+        <translation>Varsayılan Kanallar</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="264"/>
@@ -5189,38 +5189,38 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefaudio.cpp" line="295"/>
         <source>Gradually adjusts the A/V sync based on audio delay measurements.</source>
-        <translation>基于音频延迟的测量值逐步调整 A/V 同步。</translation>
+        <translation>Ses gecikmesi ölçümlerine dayalı olarak A/V senkronizasyonunu kademeli olarak ayarlar.</translation>
     </message>
     <message>
         <location filename="../prefaudio.ui" line="44"/>
         <location filename="../prefaudio.cpp" line="274"/>
         <source>Global volume</source>
-        <translation>全局音量</translation>
+        <translation>Küresel hacim</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="275"/>
         <source>If this option is checked, the same volume will be used for all files you play. If the option is not checked each file uses its own volume.</source>
-        <translation>如果勾选此选项，您播放的所有文件都将使用相同的音量。如果此选项未被勾选，每个文件将使用其自己的音量。</translation>
+        <translation>Bu seçenek işaretlenirse, oynadığınız tüm dosyalar için aynı ses kullanılır. Seçenek işaretli değilse, her dosya kendi ses seviyesini kullanır.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="278"/>
         <source>This option also applies for the mute control.</source>
-        <translation>此选项也适用于静音控制。</translation>
+        <translation>Bu seçenek aynı zamanda sesi kapatma denetimi için de geçerlidir.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="280"/>
         <source>Software volume control</source>
-        <translation>使用软件音量控制</translation>
+        <translation>Yazılım ses kontrolü</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="281"/>
         <source>Check this option to use the software mixer, instead of using the sound card mixer.</source>
-        <translation>勾选此选项以使用软件混音器，而不使用声卡混音器。</translation>
+        <translation>Ses kartı karıştırıcısını kullanmak yerine yazılım karıştırıcıyı kullanmak için bu seçeneği işaretleyin.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="284"/>
         <source>Max. Amplification</source>
-        <translation>最大放大率</translation>
+        <translation>Maks. Amplifikasyon</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="285"/>
@@ -5259,7 +5259,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Choose your DVD device. It will be used to play DVDs.</source>
-        <translation type="vanished">选择您的 DVD 驱动器。它将用于播放 DVD。</translation>
+        <translation type="vanished">DVD cihazınızı seçin. DVD çalmak için kullanılacaktır.</translation>
     </message>
     <message>
         <source>If this option is checked, SMPlayer will play DVDs using dvdnav. Requires a recent version of MPlayer compiled with dvdnav support.</source>
@@ -5279,7 +5279,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>SMPlayer does not choose any CDROM or DVD devices by default. So before you can actually play a CD or DVD you have to select the devices you want to use (they can be the same).</source>
-        <translation type="vanished">视频播放器默认不会选择任何 CDROM 或 DVD 驱动器。因此在您实际播放 CD 或 DVD 之前，您必须选择您想要使用的驱动器(它们可以是相同的)。</translation>
+        <translation type="vanished">SMPlayer varsayılan olarak herhangi bir CDROM veya DVD aygıtı seçmez. Yani aslında bir CD veya DVD çalabilmeniz için kullanmak istediğiniz cihazları seçmeniz gerekir (bunlar aynı olabilir).</translation>
     </message>
     <message>
         <source>Blu-ray device</source>
@@ -5578,7 +5578,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>2 (Stereo)</source>
-        <translation type="vanished">2 (Siteryo)</translation>
+        <translation type="vanished">2 (Steryo)</translation>
     </message>
     <message>
         <source>4 (4.0 Surround)</source>
@@ -5590,7 +5590,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>C&amp;hannels by default:</source>
-        <translation type="vanished">默认声道(&amp;H):</translation>
+        <translation type="vanished">Varsayılan Kanallar:</translation>
     </message>
     <message>
         <source>&amp;Pause when minimized</source>
@@ -5615,20 +5615,20 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefgeneral.ui" line="65"/>
         <source>Playback engine:</source>
-        <translation>播放引擎：</translation>
+        <translation>Oynatma motoru:：</translation>
     </message>
     <message>
         <location filename="../prefgeneral.ui" line="81"/>
         <source>Preview when video is playing</source>
-        <translation>视频播放时进行预览</translation>
+        <translation>Video oynatılırken önizleme yapın</translation>
     </message>
     <message>
         <source>Enable postprocessing by default</source>
-        <translation type="vanished">默认启用后期处理</translation>
+        <translation type="vanished">Sonra işleme özelliğini varsayılan olarak etkinleştir</translation>
     </message>
     <message>
         <source>Max. Amplification</source>
-        <translation type="vanished">最大放大率</translation>
+        <translation type="vanished">Maks. Amplifikasyon</translation>
     </message>
     <message>
         <source>AC3/DTS pass-through S/PDIF</source>
@@ -5636,7 +5636,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Volume normalization by default</source>
-        <translation type="vanished">默认音量标准化</translation>
+        <translation type="vanished">Varsayılan olarak birim normalleştirme</translation>
     </message>
     <message>
         <source>Maximizes the volume without distorting the sound.</source>
@@ -5644,7 +5644,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Channels by default</source>
-        <translation type="vanished">默认声道</translation>
+        <translation type="vanished">Varsayılan Kanallar</translation>
     </message>
     <message>
         <source>Sets the maximum amplification level in percent (default: 110). A value of 200 will allow you to adjust the volume up to a maximum of double the current level. With values below 100 the initial volume (which is 100%) will be above the maximum, which e.g. the OSD cannot display correctly.</source>
@@ -7786,12 +7786,12 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.ui" line="77"/>
         <source>Same name as movie</source>
-        <translation>与影片的名称相同</translation>
+        <translation>Filmle aynı adı</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="82"/>
         <source>All subs containing movie name</source>
-        <translation>Filmle aynı ad</translation>
+        <translation>Film adı içeren tüm alt bölümler</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="87"/>
@@ -7801,12 +7801,12 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.ui" line="127"/>
         <source>Default subtitle encoding:</source>
-        <translation>默认字幕编码:</translation>
+        <translation>Varsayılan altyazı kodlaması:</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="176"/>
         <source>Try to autodetect for this language:</source>
-        <translation>尝试自动检测此语言:</translation>
+        <translation>Bu dil için otomatik algılamaya çalışın:</translation>
     </message>
     <message>
         <source>Use the &amp;ASS library</source>
@@ -7864,7 +7864,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Border color</source>
-        <translation type="vanished">边框颜色</translation>
+        <translation type="vanished">Kenarlık rengi</translation>
     </message>
     <message>
         <source>Select the color for the border of the subtitles.</source>
