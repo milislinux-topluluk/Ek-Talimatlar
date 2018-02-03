@@ -63,3 +63,4 @@ derle() {
   mkdir -p $PKG/usr/bin
   ln -s /opt/openboard/OpenBoard $PKG/usr/bin/openboard
 }
+
