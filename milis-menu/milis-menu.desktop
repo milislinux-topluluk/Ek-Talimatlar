@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Milis Menü
+Comment=Milis Linux Menüsü
+Categories=Utility;
+Exec=python3 /usr/share/milis-menu/main.py
+Icon=/usr/share/milis-menu/simgeler/uygulama.svg
+Terminal=false
+Type=Application

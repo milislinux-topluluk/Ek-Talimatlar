@@ -5164,22 +5164,22 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefaudio.cpp" line="253"/>
         <source>Audio output driver</source>
-        <translation>音频输出驱动</translation>
+        <translation>Ses çıkış sürücüsü</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="254"/>
         <source>Select the audio output driver.</source>
-        <translation>选择音频输出驱动。</translation>
+        <translation>Ses çıkışı sürücüsünü seçin.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="256"/>
         <source>%1 is the recommended one. Try to avoid %2 and %3, they are slow and can have an impact on performance.</source>
-        <translation>推荐使用 %1。尽量避免 %2 和 %3，它们速度很慢，且会影响性能。</translation>
+        <translation>Önerilen %1'dir. %2 ve %3'ten kaçınmaya çalışın; bunlar yavaştır ve performansı etkileyebilir.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="263"/>
         <source>Channels by default</source>
-        <translation>默认声道</translation>
+        <translation>Varsayılan Kanallar</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="264"/>
@@ -5189,38 +5189,38 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefaudio.cpp" line="295"/>
         <source>Gradually adjusts the A/V sync based on audio delay measurements.</source>
-        <translation>基于音频延迟的测量值逐步调整 A/V 同步。</translation>
+        <translation>Ses gecikmesi ölçümlerine dayalı olarak A/V senkronizasyonunu kademeli olarak ayarlar.</translation>
     </message>
     <message>
         <location filename="../prefaudio.ui" line="44"/>
         <location filename="../prefaudio.cpp" line="274"/>
         <source>Global volume</source>
-        <translation>全局音量</translation>
+        <translation>Küresel hacim</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="275"/>
         <source>If this option is checked, the same volume will be used for all files you play. If the option is not checked each file uses its own volume.</source>
-        <translation>如果勾选此选项，您播放的所有文件都将使用相同的音量。如果此选项未被勾选，每个文件将使用其自己的音量。</translation>
+        <translation>Bu seçenek işaretlenirse, oynadığınız tüm dosyalar için aynı ses kullanılır. Seçenek işaretli değilse, her dosya kendi ses seviyesini kullanır.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="278"/>
         <source>This option also applies for the mute control.</source>
-        <translation>此选项也适用于静音控制。</translation>
+        <translation>Bu seçenek aynı zamanda sesi kapatma denetimi için de geçerlidir.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="280"/>
         <source>Software volume control</source>
-        <translation>使用软件音量控制</translation>
+        <translation>Yazılım ses kontrolü</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="281"/>
         <source>Check this option to use the software mixer, instead of using the sound card mixer.</source>
-        <translation>勾选此选项以使用软件混音器，而不使用声卡混音器。</translation>
+        <translation>Ses kartı karıştırıcısını kullanmak yerine yazılım karıştırıcıyı kullanmak için bu seçeneği işaretleyin.</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="284"/>
         <source>Max. Amplification</source>
-        <translation>最大放大率</translation>
+        <translation>Maks. Amplifikasyon</translation>
     </message>
     <message>
         <location filename="../prefaudio.cpp" line="285"/>
@@ -5259,7 +5259,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Choose your DVD device. It will be used to play DVDs.</source>
-        <translation type="vanished">选择您的 DVD 驱动器。它将用于播放 DVD。</translation>
+        <translation type="vanished">DVD cihazınızı seçin. DVD çalmak için kullanılacaktır.</translation>
     </message>
     <message>
         <source>If this option is checked, SMPlayer will play DVDs using dvdnav. Requires a recent version of MPlayer compiled with dvdnav support.</source>
@@ -5279,7 +5279,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>SMPlayer does not choose any CDROM or DVD devices by default. So before you can actually play a CD or DVD you have to select the devices you want to use (they can be the same).</source>
-        <translation type="vanished">视频播放器默认不会选择任何 CDROM 或 DVD 驱动器。因此在您实际播放 CD 或 DVD 之前，您必须选择您想要使用的驱动器(它们可以是相同的)。</translation>
+        <translation type="vanished">SMPlayer varsayılan olarak herhangi bir CDROM veya DVD aygıtı seçmez. Yani aslında bir CD veya DVD çalabilmeniz için kullanmak istediğiniz cihazları seçmeniz gerekir (bunlar aynı olabilir).</translation>
     </message>
     <message>
         <source>Blu-ray device</source>
@@ -5558,7 +5558,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Double buffering fixes flicker by storing two frames in memory, and displaying one while decoding another. If disabled it can affect OSD negatively, but often removes OSD flickering.</source>
-        <translation type="vanished">通过在内存中存储两帧，在显示一帧的同时解码另一帧的双缓冲来修复闪烁问题。如果禁用它会对 OSD (屏幕显示)产生负面影响，但常常能去除 OSD (屏幕显示)的闪烁。</translation>
+        <translation type="vanished">Çifte arabellekleme, iki kareyi bellekte saklar ve diğerini çözerken diğerini titreşir. Devre dışı bırakılırsa, OSD'yi olumsuz etkileyebilir, ancak sıklıkla OSD titreşimini ortadan kaldırır.</translation>
     </message>
     <message>
         <source>&amp;Enable postprocessing by default</source>
@@ -5578,7 +5578,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>2 (Stereo)</source>
-        <translation type="vanished">2 (Siteryo)</translation>
+        <translation type="vanished">2 (Steryo)</translation>
     </message>
     <message>
         <source>4 (4.0 Surround)</source>
@@ -5590,7 +5590,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>C&amp;hannels by default:</source>
-        <translation type="vanished">默认声道(&amp;H):</translation>
+        <translation type="vanished">Varsayılan Kanallar:</translation>
     </message>
     <message>
         <source>&amp;Pause when minimized</source>
@@ -5615,20 +5615,20 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefgeneral.ui" line="65"/>
         <source>Playback engine:</source>
-        <translation>播放引擎：</translation>
+        <translation>Oynatma motoru:：</translation>
     </message>
     <message>
         <location filename="../prefgeneral.ui" line="81"/>
         <source>Preview when video is playing</source>
-        <translation>视频播放时进行预览</translation>
+        <translation>Video oynatılırken önizleme yapın</translation>
     </message>
     <message>
         <source>Enable postprocessing by default</source>
-        <translation type="vanished">默认启用后期处理</translation>
+        <translation type="vanished">Sonra işleme özelliğini varsayılan olarak etkinleştir</translation>
     </message>
     <message>
         <source>Max. Amplification</source>
-        <translation type="vanished">最大放大率</translation>
+        <translation type="vanished">Maks. Amplifikasyon</translation>
     </message>
     <message>
         <source>AC3/DTS pass-through S/PDIF</source>
@@ -5636,7 +5636,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Volume normalization by default</source>
-        <translation type="vanished">默认音量标准化</translation>
+        <translation type="vanished">Varsayılan olarak birim normalleştirme</translation>
     </message>
     <message>
         <source>Maximizes the volume without distorting the sound.</source>
@@ -5644,15 +5644,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Channels by default</source>
-        <translation type="vanished">默认声道</translation>
+        <translation type="vanished">Varsayılan Kanallar</translation>
     </message>
     <message>
         <source>Sets the maximum amplification level in percent (default: 110). A value of 200 will allow you to adjust the volume up to a maximum of double the current level. With values below 100 the initial volume (which is 100%) will be above the maximum, which e.g. the OSD cannot display correctly.</source>
-        <translation type="vanished">设置最大放大级别的百分比(默认值: 110)。该值为 200 时允许您调整的最大音量为目前级别的两倍。该值低于 100 时，初始音量(为100%)将高于可调整的最大值，这时例如 OSD (屏幕显示)将不能正确显示。</translation>
+        <translation type="vanished">Maksimum yükseltme düzeyini yüzde olarak ayarlar (varsayılan: 110). 200 değeri, ses seviyesini geçerli seviyeye iki katına çıkarmanızı sağlar. 100'ün altındaki değerlerde başlangıç hacmi (% 100) maksimumun üzerine çıkar; OSD doğru görüntülenemiyor.</translation>
     </message>
     <message>
         <source>Postprocessing will be used by default on new opened files.</source>
-        <translation type="vanished">默认在新打开的文件上使用后期处理。</translation>
+        <translation type="vanished">Postprocessing, yeni açılan dosyalarda varsayılan olarak kullanılacaktır.</translation>
     </message>
     <message>
         <source>Audio track</source>
@@ -5792,7 +5792,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enable/disable drawing video by 16-pixel height slices/bands. If disabled, the whole frame is drawn in a single run. May be faster or slower, depending on video card and available cache. It has effect only with libmpeg2 and libavcodec codecs.</source>
-        <translation type="vanished">启用/禁用以 16-像素高的片/带方式绘制视频。如果禁用，将一次运行绘制整个帧。可能更快或更慢，这取决于显卡和可用的缓存。它只对 libmpeg2 和 libavcodec 编解码器有效果。</translation>
+        <translation type="vanished">Videoyu 16 piksellik yükseklik dilim / bantlarla çizmeyi etkinleştirin / devre dışı bırakın. Devre dışı bırakıldığında, tüm çerçeve tek bir kere çalıştırılır. Video kartına ve kullanılabilir ön belleğe bağlı olarak daha hızlı veya daha yavaş olabilir. Yalnızca libmpeg2 ve libavcodec codec bileşenleri ile etkiye sahiptir.</translation>
     </message>
     <message>
         <source>Dra&amp;w video using slices</source>
@@ -5800,7 +5800,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Close when finished playback</source>
-        <translation type="vanished">结束播放时关闭(&amp;C)</translation>
+        <translation type="vanished">Çalmayı bitirdikten sonra kapat</translation>
     </message>
     <message>
         <source>fast</source>
@@ -5816,11 +5816,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>User defined...</source>
-        <translation type="vanished">用户定义...</translation>
+        <translation type="vanished">Kullanıcı tanımlı...</translation>
     </message>
     <message>
         <source>Default zoom</source>
-        <translation type="vanished">默认缩放</translation>
+        <translation type="vanished">Varsayılan Yakınlaştırma</translation>
     </message>
     <message>
         <source>This option sets the default zoom which will be used for new videos.</source>
@@ -5864,22 +5864,22 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefgeneral.cpp" line="134"/>
         <source>Select MPlayer as playback engine</source>
-        <translation>选择 MPlayer 作为播放引擎</translation>
+        <translation>Oynatma motoru olarak MPlayer'i seçin</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="135"/>
         <source>If you change the playback engine to MPlayer, please restart Kylin Video.</source>
-        <translation>如果你切换播放引擎为MPlayer，请重启麒麟影音。</translation>
+        <translation>Oynatma motorunu MPlayer'e değiştirirseniz, lütfen Kylin Video'yu yeniden başlatın.</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="136"/>
         <source>Select MPV as playback engine</source>
-        <translation>选择 MPV 作为播放引擎</translation>
+        <translation>Oynatma motoru olarak MPV'yi seçin</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="137"/>
         <source>If you change the playback engine to MPV, please restart Kylin Video.</source>
-        <translation>如果你切换播放引擎为MPV，请重启麒麟影音。</translation>
+        <translation>Oynatma motorunu MPV'ye değiştirirseniz, lütfen Kylin Video'yu yeniden başlatın.</translation>
     </message>
     <message>
         <source>Check this option to disable the screensaver while playing.&lt;br&gt;The screensaver will enabled again when play finishes.</source>
@@ -5899,11 +5899,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Add black borders on fullscreen</source>
-        <translation type="vanished">全屏时添加黑边</translation>
+        <translation type="vanished">Tam ekrana siyah kenarlıklar ekleyin</translation>
     </message>
     <message>
         <source>If this option is enabled, black borders will be added to the image in fullscreen mode. This allows subtitles to be displayed on the black borders.</source>
-        <translation type="vanished">如果启用此选项，则会在全屏模式的图像上添加黑色边框。这将允许字幕显示在黑色边框上。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse, tam ekran modunda görüntüye siyah kenarlıklar eklenecektir. Bu altyazıların siyah kenarlarda görüntülenmesine olanak tanır.</translation>
     </message>
     <message>
         <source>&amp;Add black borders on fullscreen</source>
@@ -5931,11 +5931,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>The latter method could be faster if there is info for a lot of files.</source>
-        <translation type="vanished">如果有大量的文件信息，后一种方法可能会更快。</translation>
+        <translation type="vanished">Birçok dosya için bilgi varsa ikinci yöntem daha hızlı olabilir.</translation>
     </message>
     <message>
         <source>&amp;Store settings in</source>
-        <translation type="vanished">存储设置于(&amp;S)</translation>
+        <translation type="vanished">Içinde ayarları sakla</translation>
     </message>
     <message>
         <source>&lt;b&gt;multiple ini files&lt;/b&gt;: one ini file will be used for each played file. Those ini files will be saved in the folder %1</source>
@@ -5943,11 +5943,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If you check this option, SMPlayer will remember the last position of the file when you open it again. This option works only with regular files (not with DVDs, CDs, URLs...).</source>
-        <translation type="vanished">如果您勾选此选项，视频播放器将记住文件的最后播放位置，当您再次打开它时可由该位置开始播放。此选项仅适用于常规文件(不包括 DVD、CD、URL...)。</translation>
+        <translation type="vanished">Bu seçeneğe işaret ederseniz, SMPlayer yeniden açtığınızda dosyanın son konumunu hatırlar. Bu seçenek yalnızca normal dosyalarla (DVD'ler, CD'ler, URL'ler ...) çalışır</translation>
     </message>
     <message>
         <source>If checked, turns on direct rendering (not supported by all codecs and video outputs)&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; May cause OSD/SUB corruption!</source>
-        <translation type="vanished">如果勾选，将打开直接渲染(还不被所有的编解码器和视频输出支持)&lt;br&gt;&lt;b&gt;警告:&lt;/b&gt; 可能会导致 OSD (屏幕显示)/SUB 的讹误!</translation>
+        <translation type="vanished">İşaretlenirse, doğrudan açılır (tüm codec bileşenleri ve video çıkışı tarafından desteklenmez) &lt;br&gt;&lt;b&gt;:&lt;/b&gt; OSD / SUB bozulmasına neden olabilir!</translation>
     </message>
     <message>
         <source>Requests the number of playback channels. MPlayer asks the decoder to decode the audio into as many channels as specified. Then it is up to the decoder to fulfill the requirement. This is usually only important when playing videos with AC3 audio (like DVDs). In that case liba52 does the decoding by default and correctly downmixes the audio into the requested number of channels. &lt;b&gt;Note&lt;/b&gt;: This option is honored by codecs (AC3 only), filters (surround) and audio output drivers (OSS at least).</source>
@@ -7072,7 +7072,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If this option is checked, SMPlayer will try to play videos from streaming sites like Youtube, Dailymotion, Vimeo, Vevo, etc.</source>
-        <translation type="vanished">如果勾选此项，视频播放器将会尝试从 Youtube，DailyMotion，Vimeo，Vevo等流媒体网站播放视频。</translation>
+        <translation type="vanished">Bu seçenek işaretlenirse, SMPlayer Youtube, Dailymotion, Vimeo, Vevo gibi akışlı sitelerden videolar yürütmeye çalışacaktır.</translation>
     </message>
     <message>
         <source>Requires mpv and youtube-dl.</source>
@@ -7112,7 +7112,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If the proxy requires authentication, this sets the username.</source>
-        <translation type="vanished">如果代理需要认证，请在这里设置用户名。</translation>
+        <translation type="vanished">Proxy kimlik doğrulaması gerektiriyorsa kullanıcı adı belirlenir.</translation>
     </message>
     <message>
         <source>Password</source>
@@ -7128,7 +7128,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the proxy type to be used.</source>
-        <translation type="vanished">选择要使用的代理类型</translation>
+        <translation type="vanished">Kullanılacak proxy türünü seçin.</translation>
     </message>
 </context>
 <context>
@@ -7141,15 +7141,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Performance</source>
-        <translation type="vanished">性能(&amp;P)</translation>
+        <translation type="vanished">Performans</translation>
     </message>
     <message>
         <source>Priority</source>
-        <translation type="vanished">优先级</translation>
+        <translation type="vanished">Öncelik</translation>
     </message>
     <message>
         <source>Select the priority for the MPlayer process.</source>
-        <translation type="vanished">选择 MPlayer 进程的优先级。</translation>
+        <translation type="vanished">MPlayer işlemi için önceliği seçin.</translation>
     </message>
     <message>
         <source>realtime</source>
@@ -7161,7 +7161,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>abovenormal</source>
-        <translation type="vanished">高于普通</translation>
+        <translation type="vanished">normalin üstünde</translation>
     </message>
     <message>
         <source>normal</source>
@@ -7169,24 +7169,24 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>belownormal</source>
-        <translation type="vanished">低于普通</translation>
+        <translation type="vanished">normalin altında</translation>
     </message>
     <message>
         <source>idle</source>
-        <translation type="vanished">空闲</translation>
+        <translation type="vanished">boş</translation>
     </message>
     <message>
         <source>Decoding</source>
-        <translation type="vanished">解码中</translation>
+        <translation type="vanished">Şifre çözme</translation>
     </message>
     <message>
         <source>Hardware &amp;decoding</source>
-        <translation type="vanished">硬解 (&amp;d)</translation>
+        <translation type="vanished">Donanım şifre çözme</translation>
     </message>
     <message>
         <location filename="../prefperformance.ui" line="49"/>
         <source>Cache for local files:</source>
-        <translation>本地文件缓存:</translation>
+        <translation>Yerel dosyalar için önbellek:</translation>
     </message>
     <message>
         <location filename="../prefperformance.ui" line="66"/>
@@ -7202,28 +7202,28 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.ui" line="112"/>
         <source>Decode</source>
-        <translation>解码</translation>
+        <translation>Kod Çözme</translation>
     </message>
     <message>
         <location filename="../prefperformance.ui" line="135"/>
         <source>Threads for decoding (MPEG-1/2 and H.264 only):</source>
-        <translation>解码线程(仅 MPEG-1/2 和 H.264):</translation>
+        <translation>Kod çözme konuları (yalnızca MPEG-1/2 ve H.264):</translation>
     </message>
     <message>
         <source>Form</source>
-        <translation type="obsolete">表格</translation>
+        <translation type="obsolete">Biçim</translation>
     </message>
     <message>
         <source>Setting a cache may improve performance on slow media</source>
-        <translation type="vanished">设置缓存可能会提高慢速媒体的性能</translation>
+        <translation type="vanished">Bir önbellek ayarlamak yavaş ortamdaki performansı artırabilir</translation>
     </message>
     <message>
         <source>Allow frame drop</source>
-        <translation type="vanished">允许丢帧</translation>
+        <translation type="vanished">Kare düşmesine izin ver</translation>
     </message>
     <message>
         <source>Skip displaying some frames to maintain A/V sync on slow systems.</source>
-        <translation type="vanished">跳过显示一些帧从而在缓慢的系统上保持 A/V 同步。</translation>
+        <translation type="vanished">Yavaş sistemlerde A / V senkronizasyonunu sağlamak için bazı çerçeveleri gösteren atlama.</translation>
     </message>
     <message>
         <source>Allow hard frame drop</source>
@@ -7235,7 +7235,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Priorit&amp;y:</source>
-        <translation type="vanished">优先级(&amp;Y):</translation>
+        <translation type="vanished">Öncelik:</translation>
     </message>
     <message>
         <source>&amp;Allow frame drop</source>
@@ -7263,7 +7263,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>If checked, it will try the fastest method to seek to chapters but it might not work with some discs.</source>
-        <translation type="vanished">如果勾选，它将尝试以最快的方法定位到章节，但它可能无法工作于某些光盘。</translation>
+        <translation type="vanished">İşaretlenirse, bölümlere bakmak için en hızlı yöntemi deneyecek ancak bazı disklerle çalışmayabilir.</translation>
     </message>
     <message>
         <source>Skip loop filter</source>
@@ -7295,11 +7295,11 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.cpp" line="162"/>
         <source>This option specifies how much memory (in kBytes) to use when precaching a URL.</source>
-        <translation>此选项可指定预缓存 URL 时要使用多少内存(以 KB 为单位)。</translation>
+        <translation>Bu seçenek, URL'yi öncelemek için ne kadar bellek (kBayt cinsinden) kullanılacağını belirtir.</translation>
     </message>
     <message>
         <source>Cache for DVDs</source>
-        <translation type="vanished">DVD 缓存</translation>
+        <translation type="vanished">DVD için bellek</translation>
     </message>
     <message>
         <source>This option specifies how much memory (in kBytes) to use when precaching a DVD.&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; Seeking might not work properly (including chapter switching) when using a cache for DVDs.</source>
@@ -7327,7 +7327,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Skip (always)</source>
-        <translation type="vanished">跳过(始终)</translation>
+        <translation type="vanished">Atla(herzaman)</translation>
     </message>
     <message>
         <source>Skip only on HD videos</source>
@@ -7359,7 +7359,7 @@ Example: extrastereo,karaoke</source>
         <location filename="../prefperformance.ui" line="172"/>
         <location filename="../prefperformance.cpp" line="139"/>
         <source>Hardware decoding</source>
-        <translation>Donanım şifre çözme</translation>
+        <translation>Donanım Şifre Çözme</translation>
     </message>
     <message>
         <location filename="../prefperformance.cpp" line="140"/>
@@ -7379,7 +7379,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.cpp" line="145"/>
         <source>Auto: it tries to automatically enable hardware decoding using the first available method.</source>
-        <translation>自动：自动尝试使用第一种可用的硬解方式。</translation>
+        <translation>Otomatik: ilk kullanılabilir yöntemi kullanarak donanım şifre çözmeyi otomatik olarak etkinleştirmeye çalışır.</translation>
     </message>
     <message>
         <location filename="../prefperformance.cpp" line="147"/>
@@ -7403,7 +7403,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.cpp" line="153"/>
         <source>This option only works with mpv.</source>
-        <translation>此选项仅支持 mpv。</translation>
+        <translation>Bu seçenek yalnızca mpv ile çalışır.</translation>
     </message>
     <message>
         <source>Possible values:</source>
@@ -7433,7 +7433,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>This option specifies how much memory (in kBytes) to use when precaching an audio CD.</source>
-        <translation type="vanished">此选项可指定预缓存音频 CD 时要使用多少内存(以 KB 为单位)。</translation>
+        <translation type="vanished">Bu seçenek, bir ses CD'sini öncelerken ne kadar bellek (kBayt cinsinden) kullanılacağını belirtir.</translation>
     </message>
     <message>
         <source>Cache for &amp;audio CDs:</source>
@@ -7441,15 +7441,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Cache for VCDs</source>
-        <translation type="vanished">VCD 缓存</translation>
+        <translation type="vanished">VCD için bellek</translation>
     </message>
     <message>
         <source>This option specifies how much memory (in kBytes) to use when precaching a VCD.</source>
-        <translation type="vanished">此选项可指定预缓存 VCD 时要使用多少内存(以 KB 为单位)。</translation>
+        <translation type="vanished">Bu seçenek, bir VCD'yi öncelerken ne kadar bellek (kBayt cinsinden) kullanılacağını belirtir.</translation>
     </message>
     <message>
         <source>Cache for &amp;VCDs:</source>
-        <translation type="vanished">VCD 缓存(&amp;V):</translation>
+        <translation type="vanished">VCD için bellek:</translation>
     </message>
     <message>
         <location filename="../prefperformance.cpp" line="135"/>
@@ -7459,11 +7459,11 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefperformance.cpp" line="136"/>
         <source>Sets the number of threads to use for decoding. Only for MPEG-1/2 and H.264</source>
-        <translation>设置要用于解码的线程数。仅适用于 MPEG-1/2 和 H.264</translation>
+        <translation>Kod çözme işlemi için kullanılacak iş parçacığı sayısını ayarlar. Yalnızca MPEG-1/2 ve H.264 için</translation>
     </message>
     <message>
         <source>&amp;Threads for decoding (MPEG-1/2 and H.264 only):</source>
-        <translation type="vanished">解码线程(仅 MPEG-1/2 和 H.264)(&amp;T):</translation>
+        <translation type="vanished">Kod çözme konuları (yalnızca MPEG-1/2 ve H.264):</translation>
     </message>
     <message>
         <source>Set process priority for mplayer according to the predefined priorities available under Windows.&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; Using realtime priority can cause system lockup.</source>
@@ -7471,15 +7471,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Use CoreAVC if no other codec specified</source>
-        <translation type="vanished">没有指定其他编解码器时使用 CoreAVC</translation>
+        <translation type="vanished">Belirtilen başka bir codec bileşen yoksa CoreAVC'yi kullanın</translation>
     </message>
     <message>
         <source>&amp;Use CoreAVC if no other codec specified</source>
-        <translation type="vanished">没有指定其他编解码器时使用 CoreAVC(&amp;U)</translation>
+        <translation type="vanished">Belirtilen başka bir codec bileşen yoksa CoreAVC'yi kullanın</translation>
     </message>
     <message>
         <source>Cache for &amp;TV:</source>
-        <translation type="vanished">TV için bellek(&amp;T):</translation>
+        <translation type="vanished">TV için bellek:</translation>
     </message>
 </context>
 <context>
@@ -7490,11 +7490,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Automatically add files to playlist</source>
-        <translation type="vanished">自动将文件添加到播放列表</translation>
+        <translation type="vanished">Dosyaları otomatik olarak çalma listesine ekleme</translation>
     </message>
     <message>
         <source>If this option is enabled, every time a file is opened, SMPlayer will first clear the playlist and then add the file to it. In case of DVDs, CDs and VCDs, all titles in the disc will be added to the playlist.</source>
-        <translation type="vanished">如果启用此选项，每当打开一个文件时，视频播放器将先清除播放列表，然后再将该文件添加到其中。若是 DVD、CD 和 VCD，光盘中的所有标题都将被添加到播放列表。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse, bir dosya her açıldığında, SMPlayer öncelikle çalma listesini temizleyecek ve dosyayı ona ekleyecektir. DVD'ler, CD'ler ve VCD'lerde, diskteki tüm başlıklar çalma listesine eklenecektir.</translation>
     </message>
     <message>
         <source>None</source>
@@ -7510,7 +7510,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Video and audio files</source>
-        <translation type="vanished">视频和音频文件</translation>
+        <translation type="vanished">Video ve ses dosyaları</translation>
     </message>
     <message>
         <source>Consecutive files</source>
@@ -7518,11 +7518,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Add files from folder</source>
-        <translation type="vanished">从文件夹添加</translation>
+        <translation type="vanished">Klasörden dosya ekle</translation>
     </message>
     <message>
         <source>This option allows you to add files automatically to the playlist:</source>
-        <translation type="vanished">此选项允许自动添加文件到列表</translation>
+        <translation type="vanished">Bu seçenek, otomatik olarak çalma listesine dosyalar eklemenize izin verir:</translation>
     </message>
     <message>
         <source>&lt;b&gt;None&lt;/b&gt;: no files will be added</source>
@@ -7546,31 +7546,31 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Play files from start</source>
-        <translation type="vanished">从开头播放文件</translation>
+        <translation type="vanished">Dosyaları başlangıçtan itibaren oynat</translation>
     </message>
     <message>
         <source>If this option is enabled, all files from the playlist will start to play from the beginning instead of resuming from a previous playback.</source>
-        <translation type="vanished">如果打开此选项，所有播放列表里的文件都会从开始播放而不是从上次播放停止位置开始。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse, çalma listesindeki tüm dosyalar önceki çalma işlemine geri dönmek yerine baştan çalmaya başlayacaktır.</translation>
     </message>
     <message>
         <source>Get info automatically about files added</source>
-        <translation type="vanished">自动获取新添加文件的信息</translation>
+        <translation type="vanished">Eklenen dosyalar hakkında otomatik olarak bilgi alın</translation>
     </message>
     <message>
         <source>Save copy of playlist on exit</source>
-        <translation type="vanished">退出时保存播放列表的副本</translation>
+        <translation type="vanished">Çıkışta oynatma listesinin kopyasını kaydet</translation>
     </message>
     <message>
         <source>If this option is checked, a copy of the playlist will be saved in the smplayer configuration when smplayer is closed, and it will reloaded automatically when smplayer is run again.</source>
-        <translation type="vanished">如果勾选此项，当smplayer关闭时，一个播放列表的副本会被保存在smplayer配置文件夹下，在下次smplayer运行时重新载入此文件。</translation>
+        <translation type="vanished">Bu seçenek işaretlenirse, oynatma listesinin bir kopyası smplayer kapatıldığında smplayer yapılandırmasına kaydedilir ve smplayer tekrar çalıştırıldığında otomatik olarak yeniden yüklenir.</translation>
     </message>
     <message>
         <source>Play next file even if the previous file failed</source>
-        <translation type="vanished">上个文件播放失败时继续播放下个文件</translation>
+        <translation type="vanished">Bir önceki dosya başarısız olsa bile bir sonraki dosyayı oynat</translation>
     </message>
     <message>
         <source>If this option is enabled, the playlist will ignore playback errors from a previous file and will play the next file in the list.</source>
-        <translation type="vanished">如果启用此项，播放列表将会忽略此错误并继续播放下个文件。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse, oynatma listesi bir önceki dosyadaki oynatma hatalarını dikkate almayacak ve listedeki bir sonraki dosyayı oynatacaktır.</translation>
     </message>
     <message>
         <source>&amp;Playlist</source>
@@ -7586,11 +7586,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Check this option if you want that adding a directory will also add the files in subdirectories recursively. Otherwise only the files in the selected directory will be added.</source>
-        <translation type="vanished">如果您想在添加一个目录时也递归添加子目录中的文件，请勾选此选项。否则将只添加所选目录中的文件。</translation>
+        <translation type="vanished">Bir dizinin eklenmesinin alt dizinlere dosyaları tekrar tekrar eklemesini isterseniz bu seçeneği işaretleyin. Aksi takdirde, yalnızca seçilen dizindeki dosyalar eklenecektir.</translation>
     </message>
     <message>
         <source>Check this option to inquire the files to be added to the playlist for some info. That allows you to show the title name (if available) and length of the files. Otherwise this info won&apos;t be available until the file is actually played. Beware: this option can be slow, specially if you add many files.</source>
-        <translation type="vanished">勾选此选项可以查询文件添加到播放列表中的一些信息。这将允许显示文件的标题名称(如果可用)和长度。否则在文件被实际播放之前这些信息将不可用。注意: 这个选项可能会很慢，特别是当您添加的文件过多时。</translation>
+        <translation type="vanished">Bazı bilgiler için çalma listesine eklenecek dosyalar istemek için bu seçeneği işaretleyin. Bu, (varsa) başlık adını ve dosyaların uzunluğunu görüntülemenizi sağlar. Aksi takdirde, bu bilgi dosya gerçekte oynatılıncaya kadar kullanılamaz. Dikkat: birçok dosya eklerseniz bu seçenek özellikle yavaşlayabilir.</translation>
     </message>
     <message>
         <source>Add files from &amp;folder:</source>
@@ -7610,7 +7610,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Save copy of playlist on exit</source>
-        <translation type="vanished">退出时保存播放列表的副本(&amp;S)</translation>
+        <translation type="vanished">Çıkışta oynatma listesinin kopyasını kaydet</translation>
     </message>
     <message>
         <source>Play &amp;next file even if the previous file failed</source>
@@ -7621,7 +7621,7 @@ Example: extrastereo,karaoke</source>
     <name>PrefScreenShot</name>
     <message>
         <source>&amp;ScreenShot</source>
-        <translation type="vanished">Ekran Kaydı(&amp;S)</translation>
+        <translation type="vanished">Ekran Kaydı</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.ui" line="26"/>
@@ -7645,19 +7645,19 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Enable screenshots</source>
-        <translation type="vanished">Ekrankaydı aktif(&amp;E)</translation>
+        <translation type="vanished">Ekrankaydı aktif</translation>
     </message>
     <message>
         <source>&amp;Folder:</source>
-        <translation type="vanished">Klasör(&amp;F):</translation>
+        <translation type="vanished">Klasör:</translation>
     </message>
     <message>
         <source>Temp&amp;late:</source>
-        <translation type="vanished">Şablon(&amp;l)：</translation>
+        <translation type="vanished">Şablon：</translation>
     </message>
     <message>
         <source>F&amp;ormat:</source>
-        <translation type="vanished">Biçim(&amp;o) :</translation>
+        <translation type="vanished">Biçim:</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="71"/>
@@ -7673,7 +7673,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefscreenshot.cpp" line="142"/>
         <source>You can use this option to enable or disable the possibility to take screenshots.</source>
-        <translation>您可以使用此选项启用或禁用是否可以进行屏幕截图。</translation>
+        <translation>Ekran görüntüsü alma imkânını etkinleştirmek veya devre dışı bırakmak için bu seçeneği kullanabilirsiniz.</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="145"/>
@@ -7683,7 +7683,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefscreenshot.cpp" line="146"/>
         <source>Here you can specify a folder where the screenshots taken by Kylin Video will be stored. If the folder is not valid the screenshot feature will be disabled.</source>
-        <translation>在这里您可以指定一个麒麟影音将用来存储屏幕截图的文件夹。如果文件夹是无效的，屏幕截图功能将被禁用。</translation>
+        <translation>Burada, Kylin Video tarafından alınan ekran görüntülerinin saklanacağı bir klasörü belirleyebilirsiniz. Klasör geçersizse, ekran görüntüsü özelliği devre dışı bırakılacaktır.</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="150"/>
@@ -7693,7 +7693,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefscreenshot.cpp" line="151"/>
         <source>This option specifies the filename template used to save screenshots.</source>
-        <translation>此选项定义保存视频截屏时使用的文件名模板。</translation>
+        <translation>Bu seçenek, ekran görüntülerini kaydetmek için kullanılan dosya adı şablonunu belirtir.</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="152"/>
@@ -7708,23 +7708,23 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefscreenshot.cpp" line="155"/>
         <source>For a full list of the template specifiers visit this link:</source>
-        <translation>完整模板说明符列表请访问此链接：</translation>
+        <translation>Şablon belirteçlerinin tam listesi için şu bağlantıyı ziyaret edin:</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="158"/>
         <location filename="../prefscreenshot.cpp" line="162"/>
         <source>This option only works with mpv.</source>
-        <translation>此选项仅适用于mpv。</translation>
+        <translation>Bu seçenek yalnızca mpv ile çalışır.</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="160"/>
         <source>Format for screenshots</source>
-        <translation>截屏样式</translation>
+        <translation>Ekran görüntüleri için format</translation>
     </message>
     <message>
         <location filename="../prefscreenshot.cpp" line="161"/>
         <source>This option allows you to choose the image file type used for saving screenshots.</source>
-        <translation>此选项让您选择视频截图的格式。</translation>
+        <translation>Bu seçenek, ekran görüntülerini kaydetmek için kullanılan resim dosyası türünü seçmenizi sağlar.</translation>
     </message>
 </context>
 <context>
@@ -7732,7 +7732,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefshortcut.ui" line="50"/>
         <source>Here you can change any key shortcut. To do it double click or press enter over a shortcut cell. </source>
-        <translation>在这里您可以更改任何快捷键。要做到这一点，请在一个快捷键单元格上双击或按回车。</translation>
+        <translation>Burada herhangi bir tuş kısayolunu değiştirebilirsiniz. Bunu yapmak için, kısayol hücresinin üzerine çift tıklayın veya enter tuşuna basın.</translation>
     </message>
     <message>
         <location filename="../prefshortcut.cpp" line="55"/>
@@ -7757,7 +7757,7 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefshortcut.cpp" line="89"/>
         <source>This table allows you to change the key shortcuts of most available actions. Double click or press enter on a item, or press the &lt;b&gt;Change shortcut&lt;/b&gt; button to enter in the &lt;i&gt;Modify shortcut&lt;/i&gt; dialog. There are two ways to change a shortcut: if the &lt;b&gt;Capture&lt;/b&gt; button is on then just press the new key or combination of keys that you want to assign for the action (unfortunately this doesn&apos;t work for all keys). If the &lt;b&gt;Capture&lt;/b&gt; button is off then you could enter the full name of the key.</source>
-        <translation>此表格允许您更改大多数现有动作的快捷键。在一个项目上双击或按回车，或按 &lt;b&gt;更改快捷键&lt;/b&gt; 按钮可进入 &lt;i&gt;修改快捷键&lt;/i&gt; 对话框。有两种方法来更改快捷键: 如果 &lt;b&gt;捕捉&lt;/b&gt; 按钮已启用，那么只需按下您想要指派给此动作的新按键或组合键(很遗憾这并不适用于所有的按键)。如果 &lt;b&gt;捕捉&lt;/b&gt; 按钮已关闭，那么您可以输入按键的完整名称。</translation>
+        <translation>This table allows you to change the key shortcuts of most available actions. Double click or press enter on a item, or press the &lt;b&gt;Change shortcut&lt;/b&gt; button to enter in the &lt;i&gt;Modify shortcut&lt;/i&gt; dialog. There are two ways to change a shortcut: if the &lt;b&gt;Capture&lt;/b&gt; button is on then just press the new key or combination of keys that you want to assign for the action (unfortunately this doesn&apos;t work for all keys). If the &lt;b&gt;Capture&lt;/b&gt; button is off then you could enter the full name of the key.</translation>
     </message>
 </context>
 <context>
@@ -7770,7 +7770,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Subtitles</source>
-        <translation type="vanished">Altyazılar(&amp;S)</translation>
+        <translation type="vanished">Altyazılar</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="26"/>
@@ -7786,35 +7786,35 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.ui" line="77"/>
         <source>Same name as movie</source>
-        <translation>与影片的名称相同</translation>
+        <translation>Filmle aynı adı</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="82"/>
         <source>All subs containing movie name</source>
-        <translation>所有包含影片名称的字幕</translation>
+        <translation>Film adı içeren tüm alt bölümler</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="87"/>
         <source>All subs in directory</source>
-        <translation>目录中的所有字幕</translation>
+        <translation>Dizindeki tüm alt dizinler</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="127"/>
         <source>Default subtitle encoding:</source>
-        <translation>默认字幕编码:</translation>
+        <translation>Varsayılan altyazı kodlaması:</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="176"/>
         <source>Try to autodetect for this language:</source>
-        <translation>尝试自动检测此语言:</translation>
+        <translation>Bu dil için otomatik algılamaya çalışın:</translation>
     </message>
     <message>
         <source>Use the &amp;ASS library</source>
-        <translation type="vanished">使用 ASS 库(&amp;A)</translation>
+        <translation type="vanished">ASS kitaplığını kullanın</translation>
     </message>
     <message>
         <source>Enable &amp;Windows fonts</source>
-        <translation type="vanished">Windows Fontları Aktif(&amp;W)</translation>
+        <translation type="vanished">Windows Fontları Aktif</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="172"/>
@@ -7835,7 +7835,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Default subtitle encoding:</source>
-        <translation type="vanished">默认字幕编码(&amp;D):</translation>
+        <translation type="vanished">Varsayılan altyazı kodlaması:</translation>
     </message>
     <message>
         <source>&amp;Include subtitles on screenshots</source>
@@ -7848,11 +7848,11 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.cpp" line="157"/>
         <source>Default subtitle encoding</source>
-        <translation>默认字幕编码</translation>
+        <translation>Varsayılan altyazı kodlaması</translation>
     </message>
     <message>
         <source>Include subtitles on screenshots</source>
-        <translation type="vanished">屏幕截图时包含字幕</translation>
+        <translation type="vanished">Altyazıları ekran görüntülerine ekleyin</translation>
     </message>
     <message>
         <source>Text color</source>
@@ -7860,20 +7860,20 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the color for the text of the subtitles.</source>
-        <translation type="vanished">选择字幕的文本颜色。</translation>
+        <translation type="vanished">Altyazı metninin rengini seçin.</translation>
     </message>
     <message>
         <source>Border color</source>
-        <translation type="vanished">边框颜色</translation>
+        <translation type="vanished">Kenarlık rengi</translation>
     </message>
     <message>
         <source>Select the color for the border of the subtitles.</source>
-        <translation type="vanished">选择字幕的边框颜色。</translation>
+        <translation type="vanished">Altyazıların kenarlık rengini seçin.</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="155"/>
         <source>Select the subtitle autoload method.</source>
-        <translation>选择字幕的自动加载方法。</translation>
+        <translation>Altyazı otomatik yükleme yöntemini seçin.</translation>
     </message>
     <message>
         <source>If there are one or more subtitle tracks available, one of them will be automatically selected, usually the first one, although if one of them matches the user&apos;s preferred language that one will be used instead.</source>
@@ -7882,17 +7882,17 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.cpp" line="158"/>
         <source>Select the encoding which will be used for subtitle files by default.</source>
-        <translation>选择将用于字幕文件的默认编码。</translation>
+        <translation>Varsayılan olarak altyazı dosyaları için kullanılacak kodlamayı seçin.</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="161"/>
         <source>Try to autodetect for this language</source>
-        <translation>尝试自动检测此语言</translation>
+        <translation>Bu dil için otomatik algılamayı deneyin</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="162"/>
         <source>When this option is on, the encoding of the subtitles will be tried to be autodetected for the given language. It will fall back to the default encoding if the autodetection fails. This option requires a MPlayer compiled with ENCA support.</source>
-        <translation>开启此选项时，将尝试自动检测指定语言的字幕编码。如果自动检测失败，它将退回到默认的编码。此选项需要 MPlayer 编译有 ENCA 支持。</translation>
+        <translation>Bu seçenek açıkken, altyazıların kodlaması verilen dilde otomatik olarak algılanmaya çalışılacaktır. Otomatik algılama başarısız olursa, varsayılan kodlamaya geri dönülür. Bu seçenek, ENCA desteğiyle derlenmiş bir MPlayer gerektirir.</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.cpp" line="168"/>
@@ -7902,12 +7902,12 @@ Example: extrastereo,karaoke</source>
     <message>
         <location filename="../prefsubtitles.cpp" line="169"/>
         <source>Select the language for which you want the encoding to be guessed automatically.</source>
-        <translation>选择您想要用于自动推测编码的语言。</translation>
+        <translation>Kodlamanın otomatik olarak tahmin edileceği dili seçin.</translation>
     </message>
     <message>
         <location filename="../prefsubtitles.ui" line="104"/>
         <source>Encoding</source>
-        <translation>编码</translation>
+        <translation>Kodlama</translation>
     </message>
     <message>
         <source>Try to a&amp;utodetect for this language:</source>
@@ -7919,7 +7919,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Select the font for the subtitles.</source>
-        <translation type="vanished">选择字幕的字体。</translation>
+        <translation type="vanished">Altyazıların yazı tipini seçin.</translation>
     </message>
     <message>
         <source>Use the ASS library</source>
@@ -7935,19 +7935,19 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Enable Windows fonts</source>
-        <translation type="vanished">启用 Windows 字体</translation>
+        <translation type="vanished">Windows yazı tiplerini etkinleştir</translation>
     </message>
     <message>
         <source>If this option is enabled the Windows system fonts will be available for subtitles. There&apos;s an inconvenience: a font cache have to be created which can take some time.</source>
-        <translation type="vanished">如果启用此项那么Windows 系统字体将会用于字幕显示。不过有个不便：需要花时间创建字体缓存。</translation>
+        <translation type="vanished">Bu seçenek etkinleştirilirse altyazı için Windows sistem yazı tipleri kullanılabilir olacaktır. Bir rahatsızlıktan dolayı biraz zaman alabilecek bir yazı tipi önbellek oluşturulmalıdır.</translation>
     </message>
     <message>
         <source>If this option is not checked then only a few fonts bundled with SMPlayer can be used, but this is faster.</source>
-        <translation type="vanished">如果不勾选此项，那只有视频播放器内置的字体可用，但是更快。</translation>
+        <translation type="vanished">Bu seçenek işaretli değilse, yalnızca SMPlayer ile birlikte verilen birkaç yazı tipi kullanılabilir ancak bu daha hızlı.</translation>
     </message>
     <message>
         <source>The size in pixels.</source>
-        <translation type="vanished">以像素为单位的大小。</translation>
+        <translation type="vanished">Piksel cinsinden boyutu.</translation>
     </message>
     <message>
         <source>Bold</source>
@@ -8023,15 +8023,15 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Si&amp;ze:</source>
-        <translation type="vanished">Boyut(&amp;Z):</translation>
+        <translation type="vanished">Boyut:</translation>
     </message>
     <message>
         <source>Bol&amp;d</source>
-        <translation type="vanished">Kalın(&amp;D)</translation>
+        <translation type="vanished">Kalın</translation>
     </message>
     <message>
         <source>&amp;Italic</source>
-        <translation type="vanished">İtalik(&amp;I)</translation>
+        <translation type="vanished">İtalik</translation>
     </message>
     <message>
         <source>Colors</source>
@@ -8039,23 +8039,23 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>&amp;Text:</source>
-        <translation type="vanished">Metin(&amp;T):</translation>
+        <translation type="vanished">Metin:</translation>
     </message>
     <message>
         <source>&amp;Border:</source>
-        <translation type="vanished">Kenarlık(&amp;B):</translation>
+        <translation type="vanished">Kenarlık:</translation>
     </message>
     <message>
         <source>Margins</source>
-        <translation type="vanished">边距</translation>
+        <translation type="vanished">Kenar boşlukları</translation>
     </message>
     <message>
         <source>L&amp;eft:</source>
-        <translation type="vanished">Sol(&amp;E):</translation>
+        <translation type="vanished">Sol:</translation>
     </message>
     <message>
         <source>&amp;Right:</source>
-        <translation type="vanished">Sağ(&amp;R):</translation>
+        <translation type="vanished">Sağ:</translation>
     </message>
     <message>
         <source>Verti&amp;cal:</source>
@@ -8063,7 +8063,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Alignment</source>
-        <translation type="vanished">对齐方式</translation>
+        <translation type="vanished">Hizalanma</translation>
     </message>
     <message>
         <source>&amp;Horizontal:</source>
@@ -8100,17 +8100,17 @@ Example: extrastereo,karaoke</source>
     <message>
         <source>Left</source>
         <comment>horizontal alignment</comment>
-        <translation type="vanished">左</translation>
+        <translation type="vanished">Sol</translation>
     </message>
     <message>
         <source>Centered</source>
         <comment>horizontal alignment</comment>
-        <translation type="vanished">居中</translation>
+        <translation type="vanished">Ortala</translation>
     </message>
     <message>
         <source>Right</source>
         <comment>horizontal alignment</comment>
-        <translation type="vanished">右</translation>
+        <translation type="vanished">Sağ</translation>
     </message>
     <message>
         <source>Bottom</source>
@@ -8155,7 +8155,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>This option specifies the default font scale for SSA/ASS subtitles which will be used for new opened files.</source>
-        <translation type="vanished">此选项可为新打开的文件指定用于 SSA/ASS 字幕的默认字体缩放。</translation>
+        <translation type="vanished">Bu seçenek, yeni açılan dosyalar için kullanılacak SSA / ASS altyazıları için varsayılan yazı tipi ölçeğini belirtir.</translation>
     </message>
     <message>
         <source>Line spacing</source>
@@ -8163,11 +8163,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>This specifies the spacing that will be used to separate multiple lines. It can have negative values.</source>
-        <translation type="vanished">指定将用于分隔多行的间距。它可以是负值。</translation>
+        <translation type="vanished">Bu, birden fazla satırı ayırmak için kullanılacak aralığı belirtir. Olumsuz değerleri olabilir.</translation>
     </message>
     <message>
         <source>&amp;Font and colors</source>
-        <translation type="vanished">字体和颜色(&amp;F)</translation>
+        <translation type="vanished">Yazı tipi ve renkler</translation>
     </message>
     <message>
         <source>Defa&amp;ult scale:</source>
@@ -8179,11 +8179,11 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Freetype support</source>
-        <translation type="vanished">FreeType 支持</translation>
+        <translation type="vanished">FreeType desteği</translation>
     </message>
     <message>
         <source>Freet&amp;ype support</source>
-        <translation type="vanished">FreeType 支持(&amp;Y)</translation>
+        <translation type="vanished">FreeType desteği</translation>
     </message>
     <message>
         <source>If this option is checked, the subtitles will appear in the screenshots. &lt;b&gt;Note:&lt;/b&gt; it may cause some troubles sometimes.</source>
