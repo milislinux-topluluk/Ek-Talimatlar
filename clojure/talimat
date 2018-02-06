@@ -1,0 +1,25 @@
+# Tanım: JVM için LISP
+# URL: http://clojure.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: openjdk classpath maven
+# Grup: 
+
+isim=clojure
+surum=1.9.0
+devir=1
+kaynak=(https://download.clojure.org/install/clojure-tools-$surum.315.tar.gz
+        clojure.sh)
+
+
+derle() {
+  sed -i -e 's,PREFIX,/usr/share/clojure,g' clojure-tools/clojure
+  cd clojure-tools
+
+  install -Dm644 deps.edn "$PKG/usr/share/clojure/deps.edn"
+  install -Dm644 example-deps.edn "$PKG/usr/share/clojure/example-deps.edn"
+  install -Dm644 clojure-tools-$surum.315.jar \
+    "$PKG/usr/share/clojure/libexec/clojure-tools-$surum.315.jar"
+  install -Dm755 clojure "$PKG/usr/bin/clojure"
+  install -Dm755 clj "$PKG/usr/bin/clj"
+  install -Dm755 "$SRC/clojure.sh" "$PKG/etc/profile.d/clojure.sh"
+}
