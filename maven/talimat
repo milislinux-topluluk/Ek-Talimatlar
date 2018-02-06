@@ -1,0 +1,31 @@
+# Tanım: Bir Java proje yönetimi ve proje anlama aracı
+# URL: http://maven.apache.org
+# Paketçi: Cihan_Alkan
+# Gerekler: openjdk
+# Grup: 
+
+isim=maven
+surum=3.5.2
+devir=1
+kaynak=(http://apache-mirror.rbc.ru/pub/apache/maven/maven-3/$surum/source/apache-maven-$surum-src.tar.gz
+	    maven.sh)
+
+
+derle() {
+
+  cd "$SRC"/apache-maven-$surum
+
+  export PATH=${PATH}:/opt/jdk/bin
+
+  mkdir -p "$SRC"/repo
+  mkdir -p "$PKG"/opt/maven
+  mkdir -p "$PKG"/usr/bin
+
+  # FIXME: downloads many deps from Internet. Probably they should be
+  # packaged or added into source=()
+  mvn package -Dmaven.repo.local="$SRC"/repo -DdistributionTargetDir="$PKG"/opt/maven
+
+  install -D -m 755 "$SRC"/maven.sh "$PKG"/etc/profile.d/maven.sh
+  ln -s /opt/maven/bin/mvn "$PKG"/usr/bin/mvn
+  ln -s /opt/maven/bin/mvnDebug "$PKG"/usr/bin/mvnDebug
+}
