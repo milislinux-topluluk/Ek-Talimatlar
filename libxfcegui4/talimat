@@ -2,7 +2,7 @@
 # URL: http://www.xfce.org/
 # Paketçi: Cihan Alkan
 # Gerekler: startup-notification xfce4-conf libglade xorg-libsm hicolor-icon-theme
-# Grup: xfce4
+# Grup: xfce
 
 isim=libxfcegui4
 surum=4.10.0
