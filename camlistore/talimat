@@ -1,0 +1,19 @@
+# Tanım: Camlistore (İçerik-Adresli Çok Katmanlı Dizinli Depolama) yaşam için kişisel depolama sisteminizdir.
+# URL: https://camlistore.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: sqlite go18
+# Grup:
+
+isim=camlistore
+surum=20170505
+devir=1
+kaynak=(https://camlistore.org/dl/monthly/camlistore-$surum-src.zip)
+
+derle() {
+  cd camlistore.org
+  echo "$surum" > VERSION
+  go run make.go
+  install -d "${PKG}/usr/bin"
+  install -m755 -t "${PKG}/usr/bin" "${SRC}"/camlistore.org/bin/{camdeploy,camget,camlistored,cammount,camput,camtool,devcam,hello,publisher,scanningcabinet}
+
+}
