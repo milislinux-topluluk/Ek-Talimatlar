@@ -1,0 +1,56 @@
+# Tanım: Bir saldırı tespit sistemi
+# URL: http://sourceforge.net/projects/tripwire/
+# Paketçi: Cihan_Alkan
+# Gerekler: automake openssl
+# Grup: 
+
+isim=tripwire
+surum=2.4.3.6
+devir=1
+kaynak=(https://github.com/Tripwire/tripwire-open-source/archive/2.4.3.6.tar.gz::$isim-$surum.tar.gz
+        twpol.txt 
+        twcfg.txt)
+
+derle() {
+  cd tripwire-open-source-$surum
+
+#build package
+#  CFLAGS="$CFLAGS -fno-strict-aliasing" CXXFLAGS="$CXXFLAGS -fno-strict-aliasing" \
+    autoreconf --force --install
+    ./autogen.sh
+    ./configure --sysconfdir=/etc/tripwire
+  make -j4
+
+  # This package doesn't have a typical make install, so we do it by hand.
+ 
+#create var/lib directories
+  install -d ${PKG}/var/lib
+  install -d -m700 ${PKG}/var/lib/tripwire
+  install -d -m700 ${PKG}/var/lib/tripwire/report
+
+#install binaries
+  install -d ${PKG}/usr/bin
+  install -m755 bin/siggen ${PKG}/usr/bin/
+  install -m755 bin/tripwire ${PKG}/usr/bin/
+  install -m755 bin/twadmin ${PKG}/usr/bin/
+  install -m755 bin/twprint ${PKG}/usr/bin/
+
+#copy install files for use by user after install, and fix a path
+  install -d ${PKG}/usr/share/$isim
+  install -m755 installer/install.sh ${PKG}/usr/share/$isim/
+  install -m644 installer/install.cfg ${PKG}/usr/share/$isim/
+  sed -i 's#./install/install.cfg#./install.cfg#' ${PKG}/usr/share/$isim/install.sh
+
+#install man pages - FS#13766 fixed
+  install -d ${PKG}/usr/share/man/{man4,man5,man8}
+  install -m644 man/man4/*.4 ${PKG}/usr/share/man/man4/
+  install -m644 man/man5/*.5 ${PKG}/usr/share/man/man5/
+  install -m644 man/man8/*.8 ${PKG}/usr/share/man/man8/
+
+#install configuration files
+  mkdir ${PKG}/etc
+  mkdir ${PKG}/etc/tripwire
+  install -d ${PKG}/etc/$isim
+  install -m644 ${SRC}/twpol.txt ${PKG}/etc/tripwire/twpol.txt
+  install -m644 ${SRC}/twcfg.txt ${PKG}/etc/tripwire/twcfg.txt
+}
