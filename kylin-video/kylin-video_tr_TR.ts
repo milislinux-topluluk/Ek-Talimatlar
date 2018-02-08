@@ -280,15 +280,15 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>&amp;Preset</source>
-        <translation type="vanished">Ön ayar(&amp;P)</translation>
+        <translation type="vanished">Ön ayar</translation>
     </message>
     <message>
         <source>&amp;Apply</source>
-        <translation type="vanished">Uygula(&amp;A)</translation>
+        <translation type="vanished">Uygula</translation>
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation type="vanished">Sıfırla(&amp;R)</translation>
+        <translation type="vanished">Sıfırla</translation>
     </message>
     <message>
         <source>&amp;Set as default values</source>
@@ -423,11 +423,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Op&amp;tions</source>
-        <translation type="vanished">Seçenekler(&amp;T)</translation>
+        <translation type="vanished">Seçenekler</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation type="vanished">Yardım(&amp;H)</translation>
+        <translation type="vanished">Yardım</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="662"/>
@@ -2647,7 +2647,7 @@ Example: extrastereo,karaoke</source>
     </message>
     <message>
         <source>Uploaded by</source>
-        <translation type="vanished">上传者</translation>
+        <translation type="vanished">Yüklenme</translation>
     </message>
     <message>
         <source>Portuguese - Brasil</source>
@@ -2751,8 +2751,8 @@ Example: extrastereo,karaoke</source>
         <source>It wasn&apos;t possible to save the downloaded
 file in folder %1
 Please check the permissions of that folder.</source>
-        <translation type="vanished">无法在文件夹 %1
-中保存下载的文件
+        <translation type="vanished">İndirilen dosyayı %1 klasörüne
+kaydetmek mümkün değil
 Lütfen o klasörün izinlerini kontrol edin.</translation>
     </message>
     <message>
@@ -2968,7 +2968,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../infofile.cpp" line="128"/>
         <source>Audio Streams</source>
-        <translation>音频流</translation>
+        <translation>Ses Akışı</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="132"/>
@@ -3011,12 +3011,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../infofile.cpp" line="96"/>
         <source>Stream title</source>
-        <translation>流标题</translation>
+        <translation>Akış başlığı</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="97"/>
         <source>Stream URL</source>
-        <translation>Stream URL</translation>
+        <translation>Akış URL</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="72"/>
@@ -3032,7 +3032,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     </message>
     <message>
         <source>SMPlayer - Play a DVD from a folder</source>
-        <translation type="vanished">视频播放器 - 从文件夹播放 DVD</translation>
+        <translation type="vanished">SMPlayer - Bir klasörden DVD oynat</translation>
     </message>
     <message>
         <source>You can play a DVD from your hard disc. Just select the folder which contains the VIDEO_TS and AUDIO_TS directories.</source>
@@ -3051,15 +3051,15 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     </message>
     <message>
         <source>SMPlayer couldn&apos;t identify the MPlayer version you&apos;re using.</source>
-        <translation type="vanished">视频播放器无法识别您正在使用的 MPlayer 版本。</translation>
+        <translation type="vanished">SMPlayer kullandığınız MPlayer sürümünü belirleyemedi.</translation>
     </message>
     <message>
         <source>Version reported by MPlayer:</source>
-        <translation type="vanished">MPlayer 报告的版本:</translation>
+        <translation type="vanished">MPlayer tarafından rapor edilen versiyon:</translation>
     </message>
     <message>
         <source>Please, &amp;select the correct version:</source>
-        <translation type="vanished">请选择正确的版本(&amp;S):</translation>
+        <translation type="vanished">Lütfen doğru sürümü seçin:</translation>
     </message>
     <message>
         <source>1.0rc1 or older</source>
@@ -3117,22 +3117,22 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="24"/>
         <source>Afar</source>
-        <translation>阿法尔语</translation>
+        <translation>Afar</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="25"/>
         <source>Abkhazian</source>
-        <translation>阿布哈西亚语</translation>
+        <translation>Abhazca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="27"/>
         <source>Afrikaans</source>
-        <translation>南非荷兰语</translation>
+        <translation>Afrikanca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="29"/>
         <source>Amharic</source>
-        <translation>阿姆哈拉语</translation>
+        <translation>Amharca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="31"/>
@@ -3143,12 +3143,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="32"/>
         <source>Assamese</source>
-        <translation>阿萨姆语</translation>
+        <translation>Assam</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="34"/>
         <source>Aymara</source>
-        <translation>艾马拉语</translation>
+        <translation>Aymara</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="35"/>
@@ -3158,7 +3158,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="36"/>
         <source>Bashkir</source>
-        <translation>巴什基尔语</translation>
+        <translation>Başkurt</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="38"/>
@@ -3169,53 +3169,53 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="39"/>
         <source>Bihari</source>
-        <translation>比哈尔语</translation>
+        <translation>Biharca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="40"/>
         <source>Bislama</source>
-        <translation>比斯拉马语</translation>
+        <translation>Bislama</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="42"/>
         <source>Bengali</source>
-        <translation>孟加拉语</translation>
+        <translation>Bengal</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="43"/>
         <source>Tibetan</source>
-        <translation>藏语</translation>
+        <translation>Tibet</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="44"/>
         <source>Breton</source>
-        <translation>布列塔尼语</translation>
+        <translation>Breton</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="46"/>
         <source>Catalan</source>
-        <translation>加泰罗尼亚语</translation>
+        <translation>Katalan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="48"/>
         <source>Corsican</source>
-        <translation>科西嘉语</translation>
+        <translation>Korsikalı</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="50"/>
         <location filename="../languages.cpp" line="324"/>
         <source>Czech</source>
-        <translation>捷克语</translation>
+        <translation>Çek</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="53"/>
         <source>Welsh</source>
-        <translation>威尔士语</translation>
+        <translation>Welsh</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="54"/>
         <source>Danish</source>
-        <translation>丹麦语</translation>
+        <translation>Danimarka</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="55"/>
@@ -3226,7 +3226,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="59"/>
         <source>Greek</source>
-        <translation>希腊语</translation>
+        <translation>Yunanca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="60"/>
@@ -3237,7 +3237,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="61"/>
         <source>Esperanto</source>
-        <translation>世界语</translation>
+        <translation>Esperanto</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="62"/>
@@ -3249,12 +3249,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
         <location filename="../languages.cpp" line="63"/>
         <location filename="../languages.cpp" line="325"/>
         <source>Estonian</source>
-        <translation>爱沙尼亚语</translation>
+        <translation>Estonyaca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="64"/>
         <source>Basque</source>
-        <translation>巴斯克语</translation>
+        <translation>Bask</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="65"/>
@@ -3265,12 +3265,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
         <location filename="../languages.cpp" line="67"/>
         <location filename="../languages.cpp" line="219"/>
         <source>Finnish</source>
-        <translation>芬兰语</translation>
+        <translation>Fince</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="69"/>
         <source>Faroese</source>
-        <translation>法罗语</translation>
+        <translation>Faroese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="70"/>
@@ -3281,37 +3281,37 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="71"/>
         <source>Frisian</source>
-        <translation>弗里西亚语</translation>
+        <translation>Frisian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="72"/>
         <source>Irish</source>
-        <translation>爱尔兰语</translation>
+        <translation>İrlanda</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="74"/>
         <source>Galician</source>
-        <translation>加利西亚语</translation>
+        <translation>Galician</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="75"/>
         <source>Guarani</source>
-        <translation>瓜拉尼语</translation>
+        <translation>Guarani</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="76"/>
         <source>Gujarati</source>
-        <translation>古吉拉特语</translation>
+        <translation>Gujarati</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="78"/>
         <source>Hausa</source>
-        <translation>豪萨语</translation>
+        <translation>Hausa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="79"/>
         <source>Hebrew</source>
-        <translation>希伯来语</translation>
+        <translation>Hebrew</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="80"/>
@@ -3322,65 +3322,65 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
         <location filename="../languages.cpp" line="82"/>
         <location filename="../languages.cpp" line="326"/>
         <source>Croatian</source>
-        <translation>克罗地亚语</translation>
+        <translation>Hırvatça</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="84"/>
         <location filename="../languages.cpp" line="327"/>
         <source>Hungarian</source>
-        <translation>匈牙利语</translation>
+        <translation>Macarca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="85"/>
         <source>Armenian</source>
-        <translation>亚美尼亚语</translation>
+        <translation>Ermenice</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="88"/>
         <source>Interlingua</source>
-        <translation>国际语A</translation>
+        <translation>Interlingua</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="89"/>
         <source>Indonesian</source>
-        <translation>印度尼西亚语</translation>
+        <translation>Endonezya dili</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="90"/>
         <source>Interlingue</source>
-        <translation>国际语E</translation>
+        <translation>Interlingue</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="95"/>
         <source>Icelandic</source>
-        <translation>冰岛语</translation>
+        <translation>Icelandic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="96"/>
         <location filename="../languages.cpp" line="221"/>
         <source>Italian</source>
-        <translation>意大利语</translation>
+        <translation>İtalyanca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="97"/>
         <source>Inuktitut</source>
-        <translation>因纽特语</translation>
+        <translation>Inuktitut</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="98"/>
         <location filename="../languages.cpp" line="222"/>
         <source>Japanese</source>
-        <translation>日语</translation>
+        <translation>Japonca</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="99"/>
         <source>Javanese</source>
-        <translation>爪哇语</translation>
+        <translation>Javanese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="100"/>
         <source>Georgian</source>
-        <translation>格鲁吉亚语</translation>
+        <translation>Georgian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="104"/>
@@ -3390,12 +3390,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="105"/>
         <source>Greenlandic</source>
-        <translation>格陵兰语</translation>
+        <translation>Greenlandic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="107"/>
         <source>Kannada</source>
-        <translation>卡纳达语</translation>
+        <translation>Kanada</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="108"/>
@@ -3405,7 +3405,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="110"/>
         <source>Kashmiri</source>
-        <translation>克什米尔语</translation>
+        <translation>Kashmiri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="111"/>
@@ -3425,123 +3425,123 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="119"/>
         <source>Lingala</source>
-        <translation>林加拉语</translation>
+        <translation>Lingala</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="121"/>
         <location filename="../languages.cpp" line="328"/>
         <source>Lithuanian</source>
-        <translation>立陶宛语</translation>
+        <translation>Lithuanian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="123"/>
         <location filename="../languages.cpp" line="329"/>
         <source>Latvian</source>
-        <translation>拉脱维亚语</translation>
+        <translation>Latvian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="124"/>
         <source>Malagasy</source>
-        <translation>马达加斯加语</translation>
+        <translation>Malagasy</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="126"/>
         <source>Maori</source>
-        <translation>毛利语</translation>
+        <translation>Maori</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="127"/>
         <source>Macedonian</source>
-        <translation>马其顿语</translation>
+        <translation>Macedonian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="128"/>
         <source>Malayalam</source>
-        <translation>马拉雅拉姆语</translation>
+        <translation>Malayalam</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="129"/>
         <source>Mongolian</source>
-        <translation>蒙古语</translation>
+        <translation>Mongolian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="130"/>
         <source>Moldavian</source>
-        <translation>摩尔达维亚语</translation>
+        <translation>Moldavian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="131"/>
         <source>Marathi</source>
-        <translation>马拉地语</translation>
+        <translation>Marathi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="132"/>
         <source>Malay</source>
-        <translation>马来语</translation>
+        <translation>Malay</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="133"/>
         <source>Maltese</source>
-        <translation>马耳他语</translation>
+        <translation>Maltese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="134"/>
         <source>Burmese</source>
-        <translation>缅甸语</translation>
+        <translation>Burmese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="135"/>
         <source>Nauru</source>
-        <translation>瑙鲁语</translation>
+        <translation>Nauru</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="138"/>
         <source>Nepali</source>
-        <translation>尼泊尔语</translation>
+        <translation>Nepali</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="140"/>
         <location filename="../languages.cpp" line="223"/>
         <source>Dutch</source>
-        <translation>荷兰语</translation>
+        <translation>Flemenkçe</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="141"/>
         <source>Norwegian Nynorsk</source>
-        <translation>耐诺斯克挪威语</translation>
+        <translation>Norveççe Nynorsk</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="142"/>
         <location filename="../languages.cpp" line="224"/>
         <source>Norwegian</source>
-        <translation>挪威语</translation>
+        <translation>Norveççe</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="146"/>
         <source>Occitan</source>
-        <translation>欧西坦语</translation>
+        <translation>Occitan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="149"/>
         <source>Oriya</source>
-        <translation>奥里亚语</translation>
+        <translation>Oriya</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="153"/>
         <location filename="../languages.cpp" line="330"/>
         <source>Polish</source>
-        <translation>波兰语</translation>
+        <translation>Polish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="155"/>
         <location filename="../languages.cpp" line="225"/>
         <source>Portuguese</source>
-        <translation>葡萄牙语</translation>
+        <translation>Portuguese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="156"/>
         <source>Quechua</source>
-        <translation>克丘亚语</translation>
+        <translation>Quechua</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="159"/>
@@ -3559,89 +3559,89 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="161"/>
         <source>Kinyarwanda</source>
-        <translation>基尼亚卢旺达语</translation>
+        <translation>Kinyarwanda</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="162"/>
         <source>Sanskrit</source>
-        <translation>梵语</translation>
+        <translation>Sanskrit</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="164"/>
         <source>Sindhi</source>
-        <translation>信德语</translation>
+        <translation>Sindhi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="168"/>
         <location filename="../languages.cpp" line="332"/>
         <source>Slovak</source>
-        <translation>斯洛伐克语</translation>
+        <translation>Slovak</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="170"/>
         <source>Samoan</source>
-        <translation>萨摩亚语</translation>
+        <translation>Samoan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="171"/>
         <source>Shona</source>
-        <translation>绍纳语</translation>
+        <translation>Shona</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="172"/>
         <source>Somali</source>
-        <translation>索马里语</translation>
+        <translation>Somali</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="173"/>
         <source>Albanian</source>
-        <translation>阿尔巴尼亚语</translation>
+        <translation>Albanian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="174"/>
         <source>Serbian</source>
-        <translation>塞尔维亚语</translation>
+        <translation>Serbian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="177"/>
         <source>Sundanese</source>
-        <translation>巽他语</translation>
+        <translation>Sundanese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="178"/>
         <location filename="../languages.cpp" line="227"/>
         <source>Swedish</source>
-        <translation>瑞典语</translation>
+        <translation>Swedish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="179"/>
         <source>Swahili</source>
-        <translation>斯瓦希里语</translation>
+        <translation>Swahili</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="180"/>
         <source>Tamil</source>
-        <translation>泰米尔语</translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="181"/>
         <source>Telugu</source>
-        <translation>泰卢固语</translation>
+        <translation>Telugu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="182"/>
         <source>Tajik</source>
-        <translation>塔吉克语</translation>
+        <translation>Tajik</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="183"/>
         <source>Thai</source>
-        <translation>泰语</translation>
+        <translation>Thai</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="184"/>
         <source>Tigrinya</source>
-        <translation>提格利尼亚语</translation>
+        <translation>Tigrinya</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="185"/>
@@ -3651,12 +3651,12 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="186"/>
         <source>Tagalog</source>
-        <translation>塔加洛语</translation>
+        <translation>Tagalog</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="188"/>
         <source>Tonga</source>
-        <translation>汤加语</translation>
+        <translation>Tonga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="189"/>
@@ -3667,7 +3667,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="190"/>
         <source>Tsonga</source>
-        <translation>聪加语</translation>
+        <translation>Tsonga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="191"/>
@@ -3677,7 +3677,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="192"/>
         <source>Twi</source>
-        <translation>契维语</translation>
+        <translation>Twi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="194"/>
@@ -3688,7 +3688,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
         <location filename="../languages.cpp" line="195"/>
         <location filename="../languages.cpp" line="334"/>
         <source>Ukrainian</source>
-        <translation>乌克兰语</translation>
+        <translation>Ukrainian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="196"/>
@@ -3703,32 +3703,32 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="199"/>
         <source>Vietnamese</source>
-        <translation>越南语</translation>
+        <translation>Vietnamese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="202"/>
         <source>Wolof</source>
-        <translation>沃洛夫语</translation>
+        <translation>Wolof</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="203"/>
         <source>Xhosa</source>
-        <translation>科萨语</translation>
+        <translation>Xhosa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="204"/>
         <source>Yiddish</source>
-        <translation>意第绪语</translation>
+        <translation>Yiddish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="205"/>
         <source>Yoruba</source>
-        <translation>约鲁巴语</translation>
+        <translation>Yoruba</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="206"/>
         <source>Zhuang</source>
-        <translation>壮语</translation>
+        <translation>Zhuang</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="207"/>
@@ -3740,7 +3740,7 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="208"/>
         <source>Zulu</source>
-        <translation>祖鲁语</translation>
+        <translation>Zulu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="236"/>
@@ -3765,27 +3765,27 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="292"/>
         <source>Western European Languages with Euro</source>
-        <translation>西欧(欧盟)</translation>
+        <translation>Avrupalı Batı Avrupa Dilleri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="293"/>
         <source>Slavic/Central European Languages</source>
-        <translation>斯拉夫语/中欧</translation>
+        <translation>Slav / Orta Avrupa Dilleri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="294"/>
         <source>Esperanto, Galician, Maltese, Turkish</source>
-        <translation>世界语，加利西亚，马耳他，Türkçe</translation>
+        <translation>Esperanto, Galiçya, Maltaca, Türkçe</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="295"/>
         <source>Old Baltic charset</source>
-        <translation>旧波罗的海字符集</translation>
+        <translation>Eski Baltık karakter seti</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="296"/>
         <source>Cyrillic</source>
-        <translation>西里尔文</translation>
+        <translation>Kiril</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="298"/>
@@ -3795,37 +3795,37 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="300"/>
         <source>Baltic</source>
-        <translation>波罗的海语</translation>
+        <translation>Baltık</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="301"/>
         <source>Celtic</source>
-        <translation>凯尔特语</translation>
+        <translation>Keltçe</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="302"/>
         <source>South-Eastern European</source>
-        <translation>东南欧洲</translation>
+        <translation>Güneydoğu Avrupa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="303"/>
         <source>Hebrew charsets</source>
-        <translation>希伯来语字符集</translation>
+        <translation>İbranice karakter setleri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="305"/>
         <source>Ukrainian, Belarusian</source>
-        <translation>乌克兰语，白俄罗斯</translation>
+        <translation>Ukraynaca, Belarusça</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="306"/>
         <source>Simplified Chinese charset</source>
-        <translation>简体中文字符集</translation>
+        <translation>Basitleştirilmiş Çince karakter seti</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="307"/>
         <source>Traditional Chinese charset</source>
-        <translation>繁体中文字符集</translation>
+        <translation>Geleneksel Çince karakter seti</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="308"/>
@@ -3835,22 +3835,22 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="309"/>
         <source>Korean charset</source>
-        <translation>朝鲜语字符集</translation>
+        <translation>Korece karakter seti</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="310"/>
         <source>Thai charset</source>
-        <translation>泰语字符集</translation>
+        <translation>Tayca karakter seti</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="311"/>
         <source>Cyrillic Windows</source>
-        <translation>西里尔文 Windows</translation>
+        <translation>Kiril Windows</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="312"/>
         <source>Slavic/Central European Windows</source>
-        <translation>斯拉夫语/中欧 Windows</translation>
+        <translation>Slav / Orta Avrupa Windows</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="313"/>
@@ -3860,330 +3860,330 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     <message>
         <location filename="../languages.cpp" line="26"/>
         <source>Avestan</source>
-        <translation>阿维斯陀语</translation>
+        <translation>Avestan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="28"/>
         <source>Akan</source>
-        <translation>阿坎语</translation>
+        <translation>Akan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="30"/>
         <source>Aragonese</source>
-        <translation>阿拉贡语</translation>
+        <translation>Aragonese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="33"/>
         <source>Avaric</source>
-        <translation>阿瓦尔语</translation>
+        <translation>Avaric</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="37"/>
         <location filename="../languages.cpp" line="322"/>
         <source>Belarusian</source>
-        <translation>白俄罗斯语</translation>
+        <translation>Belarusian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="41"/>
         <source>Bambara</source>
-        <translation>班巴拉语</translation>
+        <translation>Bambara</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="45"/>
         <source>Bosnian</source>
-        <translation>波斯尼亚语</translation>
+        <translation>Bosnian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="47"/>
         <source>Chechen</source>
-        <translation>车臣语</translation>
+        <translation>Chechen</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="49"/>
         <source>Cree</source>
-        <translation>克里语</translation>
+        <translation>Cree</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="51"/>
         <source>Church</source>
-        <translation>古教会斯拉夫语</translation>
+        <translation>Church</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="52"/>
         <source>Chuvash</source>
-        <translation>楚瓦什语</translation>
+        <translation>Chuvash</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="56"/>
         <source>Divehi</source>
-        <translation>迪维希语</translation>
+        <translation>Divehi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="57"/>
         <source>Dzongkha</source>
-        <translation>宗卡语</translation>
+        <translation>Dzongkha</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="58"/>
         <source>Ewe</source>
-        <translation>埃维语</translation>
+        <translation>Ewe</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="66"/>
         <source>Fulah</source>
-        <translation>富拉语</translation>
+        <translation>Fulah</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="68"/>
         <source>Fijian</source>
-        <translation>斐济语</translation>
+        <translation>Fijian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="73"/>
         <source>Gaelic</source>
-        <translation>盖尔语</translation>
+        <translation>Gaelic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="77"/>
         <source>Manx</source>
-        <translation>马恩岛语</translation>
+        <translation>Manx</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="81"/>
         <source>Hiri</source>
-        <translation>希里莫图语</translation>
+        <translation>Hiri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="83"/>
         <source>Haitian</source>
-        <translation>海地克里奥尔语</translation>
+        <translation>Haitian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="86"/>
         <source>Herero</source>
-        <translation>赫雷罗语</translation>
+        <translation>Herero</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="87"/>
         <source>Chamorro</source>
-        <translation>查莫罗语</translation>
+        <translation>Chamorro</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="91"/>
         <source>Igbo</source>
-        <translation>伊博语</translation>
+        <translation>Igbo</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="92"/>
         <source>Sichuan</source>
-        <translation>四川彝语</translation>
+        <translation>Sichuan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="93"/>
         <source>Inupiaq</source>
-        <translation>依努庇克语</translation>
+        <translation>Inupiaq</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="94"/>
         <source>Ido</source>
-        <translation>伊多语</translation>
+        <translation>Ido</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="101"/>
         <source>Kongo</source>
-        <translation>刚果语</translation>
+        <translation>Kongo</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="102"/>
         <source>Kikuyu</source>
-        <translation>基库尤语</translation>
+        <translation>Kikuyu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="103"/>
         <source>Kuanyama</source>
-        <translation>宽亚玛语</translation>
+        <translation>Kuanyama</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="106"/>
         <source>Khmer</source>
-        <translation>高棉语</translation>
+        <translation>Khmer</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="109"/>
         <source>Kanuri</source>
-        <translation>卡努里语</translation>
+        <translation>Kanuri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="112"/>
         <source>Komi</source>
-        <translation>科米语</translation>
+        <translation>Komi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="113"/>
         <source>Cornish</source>
-        <translation>康沃尔语</translation>
+        <translation>Cornish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="116"/>
         <source>Luxembourgish</source>
-        <translation>卢森堡语</translation>
+        <translation>Luxembourgish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="117"/>
         <source>Ganda</source>
-        <translation>干达语</translation>
+        <translation>Ganda</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="118"/>
         <source>Limburgan</source>
-        <translation>林堡语</translation>
+        <translation>Limburgan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="120"/>
         <source>Lao</source>
-        <translation>老挝语</translation>
+        <translation>Lao</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="122"/>
         <source>Luba-Katanga</source>
-        <translation>卢巴-加丹加语</translation>
+        <translation>Luba-Katanga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="125"/>
         <source>Marshallese</source>
-        <translation>马绍尔语</translation>
+        <translation>Marshallese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="136"/>
         <source>Bokmål</source>
-        <translation>博克马尔语</translation>
+        <translation>Bokmål</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="137"/>
         <location filename="../languages.cpp" line="143"/>
         <source>Ndebele</source>
-        <translation>北恩德贝勒语</translation>
+        <translation>Ndebele</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="139"/>
         <source>Ndonga</source>
-        <translation>恩敦加语</translation>
+        <translation>Ndonga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="144"/>
         <source>Navajo</source>
-        <translation>纳瓦霍语</translation>
+        <translation>Navajo</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="145"/>
         <source>Chichewa</source>
-        <translation>齐切瓦语</translation>
+        <translation>Chichewa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="147"/>
         <source>Ojibwa</source>
-        <translation>奥吉布瓦语</translation>
+        <translation>Ojibwa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="148"/>
         <source>Oromo</source>
-        <translation>奥罗莫语</translation>
+        <translation>Oromo</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="150"/>
         <source>Ossetian</source>
-        <translation>奥塞梯语</translation>
+        <translation>Ossetian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="151"/>
         <source>Panjabi</source>
-        <translation>旁遮普语</translation>
+        <translation>Panjabi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="152"/>
         <source>Pali</source>
-        <translation>巴利语</translation>
+        <translation>Panjabi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="154"/>
         <source>Pushto</source>
-        <translation>普什图语</translation>
+        <translation>Pushto</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="157"/>
         <source>Romansh</source>
-        <translation>罗曼什语</translation>
+        <translation>Romansh</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="158"/>
         <source>Rundi</source>
-        <translation>基隆迪语</translation>
+        <translation>Rundi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="163"/>
         <source>Sardinian</source>
-        <translation>萨丁尼亚语</translation>
+        <translation>Sardinian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="165"/>
         <source>Sami</source>
-        <translation>北萨米语</translation>
+        <translation>Sami</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="166"/>
         <source>Sango</source>
-        <translation>桑戈语</translation>
+        <translation>Sango</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="167"/>
         <source>Sinhala</source>
-        <translation>僧加罗语</translation>
+        <translation>Sinhala</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="169"/>
         <location filename="../languages.cpp" line="333"/>
         <source>Slovene</source>
-        <translation>斯洛文尼亚语</translation>
+        <translation>Slovene</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="175"/>
         <source>Swati</source>
-        <translation>斯瓦特语</translation>
+        <translation>Swati</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="176"/>
         <source>Sotho</source>
-        <translation>南索托语</translation>
+        <translation>Sotho</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="187"/>
         <source>Tswana</source>
-        <translation>茨瓦纳语</translation>
+        <translation>Tswana</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="193"/>
         <source>Tahitian</source>
-        <translation>塔希提语</translation>
+        <translation>Tahitian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="198"/>
         <source>Venda</source>
-        <translation>文达语</translation>
+        <translation>Venda</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="200"/>
         <source>Volapük</source>
-        <translation>沃拉普克语</translation>
+        <translation>Volapük</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="201"/>
         <source>Walloon</source>
-        <translation>瓦龙语</translation>
+        <translation>Walloon</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="314"/>
         <source>Modern Greek Windows</source>
-        <translation>现代希腊语 Windows</translation>
+        <translation>Modern Yunanca Windows</translation>
     </message>
 </context>
 <context>
@@ -4202,25 +4202,25 @@ Lütfen o klasörün izinlerini kontrol edin.</translation>
     </message>
     <message>
         <source>Confirm overwrite?</source>
-        <translation type="vanished">确认是否覆盖?</translation>
+        <translation type="vanished">Üzerine Yazısın mı?</translation>
     </message>
     <message>
         <source>The file already exists.
 Do you want to overwrite?</source>
-        <translation type="vanished">该文件已存在。
-您想要覆盖吗?</translation>
+        <translation type="vanished">Dosya zaten var.
+Üzerine yazmak ister misin?</translation>
     </message>
     <message>
         <source>Error saving file</source>
-        <translation type="vanished">保存文件时出错</translation>
+        <translation type="vanished">Dosya kaydedilirken hata oluştu</translation>
     </message>
     <message>
         <source>The log couldn&apos;t be saved</source>
-        <translation type="vanished">无法保存日志</translation>
+        <translation type="vanished">Günlüğü kaydedilemedi</translation>
     </message>
     <message>
         <source>Logs</source>
-        <translation type="vanished">日志</translation>
+        <translation type="vanished">Günlükler</translation>
     </message>
 </context>
 <context>
@@ -4247,32 +4247,32 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../mpvoptions.cpp" line="108"/>
         <source>the &apos;%1&apos; filter is not supported by mpv</source>
-        <translation>mpv不支持 &apos;%1&apos; 过滤器</translation>
+        <translation>&apos;%1&apos; filtre, mpv tarafından desteklenmiyor</translation>
     </message>
 </context>
 <context>
     <name>MediaBarPanel</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表格</translation>
+        <translation type="vanished">Biçim</translation>
     </message>
 </context>
 <context>
     <name>MediaPanel</name>
     <message>
         <source>Shuffle playlist</source>
-        <translation type="vanished">乱序播放列表</translation>
+        <translation type="vanished">Çalma listesini karıştır</translation>
     </message>
     <message>
         <source>Repeat playlist</source>
-        <translation type="vanished">重复播放列表</translation>
+        <translation type="vanished">Çalma listesini tekrarla</translation>
     </message>
 </context>
 <context>
     <name>MediaPanelClass</name>
     <message>
         <source>MediaPanel</source>
-        <translation type="vanished">媒体面板</translation>
+        <translation type="vanished">MediaPanel</translation>
     </message>
 </context>
 <context>
@@ -4306,26 +4306,26 @@ Do you want to overwrite?</source>
     <name>MiniGui</name>
     <message>
         <source>Control bar</source>
-        <translation type="vanished">控制条</translation>
+        <translation type="vanished">Kontrol Çubuğu</translation>
     </message>
     <message>
         <source>Edit &amp;control bar</source>
-        <translation type="vanished">编辑控制条(&amp;C)</translation>
+        <translation type="vanished">Denetim çubuğunu düzenle</translation>
     </message>
     <message>
         <source>Edit &amp;floating control</source>
-        <translation type="vanished">编辑浮动控制条(&amp;F)</translation>
+        <translation type="vanished">Yüzen kontrolü düzenle</translation>
     </message>
 </context>
 <context>
     <name>MpcGui</name>
     <message>
         <source>Control bar</source>
-        <translation type="vanished">控制条</translation>
+        <translation type="vanished">Kontrol çubuğu</translation>
     </message>
     <message>
         <source>Seek bar</source>
-        <translation type="vanished">定位栏</translation>
+        <translation type="vanished">Ara çubuğu</translation>
     </message>
     <message>
         <source>-%1</source>
@@ -4341,7 +4341,7 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../mplayeroptions.cpp" line="279"/>
         <source>This option is not supported by MPlayer</source>
-        <translation>MPlayer不支持该选项</translation>
+        <translation>Bu seçenek MPlayer tarafından desteklenmiyor</translation>
     </message>
 </context>
 <context>
@@ -4359,11 +4359,11 @@ Do you want to overwrite?</source>
     <name>PlayControl</name>
     <message>
         <source>Rewind</source>
-        <translation type="vanished">后退</translation>
+        <translation type="vanished">Geri</translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation type="vanished">前进</translation>
+        <translation type="vanished">İleri</translation>
     </message>
     <message>
         <source>Play / Pause</source>
@@ -4379,11 +4379,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Next file in playlist</source>
-        <translation type="vanished">播放列表中的下一个文件</translation>
+        <translation type="vanished">Çalma listesinde bir sonraki dosya</translation>
     </message>
     <message>
         <source>Previous file in playlist</source>
-        <translation type="vanished">播放列表中的上一个文件</translation>
+        <translation type="vanished">Çalma listesinde bir önceki dosya</translation>
     </message>
 </context>
 <context>
@@ -4405,7 +4405,7 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Length</source>
-        <translation type="vanished">长度</translation>
+        <translation type="vanished">Uzunluk</translation>
     </message>
     <message>
         <source>&amp;Play</source>
@@ -4429,13 +4429,13 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Confirm overwrite?</source>
-        <translation type="vanished">确认是否覆盖?</translation>
+        <translation type="vanished">Üzerine yazılsın mı?</translation>
     </message>
     <message>
         <source>The file %1 already exists.
 Do you want to overwrite?</source>
-        <translation type="vanished">文件 %1 已存在。
-您想要覆盖吗?</translation>
+        <translation type="vanished">Dosya %1 zaten var.
+Üzerinde yazmak istiyor musun?</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="706"/>
@@ -4445,7 +4445,7 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../playlist.cpp" line="703"/>
         <source>Select one or more files to open</source>
-        <translation>选择一个或多个要打开的文件</translation>
+        <translation>Açılacak bir veya daha fazla dosya seçin</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="288"/>
@@ -4480,7 +4480,7 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../playlist.cpp" line="628"/>
         <source>Reached the end of the playlist</source>
-        <translation>已经到达播放列表底部</translation>
+        <translation>Oynatma listesinin sonuna ulaştı</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="763"/>
@@ -4525,11 +4525,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>S&amp;huffle</source>
-        <translation type="vanished">乱序(&amp;H)</translation>
+        <translation type="vanished">Karıştır</translation>
     </message>
     <message>
         <source>Add &amp;current file</source>
-        <translation type="vanished">添加当前文件(&amp;C)</translation>
+        <translation type="vanished">Geçerli dosya ekle</translation>
     </message>
     <message>
         <source>Add &amp;file(s)</source>
@@ -4555,7 +4555,7 @@ Do you want to overwrite?</source>
     <message>
         <location filename="../playlist.cpp" line="333"/>
         <source>&amp;Delete file from disk</source>
-        <translation>从硬盘删除(&amp;D)</translation>
+        <translation>Dosyayı diskten sil</translation>
     </message>
     <message>
         <source>SMPlayer - Playlist</source>
@@ -4571,48 +4571,48 @@ Do you want to overwrite?</source>
         <location filename="../playlist.cpp" line="823"/>
         <location filename="../playlist.cpp" line="838"/>
         <source>You&apos;re about to remove the file &apos;%1&apos; from the playlist.</source>
-        <translation>将从播放列表中移除文件 &apos;%1&apos;。</translation>
+        <translation>&apos;%1&apos; dosyasını çalma listesinden kaldırmak üzeresiniz.</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="824"/>
         <location filename="../playlist.cpp" line="839"/>
         <source>Are you sure you want to proceed?</source>
-        <translation>你确定要继续？</translation>
+        <translation>Devam etmek istediğinden emin misin?</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="991"/>
         <source>Confirm deletion</source>
-        <translation>确认删除</translation>
+        <translation>Silmeyi Onayla</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="992"/>
         <source>You&apos;re about to DELETE the file &apos;%1&apos; from your drive.</source>
-        <translation>将从您的硬盘删除文件 &apos;%1&apos; </translation>
+        <translation>&apos;%1&apos; dosyasını sürücünüzden SİLMEK üzeresiniz.</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="993"/>
         <source>This action cannot be undone. Are you sure you want to proceed?</source>
-        <translation>此操作不可撤销。你确定要继续？</translation>
+        <translation>Bu eylem geri alınamaz. Devam etmek istediğinden emin misin?</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="1004"/>
         <source>Deletion failed</source>
-        <translation>删除失败</translation>
+        <translation>Silme işlemi başarısız oldu</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="1004"/>
         <source>It wasn&apos;t possible to delete &apos;%1&apos;</source>
-        <translation>无法删除 &apos;%1&apos;</translation>
+        <translation>&apos;%1&apos; silmek mümkün değildi</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="1011"/>
         <source>Error deleting the file</source>
-        <translation>删除文件出错</translation>
+        <translation>Dosya silinirken hata oluştu</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="1011"/>
         <source>It&apos;s not possible to delete &apos;%1&apos; from the filesystem.</source>
-        <translation>无法从文件系统删除 &apos;%1&apos;</translation>
+        <translation>&apos;%1&apos;'i dosya sisteminden silmek mümkün değil.</translation>
     </message>
     <message>
         <source>Add...</source>
@@ -4624,11 +4624,11 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Playlist modified</source>
-        <translation type="vanished">播放列表己修改</translation>
+        <translation type="vanished">Oynatma listesi değiştirildi</translation>
     </message>
     <message>
         <source>There are unsaved changes, do you want to save the playlist?</source>
-        <translation type="vanished">有未保存的更改，您想要保存该播放列表吗?</translation>
+        <translation type="vanished">Kaydedilmemiş değişiklikler var, çalma listesini kaydetmek istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="705"/>
@@ -4652,23 +4652,23 @@ Do you want to overwrite?</source>
     </message>
     <message>
         <source>Log SMPlayer output</source>
-        <translation type="vanished">记录视频播放器输出</translation>
+        <translation type="vanished">Günlük SMPlayer çıktısı</translation>
     </message>
     <message>
         <source>This option is mainly intended for debugging the application.</source>
-        <translation type="vanished">此选项主要用于调试应用程序。</translation>
+        <translation type="vanished">Bu seçenek, esas olarak uygulamanın hata ayıklamaya yöneliktir.</translation>
     </message>
     <message>
         <source>Checking this option may reduce flickering, but it also might produce that the video won&apos;t be displayed properly.</source>
-        <translation type="vanished">勾选此选项可减少闪烁，但也可能会造成视频无法正确显示。</translation>
+        <translation type="vanished">Bu seçeneğin işaretlenmesi titreşimi azaltabilir, ancak aynı zamanda videonun düzgün görüntülenmediğine neden olabilir.</translation>
     </message>
     <message>
         <source>Filter for SMPlayer logs</source>
-        <translation type="vanished">视频播放器日志筛选器</translation>
+        <translation type="vanished">SMPlayer günlükleri için filtreleme</translation>
     </message>
     <message>
         <source>&amp;Monitor aspect:</source>
-        <translation type="vanished">显示器纵横比(&amp;M):</translation>
+        <translation type="vanished">Görüntüleme boyutu:</translation>
     </message>
     <message>
         <source>Use the la&amp;vf demuxer by default</source>
