@@ -1,0 +1,31 @@
+# Tanım: Milis Program Ekle Kaldır
+# URL: https://github.com/oltulu/milpek
+# Paketçi: Cihan Alkan
+# Gerekler: pywget
+
+isim=psiphon
+surum=0.2
+devir=1
+
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/thispc/psiphon $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+	cd openssh-5.9p1
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=${PKG} install
+#    cd ..
+#    rm ssh
+#    cp openssh-5.9p1/ssh .
+#    python psi_client.py -u
+
+}
