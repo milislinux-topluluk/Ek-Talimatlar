@@ -1,0 +1,20 @@
+# Tanım: P2P anonim BBS shinGETsu'nun bir klonu
+# URL: http://shingetsu.info/saku
+# Paketçi: Cihan_Alkan
+# Gerekler: python pyjinja pymarkupsafe
+# Grup: ağ
+
+isim=saku
+surum=4.7.1
+devir=1
+kaynak=(https://github.com/shingetsu/$isim/archive/release-$surum.tar.gz::$isim-$surum.tar.gz
+        defaultpath.patch)
+
+derle() {
+    cd "$SRC"/$isim-release-$surum
+    patch -p1 <../defaultpath.patch
+    make clean
+    python3 setup.py install --root="$PKG"
+
+    install -Dvm644 LICENSE "$PKG"/usr/share/licenses/$isim/LICENSE
+}
