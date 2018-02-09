@@ -1,0 +1,41 @@
+# Tanım: Linux Konteynerleri
+# URL: http://linuxcontainers.org
+# Paketçi: Cihan_Alkan
+# Gerekler: docbook2x lua python-setuptools perl libseccomp libcap python cgmanager rsync
+# Grup: zynaddsubfx
+
+isim=lxc
+surum=1.1.3
+devir=1
+kaynak=(https://linuxcontainers.org/downloads/$isim-${surum}.tar.gz
+        lxc.tmpfiles.d)
+
+derle() {
+
+  cd "$SRC/$isim-${surum/_/-}"
+  sed -i \
+    -e 's|"\\"-//Davenport//DTD DocBook V3.0//EN\\""|"\\"-//OASIS//DTD DocBook XML\\" \\"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd\\""|' \
+    configure.ac
+  sed -i \
+    -e 's|\${prefix}/||g' \
+    lxc.pc.in
+  ./autogen.sh
+  bashcompdir=/usr/share/bash-completion/completions ./configure \
+    --prefix=/usr \
+    --sbindir=/usr/bin \
+    --localstatedir=/var \
+    --libexecdir=/usr/lib \
+    --libdir=/usr/lib \
+    --sysconfdir=/etc \
+    --disable-apparmor \
+    --enable-seccomp \
+    --enable-cgmanager \
+    --enable-capabilities \
+    --enable-lua 
+  make
+
+  make DESTDIR="$PKG" install
+  install -d -m755 "$PKG/var/lib/lxc"
+  install -d -m755 "$PKG/usr/lib/lxc/rootfs/dev"
+  install -D -m644 "$SRC"/lxc.tmpfiles.d "$PKG"/usr/lib/tmpfiles.d/lxc.conf
+}
