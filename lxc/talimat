@@ -2,7 +2,7 @@
 # URL: http://linuxcontainers.org
 # Paketçi: Cihan_Alkan
 # Gerekler: docbook2x lua python-setuptools perl libseccomp libcap python cgmanager rsync
-# Grup: zynaddsubfx
+# Grup: 
 
 isim=lxc
 surum=2.1.1
