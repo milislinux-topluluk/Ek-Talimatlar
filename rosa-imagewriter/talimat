@@ -41,3 +41,4 @@ EOF
 /usr/lib/qt5/bin/lrelease ../imagewriter-tr_TR.ts -qm $PKG/usr/share/RosaImageWriter/lang/tr_TR.qm
 
 }
+
