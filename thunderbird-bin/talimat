@@ -1,0 +1,52 @@
+# Tanım: Bağımsız Posta / Haber okuyucu - ikili sürüm
+# URL: https://www.mozilla.org/thunderbird
+# Paketçi: Cihan_Alkan
+# Gerekler: dbus-glib gtk3 libxt nss
+
+isim=thunderbird-bin
+surum=58.0b3
+devir=1
+kaynak=(https://ftp.mozilla.org/pub/thunderbird/releases/58.0b3/linux-x86_64/tr/thunderbird-58.0b3.tar.bz2
+        thunderbird-bin.desktop
+        vendor.js)
+
+derle() {
+  # Create directories
+  install -d "$PKG"/usr/bin
+  install -d "$PKG"/usr/share/applications
+  install -d "$PKG"/opt
+
+  # Install
+  cp -r thunderbird/ "$PKG"/opt/thunderbird
+
+  # Launchers
+  ln -s /opt/thunderbird/thunderbird "$PKG"/usr/bin/thunderbird
+  ln -sf thunderbird "$PKG"/opt/thunderbird/thunderbird-bin
+
+  # vendor.js
+  _vendorjs="$PKG/opt/thunderbird/defaults/preferences/vendor.js"
+  install -Dm644 /dev/stdin "$_vendorjs" <<END
+// Use LANG environment variable to choose locale
+pref("intl.locale.matchOS", true);
+
+// Disable default mailer checking.
+pref("mail.shell.checkDefaultMail", false);
+
+// Don't disable our bundled extensions in the application directory
+pref("extensions.autoDisableScopes", 11);
+pref("extensions.shownSelectionUI", true);
+END
+
+  # Desktop
+  install -m644 $isim.desktop "$PKG"/usr/share/applications/
+
+  # Icons
+  for i in 16 22 24 32 48 256; do
+    install -d "$PKG"/usr/share/icons/hicolor/${i}x${i}/apps/
+    ln -s /opt/thunderbird/chrome/icons/default/default$i.png \
+          "$PKG"/usr/share/icons/hicolor/${i}x${i}/apps/thunderbird.png
+  done
+
+  # Use system certificates
+  ln -sf /usr/lib/libnssckbi.so "$PKG"/opt/thunderbird/libnssckbi.so
+}
