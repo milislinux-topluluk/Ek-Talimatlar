@@ -21,8 +21,6 @@ derle() {
   mkdir -p "$PKG"/opt/maven
   mkdir -p "$PKG"/usr/bin
 
-  # FIXME: downloads many deps from Internet. Probably they should be
-  # packaged or added into source=()
   mvn package -Dmaven.repo.local="$SRC"/repo -DdistributionTargetDir="$PKG"/opt/maven
 
   install -D -m 755 "$SRC"/maven.sh "$PKG"/etc/profile.d/maven.sh
