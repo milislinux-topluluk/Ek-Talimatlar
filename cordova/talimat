@@ -1,0 +1,25 @@
+# Tanım: Cordova komut satırı arabirimi aracı
+# URL: http://cordova.apache.org
+# Paketçi: Cihan_Alkan
+# Gerekler: npm acorn semver browserify
+# Grup: 
+
+isim=cordova
+surum=8.0.0
+devir=1
+kaynak=(https://registry.npmjs.org/$isim/-/$isim-$surum.tgz::$isim-$surum.mls)
+
+derle() {
+  mv $isim-$surum.mls $isim-$surum.tgz
+  npm install -g --user root --prefix "$PKG"/usr "$SRC"/$isim-$surum.tgz
+  rm -r "$PKG"/usr/etc
+
+  # Why 777? :/
+  chmod -R u=rwX,go=rX "$PKG"
+
+  # Experimental dedup
+  cd "$PKG"/usr/lib/node_modules/$isim/node_modules
+  for dep in acorn semver browserify; do
+    rm -r $dep;
+  done
+}
