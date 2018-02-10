@@ -1,0 +1,33 @@
+# Tanım: Javascript için bir paket yöneticisi
+# URL: https://www.npmjs.com/
+# Paketçi: Cihan Alkan
+# Gerekler: node procps-ng
+# Grup: geliştirme
+
+isim=npm
+surum=5.3.0
+devir=1
+kaynak=(https://github.com/npm/npm/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd npm-$surum
+  ln -sf /usr/bin/marked{,-man} node_modules/.bin/
+  make
+  make NPMOPTS="--prefix=\"$PKG/usr\"" install
+
+  # Provide node-gyp executable
+  cp "$PKG"/usr/lib/node_modules/npm/bin/node-gyp-bin/node-gyp "$PKG"/usr/bin/node-gyp
+  sed -i 's|"`dirname "$0"`/../../|"`dirname "$0"`/../lib/node_modules/npm/|' "$PKG"/usr/bin/node-gyp
+
+  # Why 777? :/
+  chmod -R u=rwX,go=rX "$PKG"
+
+  # Experimental dedup
+  for _d in "$PKG"/usr/lib/node_modules/$isim/node_modules; do
+    cd "$_d"
+    for dep in semver; do
+      rm -r $dep;
+    done
+  done
+  install -Dm644 "$SRC"/npm-$surum/LICENSE "$PKG"/usr/share/licenses/$isim/LICENSE
+}
