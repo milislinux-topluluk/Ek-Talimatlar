@@ -17,8 +17,7 @@ derle() {
 		--prefix=/usr \
 		--sbindir=/usr/bin \
 		--libdir=/usr/lib \
-		--libexecdir=/usr/lib \
-		--with-init-script=systemd
+		--libexecdir=/usr/lib
 	make
 	make DESTDIR="$PKG/" install
 	mv "$PKG"/lib/* "$PKG"/usr/lib/

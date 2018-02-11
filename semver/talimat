@@ -7,10 +7,9 @@
 isim=semver
 surum=5.5.0
 devir=1
-kaynak=(https://registry.npmjs.org/$isim/-/$isim-$surum.tgz::$isim-$surum.mls)
+kaynak=(https://registry.npmjs.org/$isim/-/$isim-$surum.tgz)
 
 derle() {
-  mv $isim-$surum.mls $isim-$surum.tgz
   npm install -g --user root --prefix "$PKG"/usr "$SRC"/$isim-$surum.tgz
   rm -r "$PKG"/usr/etc
 
