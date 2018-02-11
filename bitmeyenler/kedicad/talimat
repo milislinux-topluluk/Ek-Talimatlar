@@ -1,0 +1,18 @@
+# Tanım: Cad programı
+# URL: http://kedicad.com/
+# Paketçi: Cihan_Alkan
+# Gerekler: gambas3
+# Grup: 
+
+isim=kedicad
+surum=1.0.384
+devir=1
+kaynak=(https://sourceforge.net/projects/parduscad/files/kedicad2b_1.0.384-1_all.deb)
+
+derle() {
+    ar x kedicad2b_1.0.384-1_all.deb
+	tar -xf data.tar.xz -C "${PKG}"
+    mkdir ${PKG}/root
+    mkdir ${PKG}/root/.KediCAD
+    mv ${PKG}/home/ulusoy/.KediCAD/* ${PKG}/root/.KediCAD/
+}
