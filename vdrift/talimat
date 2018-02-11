@@ -1,8 +1,7 @@
-# Tanım: Sürükleyici yarış ve akıllıca yapılan açık kaynak sürüş simülasyonu
+# Tanım: Sürükleyici yarış ile akıllıca yapılan açık kaynak sürüş simülasyonu
 # URL: http://vdrift.net/
-# Paketçi: Cihan_Alkan
+# Paketçi: Cihan Alkan
 # Gerekler: bullet curl sdl2-image glew libvorbis hicolor-icon-theme libarchive scons xorg-mesa
-# Grup: oyun
 
 isim=vdrift
 surum=2014.10.20
@@ -44,3 +43,4 @@ derle() {
   install -Dm644 data/textures/icons/vdrift-64x64.png "$PKG"/usr/share/icons/hicolor/64x64/apps/vdrift.png
   install -Dm644 data/textures/icons/vdrift-64x64.png "$PKG/usr/share/pixmaps/$isim.png"
 }
+
