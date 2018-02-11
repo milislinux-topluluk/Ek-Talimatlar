@@ -1,0 +1,21 @@
+# Tanım: Çok yönlü (çapraz) alet zinciri jeneratörü
+# URL: http://crosstool-ng.org
+# Peketöi: Cihan_Alkan
+# Gerekler: gperf help2man
+# Grup:
+
+isim=crosstool-ng
+surum=1.23.0
+devir=1
+
+kaynak=(http://crosstool-ng.org/download/$isim/$isim-$surum.tar.bz2)
+
+derle() {
+	cd $SRC/$isim-$surum
+  ./configure --prefix=/usr
+  make
+
+  make DESTDIR="$PKG" install
+  install -Dm644 ct-ng.comp "$PKG"/usr/share/bash-completion/completions/ct-ng
+
+}
