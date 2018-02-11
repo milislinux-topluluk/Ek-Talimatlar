@@ -1,0 +1,64 @@
+# Tanım: Geospatial veri yönetimi ve analizi, görüntü işleme, grafik / harita üretimi, mekansal modelleme ve görselleştirme için kullanılan CBS (Coğrafi Bilgi Sistemi).
+# URL: https://grass.itc.it/index.php
+# Paketçi: Cihan_Alkan
+# Gerekler: proj tk sqlite python xorg-mesa libjpeg-turbo libpng libtiff fftw xorg-libxmu postgresql xorg-server xorg-glu tcl zlib cairo geos mariadb freetype
+# Grup: grafik
+
+isim=grass
+surum=7.2.2
+devir=1
+kaynak=(https://grass.osgeo.org/grass72/source/${isim}-${surum}.tar.gz"
+        "${isim}.sh"
+        "${isim}.conf)
+
+derle() {
+
+  cd ${isim}-${surum}
+  sed -i '/^\s*INSTDIR/ s/".*"//' configure
+  export CFLAGS="$CPPFLAGS $CFLAGS"
+  export CXXFLAGS="$CPPFLAGS $CXXFLAGS"
+  unset CPPFLAGS
+
+  # see ${srcdir}/grass-6.4.0/REQUIREMENTS.html for options
+  ./configure --enable-64bit \
+    --prefix=/opt/grass \
+    --with-mysql-includes=/usr/include/mysql \
+    --with-mysql \
+    --with-sqlite \
+    --with-postgres \
+    --with-fftw \
+    --without-gdal \
+    --with-python \
+    --without-blas \
+    --with-lapack \
+    --with-readline \
+    --with-pthread \
+    --without-netcdf \
+    --with-nls \
+    --with-geos \
+    --with-cairo \
+    --with-postgres \
+    --with-proj-libs=/usr/lib \
+    --with-proj-includes=/usr/include \
+    --with-proj-share=/usr/share/proj \
+    --with-fftw-includes=/usr/include \
+    --with-fftw-libs=/usr/lib \
+    --with-freetype \
+    --with-freetype-includes=/usr/include/freetype2 \
+    --without-glw \
+    --without-wxwidgets \
+    --without-htmldocs
+   
+  make -j4
+  make \
+    exec_prefix=$PKG/usr \
+    INST_DIR=${PKG}/opt/grass \
+    BINDIR=${PKG}/usr/bin \
+    install
+
+  install -D -m644 gui/icons/grass-48x48.png ${PKG}/usr/share/icons/hicolor/48x48/apps/grass.png
+  install -D -m644 gui/icons/grass-64x64.png $PKG/usr/share/icons/hicolor/64x64/apps/grass.png
+
+install -D -m644 ${SRC}/grass.conf ${PKG}/etc/ld.so.conf.d/grass.conf
+}
+
