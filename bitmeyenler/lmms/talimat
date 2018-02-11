@@ -1,0 +1,26 @@
+# Tanım: Linux MultiMedia Studio (Qt5 Sürümü)
+# URL: http://lmms.io
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5 fltk1 libsamplerate fluidsynth xorg-libxft cmake ninja ladspa raptor rasqal freetype redland lame libgig xorg-libxinerama shared-mime-info alsa-lib
+# Grup: 
+
+isim=lmms
+surum=1.1.3
+devir=1
+kaynak=()
+
+derle() {
+	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
+		git clone https://github.com/LMMS/lmms.git $DERLEME_KAYNAKDIZIN/$isim 
+	else
+		cd $DERLEME_KAYNAKDIZIN/$isim 
+		git pull
+		cd -
+	fi
+	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+	cd $SRC/$isim
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DWANT_QT5=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -GNinja -DWANT_WEAKJACK=OFF
+  ninja
+  make
+  DESTDIR="$PKG" ninja install
+}
