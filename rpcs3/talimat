@@ -1,0 +1,72 @@
+# Tanım: Açık kaynaklı Sony PlayStation 3 Emulator
+# URL: https://rpcs3.net/
+# Paketçi: Cihan_Alkan
+# Gerekler: alsa-lib glew hicolor-icon-theme eudev ncurses openal qt5 yaml-cpp cmake boost
+# Grup: 
+
+isim=rpcs3
+surum=0.0.4
+devir=1
+
+kaynak=(https://github.com/RPCS3/$isim/archive/v$surum.tar.gz
+        https://github.com/Microsoft/GSL/archive/fc5fce4f4f8d64fbda523d1b0d55115f5ca68774.tar.gz::GSL.tar.gz
+        https://github.com/USCiLab/cereal/archive/v1.2.0.tar.gz::cereal.tar.gz
+        https://github.com/hrydgard/ppsspp-ffmpeg/archive/7b7ae7b06705bf5539b222e77c779d4b649b53ef.tar.gz::ffmpeg.tar.gz
+        https://github.com/RPCS3/hidapi/archive/ca39ce8939e490ffcadb38ff978447aac1c17662.tar.gz::hidapi.tar.gz
+        https://github.com/RPCS3/libpng/archive/1dcba4d6eb1bad9500be877cbd1b0442fa92cfa6.tar.gz::libpng.tar.gz
+        https://github.com/RPCS3/pugixml/archive/f205aaf6e1c90f1dda943edd4f82922118a85648.tar.gz::pugixml.tar.gz
+        https://github.com/madler/zlib/archive/v1.2.11.tar.gz::zlib.tar.gz
+        https://github.com/KhronosGroup/Vulkan-LoaderAndValidationLayers/archive/85926a33d427ee62f395a50886db980127063c72.tar.gz::Vulkan-LoaderAndValidationLayers.tar.gz
+        https://github.com/KhronosGroup/glslang/archive/cf571f7310f58e6eb4ea35600ef1401bc76db0d2.tar.gz::glslang.tar.gz
+        https://github.com/kobalicek/asmjit/archive/1370fe6a26a82f18500faedac66798953961a916.tar.gz::asmjit.tar.gz
+        https://github.com/llvm-mirror/llvm/archive/4423e351176a92975739dd4ea43c2ff5877236ae.tar.gz::llvm.tar.gz
+        https://github.com/akrzemi1/Optional/archive/f27e79084a9176672ed1eae50b3397fa8035d50d.tar.gz::optional.tar.gz 
+        git-version.h)
+
+derle() {
+    cd "$isim-$surum"
+
+    rmdir 3rdparty/GSL
+    ln --symbolic --force ../../GSL-fc5fce4f4f8d64fbda523d1b0d55115f5ca68774/ 3rdparty/GSL
+    rmdir 3rdparty/cereal
+    ln --symbolic --force ../../cereal-1.2.0 3rdparty/cereal
+    rmdir 3rdparty/ffmpeg
+    ln --symbolic --force ../../ppsspp-ffmpeg-7b7ae7b06705bf5539b222e77c779d4b649b53ef 3rdparty/ffmpeg
+    rmdir 3rdparty/hidapi
+    ln --symbolic --force ../../hidapi-ca39ce8939e490ffcadb38ff978447aac1c17662 3rdparty/hidapi
+    rmdir 3rdparty/libpng
+    ln --symbolic --force ../../libpng-1dcba4d6eb1bad9500be877cbd1b0442fa92cfa6 3rdparty/libpng
+    rmdir 3rdparty/Optional
+    ln --symbolic --force ../../Optional-f27e79084a9176672ed1eae50b3397fa8035d50d 3rdparty/Optional
+    rmdir 3rdparty/pugixml
+    ln --symbolic --force ../../pugixml-f205aaf6e1c90f1dda943edd4f82922118a85648 3rdparty/pugixml
+    rmdir 3rdparty/zlib
+    ln --symbolic --force ../../zlib-1.2.11 3rdparty/zlib
+    rmdir Vulkan/Vulkan-LoaderAndValidationLayers
+    ln --symbolic --force ../../Vulkan-LoaderAndValidationLayers-85926a33d427ee62f395a50886db980127063c72 Vulkan/Vulkan-LoaderAndValidationLayers
+    rmdir Vulkan/glslang
+    ln --symbolic --force ../../glslang-cf571f7310f58e6eb4ea35600ef1401bc76db0d2 Vulkan/glslang
+    rmdir asmjit
+    ln --symbolic --force ../asmjit-1370fe6a26a82f18500faedac66798953961a916 asmjit
+    rmdir llvm
+    ln --symbolic --force ../llvm-4423e351176a92975739dd4ea43c2ff5877236ae llvm
+
+    if [ ! -d build ]
+    then
+        mkdir build
+    fi
+
+    cd build
+
+    cmake .. \
+        -DCMAKE_BUILD_TYPE='Release' \
+        -DCMAKE_INSTALL_PREFIX='/usr' \
+        -DCMAKE_EXE_LINKER_FLAGS='-ldl -lyaml-cpp' \
+        -DCMAKE_SKIP_RPATH='ON' \
+        -DUSE_SYSTEM_FFMPEG='ON' \
+        -DUSE_SYSTEM_LIBPNG='ON'
+
+    cp ../../git-version.h ../rpcs3/
+    make
+    make DESTDIR="$PKG" install
+}
