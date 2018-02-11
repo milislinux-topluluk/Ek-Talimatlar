@@ -1,0 +1,26 @@
+# Tanım: Librtmp için Python arabirimi
+# URL: https://github.com/chrippa/python-librtmp
+# Paketçi: Cihan_Alkan 
+# Gerekler: python-setuptools python3-setuptools python python3 enchant rtmpdump
+# Grup:kütüphane
+
+isim=pylibrtmp
+surum=0.3.0
+devir=1
+kaynak=(https://pypi.python.org/packages/source/p/python-librtmp/python-librtmp-$surum.tar.gz)
+
+derle() {
+
+  cp -rup python-librtmp-${surum} python3-librtmp-${surum}
+
+  cd ${SRC}/python-librtmp-${surum}
+
+  python setup.py build
+  python setup.py install --root=${PKG} --optimize=1
+
+  cd ${SRC}/python3-librtmp-${surum}
+
+  python3 setup.py build
+  python3 setup.py install --root=${PKG} --optimize=1
+
+}
