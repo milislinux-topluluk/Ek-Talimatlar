@@ -1,0 +1,15 @@
+# Tanım: SQLite için Python DB-API 2.0 arayüzü
+# URL: https://initd.org/tracker/pysqlite
+# Paketçi: Cihan_Alkan 
+# Gerekler: python-setuptools python3-setuptools python python3 sqlite2
+# Grup:kütüphane
+
+isim=python-pysqlite-legacy
+surum=1.0.1
+devir=1
+kaynak=(https://www.mirrorservice.org/sites/www.ibiblio.org/gentoo/distfiles/pysqlite-$surum.tar.gz)
+
+derle() {
+  cd ${SRC}/pysqlite
+  python setup.py install --root=${PKG} -O1
+}
