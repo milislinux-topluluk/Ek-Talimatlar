@@ -1,0 +1,43 @@
+# Tanım: Linux uygulama sandbox ve dağıtım çerçevesi (eski xdg-uygulaması)
+# URL: http://flatpak.org
+# Paketçi: Cihan_Alkan
+# Gerekler: dbus glib2 libsoup polkit libxau ostree fuse json-glib libseccomp libarchive python bubblewrap appstream-glib intltool gobject-introspection gtk-doc git docbook-xsl xmlto
+# Grup: 
+
+isim=flatpak
+surum=0.10.3
+devir=1
+kaynak=(https://github.com/flatpak/flatpak/releases/download/0.10.3/flatpak-0.10.3.tar.xz
+        flatpak-bindir.sh
+        flathub.flatpakrepo)
+
+derle() {
+  cd flatpak-0.10.3
+  # https://github.com/flatpak/flatpak/issues/267
+  sed -i '/locale\/C\./d' tests/make-test-runtime.sh
+
+#  NOCONFIGURE=1 ./autogen.sh
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --sbindir=/usr/bin \
+    --libexecdir=/usr/lib/$isim \
+    --disable-static \
+    --enable-gtk-doc \
+    --enable-p2p \
+    --with-system-bubblewrap \
+    --with-priv-mode=setuid
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR="$PKG" install
+
+  install -Dt "$PKG/etc/profile.d" -m644 ../flatpak-bindir.sh
+  install -Dt "$PKG/usr/share/flatpak" -m644 ../flathub.flatpakrepo
+
+  # Fixup mode to match polkit
+  install -d -o root -g 102 -m 750 "$PKG/usr/share/polkit-1/rules.d"
+}
