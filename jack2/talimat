@@ -2,7 +2,6 @@
 # URL: http://jackaudio.org
 # Paketçi: Cihan_Alkan
 # Gerekler: db libsamplerate readline doxygen celt
-# Grup: medya
 
 isim=jack2
 surum=1.9.12
