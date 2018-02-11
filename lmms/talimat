@@ -1,0 +1,29 @@
+# Tanım: Linux MultiMedia Studio (Qt5 Sürümü)
+# URL: http://lmms.io
+# Paketçi: Cihan_Alkan
+# Gerekler: portaudio libsoundio qt5 fltk1 libsamplerate fluidsynth xorg-libxft cmake ladspa raptor rasqal freetype redland lame libgig xorg-libxinerama shared-mime-info alsa-lib jack2
+# Grup: medya
+
+isim=lmms
+surum=1.2.0
+devir=1
+kaynak=()
+
+derle() {
+	adres1="https://github.com/LMMS/lmms"
+	git_indir ${adres1} ${isim}
+  cd ${isim}
+  git describe --long --tags | sed -r 's/^v//;s/([^-]*-g)/r\1/;s/-/./g'
+  git submodule update --init --recursive
+  git shortlog -nse | cut -f 2- > doc/CONTRIBUTORS
+  cmake . -DCMAKE_INSTALL_PREFIX=/usr \
+          -DWANT_QT5=ON \
+          -DWANT_CARLA=OFF \
+          -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+          -DWANT_WEAKJACK=OFF \
+          -DWANT_STK=OFF \
+          -DWANT_VST_NOWINE=ON
+
+  make
+  make DESTDIR="$PKG" install
+}
