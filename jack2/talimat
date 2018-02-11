@@ -1,0 +1,67 @@
+# Tanım: SMP desteği olan yeni nesil JACK
+# URL: http://jackaudio.org
+# Paketçi: Cihan_Alkan
+# Gerekler: db libsamplerate readline doxygen celt
+# Grup: medya
+
+isim=jack2
+surum=1.9.12
+devir=1
+kaynak=(https://github.com/jackaudio/${isim}/archive/v${surum}.tar.gz::${isim}-$surum.tar.gz
+        jack-99-audio.conf
+        jack-40-hpet-permissions.rules)
+
+derle() {
+
+  cd "${isim}-${surum}"
+
+  # https://github.com/jackaudio/jack2/issues/308
+  sed -i 's:bin/env python:bin/env python2:' \
+    "example-clients/jack_control"
+
+  # copy of the source for jack2-dbus
+  cp -r "${SRC}/${isim}-${surum}" "${SRC}/${isim}1-${surum}"
+
+  # configure jack2
+  python waf configure --prefix=/usr \
+                       --htmldir="/usr/share/doc/${isim}/" \
+                       --freebob=no \
+                       --classic \
+                       --dbus
+
+  # configure jack2-dbus
+  cd "${SRC}/${isim}1-${surum}"
+  python waf configure --prefix=/usr \
+                       --htmldir="/usr/share/doc/${isim}/" \
+                       --freebob=no \
+                       --dbus
+
+  # build jack2
+  cd "${SRC}/${isim}-${surum}"
+  python waf build
+  # build jack2-dbus
+  cd "${SRC}/${isim}1-${surum}"
+  python waf build
+
+  cd "${SRC}/${isim}-${surum}"
+  python waf install --destdir="${PKG}"
+
+  # configure realtime access/scheduling
+  # see https://bugs.archlinux.org/task/26343
+  install -Dm644 "${SRC}/jack-99-audio.conf" \
+    "${PKG}/etc/security/limits.d/jack-99-audio.conf"
+
+  install -Dm644 "${SRC}/jack-40-hpet-permissions.rules" \
+    "${PKG}/usr/lib/udev/rules.d/jack-40-hpet-permissions.rules"
+
+  cd "${SRC}/${isim}1-${surum}"
+  python waf install --destdir="${PKG}"
+
+  # configure realtime access/scheduling
+  # see https://bugs.archlinux.org/task/26343
+  install -Dm644 "${SRC}/jack-99-audio.conf" \
+    "${PKG}/etc/security/limits.d/jack-99-audio.conf"
+
+  install -Dm644 "${SRC}/jack-40-hpet-permissions.rules" \
+    "${PKG}/usr/lib/udev/rules.d/jack-40-hpet-permissions.rules"
+}
