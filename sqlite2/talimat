@@ -1,0 +1,19 @@
+# Tanım: Bir SQL veritabanı motorunu uygulayan bir C kütüphanesi
+# URL: http://www.sqlite.org/
+# Paketçi: Cihan_Alkan 
+# Gerekler: readline
+# Grup:kütüphane
+
+isim=sqlite2
+surum=2.8.17
+devir=1
+kaynak=(http://www.sqlite.org/sqlite-$surum.tar.gz)
+
+derle() {
+  cd ${SRC}/sqlite-${surum}
+
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=${PKG} install
+
+}
