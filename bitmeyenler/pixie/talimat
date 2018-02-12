@@ -1,0 +1,17 @@
+# Tanım: Pixie, hem genel kullanım için hem de kabuk betikleme için uygun hafif bir lisp
+# URL: https://github.com/pixie-lang/pixie
+# Paketçi: Cihan_Alkan
+# Gerekler: libedit libffi libuv boost
+# Grup: 
+
+isim=pixie
+surum=0.1
+devir=1
+kaynak=()
+
+derle() {
+  git_indir https://github.com/pixie-lang/pixie pixie
+  cd  $isim
+  make build_no_jit
+  make DESTDIR=$PKG install
+}
