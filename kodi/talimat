@@ -1,0 +1,24 @@
+# Tanım: Dijital ortam için bir yazılım ortam yürütücü ve eğlence merkezi
+# URL: http://kodi.tv
+# Paketçi: Cihan Alkan
+# Gerekler: boost cmake nasm doxygen upower samba tinyxml yajl swig libbluray nfs-utils libmicrohttpd ffmpeg python libjpeg-turbo hicolor-icon-theme enca gperf libdvdcss wavpack x264 dcadec
+# Grup: medya
+
+isim=kodi
+surum=17.6
+devir=1
+kaynak=(https://github.com/xbmc/xbmc/archive/17.6-Krypton.tar.gz)
+
+derle() {
+   mkdir -p build
+    cd build
+    
+    cmake ../xbmc-17.6-Krypton/project/cmake \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+        -DENABLE_EVENTCLIENTS=OFF \
+        -DENABLE_OPTICAL=OFF
+make
+make DESTDIR=${PKG} install
+}
