@@ -2,7 +2,6 @@
 # URL: https://rabbitmq.com
 # Paketçi: Cihan_Alkan
 # Gerekler: util-linux' 'inetutils' 'erlang-nox
-# Grup:
 
 isim=rabbitmq
 surum=3.6.14
@@ -41,3 +40,4 @@ derle() {
 
   chown -R 197:0 "${PKG}/etc/rabbitmq"
 }
+
