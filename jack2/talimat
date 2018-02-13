@@ -1,7 +1,7 @@
 # Tanım: SMP desteği olan yeni nesil JACK
 # URL: http://jackaudio.org
 # Paketçi: Cihan_Alkan
-# Gerekler: db libsamplerate readline doxygen celt
+# Gerekler: db libsamplerate doxygen celt
 
 isim=jack2
 surum=1.9.12
