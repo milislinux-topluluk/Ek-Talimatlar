@@ -1,0 +1,23 @@
+# Tanım: PDF'ler için İsviçre ordu bıçağı. ikili yürütülebilir dosyalardan oluşturulmuştur.
+# URL: http://www.pdfhacks.com/pdftk
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: 
+
+isim=pdftk-bin
+surum=2.02
+devir=1
+kaynak=(http://httpredir.debian.org/debian/pool/main/p/pdftk/pdftk_2.02-4+b2_amd64.deb
+        http://ftp.debian.org/debian/pool/main/g/gcc-6/libgcj17_6.4.0-12_amd64.deb)
+
+derle() {
+  ar x pdftk_2.02-4+b2_amd64.deb
+  tar -xf data.tar.?z -C "$PKG" ./usr
+  mkdir libgcj
+  cd libgcj
+  ar x ../libgcj17_6.4.0-12_amd64.deb
+  tar -xf data.tar.?z
+   find -type f -name 'libgcj.so*' \
+    -execdir install -Dm755 {} "$PKG/usr/lib/{}" \;
+
+}
