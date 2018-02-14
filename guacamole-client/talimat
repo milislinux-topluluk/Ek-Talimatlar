@@ -1,0 +1,22 @@
+# Tanım: Java ve Maven bileşenleri Guacamole
+# URL: http://guacamole.sourceforge.net/
+# Paketçi: Cihan_Alkan
+# Gerekler: tomcat8 maven openjdk
+# Grup: 
+
+isim=guacamole-client
+surum=0.9.14
+devir=1
+kaynak=(ftp://ftp.itu.edu.tr/Mirror/Apache/guacamole/0.9.14/source/guacamole-client-0.9.14.tar.gz
+        guacamole.properties)
+
+derle() {
+	cd "$SRC"/$isim-$surum
+	mvn package
+	mkdir -m 775 -p "$PKG"/var/lib/tomcat8/
+	mkdir -m 775 -p "$PKG"/var/lib/tomcat8/webapps/
+	mkdir -p "$PKG"/usr/share/tomcat8/.${isim%-*}/
+	install -D ${isim%-*}/target/${isim%-*}-$surum.war "$PKG"/var/lib/tomcat8/webapps/guacamole.war
+	install -D ${isim%-*}/doc/example/user-mapping.xml "$PKG"/usr/share/tomcat8/.guacamole/
+	install -D "$SRC"/guacamole.properties "$PKG"/usr/share/tomcat8/.guacamole/
+}
