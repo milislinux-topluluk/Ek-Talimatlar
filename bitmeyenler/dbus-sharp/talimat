@@ -1,0 +1,24 @@
+# Tanım: D-Bus'un C # uygulaması
+# URL: http://github.com/mono/dbus-sharp/
+# Paketçi: Cihan_Alkan
+# Gerekler: mono
+# Grup: 
+
+isim=dbus-sharp
+surum=0.8.1
+devir=1
+
+kaynak=()
+
+derle() {
+
+  git_indir https://github.com/mono/dbus-sharp $isim-$surum
+  cd "$SRC/$isim-$surum"
+  export MONO_SHARED_DIR="$SRC/.wabi"
+  mkdir -p "$MONO_SHARED_DIR"
+
+  ./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+  make
+  make DESTDIR="$PKG" install
+  install -D COPYING "$PKG/usr/share/licenses/$isim/COPYING"
+}
