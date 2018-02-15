@@ -1,0 +1,29 @@
+# Tanım: Linux ve Unix için masaüstü not alma uygulaması
+# URL: http://www.gnome.org/projects/tomboy/
+# Paketçi: Cihan_Alkan
+# Gerekler: intltool pkgconfig gnome-doc-utils yelp-tools autoconf-archive gtk2 gtkspell gconf gconf-sharp dbus-sharp-glib mono-addins hicolor-icon-theme
+# Grup: 
+
+isim=tomboy
+surum=1.15.9
+devir=1
+
+kaynak=(https://git.gnome.org/browse/tomboy/snapshot/tomboy-1.15.9.tar.xz)
+
+derle() {
+  cd tomboy-$surum
+  NOCONFIGURE=1 ./autogen.sh
+  export MONO_SHARED_DIR="$SRC/.wabi"
+  mkdir -p "$MONO_SHARED_DIR"
+  autoreconf -fi
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var \
+      --disable-update-mimedb
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+  make
+  make DESTDIR="$PKG" GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 install
+
+  install -m755 -d "$PKG/usr/share/gconf/schemas"
+  gconf-merge-schema "$PKG/usr/share/gconf/schemas/$isim.schemas" --domain tomboy "$PKG"/etc/gconf/schemas/*.schemas
+  rm -f "$PKG"/etc/gconf/schemas/*.schemas
+}
