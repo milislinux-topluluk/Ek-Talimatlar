@@ -1,0 +1,19 @@
+# Tanım: Linux için bir sistem geri yükleme programı
+# URL: https://github.com/teejee2008/timeshift
+# Paketçi: Cihan_Alkan
+# Gerekler: gtk3 libsoup desktop-file-utils vala diffutils coreutils vte3 libgee fcron
+# Grup: sistem
+
+isim=timeshift
+surum=18.2
+devir=1
+kaynak=(https://github.com/teejee2008/${isim}/archive/v${surum}.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  set -u
+  make -C "$isim-$surum" -s -j1
+  set +u
+  set -u
+  make -C "$isim-$surum" DESTDIR="$PKG" install
+  set +u
+}
