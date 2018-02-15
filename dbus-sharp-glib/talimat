@@ -1,0 +1,24 @@
+# Tanım: D-Bus'un C # GLib uygulaması
+# URL: http://github.com/mono/dbus-sharp-glib/
+# Paketçi: Cihan_Alkan
+# Gerekler: dbus-sharp pkgconfig
+# Grup: 
+
+isim=dbus-sharp-glib
+surum=0.6.0
+devir=1
+
+kaynak=(https://github.com/mono/$isim/releases/download/v${surum:0:3}/$isim-$surum.tar.gz)
+
+derle() {
+  cd "$SRC/$isim-$surum"
+
+  export MONO_SHARED_DIR="${SRC}/.wabi"
+  mkdir -p "${MONO_SHARED_DIR}"
+
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+  make
+  cd "$SRC/$isim-$surum"
+  make DESTDIR="$PKG" install
+  install -D COPYING "$PKG/usr/share/licenses/$isim/COPYING"
+}
