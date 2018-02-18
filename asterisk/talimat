@@ -1,0 +1,31 @@
+# Tanım: Tam bir PBX çözümü
+# URL: http://www.asterisk.org
+# Paketçi: Cihan_Alkan
+# Gerekler: sqlite gsm alsa-lib speex popt libvorbis curl libxml2 jansson libxslt opus termcap
+# Grup: ağ
+
+isim=asterisk
+surum=15.2.1
+devir=1
+kaynak=(http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-${surum}.tar.gz
+       ${isim}.logrotated
+	   ${isim}.tmpfile)
+
+derle() {
+  cd ${isim}-${surum}
+  #./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --sbindir=/usr/bin --with-libedit=internal
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --sbindir=/usr/bin
+  make
+  make DESTDIR=${PKG} install
+  make DESTDIR=${PKG} samples
+  
+  sed -i -e "s/\/var\/run/\/run/" ${PKG}/etc/asterisk/asterisk.conf
+
+  mkdir -p ${PKG}/usr/share/doc/asterisk/examples
+  for i in ${PKG}/etc/asterisk/*; do install -D -m 644 $i ${PKG}/usr/share/doc/asterisk/examples/; done
+  
+  mv ${PKG}/var/run ${PKG}
+  
+  install -D -m 644 ${SRC}/asterisk.logrotated ${PKG}/etc/logrotate.d/asterisk
+  install -D -m 644 ${SRC}/asterisk.tmpfile ${PKG}/usr/lib/tmpfiles.d/asterisk.conf
+}
