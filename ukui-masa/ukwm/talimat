@@ -1,0 +1,26 @@
+# Tanım: Ukui için panel uygulaması
+# URL: https://github.com/ukui/ukui-panel
+# Paketçi: Cihan_Alkan
+# Gerekler: wayland-protocols clutter
+
+isim=ukwm
+surum=1.1.4
+devir=1
+kaynak=()
+
+derle() {
+    git_indir https://github.com/ukui/ukwm $isim
+
+	cd $SRC/$isim
+
+    ./autogen.sh \
+        --prefix=/usr \
+        --libexecdir=/usr/lib/$isim \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --enable-introspection
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+    make
+    make DESTDIR="${PKG}" install
+}
