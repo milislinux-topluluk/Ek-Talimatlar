@@ -1,22 +1,28 @@
 # Tanım: Masaüstü yayıncılık yazılımı
 # URL: https://github.com/scribusproject/scribus
 # Paketçi: Cihan_Alkan
-# Gerekler: harfbuzz qt5 librevenge cmake
+# Gerekler: harfbuzz qt5 librevenge cmake boost cairo python lcms2 ghostscript
 # Grup:
 
 isim=scribus
-surum=git
+surum=1.5.3
 devir=1
-kaynak=()
+kaynak=(http://downloads.sourceforge.net/${isim}/${isim}-${surum}.tar.xz)
 
 derle() {
-  git_indir https://github.com/scribusproject/scribus scribus
-  cd scribus
-  mkdir build
-  cd build
-  cmake .. \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release
-  make
-  make DESTDIR="$PKG/" install
+	cd "${SRC}/${isim}-${surum}"
+	sed \
+		-e 's|#!/usr/bin/python|#!/usr/bin/python2|' \
+		-e 's|#!/usr/bin/env python|#!/usr/bin/env python2|' \
+		-i scribus/plugins/scriptplugin/{samples,scripts}/*
+	install -d build
+	cd build
+	cmake .. \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_SKIP_RPATH=ON \
+		-DLIB_SUFFIX=""
+	make
+	make DESTDIR="${PKG}" install
+	install -Dm644 ../scribus.desktop "${PKG}/usr/share/applications/scribus.desktop"
 }
