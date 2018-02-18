@@ -1,0 +1,24 @@
+# Tanım: Matrix referans homeserver
+# URL: https://github.com/matrix-org/synapse
+# Paketçi: Cihan_Alkan
+# Gerekler: python-openssl python-yaml
+# Grup: 
+
+isim=matrix-synapse
+surum=0.26.0
+devir=1
+kaynak=(https://github.com/matrix-org/synapse/archive/v0.26.0.tar.gz::$isim-$surum.tar.gz
+        sysusers-synapse.conf)
+
+derle() {
+	cd synapse-$surum
+	python setup.py build 
+	python setup.py install --root "${PKG}" --optimize=1 --skip-build
+
+	for file in "${PKG}/usr/lib/python2.7/site-packages/synapse"/{app,push}/*.py; do
+		sed -re 's|env python$|&2.7|' -i "${file}"
+	done
+
+	install -dm755 -o 198 -g 198 "$PKG"/etc/synapse
+	install -Dm644 "$SRC"/sysusers-synapse.conf "$PKG"/usr/lib/sysusers.d/synapse.conf
+}
