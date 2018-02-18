@@ -1,0 +1,52 @@
+# Tanım: Parça editörüyle birlikte VDrift ve OGRE'ye dayalı bir 3D yarış oyunu
+# URL: http://stuntrally.tuxfamily.org
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake boost sdl2 libvorbis enet bullet openal hicolor-icon-theme ogre mygui-ogre btogre
+# Grup: oyun
+
+isim=stuntrally
+surum=2.6
+devir=1
+kaynak=(https://github.com/stuntrally/stuntrally/archive/$surum.tar.gz::stuntrally-$surum.tar.gz
+        https://github.com/stuntrally/tracks/archive/$surum.tar.gz::stuntrally-tracks-$surum.tar.gz
+        stuntrally-bullet-2.84+.patch
+        stuntrally-gcc-6.patch
+        stuntrally
+        sr-editor)
+
+derle() {
+
+  cd $isim-$surum
+
+  # https://github.com/stuntrally/stuntrally/commit/58e9d66
+  patch -p1 -i ../stuntrally-bullet-2.84+.patch
+
+  # https://github.com/stuntrally/stuntrally/commit/f7703d8
+  patch -p1 -i ../stuntrally-gcc-6.patch
+
+  # copy tracks into source directory
+  mkdir data/tracks
+  cp -r ../tracks-$surum/* data/tracks
+
+  mkdir build
+
+  cd build
+
+  export PKG_CONFIG_PATH="/opt/OGRE-1.9/lib/pkgconfig:/opt/MyGUI-OGRE1.9/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+  cmake .. \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DSHARE_INSTALL=share/stuntrally \
+    -DBUILD_EDITOR=ON
+  make
+
+  make DESTDIR="$PKG" install
+
+  install -d "$PKG"/usr/share/pixmaps
+  install -m 644 ../data/gui/{stuntrally,sr-editor}.png "$PKG"/usr/share/pixmaps
+
+  install -d "$PKG"/usr/lib/stuntrally
+  mv "$PKG"/usr/bin/{stuntrally,sr-editor} "$PKG"/usr/lib/stuntrally
+  install -m 755 ../../{stuntrally,sr-editor} "$PKG"/usr/bin
+}
