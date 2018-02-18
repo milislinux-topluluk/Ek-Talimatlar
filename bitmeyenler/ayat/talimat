@@ -1,0 +1,24 @@
+# Tanım: Kur'an-ı Kerim - KSU Elektronik Mushaf projesi
+# URL: http://quran.ksu.edu.sa/
+# Paketçi: Cihan_Alkan
+# Gerekler: unzip adobe-air-sdk lib32-libxt lib32-curl
+# Grup: medya
+
+isim=ayat
+surum=1.4
+devir=1
+kaynak=(http://quran.ksu.edu.sa/ayat/download/programs/Ayat-v${surum}_linux.zip::Ayat-v${surum}_linux.mls
+        ${isim} 
+        ${isim}.desktop)
+
+derle() {
+  mv Ayat-v${surum}_linux.mls Ayat-v${surum}_linux.zip
+
+  unzip -q "Ayat-v${surum}_linux.zip"
+
+  mkdir -p "${PKG}/opt/airapps/${isim}"
+  unzip -q "${SRC}/Ayat-v${surum}.air" -d "${PKG}/opt/airapps/${isim}"
+  install -Dm755 ${isim} "${PKG}/usr/bin/${isim}"
+  install -Dm644 ${isim}.desktop "${PKG}/usr/share/applications/${isim}.desktop"
+  install -Dm644 "${PKG}/opt/airapps/${isim}/icons/128_app.png" "${PKG}/usr/share/pixmaps/${isim}.png"
+}
