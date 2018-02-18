@@ -14,6 +14,6 @@ derle() {
     cd "$isim-$surum"
     perl Build.PL --destdir "$PKG" --installdirs vendor --gtk
     ./Build install --install_path script=/usr/bin
-    install -Dm 644 "share/gtk-youtube-viewer.desktop" "$PKG/usr/share/applications/gtk-youtube-viewer.desktop"
+    install -Dm 644 "$SRC/gtk-youtube-viewer.desktop" "$PKG/usr/share/applications/gtk-youtube-viewer.desktop"
     install -Dm 644 "share/icons/gtk-youtube-viewer.png" "$PKG/usr/share/pixmaps/gtk-youtube-viewer.png"
 }
