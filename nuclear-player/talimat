@@ -1,0 +1,21 @@
+# Tanım: Birden fazla kaynaktan akan ücretsiz, çok yönlü bir müzik çalar uygulaması.
+# URL: http://nuclear.gumblert.tech/
+# Paketçi: Cihan_Alkan
+# Gerekler: xorg-libxtst gconf nss alsa-lib libnotify
+# Grup: 
+
+
+isim=nuclear-player
+surum=0.4.2
+devir=1
+kaynak=(https://github.com/nukeop/nuclear/releases/download/v${surum}/nuclear_${surum}_amd64.deb)
+
+derle() {
+    ar x nuclear_${surum}_amd64.deb
+    tar xf data.tar.xz
+
+    cp --preserve=mode -r usr "${PKG}"
+    cp --preserve=mode -r opt "${PKG}"
+
+    find "${PKG}" -type d -exec chmod 755 {} +
+}
