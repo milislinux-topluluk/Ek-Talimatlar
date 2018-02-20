@@ -1,0 +1,21 @@
+# Tanım: Python için basit ama güçlü yapılandırma dosyası okuyucu ve yazıcı
+# URL: https://github.com/DiffSK/configobj
+# Paketçi: Cihan Alkan
+# Gerekler: python python3 python-six
+# Grup: kütüphane
+
+isim=pyconfigobj
+surum=5.0.6
+devir=1
+
+kaynak=(https://github.com/DiffSK/configobj/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cp -a configobj-$surum{,-py3}
+  cd "$SRC"/configobj-$surum
+  python setup.py install --root="$PKG" --optimize=1
+ 
+  cd "$SRC"/configobj-$surum-py3
+  python3 setup.py install --root="$PKG" --optimize=1
+  install -Dm644 LICENSE "$PKG/usr/share/licenses/$isim/LICENSE"
+}
