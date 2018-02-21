@@ -1,0 +1,20 @@
+# Tanım: Sysfs Tabanlı Sistem Araçları
+# URL: http://linux-diag.sourceforge.net/Sysfsutils.html
+# Paketçi: Cihan_Alkan
+# Gerekler: glibc
+# Grup: 
+
+isim=sysfsutils
+surum=2.1.0
+devir=1
+
+kaynak=(http://downloads.sourceforge.net/sourceforge/linux-diag/${isim}-${surum}.tar.gz)
+
+derle() {
+
+  cd "$isim-$surum"
+  ./configure --prefix=/usr --mandir=/usr/share/man
+  make
+  make DESTDIR="$PKG" install
+  rm "$PKG/usr/lib/libsysfs.a"
+}
