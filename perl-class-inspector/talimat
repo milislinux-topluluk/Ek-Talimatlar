@@ -1,7 +1,7 @@
 # Tanım: Bir sınıf ve yapısı hakkında bilgi edinin
 # URL: http://search.cpan.org/dist/Class-Inspector
 # Paketçi: Cihan_Alkan
-# Gerekler: perl
+# Gerekler:
 # Grup: 
 
 isim=perl-class-inspector

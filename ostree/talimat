@@ -1,7 +1,7 @@
 # Tanım: İşletim sistemi ve konteyner ikili dağıtımı ve yükseltmeleri
 # URL: https://github.com/ostreedev/ostree
 # Paketçi: Cihan_Alkan
-# Gerekler: glib libsoup gpgme libarchive fuse util-linux openssl e2fsprogs gobject-introspection gtk-doc libxslt python syslinux gjs cpio elfutils
+# Gerekler: glib libsoup gpgme libarchive fuse util-linux openssl e2fsprogs gobject-introspection libxslt python syslinux gjs cpio elfutils
 # Grup: 
 
 isim=ostree
@@ -37,7 +37,7 @@ derle() {
     --with-builtin-grub2-mkconfig \
     --enable-experimental-api \
     --disable-static \
-    --enable-gtk-doc
+    --disable-gtk-doc
 
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
   make

@@ -1,7 +1,7 @@
 # Tanım: \$@ Öğesinin uygun yerelleştirilmesiyle minimum deneme/yakalama
 # URL: http://search.cpan.org/dist/Try-Tiny
 # Paketçi: Cihan_Alkan
-# Gerekler: perl
+# Gerekler:
 # Grup: 
 
 isim=perl-try-tiny
