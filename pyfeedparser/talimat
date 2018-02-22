@@ -1,0 +1,22 @@
+# Tanım: Python'da RSS ve Atom feed'lerini ayrıştırma
+# URL: https://github.com/kurtmckee/feedparser/
+# Paketçi: Cihan_Alkan
+# Gerekler: python python3 python-setuptools python3-setuptools libxml2
+# Grup: kütüphane
+
+isim=pyfeedparser
+surum=5.2.1
+devir=1
+kaynak=(https://github.com/kurtmckee/feedparser/archive/${surum}.tar.gz::feedparser-$surum.tar.gz)
+
+derle() {
+
+  cp -a feedparser-$surum{,-py3}
+
+  cd "$SRC"/feedparser-$surum
+  python setup.py install --root="$PKG"
+ 
+  cd "$SRC"/feedparser-$surum-py3
+  python3 setup.py install --root="$PKG"
+  install -Dm644 LICENSE "$PKG/usr/share/licenses/$isim/LICENSE"
+}
