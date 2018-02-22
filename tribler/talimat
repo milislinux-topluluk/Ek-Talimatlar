@@ -1,0 +1,29 @@
+# Tanım: P2P içerik keşfi ile gizlilik gelişmiş BitTorrent istemcisi
+# URL: http://www.tribler.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: python python3 python-setuptools python3-setuptools pyfeedparser pyapsw pydecorator
+# Grup: kütüphane
+
+isim=tribler
+surum=7.0.1
+devir=1
+kaynak=(https://github.com/Tribler/tribler/releases/download/v${surum}/Tribler-v${surum}.tar.xz)
+
+derle() {
+  cd "${SRC}/tribler"
+  python setup.py build
+  python setup.py install --root=${PKG} --optimize=1
+  install -d "${PKG}"/usr/{bin,share/tribler}
+  cp -r Tribler "${PKG}"/usr/share/tribler
+  cp -r TriblerGUI "${PKG}"/usr/share/tribler
+  cp Tribler/schema_sdb_v*.sql "${PKG}"/usr/share/tribler/Tribler
+  install -d "${PKG}"/usr/share/{applications,pixmaps}
+  install -m644 Tribler/Main/Build/Ubuntu/tribler.desktop "${PKG}"/usr/share/applications
+  install -m644 Tribler/Main/Build/Ubuntu/tribler.xpm "${PKG}"/usr/share/pixmaps
+  install -m644 Tribler/Main/Build/Ubuntu/tribler_big.xpm "${PKG}"/usr/share/pixmaps
+  install -m755 debian/bin/tribler "${PKG}"/usr/bin
+  install -m644 logger.conf "${PKG}"/usr/share/tribler/
+  install -m644 run_tribler.py "${PKG}"/usr/share/tribler/
+  install -m644 check_os.py "${PKG}"/usr/share/tribler/
+  cp -r twisted "${PKG}"/usr/share/tribler
+}
