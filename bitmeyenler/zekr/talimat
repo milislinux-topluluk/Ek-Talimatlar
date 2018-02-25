@@ -1,0 +1,24 @@
+# Tanım: Kur'an-ı Kerim platformu
+# URL: http://zekr.org/quran/quran-for-linux
+# Paketçi: Cihan_Alkan
+# Gerekler: openjdk libsoup
+# Grup:
+
+isim=zekr
+surum=1.1.0
+devir=1
+
+kaynak=(https://sourceforge.mirrorservice.org/z/ze/zekr/Zekr/zekr-1.1.0/zekr-1.1.0-linux_64.tar.gz
+        $isim.desktop)
+
+derle() {
+  mkdir -p $PKG/usr/share/java/$isim
+  cp -r $SRC/$isim $PKG/usr/share/java/
+  sed -i 's|DIR_NAME=`dirname $0`|DIR_NAME=/usr/share/java/zekr|' $SRC/$isim/zekr.sh
+  rm $PKG/usr/share/java/zekr/zekr.sh
+  install -D -m755 $SRC/$isim/zekr.sh $PKG/usr/bin/$isim.sh
+  mkdir -p $PKG/usr/share/pixmaps
+  install -D -m644 $SRC/$isim/res/image/icon/open-book-128.png $PKG/usr/share/pixmaps/$isim.png
+  mkdir -p $PKG/usr/share/applications
+  install -D -m755 $isim.desktop $PKG/usr/share/applications/$isim.desktop
+}
