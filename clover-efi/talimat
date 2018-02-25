@@ -1,0 +1,19 @@
+# Tanım: BIOS tabanlı bilgisayarlar için EFI tabanlı bir önyükleyici.
+# URL: http://cloverefiboot.sourceforge.net
+# Paketçi: Cihan Alkan
+# Gerekler:
+# Grup:
+
+isim=clover-efi
+surum=4411
+devir=1
+kaynak=(http://downloads.sourceforge.net/project/cloverefiboot/Bootable_ISO/CloverISO-$surum.tar.lzma)
+
+derle() {
+  bsdtar -x --file "Clover-v2.4k-$surum-X64.iso" EFI
+  install -dm755 "$PKG/boot"
+  install -dm755 "$PKG/usr/share/doc"
+  cp --archive EFI "$PKG/boot"
+  rm --recursive "$PKG/boot/EFI/BOOT"
+  mv --force "$PKG/boot/EFI/CLOVER/doc" "$PKG/usr/share/doc/clover-efi"
+}
