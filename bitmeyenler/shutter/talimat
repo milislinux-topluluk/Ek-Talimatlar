@@ -1,0 +1,21 @@
+# Tanım: Özel bir ekran görüntüsü aracı 
+# URL: http://shutter-project.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: xdg-utils imagemagick procps-ng librsvg desktop-file-utils
+
+isim=shutter
+surum=0.94
+devir=1
+
+kaynak=(https://launchpad.net/shutter/0.9x/$surum/+download/shutter-$surum.tar.gz)
+
+derle() {
+  cd "$SRC/$isim-$surum"
+
+  # Fix tray icon under many icon themes, from Gentoo
+  sed -e "/\$tray->set_from_icon_name/s:set_from_icon_name:set_from_file:" \
+      -e "s:shutter-panel:/usr/share/icons/hicolor/scalable/apps/&.svg:" \
+      -i bin/shutter
+  install -Dm755 bin/$isim "$PKG/usr/bin/$isim"
+  cp -a share "$PKG/usr/"
+}
