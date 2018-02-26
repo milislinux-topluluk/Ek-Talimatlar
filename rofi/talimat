@@ -36,4 +36,6 @@ derle() {
   install -Dm644 COPYING "$PKG/usr/share/licenses/rofi/COPYING"
   install -dm755 "$PKG/usr/share/doc/rofi/examples"
   install -Dm755 Examples/*.sh "$PKG/usr/share/doc/rofi/examples"
+  rm -rf ${PKG}/usr/share/doc
+  rm -rf ${PKG}/usr/share/man
 }
