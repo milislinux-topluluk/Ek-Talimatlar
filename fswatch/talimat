@@ -1,0 +1,18 @@
+# Tanım: Birden çok arka plan içeren bir çapraz platform dosya değiştirme monitörü: Apple OS X Dosya Sistemi Olayları API'si, * BSD kqueue, Linux inotify, Microsoft Windows ve stat temelli bir arka uç
+# URL: https://emcrisostomo.github.io/fswatch/
+# Paketçi: Cihan_Alkan
+# Gerekler:
+# Grup:
+
+isim=fswatch
+surum=1.11.2
+devir=1
+kaynak=(https://github.com/emcrisostomo/fswatch/releases/download/$surum/$isim-$surum.tar.gz)
+
+derle() {
+    cd "$isim-$surum"
+    ./configure --prefix=/usr
+    make
+    make DESTDIR="$PKG/" install
+}
+
