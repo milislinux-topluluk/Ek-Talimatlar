@@ -1,0 +1,40 @@
+# Tanım: Ses sinyallerinden açıklamalar ayıklamak için bir araç
+# URL: https://aubio.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: doxygen ffmpeg fftw jack libsamplerate libsndfile python-setuptools python-numpy txt2man jack python-sphinx
+# Grup:
+
+isim=aubio
+surum=0.4.6
+devir=1
+kaynak=(https://aubio.org/pub/${isim}-${surum}.tar.bz2)
+
+derle() {
+  cp -av "$isim-${surum}" "$isim-1-${surum}"
+  cp -av "$isim-${surum}" "$isim-2-${surum}"
+  cd "$isim-2-${surum}"
+  # python2 shebang
+  sed -e '1s/python/&2/' \
+    -i "python/lib/${isim}/"{__init__,cmd,cut}.py \
+    -i "python/tests/"*.py
+
+  cd "$SRC/${isim}-${surum}"
+  python2 waf configure --prefix=/usr \
+    --enable-fftw3 \
+    --htmldir=/usr/share/doc/${isim} \
+    --docdir=/usr/share/doc/${isim} \
+    --libdir=/usr/lib
+  python2 waf build
+  cd ../"$isim-1-${surum}"
+  python setup.py build
+  cd ../"$isim-2-${surum}"
+  python2 setup.py build
+
+  cd "$SRC/${isim}-${surum}"
+  python2 waf --destdir="${PKG}" install
+  # move doc, as waf configure doesn't honor the htmldir and docdir settings
+  mv -v "${PKG}/usr/share/doc/lib${isim}-doc" \
+    "${PKG}/usr/share/doc/${isim}"
+  install -t "${PKG}/usr/share/doc/${isim}/" \
+    -vDm644 {AUTHORS,ChangeLog,README.md}
+}
