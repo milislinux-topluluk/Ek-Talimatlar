@@ -1,13 +1,13 @@
 # Tanım: KCP'ye dayanan son derece basit bir udp tüneli
 # URL: https://github.com/xtaci/kcptun
 # Paketçi: Cihan_Alkan
-# Gerekler: glibc go18
-# Grup: 
+# Gerekler: go18
+# Grup: ağ
 
 isim=kcptun
 surum=20171201
 devir=1
-kaynak=(https://github.com/xtaci/kcptun/archive/v20171201.tar.gz)
+kaynak=(https://github.com/xtaci/kcptun/archive/v20171201.tar.gz::$isim-$surum.tar.gz)
 
 derle() {
     mv kcptun-20171201 kcptun
