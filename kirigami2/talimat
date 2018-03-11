@@ -1,0 +1,22 @@
+# Tanım: QtQuick tabanlı bileşenler kümesi
+# URL: https://community.kde.org/Frameworks
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5 kf5-extra-cmake-modules kf5-kpackage kf5-plasma-framework
+# Grup: 
+
+isim=kirigami2
+surum=5.41.0
+devir=1
+kaynak=(https://download.kde.org/stable/frameworks/${surum%.*}/$isim-$surum.tar.xz)
+
+derle() {
+  mkdir -p build
+  cd build
+  cmake ../${isim}-${surum} \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DBUILD_EXAMPLES=ON \
+    -DBUILD_TESTING=OFF
+  make
+  make DESTDIR="$PKG" install
+}
