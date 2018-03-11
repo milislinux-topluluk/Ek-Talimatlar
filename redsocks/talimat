@@ -1,0 +1,31 @@
+# Tanım: Güvenlik duvarınızı kullanarak proxy'ye herhangi bir TCP bağlantısının şeffaf yönlendiricisi
+# URL: http://darkk.net.ru/redsocks/
+# Paketçi: Cihan_Alkan
+# Gerekler: libevent
+# Grup: 
+
+isim=redsocks
+surum=0.5
+devir=1
+kaynak=(https://github.com/darkk/redsocks/archive/release-0.5.tar.gz
+        redsocks.conf
+        redsocks.tmpfiles
+        redsocks.rules
+        redsocks)
+
+derle() {
+
+  cd $isim-release-$surum
+
+  make
+
+  install -Dm644 "$SRC/redsocks" "$PKG/etc/conf.d/redsocks"
+  install -Dm644 "$SRC/redsocks.conf" "$PKG/etc/redsocks.conf"
+  install -Dm644 "$SRC/redsocks.rules" "$PKG/etc/iptables/redsocks.rules"
+  install -Dm644 "$SRC/redsocks.tmpfiles" "$PKG/usr/lib/tmpfiles.d/redsocks.conf"
+
+  install -Dm755 "redsocks" "$PKG/usr/bin/redsocks"
+  install -Dm644 "README" "$PKG/usr/share/doc/redsocks/README"
+#  install -Dm644 "redsocks.service" "$PKG/usr/lib/systemd/system/redsocks.service"
+  install -Dm644 "redsocks.conf.example" "$PKG/usr/share/doc/redsocks/redsocks.conf.example"
+}
