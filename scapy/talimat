@@ -1,0 +1,21 @@
+# Tanım: Python'da yazılmış güçlü bir etkileşimli paket manipülasyon programı
+# URL: http://www.secdev.org/projects/scapy/
+# Paketçi: Cihan_Alkan
+# Gerekler: tcpdump python
+# Grup: 
+
+isim=scapy
+surum=2.3.3
+devir=1
+kaynak=(https://github.com/secdev/scapy/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz)
+
+derle() {
+  cd ${isim}-${surum}
+  sed -e 's|env python|env python2|g' -i doc/scapy/*.rst scapy/contrib/*.py setup.py \
+    run_scapy scapy/pipetool.py scapy/tools/check_asdis.py scapy/layers/*.py
+  sed -e 's/exec python/exec python2/g' -i run_scapy setup.py test/run_tests
+
+  python setup.py build
+  python setup.py install -O1 --skip-build --root="${PKG}" --prefix=/usr
+  install -Dm 644 doc/scapy/*.rst -t "${PKG}/usr/share/doc/${isim}"
+}
