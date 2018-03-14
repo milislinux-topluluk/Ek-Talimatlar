@@ -1,0 +1,35 @@
+# Tanım: Hızlı, minimalist ve dikkate değer ölçüde genişletilebilir çapraz platform metin düzenleyicisi
+# URL: http://foicica.com/textadept/
+# Paketçi: Cihan Alkan
+# Gerekler: lua gtk2 mercurial unzip
+# Grup:
+
+isim=textadept
+surum=9.6
+devir=1
+
+kaynak=(http://foicica.com/textadept/download/textadept_${surum}.modules.zip
+        https://foicica.com/hg/textadept/archive/49292c42ef3f.zip)
+
+derle() {
+  cd "$SRC/$isim-49292c42ef3f/src"
+  unset MAKEFLAGS
+  unset CXXFLAGS
+  unset CFLAGS
+  make deps
+  install -m644 "$SRC/$isim-49292c42ef3f/src/lua.sym" "$SRC/$isim-49292c42ef3f/src/luajit/src/lua.sym"
+  make
+  make curses
+
+  make PREFIX=/usr DESTDIR="$PKG/" install
+  rm "$PKG/usr/share/pixmaps/"textadept{.svg,.png}
+  make curses PREFIX=/usr DESTDIR="$PKG/" install
+  
+  # Additional modules
+  cd "$SRC/${isim}_$surum.modules"
+  cp -r modules "$PKG/usr/share/$isim/"
+
+  # License
+  install -d "$PKG/usr/share/licenses/textadept"
+  ln -s /usr/share/textadept/LICENSE "$PKG/usr/share/licenses/$isim/"
+}
