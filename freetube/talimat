@@ -1,0 +1,16 @@
+# Tanım: Reklamsız Youtube
+# URL: https://github.com/FreeTubeApp/FreeTube
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: ağ
+
+
+isim=freetube
+surum=0.1.3
+devir=1
+kaynak=(https://github.com/FreeTubeApp/FreeTube/releases/download/v0.1.3-beta/FreeTube_0.1.3_amd64.deb)
+
+derle() {
+  ar x FreeTube_0.1.3_amd64.deb
+  tar -xf data.tar.?z -C "$PKG" ./usr
+}
