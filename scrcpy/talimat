@@ -1,0 +1,28 @@
+# Tanım: Android cihazınızı görüntüleyin ve kontrol edin
+# URL: https://github.com/Genymobile/scrcpy
+# Paketçi: Cihan_Alkan
+# Gerekler: ffmpeg sdl2 meson
+# Grup: 
+
+isim=scrcpy
+surum=1.1
+devir=1
+kaynak=(https://github.com/Genymobile/scrcpy/archive/v${surum}.tar.gz
+        https://github.com/Genymobile/scrcpy/releases/download/v${surum}/scrcpy-server-v${surum}.jar)
+
+derle() {
+    cd "scrcpy-${surum}"
+    rm -rf build
+    meson build --buildtype release --strip -Db_lto=true \
+        -Dbuild_server=false \
+        -Doverride_server_path="/usr/share/scrcpy/scrcpy-server.jar"
+    cd build
+    ninja
+cd $SRC
+    mkdir -p \
+        "${PKG}"/usr/bin \
+        "${PKG}"/"$(dirname "/usr/share/scrcpy/scrcpy-server.jar")"
+
+    install -m 755 "scrcpy-${surum}"/build/app/scrcpy "${PKG}"/usr/bin/
+    install -m 755 "scrcpy-server-v${surum}.jar" "${PKG}"/"/usr/share/scrcpy/scrcpy-server.jar"
+}
