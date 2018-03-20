@@ -1,0 +1,93 @@
+# Tanım: Hızlı, güvenli ve eksiksiz bir PDF görüntüleyici
+# URL: https://www.foxitsoftware.com/products/pdf-reader/
+# Paketçi: Cihan Alkan 
+# Gerekler: qt5 p7zip libsecret
+# Grup:
+
+isim=foxitreader
+surum=2.4.1.0609
+_foxitrevision=r08f07f8
+devir=1
+kaynak=(http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz
+        $isim-excluded_files
+        $isim.patch
+        readerlite_tr_tr.qm
+        qt_tr_TR.qm)
+
+derle() {
+  local _file
+  local _line
+  local _position
+  # Clean installer dir
+  if [ -d "${isim}-installer" ]
+  then
+    rm -rf "${isim}-installer"
+  fi
+  mkdir "${isim}-installer"
+  # Decompress .run installer
+  _file="FoxitReader.enu.setup.${surum}(${_foxitrevision}).x64.run"
+  LANG=C grep --only-matching --byte-offset --binary \
+              --text $'7z\xBC\xAF\x27\x1C' "${_file}" | cut -f1 -d: | 
+         while read _position
+         do
+           dd if="${_file}" \
+              bs=1M iflag=skip_bytes status=none skip=${_position} \
+              of="${isim}-installer/bin-${_position}.7z"
+         done
+  # Clean build dir
+  if [ -d "${isim}-build" ]
+  then
+    rm -rf "${isim}-build"
+  fi
+  # Decompress 7z files (some files are damaged during the extraction)
+  cd "${isim}-installer"
+  install -m 755 -d "${SRC}/${isim}-build"
+  for _file in *.7z
+  do
+    7z -bd -bb0 -y x -o"${SRC}/${isim}-build" ${_file} 1>/dev/null 2>&1 || true
+  done
+  # Apply final patches
+  cd "${SRC}/${isim}-build"
+  patch -p4 --no-backup-if-mismatch -i "${SRC}/${isim}.patch"
+  # Remove unneeded files
+  rm "Activation" "Activation.desktop" "Activation.sh" \
+     "countinstalltion" "countinstalltion.sh" \
+     "installUpdate" "ldlibrarypath.sh" \
+     "maintenancetool.sh" "Uninstall.desktop" \
+     "Update.desktop" "updater" "updater.sh"
+  find -type d -name ".svn" -exec rm -rf {} +
+  find -type f -name ".directory" -exec rm -rf {} +
+  find -type f -name "*~" -exec rm {} +
+  # Remove excluded files
+  while IFS='' read -r _line
+  do
+    if [ "${_line::2}" = "# " ]
+    then
+      echo "  -> Removing excluded files from ${_line:2}..."
+    elif [ -n "${_line}" -a "${_line::1}" != "#" ]
+    then
+      rm "${SRC}/${isim}-build/${_line}"
+    fi
+  done < "${SRC}/${isim}-excluded_files"
+
+  install -m 755 -d "${PKG}/usr/lib/${isim}"
+  cd "${SRC}/${isim}-build"
+  cp -r * "${PKG}/usr/lib/${isim}"
+  # Install icon and desktop files
+  install -m 755 -d "${PKG}/usr/share/pixmaps"
+  install -m 644 "images/FoxitReader.png" \
+    "${PKG}/usr/share/pixmaps/${isim}.png"
+  install -m 755 -d "${PKG}/usr/share/applications"
+  install -m 755 "FoxitReader.desktop" \
+    "${PKG}/usr/share/applications/${isim}.desktop"
+  rm FoxitReader.desktop
+  # Install launcher script
+  cd "${PKG}"
+   mkdir $PKG/usr/lib/foxitreader/lang/tr_tr
+  install -m 755 -d "${PKG}/usr/bin"
+  ln -s "/usr/lib/${isim}/FoxitReader.sh" "${PKG}/usr/bin/${isim}"
+   cp $SRC/qt_tr_TR.qm $PKG/usr/lib/foxitreader/lang/tr_tr/
+   cp $SRC/readerlite_tr_tr.qm $PKG/usr/lib/foxitreader/lang/tr_tr/
+   cp $SRC/qt_tr_TR.qm $PKG/usr/lib/foxitreader/lang/ko_kr/qt_ko_KR.qm
+   cp $SRC/readerlite_tr_tr.qm $PKG/usr/lib/foxitreader/lang/ko_kr/readerlite_ko_kr.qm
+}
