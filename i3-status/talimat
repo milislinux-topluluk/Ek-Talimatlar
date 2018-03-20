@@ -11,9 +11,7 @@ devir=1
 kaynak=(https://i3wm.org/i3status/i3status-$surum.tar.bz2)
 
 derle() {
-
   cd i3status-$surum
-
   make
   make DESTDIR="$PKG" install
   install -Dm644 LICENSE ${PKG}/usr/share/licenses/i3status/LICENSE
