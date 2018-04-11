@@ -1,0 +1,20 @@
+# Tanım: NanoGUI OpenGL 3.x veya üstü için minimalist bir çapraz platform widget kütüphanesidir.
+# URL: https://github.com/wjakob/nanogui
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake eigen3 glfw
+# Grup: 
+
+isim=nanogui
+surum=r344
+devir=1
+kaynak=()
+
+derle() {
+  git_indir https://github.com/wjakob/nanogui nanogui
+  cd $SRC/$isim
+  git submodule update --init --recursive	
+	cmake -DCMAKE_INSTALL_PREFIX=/usr
+	make
+	make DESTDIR="$PKG/" install
+	install -D LICENSE.txt ${PKG}/usr/share/licenses/${isim}/LICENSE.txt.
+}
