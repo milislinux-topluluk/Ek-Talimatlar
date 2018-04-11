@@ -1,0 +1,27 @@
+# Tanım: Grafiksel uygulama geliştirme için ücretsiz, açık kaynak, taşınabilir bir çerçeve
+# URL: http://www.glfw.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake doxygen kf5-extra-cmake-modules xorg-libxi xorg-libxrandr xorg-libxcursor xorg-libxkbcommon xorg-libxinerama
+# Grup: 
+
+isim=glfw
+surum=3.2.1
+devir=1
+kaynak=()
+
+derle() {
+  cd "$SRC/$isim-$surum"
+
+  [[ -d build-x11 ]] && rm -r build-x11
+  mkdir build-x11 && cd build-x11
+
+  cmake .. \
+      -DCMAKE_INSTALL_PREFIX=/usr \
+      -DBUILD_SHARED_LIBS=ON
+  make docs
+
+  cd "$SRC/$isim-$surum"/build-x11
+  make DESTDIR=$PKG install
+  cd ..
+  install -Dm644 COPYING.txt "$PKG/usr/share/licenses/$isim/COPYING"
+}
