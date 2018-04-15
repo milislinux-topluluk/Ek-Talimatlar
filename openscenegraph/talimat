@@ -1,7 +1,7 @@
 # Tanım: Açık Kaynaklı, yüksek performanslı gerçek zamanlı grafik araç seti
 # URL: http://www.openscenegraph.org
 # Paketçi: Cihan_Alkan
-# Gerekler: giflib jasper librsvg xine-lib curl pth cmake libvncserver qt5 ffmpeg mesa
+# Gerekler: giflib jasper librsvg xine-lib curl pth cmake libvncserver qt5 ffmpeg xorg-mesa
 # Grup: 
 
 
