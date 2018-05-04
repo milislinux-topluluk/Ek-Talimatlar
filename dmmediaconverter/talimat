@@ -2,7 +2,7 @@
 # URL: http://dmsimpleapps.blogspot.ro/2014/04/dmmediaconverter.html
 # Paketçi: Cihan_Alkan
 # Gerekler: gtk2 desktop-file-utils
-# Grup: Medya
+# Grup: 
 
 
 isim=dmmediaconverter
@@ -10,7 +10,7 @@ surum=2.1
 devir=1
 
 kaynak=(dmmediaconverter.desktop
-	      dmmediaconverter.png)
+	    dmmediaconverter.png)
 
 derle() {
 wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=0B1MiTYJef5a9dlZYR0d4Tl9RQlE' -O dmMediaConverter_v${surum}_linux_x64.tar.gz

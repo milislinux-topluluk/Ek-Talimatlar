@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0.0
+Encoding=UTF-8
+Type=Application
+NoDisplay=false
+Name=dmMediaConverter
+Comment=Video akışı ve diğer özelliklere sahip bir FFmpeg ön ucu (GUI)
+Categories=AudioVideo;
+Exec=dmmediaconverter %F
+Icon=dmmediaconverter
