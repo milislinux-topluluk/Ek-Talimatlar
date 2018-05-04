@@ -1,0 +1,39 @@
+# Tanım: Video akışı ve diğer özelliklere sahip bir FFmpeg ön ucu (GUI)
+# URL: http://dmsimpleapps.blogspot.ro/2014/04/dmmediaconverter.html
+# Paketçi: Cihan_Alkan
+# Gerekler: gtk2 desktop-file-utils
+# Grup: Medya
+
+
+isim=dmmediaconverter
+surum=2.1
+devir=1
+
+kaynak=(dmmediaconverter.desktop
+	      dmmediaconverter.png)
+
+derle() {
+wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=0B1MiTYJef5a9dlZYR0d4Tl9RQlE' -O dmMediaConverter_v${surum}_linux_x64.tar.gz
+
+	install -m 755 -d "${PKG}/usr/share/applications/${isim}"
+	install -m 755 -t "${PKG}/usr/share/applications/${isim}" "${isim}.desktop"
+	
+	install -m 755 -d "${PKG}/usr/share/pixmaps/"
+	install -m 644 -t "${PKG}/usr/share/pixmaps/" "${isim}.png"
+
+    tar -xvzf dmMediaConverter_v${surum}_linux_x64.tar.gz
+	
+	cd "${SRC}/dmMediaConverter"
+	
+	install -m 755 -d "${PKG}/usr/lib/${isim}"	
+	install -m 755 -t "${PKG}/usr/lib/${isim}" "dmMediaConverter"
+	install -m 644 -t "${PKG}/usr/lib/${isim}" *.*
+
+		install -m 755 -d "${PKG}/usr/lib/${isim}/bin/x86_64-linux"
+		install -m 755 -t "${PKG}/usr/lib/${isim}/bin/x86_64-linux" bin/x86_64-linux/*
+
+	
+	install -m 755 -d "${PKG}/usr/bin"
+	ln -s "/usr/lib/${isim}/dmMediaConverter" "${PKG}/usr/bin/${isim}"
+
+}
