@@ -5,7 +5,7 @@
 # Grup: deepin
 
 isim=deepin-clone
-surum=0.0.7.1
+surum=0.0.8.4
 devir=1
 kaynak=(https://github.com/linuxdeepin/deepin-clone/archive/$surum.tar.gz::$isim-$surum.tar.gz)
 
