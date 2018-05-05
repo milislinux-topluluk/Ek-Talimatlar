@@ -1,0 +1,44 @@
+# Tanım: Sistemd projesinin günlüğü, bağımsız bir pakete çıkarıldı
+# URL: https://github.com/elogind/elogind
+# Paketçi: Cihan_Alkan
+# Gerekler: intltool libtool gperf gtk-doc dbus-nosystemd libcap pam acl dbus-x11
+# Grup: 
+
+isim=elogind
+surum=229.4
+devir=1
+kaynak=(https://github.com/elogind/elogind/archive/5814139990daf10155b4fb0951ee456ac9c97a4b.tar.gz::${isim}-${surum}.tar.gz
+        elogind-docs.patch)
+
+derle() {
+
+    cd ${isim}-5814139990daf10155b4fb0951ee456ac9c97a4b
+    patch -Np 1 -i ${SRC}/elogind-docs.patch
+    autoreconf -vim
+
+    intltoolize
+    ./configure \
+        --sysconfdir=/etc \
+        --prefix=/usr \
+        --libdir=/usr/lib \
+        --libexecdir=/usr/lib \
+        --enable-split-usr \
+        --disable-smack \
+        --enable-acl \
+        --enable-pam \
+        --disable-kdbus
+
+    make
+
+    make DESTDIR="${PKG}" install
+
+    mkdir ${SRC}/_libelogind
+    mv -v ${PKG}/usr/lib/pkgconfig ${SRC}/_libelogind
+	mv -v ${PKG}/usr/include/ ${SRC}/_libelogind
+	mv -v ${PKG}/usr/lib/libelogind*.so* ${SRC}/_libelogind
+
+    install -dm755 ${PKG}/usr/lib
+    mv ${SRC}/_libelogind/include ${PKG}/usr
+    mv ${SRC}/_libelogind/pkgconfig ${PKG}/usr/lib
+    mv ${SRC}/_libelogind/libelogind*.so* ${PKG}/usr/lib
+}
