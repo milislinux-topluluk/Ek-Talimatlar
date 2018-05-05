@@ -1,0 +1,19 @@
+# Tanım: Linux Deepin için hafif bir çizim aracı
+# URL: https://github.com/linuxdeepin/deepin-draw
+# Paketçi: Cihan_Alkan
+# Gerekler: dtkwm freeimage libexif
+# Grup: deepin
+
+isim=deepin-draw
+surum=1.0.0
+devir=1
+
+kaynak=(https://github.com/linuxdeepin/deepin-draw/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+   cd deepin-draw-$surum
+
+    qmake-qt5
+	make 
+	make INSTALL_ROOT="$PKG" install
+}
