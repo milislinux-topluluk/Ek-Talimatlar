@@ -1,0 +1,19 @@
+# Tanım: Güzel menüler oluşturmak için Deepin menü servisi
+# URL: https://github.com/linuxdeepin/deepin-menu
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5
+# Grup: deepin
+
+isim=deepin-menu
+surum=3.3.3
+devir=1
+kaynak=(https://github.com/linuxdeepin/deepin-menu/archive/$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  cd $isim-$surum
+  qmake-qt5 DEFINES+=QT_NO_DEBUG_OUTPUT
+  make
+
+  make INSTALL_ROOT="$PKG" install
+
+}
