@@ -1,0 +1,15 @@
+# Tanım: Düz ASCII metnini man sayfa biçimine dönüştürür
+# URL: https://github.com/mvertes/txt2man
+# Paketçi: Cihan_Alkan 
+# Gerekler: 
+# Grup: 
+
+isim=txt2man
+surum=1.6.0
+devir=1
+kaynak=(https://github.com/mvertes/txt2man/archive/txt2man-$surum.tar.gz)
+
+derle() {
+  cd "$SRC"/txt2man-txt2man-$surum
+  PATH=./:$PATH make prefix="$PKG"/usr install
+}
