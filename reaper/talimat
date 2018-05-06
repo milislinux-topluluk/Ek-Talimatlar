@@ -1,0 +1,42 @@
+# Tanım: Dijital ses iş istasyonu
+# URL: http://www.reaper.fm
+# Paketçi: Cihan_Alkan
+# Gerekler: gdk-pixbuf2 gtk3 jack
+# Grup: medya
+
+isim=reaper
+surum=5.81pre8
+devir=1
+kaynak=(http://www.landoleet.org/${isim}${surum//.}_linux_x86_64.tar.xz
+        https://stash.reaper.fm/30638/reaper-desktop-support.zip)
+
+derle() {
+
+git_indir https://github.com/justinfrankel/WDL.git WDL
+
+  cd "${SRC}/WDL/WDL/swell"
+  make
+  cd "${SRC}"
+  DESTDIR="${PKG}/usr/lib/"
+  LICENSEDIR="${PKG}/usr/share/licenses/reaper/"
+  mkdir -p "${DESTDIR}"
+  cp -R "${SRC}/reaper_linux_x86_64/REAPER/" "${DESTDIR}"
+  cp "${SRC}/WDL/WDL/swell/libSwell.so" "${DESTDIR}/REAPER"
+  mkdir "${PKG}/usr/bin"
+  ln -s /usr/lib/REAPER/reaper5 "${PKG}/usr/bin/reaper5"
+
+  install -D -m644 "${SRC}/reaper_linux_x86_64/REAPER/license.txt" "${LICENSEDIR}/LICENSE"
+
+  # desktop integration
+  for file in "${SRC}"/*.desktop; do
+	  sed -i "s#/home/user/pathto#/usr/lib#" $file
+	  isim=`basename "${file}"`
+	  install -D -m644 "${file}" "${PKG}/usr/share/applications/${isim}"
+  done
+
+  install -D -m644 cockos-reaper.directory "${PKG}/usr/share/desktop-directories/cockos-reaper.directory"
+  install -D -m644 cockos-reaper.menu "${PKG}/usr/share/menus/applications-merged/cockos-reaper.menu"
+  install -D -m644 reaper.png "${PKG}/usr/share/icons/hicolor/256x256/apps/reaper.png"
+  install -D -m644 reamote.png "${PKG}/usr/share/icons/hicolor/256x256/apps/reamote.png"
+  install -D -m644 application-x-reaper.xml "${PKG}/usr/share/mime/packages/application-x-reaper.xml"
+}
