@@ -1,0 +1,15 @@
+# Tanım: BCM43142 bluetooth çip için firmware (0a5c: 21d7)
+# URL: hthttps://www.broadcom.com/support/bluetooth
+# Paketçi: Cihan Alkan
+# Gerekler: 
+
+isim=bcm43142-firmware
+surum=1
+devir=1
+source=(https://github.com/ShareDVI/bcm43142-firmware/raw/master/fw-0a5c_21d7.hcd::)
+
+derle() {
+  mkdir -p ${PKG}/usr/lib/firmware/brcm
+  install -m644 "${SRC}/fw-0a5c_21d7.hcd" "${PKG}/usr/lib/firmware/fw-0a5c_21d7.hcd"
+  install -m644 "${SRC}/fw-0a5c_21d7.hcd" "${PKG}/usr/lib/firmware/brcm/BCM.hcd"
+}
