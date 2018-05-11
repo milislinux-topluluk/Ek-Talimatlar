@@ -1,0 +1,21 @@
+# Tanım: Hızlı Resim Görüntüleyici
+# URL: https://sourceforge.net/projects/mirageiv.berlios/
+# Paketçi: CihanAlkan
+# Gerekler: pygtk desktop-file-utils
+# Grup: kütüphane
+
+isim=mirage-tr
+surum=0.9.5.2
+devir=1
+kaynak=(http://downloads.sourceforge.net/project/mirageiv.berlios/mirage-${surum}.tar.bz2
+        mirage.py)
+
+derle() {
+  rm ${SRC}/mirage-0.9.5.2/mirage.py
+  cp mirage.py ${SRC}/mirage-0.9.5.2/
+  cd mirage-$surum
+
+    python setup.py build
+
+    python setup.py install --root="${PKG}"
+}
