@@ -4,7 +4,6 @@
 # Gerekler: efl xorg-xauth
 # Grup: 
 
-
 isim=entrance
 surum=3.0.0
 devir=1
@@ -22,6 +21,7 @@ derle() {
 
   meson build \
     -Dconsolekit=false \
+    --prefix=/usr \
     -Dlogind=true
   ninja -C build
 
