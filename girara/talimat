@@ -1,0 +1,22 @@
+# Tanım: Kullanıcı arayüzü kütüphanesi sadelik ve minimalizme odaklandı
+# URL: http://pwmt.org/projects/girara
+# Paketçi: Cihan_Alkan
+# Gerekler: gtk3 glib2 json-c pango meson ninja
+# Grup: kütüphane
+
+isim=girara
+surum=0.2.9
+devir=1
+kaynak=(https://pwmt.org/projects/girara/download/girara-$surum.tar.xz)
+
+derle() {
+
+  cd girara-$surum
+  milis-meson build
+
+  cd build
+  ninja
+  DESTDIR="$PKG/" ninja install
+
+  install -D -m664 ../LICENSE "$PKG"/usr/share/licenses/$isim/LICENSE
+}
