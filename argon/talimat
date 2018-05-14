@@ -1,1 +1,16 @@
+# Tanım:Milis Linux için hafif GUI paket yöneticisi + güncelleme bildirimi 
+# URL: https://github.com/14mRh4X0r/arch-argon
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: 
 
+isim=argon
+surum=2.0.4
+devir=1
+kaynak=(${isim}-${surum}.tar.gz)
+
+derle() {
+
+  cd ${isim}-${surum}
+  make DESTDIR="$PKG/" install
+}
