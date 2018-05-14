@@ -1,0 +1,45 @@
+# Tanım: Nemo için file-roller eklentisi
+# URL: https://github.com/linuxmint/nemo-extensions
+# Paketçi: Cihan_Alkan
+# Gerekler: nemo file-roller intltool gtk-doc gobject-introspection
+# Grup: cinnamon
+
+isim=nemo-fileroller
+surum=3.8.0
+devir=1
+kaynak=(https://github.com/linuxmint/nemo-extensions/archive/${surum}.tar.gz::nemo-extensions-${surum}.tar.gz
+        nemo-fileroller.c)
+
+derle() {
+
+    rm $SRC/nemo-extensions-3.8.0/nemo-fileroller/src/nemo-fileroller.c
+    cp $SRC/nemo-fileroller.c $SRC/nemo-extensions-3.8.0/nemo-fileroller/src/nemo-fileroller.c
+    cd "${SRC}"/nemo-extensions-${surum}
+
+    for _dir in "${isim[@]}"; do
+        if ! [[ -f ${_dir}/configure.ac || -f ${_dir}/configure.in ]]; then
+            continue
+        fi
+        pushd ${_dir}
+        autoreconf -fi
+        popd
+    done
+
+    for _dir in "${isim[@]}"; do
+        if ! [[ -f ${_dir}/configure ]]; then
+            continue
+        fi
+        pushd ${_dir}
+        PYTHON=python2 ./configure --prefix=/usr \
+                                   --sysconfdir=/etc \
+                                   --localstatedir=/var \
+                                   --libexecdir=/usr/lib/${_dir} \
+                                   --disable-schemas-compile
+        sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0 /g' -e 's/    if test "$export_dynamic" = yes && test -n "$export_dynamic_flag_spec"; then/      func_append compile_command " -Wl,-O1,--as-needed"\n      func_append finalize_command " -Wl,-O1,--as-needed"\n\0/' libtool
+        make
+        popd
+    done
+
+    cd ${isim}
+    make DESTDIR="${PKG}" install
+}
