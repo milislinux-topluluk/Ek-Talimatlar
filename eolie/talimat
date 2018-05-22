@@ -1,0 +1,25 @@
+# Tanım: GNOME için basit web tarayıcısı
+# URL: https://wiki.gnome.org/Apps/Eolie
+# Paketçi: Cihan_Alkan
+# Gerekler: gtkspell python-cairo pydateutil python-gobject webkit2gtk3 gobject-introspection meson
+# Grup: ağ
+
+isim=eolie
+surum=0.9.34
+devir=1
+kaynak=()
+
+derle() {
+        git_indir https://gitlab.gnome.org/gnumdk/eolie.git eolie
+        git_indir https://gitlab.gnome.org/gnumdk/eolie-po.git eolie-po
+
+        cd $isim
+	git describe --tags | sed 's/-/+/g'
+	git config submodule.subprojects/po.url "$SRC/eolie-po"
+	git submodule update --init
+        cd $SRC
+	milis-meson $isim build
+	ninja -C build
+	DESTDIR="$PKG" ninja -C build install
+
+}
