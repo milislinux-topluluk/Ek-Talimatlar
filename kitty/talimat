@@ -1,0 +1,21 @@
+# Tanım: Modern, güçlü, OpenGL tabanlı bir terminal emülatörü
+# URL: https://github.com/kovidgoyal/kitty
+# Paketçi: Cihan_Alkan
+# Gerekler: python3 freetype2 fontconfig wayland xorg-libx11 xorg-libxkbcommon-x11 hicolor-icon-theme python-setuptools
+# Grup: 
+
+isim=kitty
+surum=0.10.0
+devir=1
+kaynak=(https://github.com/kovidgoyal/$isim/archive/v${surum}.tar.gz::${isim}-${surum}.tar.gz
+        update.patch)
+
+derle() {
+
+  cd $isim-$surum
+  python3 setup.py linux-package
+
+  python3 setup.py linux-package --prefix ${PKG}/usr
+
+  install -Dm644 ${PKG}/usr/share/icons/hicolor/256x256/apps/kitty.png ${PKG}/usr/share/pixmaps/kitty.png
+}
