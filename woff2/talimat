@@ -1,0 +1,22 @@
+# Tanım: Web Açık Yazı Biçimi Formatı 2 referans uygulaması
+# URL: https://github.com/google/woff2
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake ninja brotli
+# Grup:
+
+isim=woff2
+surum=1.0.2
+devir=1
+
+kaynak=(https://github.com/google/woff2/archive/v1.0.2.tar.gz::$isim-$surum.tar.gz)
+
+
+derle() {
+
+  cd $isim-$surum
+  sed -i 's/NOT BUILD_SHARED_LIBS/TRUE/' CMakeLists.txt
+  cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib .
+  ninja
+  DESTDIR="$PKG" ninja install
+  install -Dt "$PKG/usr/share/licenses/$isim" -m644 LICENSE
+}
