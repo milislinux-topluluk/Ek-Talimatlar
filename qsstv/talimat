@@ -1,0 +1,26 @@
+# Tanım: Yavaş Tarama TV Suite
+# URL: http://users.telenet.be/on4qz/
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5
+# Grup:
+
+isim=qsstv
+surum=9.2.6
+devir=1
+
+kaynak=(http://users.telenet.be/on4qz/qsstv/downloads/${isim}_${surum}.tar.gz
+        $isim.desktop)
+
+derle() {
+
+  cd qsstv_$surum
+  qmake-qt5 PREFIX="$PKG/usr/"
+  make $MAKEFLAGS
+
+  mkdir -p "$PKG/usr/bin/"
+  make INSTALL_ROOT="$PKG" install
+
+  cd $SRC
+  install -D -m644 "$isim.desktop" "$PKG/usr/share/applications/$isim.desktop"
+  install -D -m644 "$SRC/${isim}_$surum/qsstv/icons/${isim}.png" "$PKG/usr/share/pixmaps/${isim}.png"
+}
