@@ -32,7 +32,4 @@ derle() {
 	mv auto current
 	mv Hamlib.pm current
 	rm perltest.pl
-
-	/usr/bin/find "$PKG" -name '.packlist' -delete
-	/usr/bin/find "$PKG" -name '*.pod' -delete
 }
