@@ -1,0 +1,22 @@
+# Tanım: C ve C ++ kodunu kodlama dilleriyle bütünleştiren bir derleyici
+# URL: http://www.swig.org/
+# Paketçi: Cihan_Alkan
+# Gerekler: zlib
+
+isim=swig2
+surum=2.0.12
+devir=1
+_isim=swig
+
+kaynak=(http://downloads.sourceforge.net/${_isim}/${_isim}-${surum}.tar.gz)
+
+derle() {
+
+	cd "${SRC}/${_isim}-${surum}"
+
+	./configure --prefix=/usr --program-suffix="-2"
+	make
+
+	make DESTDIR="${PKG}" install
+	install -D -m0644 LICENSE "${PKG}/usr/share/licenses/${isim}/LICENSE"
+}
