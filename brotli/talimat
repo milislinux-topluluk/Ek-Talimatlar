@@ -1,0 +1,33 @@
+# Tanım: Brotli sıkıştırma kitaplığı
+# URL: https://github.com/google/brotli
+# Paketçi: Cihan_Alkan
+# Gerekler: cmake python
+# Grup: kütüphane
+
+isim=brotli
+surum=1.0.4
+devir=1
+
+kaynak=(https://github.com/google/$isim/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+
+  cp -a brotli-$surum{,-py2}
+  mkdir -p build
+  cd "$SRC"/brotli-$surum
+  python setup.py build
+  cd "$SRC"/brotli-$surum-py2
+  python2 ./setup.py build
+  cd "$SRC"/build
+  cmake ../brotli-$surum -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_INSTALL_LIBDIR="/usr/lib"
+  make
+  make DESTDIR="$PKG" install
+  install -D -m644 "$SRC"/brotli-$surum/LICENSE "$PKG"/usr/share/licenses/$isim/LICENSE
+  cd $SRC/brotli-$surum
+  python setup.py install --skip-build -O1 --root="$PKG"
+  cd $SRC/brotli-$surum-py2
+  python2 setup.py install --skip-build -O1 --root="$PKG"
+  cd $SRC/brotli-$surum
+  install -dm755 "$PKG"/usr/share/brotli
+  cp -a tests/testdata "$PKG"/usr/share/brotli/
+}
