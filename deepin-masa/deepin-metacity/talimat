@@ -5,7 +5,7 @@
 # Grup: deepin
 
 isim=deepin-metacity
-surum=3.22.13
+surum=3.22.16
 devir=1
 kaynak=(https://github.com/linuxdeepin/deepin-metacity/archive/$surum.tar.gz::$isim-$surum.tar.gz)
 
