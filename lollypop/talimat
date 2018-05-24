@@ -1,0 +1,27 @@
+# Tanım: GNOME için Medya Oynatıcısı
+# URL: https://gitlab.gnome.org/gnumdk/lollypop
+# Paketçi: Cihan_Alkan
+# Gerekler: desktop-file-utils pydbus python-gobject totem-pl-parser gtk3 python-cairo python3-beautifulsoup4 gobject-introspection intltool itstool meson python
+# Grup: lxde
+
+isim=lollypop
+surum=0.9.514
+_portal_surum=0.9.7
+devir=1
+kaynak=(https://gitlab.gnome.org/gnumdk/lollypop/uploads/fc731e0878cea850ebadb46afd69b3b8/lollypop-0.9.514.tar.xz
+        https://gitlab.gnome.org/gnumdk/lollypop-portal/uploads/42bd030f9c8391db93a335c6a23783bf/lollypop-portal-0.9.7.tar.xz)
+
+derle() {
+
+  for d in lollypop-portal-${_portal_surum} lollypop-${surum}; do
+    pushd $d
+    milis-meson build \
+      --libexecdir='lib/lollypop'
+    ninja -C build
+    popd
+  done
+
+  for d in lollypop-portal-${_portal_surum} lollypop-${surum}; do
+    DESTDIR="${PKG}" ninja -C $d/build install
+  done
+}
