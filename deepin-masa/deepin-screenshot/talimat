@@ -5,7 +5,7 @@
 # Grup: deepin
 
 isim=deepin-screenshot
-surum=4.0.10.4
+surum=4.0.11
 devir=1
 kaynak=(https://github.com/linuxdeepin/$isim/archive/$surum.tar.gz::$isim-$surum.tar.gz)
 
