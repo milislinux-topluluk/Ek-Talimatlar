@@ -1,0 +1,21 @@
+# Tanım: indirme hızını% 500'e kadar arttıran, video paylaşım sitelerinden video kaydetme ve HER tarayıcı ile entegrasyon sağlayan güçlü bir araçtır.
+# URL: http://xdman.sourceforge.net/
+# Paketçi: Cihan_Alkan
+# Gerekler: openjdk p7zip
+# Grup: 
+
+isim=xdman
+surum=2018.7.2.7
+devir=1
+kaynak=(https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
+        xdman.bin)
+
+derle() {
+  cd $SRC
+  7z x install.sh -oxdman
+  rm -rf xdman/jre
+  install -d -m755 "$PKG"/opt/xdman
+  install -D -m644 "$SRC"/xdman/xdman.desktop "$PKG"/usr/share/applications/xdman.desktop
+  cp -dr --no-preserve='ownership' xdman "$PKG"/opt/
+  install -D -m755 "$SRC"/xdman.bin "$PKG"/opt/xdman/xdman
+}
