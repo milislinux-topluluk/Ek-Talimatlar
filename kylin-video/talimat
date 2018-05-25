@@ -1,10 +1,10 @@
 # Tanım: Multimedya oynatıcısı
 # URL: https://github.com/ukui/kylin-video
-# Paketçi: Cihan Alkan
+# Paketçi: Cihan_Alkan
 # Gerekler: mpv ffmpeg qt5
 
 isim=kylin-video
-surum=1.1.1
+surum=1.1.6
 devir=1
 
 kaynak=(kylin-video_tr_TR.ts
@@ -12,14 +12,8 @@ kaynak=(kylin-video_tr_TR.ts
 	kylin-video.desktop)
 
 derle() {
-	if [ ! -d $DERLEME_KAYNAKDIZIN/$isim  ];then
-		git clone https://github.com/ukui/kylin-video $DERLEME_KAYNAKDIZIN/$isim 
-	else
-		cd $DERLEME_KAYNAKDIZIN/$isim 
-		git pull
-		cd -
-	fi
-	cp -r $DERLEME_KAYNAKDIZIN/$isim $SRC/
+
+    git_indir https://github.com/ukui/kylin-video $isim 
     cd $SRC/$isim
     cp ../$isim.desktop ./
     cp ../milis-logo.png src/res/background.png
