@@ -1,0 +1,27 @@
+# Tanım: Linux için Epson Mürekkep Püskürtmeli Yazıcı Sürücüsü 2 (ESC/P-R)
+# URL: http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+# Paketçi: Cihan_Alkan
+# Gerekler: cups ghostscript imagescan
+# Grup: sürücü
+
+isim=epson-inkjet-printer-escpr2
+surum=1.0.17
+devir=1
+
+kaynak=(https://download3.ebz.epson.net/dsc/f/03/00/07/40/95/bdb3928f99c2dcc486a29a5c91f470682166e998/epson-inkjet-printer-escpr2-1.0.17-1lsb3.2.src.rpm
+        bug_x86_64.patch)
+
+derle() {
+  tar xvf "$isim-$surum-$devir"lsb3.2.tar.gz
+  
+  cd "$isim-$surum"
+
+  patch -p1 -i "${SRC}/bug_x86_64.patch"
+
+  ./configure --prefix=/usr \
+              --with-cupsfilterdir=/usr/lib/cups/filter \
+              --with-cupsppddir=/usr/share/ppd
+  make
+  make DESTDIR="$PKG" install
+}
+
