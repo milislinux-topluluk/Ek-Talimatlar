@@ -13,5 +13,5 @@ derle() {
 	cd ptyprocess-$surum
 	python2 setup.py install --root="$PKG/" --prefix=/usr --optimize=0
         cd $SRC/ptyprocess-$surum-py3
-	python setup.py install --root="$PKG/" --prefix=/usr --optimize=0
+	python3 setup.py install --root="$PKG/" --prefix=/usr --optimize=0
 }
