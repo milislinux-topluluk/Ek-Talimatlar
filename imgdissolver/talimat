@@ -1,0 +1,34 @@
+# Tanım: Video düzenleme programı
+# URL: http://sourceforge.net/projects/imgdissolver
+# Paketçi: Cihan Alkan
+# Gerekler: 
+# Grup: grafik
+
+isim=imgdissolver
+surum=0.4.0
+devir=1
+kaynak=(http://sourceforge.net/projects/imgdissolver/files/IMGDissolver_0.4.0beta_linux.tar.gz)
+
+derle() {
+  mkdir -p $PKG/usr/share/imgdissolver
+  unzip -d $PKG/usr/share/imgdissolver IMGDissolver.zip
+# Başlatıcı 
+mkdir -pv $PKG/usr/share/applications &&
+cat > $PKG/usr/share/applications/imgdissolver.desktop << "EOF" &&
+[Desktop Entry]
+Encoding=UTF-8
+Name=imgdissolver
+Comment=Video Düzenle
+GenericName=Video Düzenle
+Exec=sudo java -jar /usr/share/imgdissolver/IMGDissolver/imgdissolver.jar
+Terminal=false
+Type=Application
+Icon=/usr/share/imgdissolver/IMGDissolver/resources/images/ff.bmp
+Categories=Graphics;
+EOF
+
+  mkdir -p $PKG/usr/lib
+  cd ./usr/lib
+  cp * $PKG/usr/lib
+
+}
