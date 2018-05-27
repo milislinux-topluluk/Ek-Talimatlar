@@ -1,0 +1,21 @@
+# Tanım: JADE, HTML5, CSS, JavaScript ve Python ile oluşturulmuş bir linux masaüstü.
+# URL: https://github.com/codesardine/Jadesktop
+# Paketçi: Cihan_Alkan
+# Gerekler: jade-application-kit jade-menu-data python-xdg
+# Grup: 
+
+isim=jadesktop
+surum=0.6.0
+devir=1
+kaynak=(https://github.com/codesardine/Jadesktop/archive/v0.6.0.tar.gz)
+
+derle() {
+    cd Jadesktop-0.6.0
+    cp -r $SRC/Jadesktop-0.6.0/usr $PKG/
+    cp -r $SRC/Jadesktop-0.6.0/etc $PKG/
+    mkdir -p "$PKG/opt/jade"
+    cp -r $SRC/Jadesktop-0.6.0/jade $PKG/opt
+    chmod 644 $PKG/etc/xdg/autostart/jade-dashboard.desktop
+    chmod 644 $PKG/usr/share/applications/jade-dashboard.desktop
+chmod a+x $PKG/usr/bin/jade-desktop
+}
