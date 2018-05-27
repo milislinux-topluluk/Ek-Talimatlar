@@ -1,0 +1,19 @@
+# Tanım: JADE için freedesktop.org uygulama menüsü tanım dosyaları
+# URL: https://github.com/codesardine/Jade-menu-data
+# Paketçi: Cihan_Alkan
+# Gerekler: 
+# Grup: 
+
+isim=jade-menu-data
+surum=0.7.6.2
+devir=1
+kaynak=(https://github.com/codesardine/Jade-menu-data/archive/v0.7.6.2.tar.gz)
+
+derle() {
+
+    cd Jade-menu-data-0.7.6.2
+    mkdir -p "${PKG}/etc/xdg/menus" "${PKG}/usr/share/desktop-directories"
+    cp $SRC/Jade-menu-data-0.7.6.2/manjaro-xdg-menu/manjaro-applications.menu $PKG/etc/xdg/menus
+    cp -r $SRC/Jade-menu-data-0.7.6.2/manjaro-desktop-directories/* $PKG/usr/share/desktop-directories
+
+}
