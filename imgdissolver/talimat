@@ -29,6 +29,6 @@ EOF
 
   mkdir -p $PKG/usr/lib
   cd ./usr/lib
-  cp * $PKG/usr/lib
+  # cp * $PKG/usr/lib
 
 }
