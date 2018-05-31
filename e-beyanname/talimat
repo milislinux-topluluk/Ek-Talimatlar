@@ -5,7 +5,7 @@
 # Grup: ofis
 
 isim=e-beyanname
-surum=20180502
+surum=20171101
 devir=1
 kaynak=(https://ebeyanname.gib.gov.tr/ebyn_pardus.tar.gz
 	https://ebeyanname.gib.gov.tr/ebyn_yardim_pardus.tar.gz)
