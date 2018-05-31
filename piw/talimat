@@ -1,0 +1,27 @@
+# Tanım: ISO/IMG Kalıp Dosyası yazıcı
+# URL: https://github.com/yunusem/pardus-imagewriter
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5
+# Grup: 
+
+isim=piw
+surum=0.1.6
+devir=1
+kaynak=(https://github.com/yunusem/pardus-imagewriter/archive/upstream/0.1.6.tar.gz)
+
+derle() {
+cd pardus-imagewriter-upstream-$surum
+mkdir build
+cd build
+
+	qmake-qt5 ../pardus-imagewriter.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/pardus/pardus-imagewriter
+    mv ../pardus-imagewriter.desktop $PKG/usr/share/applications/
+    mv ../images/icon.svg $PKG/usr/share/pardus/pardus-imagewriter/
+    mv piw $PKG/usr/share/pardus/pardus-imagewriter/
+    chmod +x $PKG/usr/share/pardus/pardus-imagewriter/piw
+    ln -s /usr/share/pardus/pardus-imagewriter/piw $PKG/usr/bin/piw
+}
