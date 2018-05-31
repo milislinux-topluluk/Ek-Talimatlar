@@ -1,23 +1,20 @@
 # Tanım: Beyanname Düzenleme Uygulaması
 # URL: https://ebeyanname.gib.gov.tr/
 # Paketçi: Cihan_Alkan
-# Gerekler: openjdk p7zip
+# Gerekler: openjdk
 # Grup: ofis
 
 isim=e-beyanname
 surum=20180502
 devir=1
-kaynak=(https://ebeyanname.gib.gov.tr/ebyn.exe
-		https://ebeyanname.gib.gov.tr/ebyn_yardim_pardus.tar.gz)
+kaynak=(https://ebeyanname.gib.gov.tr/ebyn_pardus.tar.gz
+	https://ebeyanname.gib.gov.tr/ebyn_yardim_pardus.tar.gz)
 
 derle() {
      
      mkdir -p ${PKG}/opt/ebyn
      cd ${PKG}/opt/ebyn
-     7z x -y ${SRC}/ebyn.exe
-	 mv "${SRC}/help" "${PKG}/opt/ebyn/"
-
-  
+     mv ${SRC}/* ./ 
 #Başlatıcı
 mkdir -pv ${PKG}/usr/share/applications &&
 cat > ${PKG}/usr/share/applications/e-beyanname.desktop << "EOF" &&
@@ -39,4 +36,6 @@ java -Xmx256m -Dcom.cs.uid.renderer.java.runtime.UIBeanClassCache.packageName= -
 EOF
 chmod 744 ${PKG}/opt/ebyn/*
 chmod +x ${PKG}/usr/bin/e-beyanname
+rm ${PKG}/opt/ebyn/ebyn_pardus.tar.gz
+rm ${PKG}/opt/ebyn/ebyn_yardim_pardus.tar.gz
 }
