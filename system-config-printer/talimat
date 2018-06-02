@@ -5,7 +5,7 @@
 
 isim=system-config-printer
 surum=1.5.11
-devir=2
+devir=1
 kaynak=(https://github.com/zdohnal/system-config-printer/releases/download/$surum/system-config-printer-${surum}.tar.xz
         0001-Fix-constructing-the-auth-dialog.patch)
 
