@@ -1,0 +1,21 @@
+# Tanım: Python ASN.1 library with a focus on performance and a pythonic API
+# URL: https://github.com/wbond/asn1crypto
+# Paketçi: Cihan_Alkan
+# Gerekler: python3-setuptools python2-setuptools
+
+isim=pyasn1crypto
+surum=0.24.0
+devir=1
+kaynak=(https://github.com/wbond/asn1crypto/archive/$surum.tar.gz::asn1crypto-$surum.tar.gz)
+
+derle() {
+  cp -a asn1crypto-$surum{,-py2}
+
+  cd "$SRC"/asn1crypto-$surum
+  python3 setup.py build
+  python3 setup.py install --root="$PKG" --optimize=1
+
+  cd "$SRC"/asn1crypto-$surum-py2
+  python2 setup.py build
+  python2 setup.py install --root="$PKG" --optimize=1
+}
