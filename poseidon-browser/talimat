@@ -1,0 +1,17 @@
+# Tanım: Hızlı, minimal ve hafif bir tarayıcı
+# URL: https://github.com/sidus-dev/poseidon
+# Paketçi: Cihan_Alkan
+# Gerekler: binutils fakeroot python3 python-gobject python-decorator python3-pyasn1 pyasn1crypto python-six python-requests pysocks python3-pillow python3-cairo python3-openssl gtk3 gtksourceview3 webkit2gtk python3-cryptography
+# Grup: ağ
+
+isim=poseidon-browser
+surum=0.7.3
+devir=1
+kaynak=(https://github.com/sidus-dev/poseidon/archive/0.7.3-1.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+  install -m755 -d ${PKG}/usr/share/applications
+  mv -v ${SRC}/poseidon-$surum-1/poseidon.desktop ${PKG}/usr/share/applications
+  install -m755 -d ${PKG}/opt
+  mv -v ${SRC}/poseidon-$surum-1 ${PKG}/opt
+}
