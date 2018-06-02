@@ -1,0 +1,19 @@
+# Tanım: Tarayıcı, Qt5 kullanarak klasik Opera (12.x) kullanıcı arayüzünü amaçlamaktadır.
+# URL: https://vivaldi.com
+# Paketçi: Cihan_Alkan
+# Gerekler: hicolor-icon-theme qt5 qt5-webkit hunspell cmake
+# Grup: 
+
+isim=otter-browser
+surum=0.9.98
+devir=1
+kaynak=(https://github.com/OtterBrowser/$isim/archive/v$surum.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+
+  cd $isim-$surum
+  lrelease resources/translations/*.ts
+  cmake -DCMAKE_INSTALL_PREFIX="/usr"
+  make
+  make DESTDIR="$PKG" install
+}
