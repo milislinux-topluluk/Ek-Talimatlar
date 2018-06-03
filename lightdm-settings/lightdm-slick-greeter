@@ -1,0 +1,29 @@
+# Tanım: Bir kaygan görünümlü LightDM karşılama
+# URL: https://github.com/linuxmint/slick-greeter
+# Paketçi: Cihan_Alkan
+# Gerekler: cairo freetype gtk3 libcanberra xorg-libxext lightdm xorg-pixman intltool vala gnome-common numlockx
+# Grup: 
+
+isim=lightdm-slick-greeter
+_isim=slick-greeter
+surum=1.2.1
+devir=1
+kaynak=(https://github.com/linuxmint/slick-greeter/archive/${surum}.tar.gz::${_isim}-$surum.tar.gz)
+
+derle() {
+    cd ${_isim}-$surum
+
+    aclocal --install
+
+    autoreconf -vfi
+    intltoolize -f
+
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --sbindir=/usr/bin \
+        --libexecdir=/usr/lib/lightdm
+
+    make
+    make DESTDIR="$PKG" install
+}
