@@ -1,0 +1,17 @@
+# Tanım: LightDM ekran yöneticisi için bir yapılandırma aracı
+# URL: https://github.com/linuxmint/lightdm-settings
+# Paketçi: Cihan_Alkan
+# Gerekler: desktop-file-utils gettext hicolor-icon-theme lightdm-slick-greeter polkit python-gobject python-setproctitle pyxapp
+# Grup: 
+
+isim=lightdm-settings
+surum=1.2.1
+devir=1
+kaynak=(https://github.com/linuxmint/lightdm-settings/archive/${surum}.tar.gz::${isim}-$surum.tar.gz)
+
+derle() {
+
+  cd $isim-$surum
+  make
+  cp -r usr $PKG
+}
