@@ -1,0 +1,92 @@
+# Tanım: Profesyonel A / V üretim sonrası yazılım paketi
+# URL: https://www.blackmagicdesign.com/
+# Paketçi: Cihan Alkan
+# Gerekler: xorg-glu gtk2 gstreamer libpng12 qt5 qt5-webkit qt5-webengine
+# Grup: grafik
+
+isim=davinci-resolve
+_isim=resolve
+surum=14.3
+devir=1
+
+kaynak=(DaVinci_Resolve_${surum}_Linux.zip)
+
+derle() {
+
+
+#if [ ! -f ${PKG}/DaVinci_Resolve_${surum}_Linux.zip ]; then
+#  if [ -f $HOME/Downloads/DaVinci_Resolve_${surum}_Linux.zip ]; then
+#    ln -sfn $HOME/Downloads/DaVinci_Resolve_${surum}_Linux.zip ${PKG}
+#  else
+#    sleep 3
+#  fi
+#fi
+# echo " DaVinci_Resolve_${surum}_Linux.zip dosyasını $HOME/Downloads/ klasörüne indirin"
+	mkdir -p "${PKG}/opt/${_isim}/"{bin,configs,Media}
+
+	cd "${SRC}" || exit
+	./DaVinci_Resolve_${surum}_Linux.sh --tar xf -C "${PKG}/opt/${_isim}"
+
+	cd "${PKG}/opt/${_isim}/" || exit
+	gunzip -f LUT/trim_lut0.dpx.gz
+	for archive in libs/*tgz; do
+		tar xf "${archive}" -C libs/
+		rm -f "${archive}"
+	done
+
+	cd "${PKG}/opt/${_isim}/" || exit
+	local _binaries=(
+		BMDPanelFirmware
+		DPDecoder
+		ShowDpxHeader
+		TestIO
+		bandwidthTest
+		bmdpaneld
+		deviceQuery
+		oclBandwidthTest
+		oclDeviceQuery
+		qt.conf
+	)
+	for binary in "${_binaries[@]}"; do
+		mv "rsf/${binary}" "bin/${binary}"
+	done
+	mv resolve bin/resolve
+	mv rsf/Control Control
+	install -Dm666 rsf/default-config-linux.dat "${PKG}/opt/${_isim}/configs/config.dat"
+
+	cd "${PKG}/opt/${_isim}/" || exit
+	ln -s /usr/lib/libcrypto.so.1.0.0  libs/libcrypto.so.10
+	ln -s /usr/lib/libssl.so.1.0.0     libs/libssl.so.10
+	ln -s /usr/lib/libgstbase-1.0.so   libs/libgstbase-0.10.so.0
+	ln -s /usr/lib/libgstreamer-1.0.so libs/libgstreamer-0.10.so.0
+
+	cd "${SRC}" || exit
+	cat > "${SRC}/DaVinci Resolve.desktop" << EOF
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=DaVinci Resolve
+Comment=Profesyonel doğrusal olmayan düzenleme
+Exec=/opt/${_isim}/bin/start-resolve
+Icon=/opt/${_isim}/rsf/DV_Resolve.png
+Terminal=false
+Categories=Multimedia;AudioVideo;Application;
+EOF
+	install -Dm644 DaVinci\ Resolve.desktop "${PKG}/usr/share/applications/DaVinci Resolve.desktop"
+
+	cat > "${SRC}/start-resolve" << EOF
+#!/bin/sh
+mkdir -p /tmp/${_isim}/{logs,GPUCache}
+cd /opt/${_isim}
+exec bin/resolve "\$@"
+EOF
+	install -Dm755 start-resolve "${PKG}/opt/${_isim}/bin/start-resolve"
+
+	chown -R root:root "${PKG}/opt"
+	chmod 0777 "${PKG}/opt/${_isim}/configs"
+	chmod 0777 "${PKG}/opt/${_isim}/Media"
+
+	ln -s "/tmp/${_isim}/logs" "${PKG}/opt/${_isim}/logs"
+	ln -s "/tmp/${_isim}/GPUCache" "${PKG}/opt/${_isim}/GPUCache"
+
+}
