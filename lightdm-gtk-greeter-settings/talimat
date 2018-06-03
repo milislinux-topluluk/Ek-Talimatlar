@@ -1,11 +1,11 @@
 # Tanım: LightDM GTK+ Greeter için ayar düzenleyici
 # URL: https://launchpad.net/lightdm-gtk-greeter-settings
-# Paketçi: Yaşar Çiv
+# Paketçi: Yaşar_Çiv
 # Gerekler: python3-distutils-extra gtk3 python3-gobject python3 gtk-update-icon-cache desktop-file-utils lightdm-gtk-greeter 
-# Grup: giriş yönetici
+# Grup: sistem
 
 isim=lightdm-gtk-greeter-settings
-surum=1.2.0
+surum=1.2.2
 devir=1
 kaynak=(https://launchpad.net/lightdm-gtk-greeter-settings/${surum%.*}/$surum/+download/$isim-$surum.tar.gz
 )
