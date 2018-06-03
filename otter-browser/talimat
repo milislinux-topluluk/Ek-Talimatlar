@@ -1,5 +1,5 @@
-# Tanım: Tarayıcı, Qt5 kullanarak klasik Opera (12.x) kullanıcı arayüzünü amaçlamaktadır.
-# URL: https://vivaldi.com
+# Tanım: Web Tarayıcı
+# URL: https://github.com/OtterBrowser
 # Paketçi: Cihan_Alkan
 # Gerekler: hicolor-icon-theme qt5 qt5-webkit hunspell cmake
 # Grup: 
