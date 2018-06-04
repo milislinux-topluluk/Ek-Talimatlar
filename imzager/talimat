@@ -1,0 +1,17 @@
+# Tanım: Elektronik ortamdaki belgeleri imzala
+# URL: https://yazilim.kamusm.gov.tr/
+# Paketçi: Cihan_Alkan
+# Gerekler: openjdk
+# Grup: 
+
+isim=imzager
+surum=2.5
+devir=1
+kaynak=(https://sourceforge.net/projects/aylinux/files/Milis-Programlar/Imzager.tar.xz)
+
+derle() {
+     mkdir -pv ${PKG}/usr/share/applications
+     cp "${SRC}/Imzager/Imzager.desktop" "${PKG}/usr/share/applications/"
+     mkdir -p ${pkgdir}/opt
+	 mv "${SRC}/Imzager" ${PKG}/opt/
+}
