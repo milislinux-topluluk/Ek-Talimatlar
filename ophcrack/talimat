@@ -1,0 +1,45 @@
+# Tanım: Rainbow tablolarına dayalı Windows şifre kırıcı
+# URL: http://ophcrack.sourceforge.net
+# Paketçi: Cihan_Alkan
+# Gerekler: qt5
+# Grup: 
+
+isim=ophcrack
+surum=3.8.0
+devir=1
+kaynak=(https://downloads.sourceforge.net/project/$isim/$isim/$surum/$isim-$surum.tar.bz2
+        aboutdialog.ui
+        helpdialog.ui
+        ophcrackgui.ui)
+
+derle() {
+
+  cd $isim-$surum
+  rm src/gui/aboutdialog.ui
+  rm src/gui/helpdialog.ui
+  rm src/gui/ophcrackgui.ui
+  mv $SRC/*.ui src/gui/
+
+  ./configure --prefix=/usr --enable-gui --enable-graph
+
+  make
+
+  make DESTDIR="$PKG" install
+  
+#Başlatıcı
+mkdir -pv ${PKG}/usr/share/applications &&
+cat > ${PKG}/usr/share/applications/ophcrack.desktop << "EOF" &&
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Ophcrack
+Comment=LM ve SAM kırıcı
+Exec=ophcrack
+Icon=/usr/share/ophcrack/pixmaps/os.xpm
+Categories=Application;Utilities;System
+
+EOF
+  install -Dm644 src/gui/pixmaps/os.xpm \
+    "$PKG"/usr/share/$isim/pixmaps/os.xpm
+
+}
