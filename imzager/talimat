@@ -12,6 +12,6 @@ kaynak=(https://sourceforge.net/projects/aylinux/files/Milis-Programlar/Imzager.
 derle() {
      mkdir -pv ${PKG}/usr/share/applications
      cp "${SRC}/Imzager/Imzager.desktop" "${PKG}/usr/share/applications/"
-     mkdir -p ${pkgdir}/opt
-	 mv "${SRC}/Imzager" ${PKG}/opt/
+     mkdir -p ${PKG}/opt
+     mv "${SRC}/Imzager" ${PKG}/opt/
 }
