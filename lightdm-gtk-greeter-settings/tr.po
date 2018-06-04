@@ -1,7 +1,7 @@
-# Greek translation for lightdm-gtk-greeter-settings
+# Turkish translation for lightdm-gtk-greeter-settings
 # Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
 # This file is distributed under the same license as the lightdm-gtk-greeter-settings package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Cihan Alkan <cihanalk@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
@@ -110,7 +110,7 @@ msgstr "Arkaplan"
 #: ../data/GtkGreeterSettingsWindow.ui.h:18
 msgctxt "option|multihead"
 msgid ""
-" <i>(or use <a href=\"\">multihead setup</a> for individual monitors)</i>"
+" <i>(veya <a href=\"\">bireysel monitörler için</a> çoklu ayar kurulumunu kullanın)</i>"
 msgstr ""
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:19
@@ -247,7 +247,7 @@ msgstr "Dikey"
 #, no-c-format
 msgctxt "option|greeter|position"
 msgid "in %"
-msgstr "in %"
+msgstr "içerde %"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:48
 msgctxt "option|greeter|position"
@@ -281,42 +281,42 @@ msgstr "Ulaşılabilirlik"
 #: ../data/GtkGreeterSettingsWindow.ui.h:54
 msgctxt "option|greeter|reader"
 msgid "Select path to reader..."
-msgstr "Επιλέξτε τη διαδρομή για τον αναγνώστη..."
+msgstr "Okuyucunun yolunu seç..."
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:55
 msgctxt "option|greeter|reader"
 msgid "Command to launch screen reader"
-msgstr "Εντολή για την εκκίνηση του αναγνώστη οθόνης"
+msgstr "Ekran okuyucuyu başlatmak için komut"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:56
 msgctxt "option|greeter|keyboard"
 msgid "Select path to keyboard..."
-msgstr "Επιλέξτε τη διαδρομή για το πληκτρολόγιο..."
+msgstr "Klavyeden yolu seç..."
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:57
 msgctxt "option|greeter|keyboard"
 msgid "Command to launch on-screen keyboard"
-msgstr "Εντολή για την εκκίνηση του πληκτρολογίου οθόνης"
+msgstr "Ekran klavyesi başlatmak için komut"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:58
 msgctxt "option|greeter|a11y-states"
 msgid "Disabled at start"
-msgstr "Απενεργοποιημένο κατά την εκκίνηση"
+msgstr "Başlangıçta devre dışı bırakıldı"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:59
 msgctxt "option|greeter|a11y-states"
 msgid "Enabled at start"
-msgstr "Ενεργοποιημένο κατά την εκκίνηση"
+msgstr "ΕBaşlangıçta etkinleştirildi"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:60
 msgctxt "option|greeter|a11y-states"
 msgid "Save state between launches"
-msgstr "Αποθήκευση κατάστασης μεταξύ εκκινήσεων"
+msgstr "Başlangıçta ki yere kaydedin"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:61
 msgctxt "option|greeter|a11y-theme"
 msgid "Contrast theme"
-msgstr "Θέμα υψηλής αντίθεσης"
+msgstr "Kontrast teması"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:62
 msgctxt "option|greeter|a11y-font"
@@ -336,12 +336,12 @@ msgstr "Klavya"
 #: ../data/GtkGreeterSettingsWindow.ui.h:65
 msgctxt "option|greeter|screensaver-timeout"
 msgid "Timeout until the screen blanks "
-msgstr "Χρόνος μέχρι το μαύρισμα της οθόνης "
+msgstr "Ekran boşluklarına kadar zaman aşımı "
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:66
 msgctxt "greeter|option|allow-debugging"
 msgid "Debugging mode"
-msgstr "Κατάσταση λειτουργίας αποσφαλμάτωσης"
+msgstr "Hata ayıklama modu"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:67
 msgctxt "greeter|option|allow-debugging"
@@ -349,13 +349,13 @@ msgid ""
 "Enable keys to launch GtkInspector\n"
 "More informative log"
 msgstr ""
-"Χρήση πλήκτρων για την εκκίνηση του GtkInspector\n"
-"Περισσότερες πληροφορίες καταγραφής"
+"GtkInspector'ı başlatmak için tuşları etkinleştir\n"
+"Daha bilgilendirici günlüğü"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:69
 msgctxt "tabs"
 msgid "Misc."
-msgstr "Διάφορα"
+msgstr "Çeşitli"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:70
 #: ../data/IndicatorPropertiesDialog.ui.h:3
@@ -375,7 +375,7 @@ msgstr "_Yeniden Yükla"
 
 #: ../data/GtkGreeterSettingsWindow.ui.h:73
 msgid "Read configuration file"
-msgstr "Ανάγνωση του αρχείου ρυθμίσεων"
+msgstr "Yapılandırma dosyasını oku"
 
 #: ../data/IconChooserDialog.ui.h:1
 msgctxt "icon-dialog"
@@ -395,7 +395,7 @@ msgstr "_Tamam"
 
 #: ../data/IconChooserDialog.ui.h:4
 msgid "Add selected indicator to the list and close this window"
-msgstr "Προσθήκη του επιλεγμένου δείκτη στη λίστα και κλείσιμο του παραθύρου"
+msgstr "Seçilen göstergeyi listeye ekle ve bu pencereyi kapat"
 
 #: ../data/IconChooserDialog.ui.h:5
 msgctxt "icon-dialog"
@@ -415,7 +415,7 @@ msgstr "Simge adı:"
 #: ../data/IconChooserDialog.ui.h:8
 msgctxt "icon-dialog"
 msgid "List _standard icons only"
-msgstr ""
+msgstr "Yalnızca standart simgeleri listele"
 
 #: ../data/ImageChooserDialog.ui.h:1
 #: ../lightdm_gtk_greeter_settings/OptionEntry.py:264
@@ -450,7 +450,7 @@ msgstr "Δείκτης"
 #: ../data/IndicatorPropertiesDialog.ui.h:7
 msgctxt "option-entry|indicators"
 msgid "Display label"
-msgstr ""
+msgstr "Ekran etiketi"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:8
 msgctxt "option-entry|indicators"
@@ -460,47 +460,47 @@ msgstr ""
 #: ../data/IndicatorPropertiesDialog.ui.h:9
 msgctxt "option-entry|indicators"
 msgid "Display image"
-msgstr "Εμφάνιση εικόνας"
+msgstr "Resmi görüntüle"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:10
 msgctxt "option-entry|indicators"
 msgid "Indicator library/service:"
-msgstr "Βιβλιοθήκη/υπηρεσία δεικτών"
+msgstr "Gösterge kütüphane/servis"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:11
 msgctxt "option-entry|indicators"
 msgid "Hide disabled power actions"
-msgstr "Απόκρυψη απενεργοποιημένων ενεργειών ρεύματος"
+msgstr "Devre dışı bırakılan güç eylemlerini gizle"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:12
 msgctxt "option-entry|indicators"
 msgid "Text to display:"
-msgstr "Κείμενο για εμφάνιση:"
+msgstr "Görüntülenecek metin:"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:13
 msgctxt "option-entry|indicators"
 msgid "Spacer - fills the maximum available space"
-msgstr "Γέμισμα κενού - καταλαμβάνει το μέγιστο διαθέσιμο χώρο"
+msgstr "Spacer - maksimum kullanılabilir alanı doldurur"
 
 #: ../data/IndicatorPropertiesDialog.ui.h:14
 msgctxt "option-entry|indicators"
 msgid "Separator - draw a separator"
-msgstr "Διαχωριστικό - σχεδίαση ενός διαχωριστικού"
+msgstr "Ayırıcı - bir ayırıcı çizin"
 
 #: ../data/MultiheadSetupDialog.ui.h:1
 msgctxt "option|multihead"
 msgid "Multihead setup"
-msgstr ""
+msgstr "çoklubaşlık kurulumu"
 
 #: ../data/MultiheadSetupDialog.ui.h:2
 msgctxt "option|multihead"
 msgid "Add configuration"
-msgstr ""
+msgstr "Yapılandırma ekle"
 
 #: ../data/MultiheadSetupDialog.ui.h:3
 msgctxt "option|multihead"
 msgid "No configured monitors found"
-msgstr ""
+msgstr "Yapılandırılmış monitör bulunamadı"
 
 #: ../data/MultiheadSetupDialog.ui.h:4
 msgctxt "option|multihead"
@@ -509,32 +509,32 @@ msgstr "Ekran adı:"
 
 #: ../data/MultiheadSetupDialog.ui.h:5
 msgid "Don't leave empty"
-msgstr "Μην το αφήσετε κενό:"
+msgstr "Boş bırakmayın"
 
 #: ../data/MultiheadSetupDialog.ui.h:6
 msgctxt "option|multihead"
 msgid "Add new monitor configuration"
-msgstr "Προσθήκη νέας ρύθμισης οθόνης"
+msgstr "Yeni monitör yapılandırması ekle"
 
 #: ../data/MultiheadSetupDialog.ui.h:7
 msgctxt "option|multihead"
 msgid "Overwrite default \"background\" option"
-msgstr "Αντικαταστήστε την προεπιλεγμένη επιλογή \"background\""
+msgstr "Varsayılan \"arka plan \" seçeneğinin üzerine yaz"
 
 #: ../data/MultiheadSetupDialog.ui.h:10
 msgctxt "option|multihead"
 msgid "Overwrite default \"user-background\" option"
-msgstr "Αντικαταστήστε την προεπιλεγμένη επιλογή \"user-background\""
+msgstr "Varsayılan \"kullanıcı arka planı \" seçeneğinin üzerine yaz"
 
 #: ../data/MultiheadSetupDialog.ui.h:12
 msgctxt "option|multihead"
 msgid "Overwrite default \"laptop\" option"
-msgstr "Αντικαταστήστε την προεπιλεγμένη επιλογή \"laptop\""
+msgstr "Varsayılan \"dizüstü \" seçeneğinin üzerine yaz"
 
 #: ../data/MultiheadSetupDialog.ui.h:13
 msgctxt "option|greeter|laptop"
 msgid "This monitor is laptop display (detect lid closing)"
-msgstr "Χρήση οθόνης lapptop (ανίχνευση κλεισίματος οθόνης)"
+msgstr "Bu monitör dizüstü bilgisayar ekranıdır (kapağın kapanmasını algılar)"
 
 #: ../data/MultiheadSetupDialog.ui.h:15
 msgctxt "option|multihead"
@@ -542,14 +542,16 @@ msgid ""
 "<i>Note: greeter does not set monitor geometry.\n"
 "You need to configure it manually.</i>"
 msgstr ""
+"<i>Not: Greeter, monitör geometrisini ayarlamaz.\n"
+"Manuel olarak yapılandırmanız gerekiyor.</i>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:179
 msgid "You don't have permissions to change greeter configuration"
-msgstr "Δεν έχετε δικαιώματα να αλλάξετε τη ρύθμιση του greeter"
+msgstr "Selamlayıcı yapılandırmayı değiştirmek için izinleriniz yok"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:183
 msgid "No permissions to save configuration"
-msgstr "Δεν έχετε δικαιώματα να αποθηκεύσετε τη ρύθμιση"
+msgstr "Yapılandırmayı kaydetmek için izin yok"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:185
 #, python-brace-format
@@ -559,42 +561,42 @@ msgid ""
 "\n"
 "Try to run this program using \"sudo\" or \"pkexec\""
 msgstr ""
-"It seems that you don't have permissions to write to file:\n"
+"Dosyaya yazma izniniz yok gibi görünüyor:\n"
 "{path}\n"
 "\n"
-"Try to run this program using \"sudo\" veya \"pkexec\""
+"\"sudo\" veya \"pkexec\" kullanarak bu programı çalıştırmayı deneyin"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:373
 msgid "<i>disabled</i>"
-msgstr "<i>disabled</i>"
+msgstr "<i>pasif edildi</i>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:375
 msgid "<i>empty string</i>"
-msgstr "<i>empty string</i>"
+msgstr "<i>boş dize</i>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:377
 msgid "<i>None</i>"
-msgstr "<i>None</i>"
+msgstr "<i>Hiçbiri</i>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:401
 #, python-brace-format
 msgid "Value defined in file: {path}"
-msgstr "Η τιμή καθορίζεται στο αρχείο: {path}"
+msgstr "Dosyada tanımlanmış değer: {path}"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:438
 #, python-brace-format
 msgid "Reset to initial value: <b>{value}</b>"
-msgstr "Επαναφορά στην προεπιλεγμένη τιμή: <b>{value}</b>"
+msgstr "İlk değere sıfırla: <b>{value}</b>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:450
 #, python-brace-format
 msgid "Reset to default value: <b>{value}</b>"
-msgstr "Επαναφορά στην προεπιλεγμένη τιμή: <b>{value}</b>"
+msgstr "ΕVarsayılan değere sıfırla: <b>{value}</b>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:471
 #, python-brace-format
 msgid "Reset to value: <b>{value}</b>"
-msgstr "Επαναφορά στην τιμή: <b>{value}</b>"
+msgstr "Değere sıfırla: <b>{value}</b>"
 
 #: ../lightdm_gtk_greeter_settings/GtkGreeterSettingsWindow.py:493
 #, python-brace-format
@@ -609,8 +611,8 @@ msgid ""
 "GtkInspector is not available on your system\n"
 "Gtk version: {current} < {minimal}"
 msgstr ""
-"Το GtkInspector δεν είναι διαθέσιμο στο σύστημά σας\n"
-"Έκδοση Gtk : {current} < {minimal}"
+"GtkInspector sisteminizde mevcut değildir\n"
+"Gtk sürümü : {current} < {minimal}"
 
 #: ../lightdm_gtk_greeter_settings/helpers.py:175
 #, python-brace-format
@@ -620,19 +622,19 @@ msgstr "Dosya bulunamadı: {path}"
 #: ../lightdm_gtk_greeter_settings/helpers.py:199
 #, python-brace-format
 msgid "Failed to check permissions: {error}"
-msgstr "Αποτυχία ελέγχου δικαιωμάτων: {error}"
+msgstr "İzinler kontrol edilemedi: {error}"
 
 #: ../lightdm_gtk_greeter_settings/helpers.py:202
 #, python-brace-format
 msgid "Directory is not readable: {path}"
-msgstr "Ο κατάλογος είναι μη αναγνώσιμος: {path}"
+msgstr "ΟDizin okunamıyor: {path}"
 
 #: ../lightdm_gtk_greeter_settings/helpers.py:205
 #: ../lightdm_gtk_greeter_settings/helpers.py:208
 #: ../lightdm_gtk_greeter_settings/helpers.py:210
 #, python-brace-format
 msgid "LightDM does not have permissions to read path: {path}"
-msgstr ""
+msgstr "LightDM yolunu okumak için izinlere sahip değil: {path}"
 
 #: ../lightdm_gtk_greeter_settings/helpers.py:216
 #, python-brace-format
@@ -644,7 +646,7 @@ msgstr "Yol normal bir dosya değil: {path}"
 #: ../lightdm_gtk_greeter_settings/helpers.py:229
 #, python-brace-format
 msgid "LightDM does not have permissions to execute file: {path}"
-msgstr ""
+msgstr "LightDM dosyasının yürütülmesi için izinlere sahip değil: {path}"
 
 #: ../lightdm_gtk_greeter_settings/IconChooserDialog.py:200
 msgctxt "icon-dialog"
@@ -706,7 +708,7 @@ msgstr "Durum"
 #, python-brace-format
 msgctxt "option-entry|icon"
 msgid "Unrecognized value: {value}"
-msgstr "Μη αναγνωρισμένη τιμή {value}"
+msgstr "Tanınmayan değer: {value}"
 
 #: ../lightdm_gtk_greeter_settings/IconEntry.py:104
 msgctxt "option-entry|icon"
@@ -739,17 +741,17 @@ msgstr "<b>Αρχείο {path}</b> (αδυναμία φόρτωσης)"
 #: ../lightdm_gtk_greeter_settings/IndicatorPropertiesDialog.py:79
 msgctxt "option-entry|indicators"
 msgid "Use default value..."
-msgstr "Χρήση προπιλεγμένης τιμής..."
+msgstr "Varsayılan değeri kullan..."
 
 #: ../lightdm_gtk_greeter_settings/IndicatorPropertiesDialog.py:81
 msgctxt "option-entry|indicators"
 msgid "<b>Using default value</b>"
-msgstr "<b>Χρήση προεπιλεγμένης τιμής</b>"
+msgstr "<b>Varsayılan değeri kullanma</b>"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorPropertiesDialog.py:233
 msgctxt "option-entry|indicators"
 msgid "Path/Service field is not filled"
-msgstr "Δεν έχει οριστεί διαδρομή/υπηρεσία"
+msgstr "Yol/Servis alanı doldurulmadı"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorPropertiesDialog.py:237
 #, python-brace-format
@@ -758,23 +760,23 @@ msgid ""
 "Indicator \"{name}\" is already in the list.\n"
 "It will be overwritten."
 msgstr ""
-"Ο δείκτης \"{name}\" είναι ήδη στη λίστα.\n"
-"Θα αντικατασταθεί."
+"Gösterge \"{name}\" zaten listede.\n"
+"ΘÜzerine yazılacak."
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:131
 msgctxt "option-entry|indicators|name"
 msgid "External library/service"
-msgstr "Εξωτερική βιβλιοθήκη/υπηρεσία"
+msgstr "Harici kütüphane/servis"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:132
 msgctxt "option-entry|indicators|name"
 msgid "Spacer"
-msgstr "Γέμισμα κενού"
+msgstr "Spacer"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:133
 msgctxt "option-entry|indicators|name"
 msgid "Separator"
-msgstr "Διαχωριστικό"
+msgstr "Ayırıcı"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:134
 msgctxt "option-entry|indicators|name"
@@ -809,7 +811,7 @@ msgstr "Dil menüsü"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:140
 msgctxt "option-entry|indicators|name"
 msgid "Accessibility menu"
-msgstr "Μενού προσβασιμότητας"
+msgstr "Erişilebilirlik menüsü"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:141
 msgctxt "option-entry|indicators|name"
@@ -819,17 +821,17 @@ msgstr "Güç menüsü"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:148
 msgctxt "option-entry|indicators|tooltip"
 msgid "Spacer"
-msgstr "Γέμισμα κενού"
+msgstr "Spacer"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:149
 msgctxt "option-entry|indicators|tooltip"
 msgid "Separator"
-msgstr "Διαχωριστικό"
+msgstr "Ayırıcı"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:150
 msgctxt "option-entry|indicators|tooltip"
 msgid "Custom text or/and image"
-msgstr "Προσαρμοσμένο κείμενο ή/και εικόνα"
+msgstr "Özel metin veya/ve görüntü"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:151
 msgctxt "option-entry|indicators|tooltip"
@@ -844,12 +846,12 @@ msgstr "Saat"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:153
 msgctxt "option-entry|indicators|tooltip"
 msgid "Layout indicator"
-msgstr "Δείκτης διάταξης"
+msgstr "Yer göstergesi"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:155
 msgctxt "option-entry|indicators|tooltip"
 msgid "Sessions menu (xfce, unity, gnome etc.)"
-msgstr "Μενού συνεδριών (xfce, unity, gnome etc.)"
+msgstr "Oturum menüsü (xfce, cinnamon, gnome vb.)"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:156
 msgctxt "option-entry|indicators|tooltip"
@@ -859,7 +861,7 @@ msgstr "Dil menüsü"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:157
 msgctxt "option-entry|indicators|tooltip"
 msgid "Accessibility menu"
-msgstr "Μενού προσβασιμότητας"
+msgstr "Erişilebilirlik menüsü"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:158
 msgctxt "option-entry|indicators|tooltip"
@@ -869,17 +871,17 @@ msgstr "Güç menüsü"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:583
 msgctxt "option-entry|indicators"
 msgid "Reset to _defaults"
-msgstr "Επαναφορά στις _προεπιλογές"
+msgstr "Varsayılanlara dön"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:585
 msgctxt "option-entry|indicators"
 msgid "Display _label"
-msgstr "Προβολή _ετικέτας"
+msgstr "Ekran etiketi"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:587
 msgctxt "option-entry|indicators"
 msgid "Display _image"
-msgstr "Προβολή _εικόνας"
+msgstr "Resmi görüntüle"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:589
 msgctxt "option-entry|indicators"
@@ -889,12 +891,12 @@ msgstr "_Çıkar"
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:689
 msgctxt "option-entry|indicators"
 msgid "Show unused items"
-msgstr "Εμφάνιση μη χρησιμοποιημένων αντικειμένων"
+msgstr "Kullanılmayan öğeleri göster"
 
 #: ../lightdm_gtk_greeter_settings/IndicatorsEntry.py:693
 msgctxt "option-entry|indicators"
 msgid "Predefined templates:"
-msgstr "Προκαθορισμένα πρότυπα"
+msgstr "Öntanımlı şablonlar:"
 
 #: ../lightdm_gtk_greeter_settings/OptionEntry.py:265
 msgctxt "option|StringPathEntry"
@@ -905,5 +907,4 @@ msgstr "Yol seç"
 msgid ""
 "Authentication is required to run Settings editor for LightDM GTK+ Greeter"
 msgstr ""
-"Απαιτείται πιστοποίηση για να εκτελέσετε τον επεξεργαστή Ρυθμίσεων του GTK+ "
-"Greeter του LightDM"
+"LightDM GTK + Greeter için Ayarlar düzenleyicisini çalıştırmak için kimlik doğrulaması gerekiyor"
