@@ -33,7 +33,7 @@ cat > ${PKG}/usr/share/applications/ophcrack.desktop << "EOF" &&
 Type=Application
 Encoding=UTF-8
 Name=Ophcrack
-Comment=LM ve SAM kırıcı
+Comment=LM ve SAM karma kırıcı
 Exec=ophcrack
 Icon=/usr/share/ophcrack/pixmaps/os.xpm
 Categories=Application;Utilities;System
