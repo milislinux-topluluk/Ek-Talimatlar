@@ -1,0 +1,36 @@
+# Tanım: HTML / JavaScript ile tema oluşturmak için WebKit2'yi kullanan LightDM karşılama.
+# URL: https://github.com/antergos/web-greeter
+# Paketçi: Cihan_Alkan
+# Gerekler: gobject-introspection meson gettext dbus-glib lightdm webkit2gtk accountsservice gnome-backgrounds
+# Grup: sistem
+
+isim=lightdm-webkit2-greeter
+surum=2.2.5
+devir=1
+kaynak=(https://github.com/Antergos/web-greeter/archive/${surum}.zip
+        milislinux-logo.svg
+        milislinux-logo.svg)
+
+derle() {
+
+	cd "${SRC}/web-greeter-${surum}"
+
+	_pixmaps='/usr/share/pixmaps'
+
+	sed -ri \
+		"s@\/usr.+antergos\.png@${_pixmaps}/milislinux-logo.svg@g;
+		 s@\/usr.+logo-user\.png@${_pixmaps}/milislinux-user.svg@g" "data/${isim}.conf"
+
+	cd build
+	meson --prefix=/usr --libdir=lib ..
+	ninja
+}
+
+package() {
+	cd "${SRC}/web-greeter-${surum}/build"
+
+	DESTDIR="${PKG}" ninja install
+
+	install -dm755 "${PKG}/usr/share/pixmaps"
+	cp -t "${PKG}/usr/share/pixmaps" "${SRC}"/*.svg
+}
