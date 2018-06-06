@@ -1,7 +1,7 @@
 # Tanım: Linux için bir e-kitap okuyucusu 
 # URL: http://www.fbreader.org/
 # Paketçi: Cihan_Alkan
-# Gerekler: fribidi bzip2 curl qt5 libunibreak sqlite
+# Gerekler: fribidi bzip2 curl qt4 libunibreak sqlite
 # Grup:
 
 isim=fbreader
