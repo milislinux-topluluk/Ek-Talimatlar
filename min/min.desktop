@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Min
+GenericName=Web Tarayıcı
+Comment=Daha akıllı, daha hızlı bir web tarayıcısı
+Icon=min
+Exec=min
+Categories=GTK;Network;WebBrowser;
+StartupNotify=true
