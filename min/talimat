@@ -1,0 +1,66 @@
+# Tanım: Daha akıllı, daha hızlı bir web tarayıcısı
+# URL: https://minbrowser.github.io/min
+# Paketçi: Cihan Alkan
+# Gerekler: electron grunt npm
+# Grup: ağ
+
+isim=min
+surum=1.7.1
+devir=1
+kaynak=(https://github.com/minbrowser/min/archive/v${surum}.tar.gz::$isim-$surum.tar.gz
+        min.desktop
+        min.js
+        icon.patch
+        tr-TR.json)
+
+derle() {
+
+    cd min-${surum}
+    cp $SRC/tr-TR.json localization/languages/
+
+    patch -Np1 -i "${SRC}"/icon.patch
+
+    npm install decomment grunt grunt-contrib-concat grunt-contrib-uglify
+    mkdir dist
+    npm run buildTranslations
+    grunt
+    rm -r node_modules
+
+    npm install --production --no-optional
+
+    appdir=/usr/lib/min
+
+    install -dm755 "${PKG}"${appdir}
+    cp -r * "${PKG}"${appdir}
+
+    install -dm755 "${PKG}"/usr/share/icons/hicolor/256x256/apps
+    mv icons/icon256.png \
+        "${PKG}"/usr/share/icons/hicolor/256x256/apps/min.png
+
+    install -Dm755 "${SRC}"/min.js "${PKG}"/usr/bin/min
+    install -Dm644 "${SRC}"/min.desktop \
+            "${PKG}"/usr/share/applications/min.desktop
+
+    # Clean up
+    rm "${PKG}"${appdir}/dist/{build,webview}.js
+    rm -r "${PKG}"${appdir}/icons
+    rm -r "${PKG}"${appdir}/localization
+    rm -r "${PKG}"${appdir}/main
+    rm -r "${PKG}"${appdir}/scripts
+    find "${PKG}"${appdir} \
+        -name "package.json" \
+            -exec sed -e "s|${SRC}/min-${surum}|${appdir}|" \
+                -i {} \; \
+        -or -name ".*" -prune -exec rm -r '{}' \; \
+        -or -name "Gruntfile.js" -exec rm '{}' \; \
+        -or -name "Makefile" -exec rm '{}' \; \
+        -or -name "bower.json" -exec rm '{}' \; \
+        -or -name "cli.js" -exec rm '{}' \; \
+        -or -name "cmd.js" -exec rm '{}' \; \
+        -or -name "coffee" -prune -exec rm -r '{}' \; \
+        -or -name "example" -prune -exec rm -r '{}' \; \
+        -or -name "gulpfile.js" -exec rm '{}' \; \
+        -or -name "scripts" -prune -exec rm -r '{}' \; \
+        -or -name "test" -prune -exec rm -r '{}' \; \
+        -or -name "tests" -prune -exec rm -r '{}' \;
+}
