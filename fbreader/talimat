@@ -5,27 +5,28 @@
 # Grup:
 
 isim=fbreader
-surum=0.99.4
+surum=0.99.5
 devir=1
 
-kaynak=(https://www.fbreader.org/files/desktop/fbreader-sources-$surum.tgz
+kaynak=(https://github.com/geometer/FBReader/archive/0.99.5.tar.gz::fbreader-$surum.tar.gz
         fbreader-0.99.4.patch
         fbreader-narrowing-conversion.patch
         qt5.patch)
 
 derle() {
   git_indir https://github.com/lokesh-krishna/FBreader-elementary-theme.git FBreader-elementary-theme
-  cd "$SRC"/fbreader-$surum
+  cd "$SRC"/FBReader-$surum
  # patch -Np1 -i "$SRC"/fbreader-0.99.4.patch
  # patch -Np1 -i "$SRC"/fbreader-narrowing-conversion.patch
- 3 patch -Np1 -i "$SRC"/qt5.patch
+  #patch -Np1 -i "$SRC"/qt5.patch
 
   cd "$SRC"
   export UI_TYPE=qt4
   export TARGET_ARCH=desktop
   export TARGET_STATUS=release
-  cd "$SRC"/fbreader-$surum
+  cd "$SRC"/FBReader-$surum
   make ZLSHARED=no
   make ZLSHARED=no DESTDIR="$PKG" install
   find "$SRC"/FBreader-elementary-theme/FBReader -name "*.png" -exec cp -a {} "$PKG"/usr/share/pixmaps/FBReader/ \;
 }
+
