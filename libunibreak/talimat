@@ -1,0 +1,22 @@
+# Tanım: Unicode 5.2.0 Standard Annex 14, Revision 24'te açıklandığı gibi satır kesme algoritmasının uygulanması
+# URL: https://github.com/adah1972/libunibreak/
+# Paketçi: Cihan_Alkan
+# Gerekler: fribidi bzip2 curl qt5 libunibreak sqlite
+# Grup:
+
+isim=libunibreak
+surum=4.0
+devir=1
+
+kaynak=(https://github.com/adah1972/libunibreak/archive/libunibreak_${surum//./_}.tar.gz::$isim-$surum.tar.gz)
+
+derle() {
+
+  cd "$SRC/libunibreak-libunibreak_${surum//./_}"
+  ./bootstrap
+  ./configure --prefix=/usr
+  make
+  make DESTDIR="$PKG" install
+  rm -f "$PKG"/usr/lib/*.a
+  install -Dm644 LICENCE "$PKG/usr/share/licenses/$isim/LICENSE"
+}
