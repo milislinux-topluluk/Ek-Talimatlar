@@ -1,0 +1,27 @@
+# Tanım: Online gazete oku
+# URL: https://notabug.org/oltulu/Ay-Gaste
+# Paketçi: Cihan_Alkan 
+# Gerekler: qt5 xviewer exempi
+
+isim=ay-gaste
+surum=0.2
+devir=1
+
+kaynak=()
+
+derle() {
+    git_indir https://notabug.org/oltulu/Ay-Gaste.git $isim 
+	cd $SRC/$isim
+    sed -i 's/sudo pacman -S/mps kur/g' anapencere.cpp 
+	qmake-qt5 ay-gaste.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug 
+    make
+    mkdir -p $PKG/usr/bin
+    mkdir -p $PKG/usr/share/applications
+    mkdir -p $PKG/usr/share/ay-gaste
+    mkdir -p $PKG/usr/share/icons
+
+    mv $isim $PKG/usr/bin/
+    mv $isim.desktop $PKG/usr/share/applications/
+    mv $isim.png $PKG/usr/share/icons/
+    cp -r logo $PKG/usr/share/ay-gaste/
+}
